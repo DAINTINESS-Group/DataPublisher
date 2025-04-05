@@ -89,7 +89,6 @@ public class ControlledVocabularyCheck implements IInteroperabilityCheck {
             Map.entry("role", "http://publications.europa.eu/resource/authority/role"),
             Map.entry("accessright", "http://publications.europa.eu/resource/authority/access-right"),
             Map.entry("filetype", "http://publications.europa.eu/resource/authority/file-type")
-            //Add more mappings here as needed
         );
         
         return vocabularyMap.getOrDefault(key, null);

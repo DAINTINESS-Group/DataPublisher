@@ -1,9 +1,0 @@
-name ?,age,country_uri,language,currency,,
-Jose,30,Germany,Portugues,€,,
-Carlos,22,https://wrong.org/ESP,Espanol, ?,,
-Diana,35,null,Italiano, ?,,
-,,,,,,
-,,,,,,
-,,name ?,age,country_uri,language,currency
-,,Jose,30,Germany,Portugues,€
-,,Carlos,22,https://wrong.org/ESP,Espanol, ?

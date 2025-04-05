@@ -1,7 +1,6 @@
 package engine;
 
 import java.util.ArrayList;
-import java.util.Properties;
 
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
@@ -27,37 +26,21 @@ public class DatasetRegistrationController {
 		{
 			if(existsProfileWithAlias(alias)) return RegistrationResponse.ALIAS_EXISTS;
 			
-			Dataset<Row> df = spark.read().option("header", hasHeader).csv(path)
-									.withColumn("_id", functions.row_number().over(Window.orderBy(functions.lit("A"))));
+			//Added 2nd option
+			Dataset<Row> df = spark.read().option("header", hasHeader)
+					.option("inferSchema", true)
+					.csv(path)
+					.withColumn("_id", functions.row_number().over(Window.orderBy(functions.lit("A"))));
+			//df.printSchema();
+			//NEW INFO
+			df.sparkSession().conf().set("spark.sql.csv.filepath", path);
+
 			DatasetProfile profile = new DatasetProfile(alias, df, path, hasHeader);
 			datasetProfiles.add(profile);
 			
 			return RegistrationResponse.SUCCESS;
 		}
 		catch(Exception e) 
-		{
-			return RegistrationResponse.FAILURE;
-		}
-	}
-	
-	public RegistrationResponse registerDataset(String username, String password, String databaseType,
-										String url, String tableName, String alias) {
-		try
-		{
-			if(existsProfileWithAlias(alias)) return RegistrationResponse.ALIAS_EXISTS;
-			
-			Properties properties = new Properties();
-			properties.setProperty("driver", databaseType);
-			properties.setProperty("username", username);
-			properties.setProperty("password", password);
-			
-			Dataset<Row> df = spark.read().jdbc(url, tableName, properties)
-								.withColumn("_id", functions.row_number().over(Window.orderBy(functions.lit("A"))));
-			DatasetProfile profile = new DatasetProfile(alias, df, "DATABASE", false);
-			datasetProfiles.add(profile);
-			return RegistrationResponse.SUCCESS;
-		}
-		catch (Exception e)
 		{
 			return RegistrationResponse.FAILURE;
 		}

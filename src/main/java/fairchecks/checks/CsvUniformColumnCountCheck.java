@@ -41,7 +41,7 @@ public class CsvUniformColumnCountCheck implements IInteroperabilityCheck {
                     lineNumber++;
                     if (line.trim().isEmpty()) continue;
 
-                    int actualColumns = line.split(",", -1).length; // -1 keeps empty trailing columns
+                    int actualColumns = line.split(",", -1).length;
 
                     if (actualColumns != expectedColumns) {
                         return false;

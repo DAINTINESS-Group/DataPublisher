@@ -16,11 +16,6 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 		return datasetController.registerDataset(path, alias, hasHeader);
 	}
 	
-	public RegistrationResponse registerDataset(String username, String password, String databaseType,
-								String url, String tableName, String alias) {
-		return datasetController.registerDataset(username, password, databaseType, url, tableName, alias);
-	}
-	
 	@Override
 	public Map<String, Boolean> executeGlobalChecks(String datasetAlias) {
 	    DatasetProfile profile = datasetController.getProfile(datasetAlias);

@@ -22,7 +22,6 @@ public class DataAccessRestrictionCheck implements IAccessibilityCheck {
 
     @Override
     public boolean executeCheck(Dataset<Row> dataset) {
-    	// 1. Check metadata flag
         try {
             String declaredRestricted = dataset.sparkSession()
                     .conf()
@@ -36,7 +35,6 @@ public class DataAccessRestrictionCheck implements IAccessibilityCheck {
             System.err.println("Error reading config: " + e.getMessage());
         }
 
-        // 2. Check file-level access
         try {
             String filePath = dataset.sparkSession().conf().get("spark.sql.csv.filepath", null);
             if (filePath == null) {
@@ -50,7 +48,6 @@ public class DataAccessRestrictionCheck implements IAccessibilityCheck {
                 return false;
             }
 
-            // Optional: Try reading a few bytes to confirm access
             try (FileInputStream fis = new FileInputStream(file)) {
                 fis.read();
             }
@@ -60,7 +57,7 @@ public class DataAccessRestrictionCheck implements IAccessibilityCheck {
             return false;
         }
 
-        return true; // If all checks pass, file is accessible
+        return true;
     }
 
 }

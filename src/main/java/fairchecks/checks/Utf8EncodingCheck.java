@@ -5,18 +5,12 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
 import java.io.FileInputStream;
-import java.io.InputStream;
-import java.nio.ByteBuffer;
-import java.nio.charset.CharacterCodingException;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CodingErrorAction;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.file.Paths;
 
 public class Utf8EncodingCheck implements IInteroperabilityCheck {
-
-    private final List<String> invalidRows = new ArrayList<>();
 
     @Override
     public String getCheckId() {
@@ -30,54 +24,57 @@ public class Utf8EncodingCheck implements IInteroperabilityCheck {
 
     @Override
     public boolean executeCheck(Dataset<Row> dataset) {
-        try {
-            String filePath = dataset.sparkSession().conf().get("spark.sql.csv.filepath");
-            if (filePath.isEmpty()) {
-                System.err.println("No file path provided in Spark config.");
-                invalidRows.add("No file path provided in Spark config.");
-                return false;
-            }
-
-            byte[] bytes = readAllBytes(filePath);
-            
-            boolean isUtf8 = isValidUtf8(bytes);
-            System.out.println("UTF-8 Validation Result → " + isUtf8);
-
-            if (!isUtf8) {
-                invalidRows.add("File contains invalid UTF-8 byte sequences.");
-                return false;
-            }
-
-            return true;
-
-        } catch (Exception e) {
-            System.err.println("❌ Error checking UTF-8 encoding: " + e.getMessage());
-            invalidRows.add("Error while checking encoding: " + e.getMessage());
-            return false;
-        }
-    }
-
-    private byte[] readAllBytes(String filePath) throws Exception {
-        try (InputStream is = new FileInputStream(filePath)) {
-            return is.readAllBytes();
-        }
-    }
-
-    private boolean isValidUtf8(byte[] bytes) {
     	try {
-            CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder()
-                    .onMalformedInput(CodingErrorAction.REPORT)
-                    .onUnmappableCharacter(CodingErrorAction.REPORT);
+    		String uriPath = dataset.inputFiles()[0];
+    		
+    		URI uri = new URI(uriPath);
+    		String filePath = Paths.get(uri).toString();
+            
+            try (FileInputStream fis = new FileInputStream(filePath)) {
+                byte[] buf = fis.readAllBytes();
+                
+                boolean valid = isValidUtf8(buf);
+                return valid;
+            }
 
-            decoder.decode(ByteBuffer.wrap(bytes));
-            return true;
-        } catch (CharacterCodingException e) {
+        } catch (IOException | IllegalArgumentException e) {
+            e.printStackTrace();
             return false;
-        }
+        } catch (URISyntaxException e) {
+			e.printStackTrace();
+			return false;
+		}
     }
+    
+    private boolean isValidUtf8(byte[] input) {
+        int i = 0;
+        while (i < input.length) {
+            int byte1 = input[i] & 0xFF;
 
-    @Override
-    public List<String> getInvalidRows() {
-        return invalidRows;
+            if ((byte1 & 0x80) == 0) {
+                // 1-byte (ASCII)
+                i++;
+            } else if ((byte1 & 0xE0) == 0xC0) {
+                // 2-byte
+                if (i + 1 >= input.length) return false;
+                if ((input[i + 1] & 0xC0) != 0x80) return false;
+                i += 2;
+            } else if ((byte1 & 0xF0) == 0xE0) {
+                // 3-byte
+                if (i + 2 >= input.length) return false;
+                if ((input[i + 1] & 0xC0) != 0x80 || (input[i + 2] & 0xC0) != 0x80) return false;
+                i += 3;
+            } else if ((byte1 & 0xF8) == 0xF0) {
+                // 4-byte
+                if (i + 3 >= input.length) return false;
+                if ((input[i + 1] & 0xC0) != 0x80 || (input[i + 2] & 0xC0) != 0x80 || (input[i + 3] & 0xC0) != 0x80)
+                    return false;
+                i += 4;
+            } else {
+                return false;
+            }
+        }
+        return true;
     }
+    
 }

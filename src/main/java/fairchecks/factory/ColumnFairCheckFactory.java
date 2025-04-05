@@ -26,8 +26,7 @@ public class ColumnFairCheckFactory {
         columnChecks.add(new DecimalFormatCheck(columnName));    // IEU2.1
         columnChecks.add(new ThousandsSeparatorCheck(columnName)); // IEU2.2
         columnChecks.add(new SpecialCharacterCheck(columnName)); // IEU3.2
-        //columnChecks.add(new ControlledVocabularyCheck(columnName));   // IEU4
-        //columnChecks.add(new UniqueIdentifierCheck(columnName));   // IEU5
+        columnChecks.add(new ControlledVocabularyCheck(columnName));   // IEU4
         columnChecks.add(new CsvUnitInHeaderCheck(columnName));     // IEU17.1
 		
 		return columnChecks;

@@ -1,7 +1,0 @@
-name,age,country_uri,language
-name,age,country_uri,language
-Alice,30,http://publications.europa.eu/resource/authority/country/DEU,German
-Bob,25,http://publications.europa.eu/resource/authority/country/FRA,French
-Carlos,22,http://publications.europa.eu/resource/authority/country/ESP,Spanish
-Diana,35,null,Italian, woman
-# Last modified: 2025-04-01

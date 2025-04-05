@@ -25,18 +25,14 @@ public class CsvNoAdditionalInfoCheck implements IInteroperabilityCheck{
         try {        	
         	String delimiter = dataset.sparkSession().conf().get("spark.sql.csv.delimiter", ",");
 
-            // Concatenate all columns into a single string
             org.apache.spark.sql.Column concatenatedColumns = functions.concat_ws(delimiter, Arrays.stream(dataset.columns())
                     .map(functions::col)
                     .toArray(org.apache.spark.sql.Column[]::new));
 
-            // Define a regular expression pattern to detect non-data rows
             String pattern = "(?i)^(#.*|.*(last\\s*modified|sheet\\s*name|notes|comments|metadata|explanation).*)$";
 
-            // Filter rows matching the pattern
             long nonDataRowCount = dataset.filter(concatenatedColumns.rlike(pattern)).count();
 
-            // If any non-data rows are found, the check fails
             return nonDataRowCount == 0;
         } catch (Exception e) {
             System.err.println("Error executing CSV No Additional Info Check: " + e.getMessage());

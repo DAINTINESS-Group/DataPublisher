@@ -12,7 +12,6 @@ import org.junit.Test;
 import engine.*;
 import fairchecks.checks.*;
 import model.DatasetProfile;
-//import utils.RegistrationResponse;
 
 public class CheckGlobalTests {
 	
@@ -580,8 +579,7 @@ public class CheckGlobalTests {
             assertTrue(false);
         }
     }
-    
- /*   
+      
     @Test
     public void utf8EncodingCheckTest()
     {
@@ -625,9 +623,9 @@ public class CheckGlobalTests {
             System.out.println(e);
             assertTrue(false);
         }
-    }*/
+    }
     
-    /*@Test
+    @Test
     public void unitInDedicatedColumnTest()
     {
     	try 
@@ -663,13 +661,13 @@ public class CheckGlobalTests {
             
         	CsvUnitInDedicatedColumnCheck check = new CsvUnitInDedicatedColumnCheck();
         	boolean result = check.executeCheck(dataset);
-        	assertFalse("Expected units NOT to be in a dedicated column.", result);
+        	assertFalse("Expected multiple units in a dedicated column.", result);
     	}
     	catch (Exception e)
         {
             System.out.println(e);
             assertTrue(false);
         }
-    }*/
+    }
 
 }

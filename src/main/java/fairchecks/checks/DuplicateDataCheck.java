@@ -35,20 +35,11 @@ public class DuplicateDataCheck implements IReusabilityCheck {
             dataset = dataset.withColumn(col, functions.trim(functions.col(col).cast("string")));
         }
 
-        /*System.out.println("Checking for duplicates using columns:");
-        columnsToUse.forEach(System.out::println);
-
-        dataset.select(columnsToUse.stream().map(functions::col).toArray(Column[]::new))
-                .show(false);*/
-
         Dataset<Row> duplicates = dataset
                 .groupBy(columnsToUse.stream().map(functions::col).toArray(Column[]::new))
                 .count()
                 .filter("count > 1")
                 .drop("count");
-
-        /*System.out.println("Duplicate rows (grouped):");
-        duplicates.show(false);*/
 
         List<Row> duplicateRows = duplicates.collectAsList();
         for (Row row : duplicateRows) {

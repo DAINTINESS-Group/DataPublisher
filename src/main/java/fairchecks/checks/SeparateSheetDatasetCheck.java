@@ -27,10 +27,8 @@ public class SeparateSheetDatasetCheck implements IReusabilityCheck {
     public boolean executeCheck(Dataset<Row> dataset) {
     	try {
     		String path = dataset.inputFiles()[0];
-            //System.out.println("Running Excel sheet check for file: " + path);
             
             if (!path.toLowerCase().endsWith(".xlsx") && !path.toLowerCase().endsWith(".xls")) {
-            	System.out.println("Not an Excel file — skipping.");
             	return true;
             }
             
@@ -39,7 +37,6 @@ public class SeparateSheetDatasetCheck implements IReusabilityCheck {
                  Workbook workbook = WorkbookFactory.create(fis)) {
 
                 int numberOfSheets = workbook.getNumberOfSheets();
-                //System.out.println("Sheet count → " + numberOfSheets);
                 return numberOfSheets == 1;
             }
 

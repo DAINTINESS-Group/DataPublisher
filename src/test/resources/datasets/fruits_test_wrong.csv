@@ -1,8 +1,8 @@
 Fruit,price,currency,weight,color,quantity,purchase timestamp
-banana,1$,dollar,150,yellow,1000,01-12-23 14:45
-strawberry,-3,Euro,20,red,1987,01-12-23 14:45
-kiwi,5.5,bitcoin,35,null,1 000,2023-12-01 14:45:30 UTC
-orange,"2,60",Euro,100,orange,300.25,2023-12-01 14:45:30 +0200
-banana,1$,dollar,150,yellow,1000,01-12-23 14:45
-cherry,,US dollar,10,red,1.201,2023-12-01T14:45:30
-banana,1 50,EUR,150,yellow,"1,000",01-12-23
+banana,1$,dollar,150 g,yellow,1000,01-12-23 14:45
+strawberry,-3,Euro,20 g,red,1987,01-12-23 14:45
+kiwi,5.5,bitcoin,35 g,null,1 000,2023-12-01 14:45:30 UTC
+orange,"2,60",Euro,1 kg,orange,300.25,2023-12-01 14:45:30 +0200
+banana,1$,dollar,150 g,yellow,1000,01-12-23 14:45
+cherry,,US dollar,10 g,red,1.201,2023-12-01T14:45:30
+banana,1 50,EUR,1 kg,yellow,"1,000",01-12-23
