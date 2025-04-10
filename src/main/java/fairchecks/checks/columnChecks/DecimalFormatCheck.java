@@ -46,7 +46,7 @@ public class DecimalFormatCheck implements IInteroperabilityCheck {
             if (value.equalsIgnoreCase("null")) continue;
 
             if (!value.matches(decimalRegex)) {
-                invalidRows.add("Invalid decimal: " + rawVal);
+                invalidRows.add("Invalid decimal: " + value);
             }
         }
 

@@ -46,7 +46,7 @@ public class ThousandsSeparatorCheck implements IInteroperabilityCheck  {
 
             if (value.equalsIgnoreCase("null")) continue;
             
-            invalidRows.add("Invalid format of number: " + row.getString(0));
+            invalidRows.add("Invalid format of number: " + value);
         }
 
         return invalidRows.isEmpty();

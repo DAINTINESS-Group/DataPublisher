@@ -8,6 +8,7 @@ public class Main {
 
         facade.registerDataset("src/test/resources/datasets/countries.csv", "myDataset", true);
 
-        //facade.executeGlobalChecks("myDataset");
+        facade.executeGlobalChecks("myDataset");
+        facade.executeColumnChecks("myDataset");
     }
 }

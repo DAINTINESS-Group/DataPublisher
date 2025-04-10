@@ -1,9 +1,11 @@
 package engine;
 
 import model.DatasetProfile;
+import model.FairCheckResult;
 import utils.RegistrationResponse;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 public class DataPublisherFacade implements IDataPublisherFacade{
@@ -35,7 +37,7 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 	}
 	
 	@Override
-    public Map<String, Map<String, Boolean>> executeColumnChecks(String datasetAlias) {
+    public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias) {
         DatasetProfile profile = datasetController.getProfile(datasetAlias);
         if (profile == null) {
             System.out.println("Dataset not found: " + datasetAlias);

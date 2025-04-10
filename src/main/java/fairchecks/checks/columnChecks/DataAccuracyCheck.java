@@ -57,7 +57,13 @@ public class DataAccuracyCheck implements IReusabilityCheck {
             	    .collectAsList();
 
             for (Row row : failingRows) {
-                invalidRows.add("Uncommon or inaccurate value: " + row.getString(0));
+            	Object rawVal = row.get(0);
+                if (rawVal == null) continue;
+
+                String value = rawVal.toString().trim();
+
+                if (value.equalsIgnoreCase("null")) continue;
+                invalidRows.add("Uncommon or inaccurate value: " + value);
             }
 
             return invalidRows.isEmpty();

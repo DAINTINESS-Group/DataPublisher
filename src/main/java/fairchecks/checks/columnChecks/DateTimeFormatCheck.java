@@ -46,7 +46,7 @@ public class DateTimeFormatCheck implements IInteroperabilityCheck {
 
             if (value.equalsIgnoreCase("null")) continue;
             
-            invalidRows.add("Invalid date or time format: " + row.getString(0));
+            invalidRows.add("Invalid date or time format: " + value);
         }
 
         return invalidRows.isEmpty();
