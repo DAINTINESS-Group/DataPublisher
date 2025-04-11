@@ -1,4 +1,4 @@
-package fairchecks.global;
+package fairchecks.checks.globalChecks;
 
 import static org.junit.Assert.*;
 
@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import engine.*;
-import fairchecks.checks.*;
+
 import model.DatasetProfile;
 
 public class CheckGlobalTests {

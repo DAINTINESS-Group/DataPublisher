@@ -1,4 +1,4 @@
-package fairchecks.column;
+package fairchecks.checks.columnChecks;
 
 import static org.junit.Assert.*;
 
@@ -10,7 +10,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import engine.*;
-import fairchecks.checks.columnChecks.*;
 import model.DatasetProfile;
 
 

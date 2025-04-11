@@ -1,6 +1,10 @@
 package engine;
 
-import fairchecks.api.*;
+import fairchecks.api.IAccessibilityCheck;
+import fairchecks.api.IFindabilityCheck;
+import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IReusabilityCheck;
+//import fairchecks.api.*;
 import fairchecks.factory.GlobalFairCheckFactory;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;

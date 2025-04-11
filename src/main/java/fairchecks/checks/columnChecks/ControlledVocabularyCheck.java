@@ -81,15 +81,18 @@ public class ControlledVocabularyCheck implements IInteroperabilityCheck {
     private String resolveVocabularyURI(String columnName) {
         String key = columnName.toLowerCase().replaceAll("[^a-z]", "");
 
-        Map<String, String> vocabularyMap = Map.ofEntries(
-            Map.entry("currency", "http://publications.europa.eu/resource/authority/currency"),
-            Map.entry("country", "http://publications.europa.eu/resource/authority/country"),
-            Map.entry("language", "http://publications.europa.eu/resource/authority/language"),
-            Map.entry("occupation", "http://publications.europa.eu/resource/authority/occupation"),
-            Map.entry("role", "http://publications.europa.eu/resource/authority/role"),
-            Map.entry("accessright", "http://publications.europa.eu/resource/authority/access-right"),
-            Map.entry("filetype", "http://publications.europa.eu/resource/authority/file-type")
-        );
+        Map<String, String> vocabularyMap = new HashMap<String, String>(){ 
+			private static final long serialVersionUID = 1L;
+			{
+        		put("currency", "http://publications.europa.eu/resource/authority/currency");
+        		put("country", "http://publications.europa.eu/resource/authority/country");
+        		put("language", "http://publications.europa.eu/resource/authority/language");
+        		put("occupation", "http://publications.europa.eu/resource/authority/occupation");
+        		put("role", "http://publications.europa.eu/resource/authority/role");
+        		put("accessright", "http://publications.europa.eu/resource/authority/access-right");
+        		put("filetype", "http://publications.europa.eu/resource/authority/file-type");
+			}
+		};
         
         return vocabularyMap.getOrDefault(key, null);
     }

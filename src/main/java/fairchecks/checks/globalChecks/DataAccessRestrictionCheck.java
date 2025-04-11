@@ -1,4 +1,4 @@
-package fairchecks.checks;
+package fairchecks.checks.globalChecks;
 
 import fairchecks.api.IAccessibilityCheck;
 

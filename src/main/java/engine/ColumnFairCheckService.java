@@ -1,8 +1,12 @@
 package engine;
 
 import model.FairCheckResult;
+import fairchecks.api.IAccessibilityCheck;
+import fairchecks.api.IFindabilityCheck;
+import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IReusabilityCheck;
 import fairchecks.factory.ColumnFairCheckFactory;
-import fairchecks.api.*;
+//import fairchecks.api.*;
 import model.DatasetProfile;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;

@@ -1,7 +1,16 @@
 package fairchecks.factory;
 
 import fairchecks.api.*;
-import fairchecks.checks.columnChecks.*;
+import fairchecks.checks.columnChecks.ControlledVocabularyCheck;
+import fairchecks.checks.columnChecks.CsvUnitInHeaderCheck;
+import fairchecks.checks.columnChecks.DataAccuracyCheck;
+import fairchecks.checks.columnChecks.DateTimeFormatCheck;
+import fairchecks.checks.columnChecks.DecimalFormatCheck;
+import fairchecks.checks.columnChecks.NullValueMarkingCheck;
+import fairchecks.checks.columnChecks.SpecialCharacterCheck;
+import fairchecks.checks.columnChecks.ThousandsSeparatorCheck;
+
+//import fairchecks.checks.columnChecks.*;
 import java.util.ArrayList;
 import java.util.List;
 

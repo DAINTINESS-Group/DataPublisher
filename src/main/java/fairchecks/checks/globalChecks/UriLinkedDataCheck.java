@@ -1,4 +1,4 @@
-package fairchecks.checks;
+package fairchecks.checks.globalChecks;
 
 import fairchecks.api.IInteroperabilityCheck;
 import org.apache.spark.sql.Dataset;

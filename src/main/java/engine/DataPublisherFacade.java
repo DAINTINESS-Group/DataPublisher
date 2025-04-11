@@ -46,7 +46,7 @@ public class DataPublisherFacade implements IDataPublisherFacade{
         return columnCheckService.executeColumnChecks(profile);
     }
 	
-	private DatasetProfile getProfile(String alias) {
+	public DatasetProfile getProfile(String alias) {
 		return datasetController.getProfile(alias);
 	}
 

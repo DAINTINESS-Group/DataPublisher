@@ -1,4 +1,4 @@
-package fairchecks.checks;
+package fairchecks.checks.globalChecks;
 
 import fairchecks.api.IInteroperabilityCheck;
 
@@ -35,10 +35,10 @@ public class CsvUniformColumnCountCheck implements IInteroperabilityCheck {
                 if (header == null) return false;
 
                 int expectedColumns = header.split(",").length;
-                int lineNumber = 1;
+//                int lineNumber = 1;
                 String line;
                 while ((line = reader.readLine()) != null) {
-                    lineNumber++;
+  //                  lineNumber++;
                     if (line.trim().isEmpty()) continue;
 
                     int actualColumns = line.split(",", -1).length;

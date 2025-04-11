@@ -1,7 +1,22 @@
 package fairchecks.factory;
 
 import fairchecks.api.*;
-import fairchecks.checks.*;
+import fairchecks.checks.globalChecks.CsvColumnHeaderCheck;
+import fairchecks.checks.globalChecks.CsvNoAdditionalInfoCheck;
+import fairchecks.checks.globalChecks.CsvSingleHeaderCheck;
+import fairchecks.checks.globalChecks.CsvSingleTableCheck;
+import fairchecks.checks.globalChecks.CsvTitleInDistributionCheck;
+import fairchecks.checks.globalChecks.CsvUniformColumnCountCheck;
+import fairchecks.checks.globalChecks.CsvUnitInDedicatedColumnCheck;
+import fairchecks.checks.globalChecks.DataAccessRestrictionCheck;
+import fairchecks.checks.globalChecks.DuplicateDataCheck;
+import fairchecks.checks.globalChecks.SeparateSheetDatasetCheck;
+import fairchecks.checks.globalChecks.SingleSheetCheck;
+import fairchecks.checks.globalChecks.SufficientDataCheck;
+import fairchecks.checks.globalChecks.UniqueIdentifierCheck;
+import fairchecks.checks.globalChecks.UriDetailsRetrievalCheck;
+import fairchecks.checks.globalChecks.UriLinkedDataCheck;
+import fairchecks.checks.globalChecks.Utf8EncodingCheck;
 
 import java.util.ArrayList;
 import java.util.List;

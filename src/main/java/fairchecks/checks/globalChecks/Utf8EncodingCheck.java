@@ -1,9 +1,10 @@
-package fairchecks.checks;
+package fairchecks.checks.globalChecks;
 
 import fairchecks.api.IInteroperabilityCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
+import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URI;
@@ -30,10 +31,13 @@ public class Utf8EncodingCheck implements IInteroperabilityCheck {
     		URI uri = new URI(uriPath);
     		String filePath = Paths.get(uri).toString();
             
-            try (FileInputStream fis = new FileInputStream(filePath)) {
-                byte[] buf = fis.readAllBytes();
+            try (FileInputStream fileInputStream = new FileInputStream(filePath)) {
+            	fileInputStream.reset();
+            	byte[] buffer = new byte[fileInputStream.available()];
+            	DataInputStream dataInputStream = new DataInputStream(fileInputStream);
+            	dataInputStream.readFully(buffer);            
                 
-                boolean valid = isValidUtf8(buf);
+                boolean valid = isValidUtf8(buffer);
                 return valid;
             }
 
