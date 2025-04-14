@@ -32,7 +32,6 @@ public class Utf8EncodingCheck implements IInteroperabilityCheck {
     		String filePath = Paths.get(uri).toString();
             
             try (FileInputStream fileInputStream = new FileInputStream(filePath)) {
-            	fileInputStream.reset();
             	byte[] buffer = new byte[fileInputStream.available()];
             	DataInputStream dataInputStream = new DataInputStream(fileInputStream);
             	dataInputStream.readFully(buffer);            

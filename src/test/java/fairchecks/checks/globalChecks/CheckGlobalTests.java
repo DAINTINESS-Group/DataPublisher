@@ -2,8 +2,6 @@ package fairchecks.checks.globalChecks;
 
 import static org.junit.Assert.*;
 
-import java.lang.reflect.Method;
-
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.junit.Before;
@@ -39,10 +37,7 @@ public class CheckGlobalTests {
     public void columnHeaderCheckTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile1 = (DatasetProfile) method.invoke(facade, "frame3");
+            DatasetProfile profile1 = facade.getProfile("frame3");
             Dataset<Row> oneTableData = profile1.getDataset();
 
             CsvColumnHeaderCheck check1 = new CsvColumnHeaderCheck();
@@ -59,10 +54,7 @@ public class CheckGlobalTests {
     public void columnHeaderCheckWrongTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile2 = (DatasetProfile) method.invoke(facade, "frame6");
+            DatasetProfile profile2 = facade.getProfile("frame6");
             Dataset<Row> twoTablesData = profile2.getDataset();
             
             CsvColumnHeaderCheck check2 = new CsvColumnHeaderCheck();
@@ -79,10 +71,7 @@ public class CheckGlobalTests {
     public void noAdditionalInfoCheckTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile1 = (DatasetProfile) method.invoke(facade, "frame3");
+            DatasetProfile profile1 = facade.getProfile("frame3");
             Dataset<Row> noAdditionalInfoData = profile1.getDataset();
 
             CsvNoAdditionalInfoCheck check1 = new CsvNoAdditionalInfoCheck();
@@ -99,10 +88,7 @@ public class CheckGlobalTests {
     public void noAdditionalInfoCheckWrongTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-            
-            DatasetProfile profile2 = (DatasetProfile) method.invoke(facade, "frame5");
+            DatasetProfile profile2 = facade.getProfile("frame5");
             Dataset<Row> moreInfoData = profile2.getDataset();
             
             CsvNoAdditionalInfoCheck check2 = new CsvNoAdditionalInfoCheck();
@@ -119,10 +105,7 @@ public class CheckGlobalTests {
     public void singleHeaderCheckTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile1 = (DatasetProfile) method.invoke(facade, "frame3");
+            DatasetProfile profile1 = facade.getProfile("frame3");
             Dataset<Row> oneHeaderData = profile1.getDataset();
 
             CsvSingleHeaderCheck check1 = new CsvSingleHeaderCheck();
@@ -139,10 +122,7 @@ public class CheckGlobalTests {
     public void singleHeaderCheckWrongTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-            
-            DatasetProfile profile2 = (DatasetProfile) method.invoke(facade, "frame5");
+            DatasetProfile profile2 = facade.getProfile("frame5");
             Dataset<Row> secondRowData = profile2.getDataset();
             
             CsvSingleHeaderCheck check2 = new CsvSingleHeaderCheck();
@@ -159,11 +139,7 @@ public class CheckGlobalTests {
     public void singleTableCheckTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            //Correct Dataset
-            DatasetProfile profile1 = (DatasetProfile) method.invoke(facade, "frame3");
+            DatasetProfile profile1 = facade.getProfile("frame3");
             Dataset<Row> oneTableData = profile1.getDataset();
 
             CsvSingleTableCheck check1 = new CsvSingleTableCheck();
@@ -180,10 +156,7 @@ public class CheckGlobalTests {
     public void singleTableCheckWrongTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile2 = (DatasetProfile) method.invoke(facade, "frame4");
+            DatasetProfile profile2 = facade.getProfile("frame4");
             Dataset<Row> twoTablesData = profile2.getDataset();
             
             CsvSingleTableCheck check2 = new CsvSingleTableCheck();
@@ -200,10 +173,7 @@ public class CheckGlobalTests {
     public void titleInDistributionCheckTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile1 = (DatasetProfile) method.invoke(facade, "frame3");
+            DatasetProfile profile1 = facade.getProfile("frame3");
             Dataset<Row> noTitleData = profile1.getDataset();
 
             CsvTitleInDistributionCheck check1 = new CsvTitleInDistributionCheck();
@@ -220,10 +190,7 @@ public class CheckGlobalTests {
     public void titleInDistributionCheckWrongTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-            
-            DatasetProfile profile2 = (DatasetProfile) method.invoke(facade, "frame6");
+            DatasetProfile profile2 = facade.getProfile("frame6");
             Dataset<Row> titleInsideData = profile2.getDataset();
             
             CsvTitleInDistributionCheck check2 = new CsvTitleInDistributionCheck();
@@ -240,10 +207,7 @@ public class CheckGlobalTests {
     public void uniformColumnCountCheckTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile1 = (DatasetProfile) method.invoke(facade, "frame3");
+            DatasetProfile profile1 = facade.getProfile("frame3");
             Dataset<Row> oneTableData = profile1.getDataset();
 
             CsvUniformColumnCountCheck check1 = new CsvUniformColumnCountCheck();
@@ -260,10 +224,7 @@ public class CheckGlobalTests {
     public void uniformColumnCountCheckWrongTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile2 = (DatasetProfile) method.invoke(facade, "frame5");
+            DatasetProfile profile2 = facade.getProfile("frame5");
             Dataset<Row> twoTablesData = profile2.getDataset();
             
             CsvUniformColumnCountCheck check2 = new CsvUniformColumnCountCheck();
@@ -280,11 +241,8 @@ public class CheckGlobalTests {
     public void dataAccessRestrictionCheckTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
             //Accessible Dataset
-            DatasetProfile profile1 = (DatasetProfile) method.invoke(facade, "frame3");
+            DatasetProfile profile1 = facade.getProfile("frame3");
             Dataset<Row> accessibleData = profile1.getDataset();
 
             DataAccessRestrictionCheck check1 = new DataAccessRestrictionCheck();
@@ -293,7 +251,7 @@ public class CheckGlobalTests {
 
 
             //Restricted Dataset
-            DatasetProfile profile2 = (DatasetProfile) method.invoke(facade, "frame9");
+            DatasetProfile profile2 = facade.getProfile("frame9");
             if (profile2 == null) {
                 System.out.println("Restricted dataset could not be loaded — possibly due to access denial.");
                 assertTrue("File is not accessible, restriction check should fail.", true);
@@ -316,9 +274,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame1");
+    		DatasetProfile profile = facade.getProfile("frame1");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -339,9 +295,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
+    		DatasetProfile profile = facade.getProfile("frame2");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -360,12 +314,7 @@ public class CheckGlobalTests {
     public void separateSheetDatasetCheckTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile1 = (DatasetProfile) method.invoke(facade, "frame7");
-            //System.out.println("→ Frame7 is: " + profile1.getFilePath());
-            
+            DatasetProfile profile1 = facade.getProfile("frame7");
             Dataset<Row> oneSheetDataset = profile1.getDataset();
 
             SeparateSheetDatasetCheck check1 = new SeparateSheetDatasetCheck();
@@ -382,12 +331,7 @@ public class CheckGlobalTests {
     public void separateSheetDatasetCheckWrongTest()
     {
     	try {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-
-            DatasetProfile profile2 = (DatasetProfile) method.invoke(facade, "frame8");
-            //System.out.println("→ Frame8 is: " + profile2.getFilePath());
-            
+            DatasetProfile profile2 = facade.getProfile("frame8");
             Dataset<Row> twoSheetsDataset = profile2.getDataset();
             
             SeparateSheetDatasetCheck check2 = new SeparateSheetDatasetCheck();
@@ -405,9 +349,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame1");
+    		DatasetProfile profile = facade.getProfile("frame1");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -428,9 +370,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
+    		DatasetProfile profile = facade.getProfile("frame2");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -450,9 +390,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame3");
+    		DatasetProfile profile = facade.getProfile("frame3");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -473,9 +411,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame4");
+    		DatasetProfile profile = facade.getProfile("frame4");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -495,9 +431,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame3");
+    		DatasetProfile profile = facade.getProfile("frame3");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -518,9 +452,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame5");
+    		DatasetProfile profile = facade.getProfile("frame5");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -540,9 +472,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame3");
+    		DatasetProfile profile = facade.getProfile("frame3");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -563,9 +493,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame5");
+    		DatasetProfile profile = facade.getProfile("frame5");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -585,9 +513,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame3");
+    		DatasetProfile profile = facade.getProfile("frame3");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -608,9 +534,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame4");
+    		DatasetProfile profile = facade.getProfile("frame4");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -630,9 +554,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame1");
+    		DatasetProfile profile = facade.getProfile("frame1");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -653,9 +575,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
+    		DatasetProfile profile = facade.getProfile("frame2");
         	
             Dataset<Row> dataset = profile.getDataset();
             

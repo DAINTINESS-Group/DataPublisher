@@ -2,8 +2,6 @@ package fairchecks.checks.columnChecks;
 
 import static org.junit.Assert.*;
 
-import java.lang.reflect.Method;
-
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.junit.Before;
@@ -11,7 +9,6 @@ import org.junit.Test;
 
 import engine.*;
 import model.DatasetProfile;
-
 
 public class CheckColumnTests {
 	
@@ -33,23 +30,17 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
-        	
+        	DatasetProfile profile = facade.getProfile("frame2");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "Fruit", "price", "color" };
 
             for (String column : columnsToCheck) {
-                //System.out.println("Checking column: " + column);
-
                 NullValueMarkingCheck check = new NullValueMarkingCheck(column);
                 boolean result = check.executeCheck(dataset);
 
                 if (column.equals("price")) {
                 	assertFalse("Expected column '" + column + "' to fail null check.", result);
-                	//check.getInvalidRows().forEach(System.out::println);
                 } else {
                 	assertTrue("Expected column '" + column + "' to pass null check.", result);
                 }
@@ -67,23 +58,19 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
+        	DatasetProfile profile = facade.getProfile("frame2");
         	
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "Fruit", "price", "color" };
 
             for (String column : columnsToCheck) {
-                //System.out.println("Checking column: " + column);
 
                 SpecialCharacterCheck check = new SpecialCharacterCheck(column);
                 boolean result = check.executeCheck(dataset);
 
                 if (column.equals("price")) {
                 	assertFalse("Expected column '" + column + "' to fail special character check.", result);
-                	//check.getInvalidRows().forEach(System.out::println);
                 } else {
                 	assertTrue("Expected column '" + column + "' to pass special character check.", result);
                 }
@@ -101,17 +88,13 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame1");
+        	DatasetProfile profile = facade.getProfile("frame1");
         	
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "price", "color", "currency" };
 
             for (String column : columnsToCheck) {
-                //System.out.println("Checking column: " + column);
-
                 DataAccuracyCheck check = new DataAccuracyCheck(column);
                 boolean result = check.executeCheck(dataset);
 
@@ -119,7 +102,6 @@ public class CheckColumnTests {
                 	assertTrue("Expected column '" + column + "' to pass data accuracy check.", result);
                 } else {
                 	assertFalse("Expected column '" + column + "' to fail data accuracy check.", result);
-                	//check.getInvalidRows().forEach(System.out::println);
                 }
             }
     	}
@@ -135,10 +117,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame1");
-        	
+        	DatasetProfile profile = facade.getProfile("frame1");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "quantity" };
@@ -163,9 +142,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
+    		DatasetProfile profile = facade.getProfile("frame2");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -176,7 +153,6 @@ public class CheckColumnTests {
                 boolean result = check.executeCheck(dataset);
 
                 assertFalse("Expected column '" + column + "' to fail thousands separator check.", result);
-                //check.getInvalidRows().forEach(System.out::println);
             }
     	}
     	catch (Exception e)
@@ -191,10 +167,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame1");
-        	
+    		DatasetProfile profile = facade.getProfile("frame1");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "price" };
@@ -219,10 +192,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
-        	
+    		DatasetProfile profile = facade.getProfile("frame2");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "price" };
@@ -232,7 +202,6 @@ public class CheckColumnTests {
                 boolean result = check.executeCheck(dataset);
 
                 assertFalse("Expected column '" + column + "' to fail decimal format check.", result);
-                //check.getInvalidRows().forEach(System.out::println);
             }
     	}
     	catch (Exception e)
@@ -247,10 +216,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame1");
-        	
+    		DatasetProfile profile = facade.getProfile("frame1");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "purchase timestamp" };
@@ -275,10 +241,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
-        	
+    		DatasetProfile profile = facade.getProfile("frame2");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "purchase timestamp" };
@@ -288,7 +251,6 @@ public class CheckColumnTests {
                 boolean result = check.executeCheck(dataset);
 
                 assertFalse("Expected column '" + column + "' to fail date time format check.", result);
-                //check.getInvalidRows().forEach(System.out::println);
             }
     	}
     	catch (Exception e)
@@ -303,10 +265,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame1");
-        	
+    		DatasetProfile profile = facade.getProfile("frame1");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "currency" };
@@ -331,10 +290,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
-        	
+    		DatasetProfile profile = facade.getProfile("frame2");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "currency" };
@@ -344,7 +300,6 @@ public class CheckColumnTests {
                 boolean result = check.executeCheck(dataset);
 
                 assertFalse("Expected column '" + column + "' to fail controlled vocabulary check.", result);
-                //check.getInvalidRows().forEach(System.out::println);
             }
     	}
     	catch (Exception e)
@@ -359,10 +314,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame1");
-        	
+    		DatasetProfile profile = facade.getProfile("frame1");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "weight (g)" };
@@ -387,10 +339,7 @@ public class CheckColumnTests {
     {
     	try 
     	{
-    		Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-        	DatasetProfile profile = (DatasetProfile) method.invoke(facade, "frame2");
-        	
+    		DatasetProfile profile = facade.getProfile("frame2");
             Dataset<Row> dataset = profile.getDataset();
             
             String[] columnsToCheck = new String[] { "weight" };
