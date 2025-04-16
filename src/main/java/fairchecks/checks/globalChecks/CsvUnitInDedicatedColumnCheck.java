@@ -31,7 +31,7 @@ public class CsvUnitInDedicatedColumnCheck implements IInteroperabilityCheck {
             if (field.dataType() instanceof StringType) {
                 Dataset<Row> nonNullValues = dataset.select(columnName)
                                                     .filter(functions.col(columnName).isNotNull())
-                                                    .limit(100); // Adjust sample size as needed
+                                                    .limit(100);
 
                 boolean allNumeric = true;
                 boolean containsNumberWithUnit = false;
@@ -53,7 +53,6 @@ public class CsvUnitInDedicatedColumnCheck implements IInteroperabilityCheck {
                 boolean hasParentheses = columnName.matches(".*\\(.*\\).*");
 
                 if ((allNumeric || containsNumberWithUnit) && !hasParentheses) {
-                    //System.out.println("Column '" + columnName + "' contains numeric data or numbers with units but lacks unit specification in the header.");
                     return false;
                 }
             }

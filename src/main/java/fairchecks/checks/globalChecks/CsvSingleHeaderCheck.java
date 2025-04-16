@@ -45,7 +45,6 @@ public class CsvSingleHeaderCheck implements IInteroperabilityCheck{
                         isFirstLine = false;
                     } else {
                         if (headerSet.contains(line.trim())) {
-                            //System.out.println("Multiple header lines detected.");
                             return false;
                         }
                     }

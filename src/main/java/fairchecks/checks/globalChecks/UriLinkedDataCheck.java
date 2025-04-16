@@ -54,9 +54,6 @@ public class UriLinkedDataCheck implements IInteroperabilityCheck{
             else if (values.size() >= 3 && ratio >= 0.5) {
                 hasObjectUriColumn = true;
             }
-            
-            //System.out.println("Subject URI column match: " + column + " → " + (hasSubjectUriColumn ? "YES" : "NO"));
-
         }
 
         if (!hasSubjectUriColumn) {

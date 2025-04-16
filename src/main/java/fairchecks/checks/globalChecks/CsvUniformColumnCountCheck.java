@@ -10,8 +10,6 @@ import java.net.URI;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
-//import com.sleepycat.je.log.FileReader;
-
 public class CsvUniformColumnCountCheck implements IInteroperabilityCheck {
 	
 	@Override
@@ -35,10 +33,8 @@ public class CsvUniformColumnCountCheck implements IInteroperabilityCheck {
                 if (header == null) return false;
 
                 int expectedColumns = header.split(",").length;
-//                int lineNumber = 1;
                 String line;
                 while ((line = reader.readLine()) != null) {
-  //                  lineNumber++;
                     if (line.trim().isEmpty()) continue;
 
                     int actualColumns = line.split(",", -1).length;

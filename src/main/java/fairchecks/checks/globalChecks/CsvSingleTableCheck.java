@@ -21,9 +21,6 @@ public class CsvSingleTableCheck implements IInteroperabilityCheck{
         return "CSV - Each data file shall contain a single table.";
     }
 
-    /**
-     * TODO why we consume the two first header indexes???
-     */
     @Override
     public boolean executeCheck(Dataset<Row> dataset) {
     	try {
@@ -40,10 +37,6 @@ public class CsvSingleTableCheck implements IInteroperabilityCheck{
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(csvFile), StandardCharsets.UTF_8))) {
 				int firstHeaderIndex = -1;
 				int secondHeaderIndex = -1;
-				@SuppressWarnings("unused")
-				int firstHeaderOffset = 0;
-				@SuppressWarnings("unused")
-				int secondHeaderOffset = 0;
 
 				int lineIndex = 0;
 				String line;
@@ -62,13 +55,11 @@ public class CsvSingleTableCheck implements IInteroperabilityCheck{
 
 				        if (firstHeaderIndex == -1) {
 				            firstHeaderIndex = lineIndex;
-				            firstHeaderOffset = offset;
 				        } else if (secondHeaderIndex == -1) {
 				            int blankLinesBetween = lineIndex - firstHeaderIndex - 1;
 
 				            if (blankLinesBetween >= 2 && offset >= 2) {
 				                secondHeaderIndex = lineIndex;
-				                secondHeaderOffset = offset;
 				                break;
 				            }
 				        }

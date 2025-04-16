@@ -54,7 +54,6 @@ public class UriDetailsRetrievalCheck implements IInteroperabilityCheck{
                 if (labelColumn == null) {
                     invalidRows.add("No label column found for controlled URI column: " + column);
                 } else {
-                    //candidatePairs.put(column, List.of(labelColumn));
                     candidatePairs.put(column, Arrays.asList(labelColumn));
                 }
             }
