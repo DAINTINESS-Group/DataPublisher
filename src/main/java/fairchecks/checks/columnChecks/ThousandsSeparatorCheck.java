@@ -8,6 +8,7 @@ import java.util.List;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
+import org.apache.spark.sql.types.*;
 
 public class ThousandsSeparatorCheck implements IInteroperabilityCheck  {
 	
@@ -55,6 +56,15 @@ public class ThousandsSeparatorCheck implements IInteroperabilityCheck  {
     @Override
     public List<String> getInvalidRows() {
         return invalidRows;
+    }
+    
+    @Override
+    public boolean isApplicable(DataType columnType) {
+        return columnType.equals(DataTypes.IntegerType) ||
+               columnType.equals(DataTypes.LongType) ||
+               columnType.equals(DataTypes.DoubleType) ||
+               columnType.equals(DataTypes.FloatType) ||
+               columnType instanceof DecimalType;
     }
 
 }

@@ -10,6 +10,7 @@ import fairchecks.factory.ColumnFairCheckFactory;
 import model.DatasetProfile;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
+import org.apache.spark.sql.types.DataType;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,17 +28,21 @@ public class ColumnFairCheckService {
 
         for (String columnName : columnNames) {
         	if (columnName.equalsIgnoreCase("_id")) continue;
+        	
+        	DataType columnType = dataset.schema().apply(columnName).dataType();
         	Map<String, List<FairCheckResult>> categorizedResults = new HashMap<>();
         	
         	// Execute Findability Checks
         	List<IFindabilityCheck> findabilityChecks = ColumnFairCheckFactory.getFindabilityChecks(columnName);
         	List<FairCheckResult> findabilityResults = new ArrayList<>();
         	for (IFindabilityCheck check : findabilityChecks) {
-        	    boolean result = check.executeCheck(dataset);
-        	    List<String> invalidRows = check.getInvalidRows();
-        	    findabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
-
-        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
+        		if (check.isApplicable(columnType)) {
+	        	    boolean result = check.executeCheck(dataset);
+	        	    List<String> invalidRows = check.getInvalidRows();
+	        	    findabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+	
+	        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
+        		}
         	}
         	categorizedResults.put("Findability", findabilityResults);
 
@@ -45,11 +50,13 @@ public class ColumnFairCheckService {
         	List<IAccessibilityCheck> accessibilityChecks = ColumnFairCheckFactory.getAccessibilityChecks(columnName);
         	List<FairCheckResult> accessibilityResults = new ArrayList<>();
         	for (IAccessibilityCheck check : accessibilityChecks) {
-        	    boolean result = check.executeCheck(dataset);
-        	    List<String> invalidRows = check.getInvalidRows();
-        	    accessibilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
-
-        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
+        		if (check.isApplicable(columnType)) {
+	        	    boolean result = check.executeCheck(dataset);
+	        	    List<String> invalidRows = check.getInvalidRows();
+	        	    accessibilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+	
+	        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
+	        	}
         	}
         	categorizedResults.put("Accessibility", accessibilityResults);
 
@@ -58,11 +65,13 @@ public class ColumnFairCheckService {
         	List<IInteroperabilityCheck> interoperabilityChecks = ColumnFairCheckFactory.getInteroperabilityChecks(columnName);
         	List<FairCheckResult> interoperabilityResults = new ArrayList<>();
         	for (IInteroperabilityCheck check : interoperabilityChecks) {
-        	    boolean result = check.executeCheck(dataset);
-        	    List<String> invalidRows = check.getInvalidRows();
-        	    interoperabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
-
-        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
+        		if (check.isApplicable(columnType)) {
+	        	    boolean result = check.executeCheck(dataset);
+	        	    List<String> invalidRows = check.getInvalidRows();
+	        	    interoperabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+	
+	        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
+	        	}
         	}
         	categorizedResults.put("Interoperability", interoperabilityResults);
 
@@ -71,14 +80,15 @@ public class ColumnFairCheckService {
         	List<IReusabilityCheck> reusabilityChecks = ColumnFairCheckFactory.getReusabilityChecks(columnName);
         	List<FairCheckResult> reusabilityResults = new ArrayList<>();
         	for (IReusabilityCheck check : reusabilityChecks) {
-        	    boolean result = check.executeCheck(dataset);
-        	    List<String> invalidRows = check.getInvalidRows();
-        	    reusabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
-
-        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
+        		if (check.isApplicable(columnType)) {
+	        	    boolean result = check.executeCheck(dataset);
+	        	    List<String> invalidRows = check.getInvalidRows();
+	        	    reusabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+	
+	        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
+	        	}
         	}
         	categorizedResults.put("Reusability", reusabilityResults);
-
 
             columnCheckResults.put(columnName, categorizedResults);
         }

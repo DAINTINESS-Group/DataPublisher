@@ -8,6 +8,8 @@ import java.util.List;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
+import org.apache.spark.sql.types.DataType;
+import org.apache.spark.sql.types.DataTypes;
 
 public class DateTimeFormatCheck implements IInteroperabilityCheck {
 	
@@ -55,6 +57,16 @@ public class DateTimeFormatCheck implements IInteroperabilityCheck {
     @Override
     public List<String> getInvalidRows() {
         return invalidRows;
+    }
+    
+    @Override
+    public boolean isApplicable(DataType columnType) {
+        List<String> keywords = List.of("date", "time", "datetime", "timestamp");
+
+        if (!columnType.equals(DataTypes.StringType)) return false;
+
+        String col = columnName.toLowerCase();
+        return keywords.stream().anyMatch(col::contains);
     }
 
 }

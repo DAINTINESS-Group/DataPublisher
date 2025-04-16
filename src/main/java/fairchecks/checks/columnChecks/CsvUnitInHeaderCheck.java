@@ -8,6 +8,12 @@ import java.util.List;
 
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
+import org.apache.spark.sql.types.DataType;
+import org.apache.spark.sql.types.DecimalType;
+import org.apache.spark.sql.types.DoubleType;
+import org.apache.spark.sql.types.FloatType;
+import org.apache.spark.sql.types.IntegerType;
+import org.apache.spark.sql.types.LongType;
 
 public class CsvUnitInHeaderCheck implements IInteroperabilityCheck{
 	
@@ -77,5 +83,13 @@ public class CsvUnitInHeaderCheck implements IInteroperabilityCheck{
 
         return false;
     }
-
+    
+    @Override
+    public boolean isApplicable(DataType columnType) {
+        return columnType instanceof IntegerType ||
+               columnType instanceof LongType ||
+               columnType instanceof DoubleType ||
+               columnType instanceof FloatType ||
+               columnType instanceof DecimalType;
+    }
 }
