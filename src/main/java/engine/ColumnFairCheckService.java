@@ -6,7 +6,6 @@ import fairchecks.api.IFindabilityCheck;
 import fairchecks.api.IInteroperabilityCheck;
 import fairchecks.api.IReusabilityCheck;
 import fairchecks.factory.ColumnFairCheckFactory;
-//import fairchecks.api.*;
 import model.DatasetProfile;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
@@ -17,10 +16,25 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Service class responsible for executing all applicable FAIR checks on each column of a dataset.
+ * <p>
+ * This service executes checks across the four FAIR categories:
+ * Findability, Accessibility, Interoperability, and Reusability. It uses the
+ * {@link fairchecks.factory.ColumnFairCheckFactory} to obtain relevant checks for each column,
+ * and evaluates their applicability based on column data types.
+ * </p>
+ *
+ * <p>
+ * The results are grouped by column and by FAIR category, and returned as structured
+ * {@link model.FairCheckResult} objects for use in reporting or further analysis.
+ * </p>
+ * @see model.FairCheckResult
+ * @see fairchecks.factory.ColumnFairCheckFactory
+ * @see fairchecks.api
+ */
 public class ColumnFairCheckService {
 	
-	//private ColumnFairCheckFactory columnCheckFactory = new ColumnFairCheckFactory();
-
 	public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(DatasetProfile profile) {
         Dataset<Row> dataset = profile.getDataset();
         String[] columnNames = dataset.columns();
@@ -40,8 +54,6 @@ public class ColumnFairCheckService {
 	        	    boolean result = check.executeCheck(dataset);
 	        	    List<String> invalidRows = check.getInvalidRows();
 	        	    findabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
-	
-	        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
         		}
         	}
         	categorizedResults.put("Findability", findabilityResults);
@@ -54,12 +66,9 @@ public class ColumnFairCheckService {
 	        	    boolean result = check.executeCheck(dataset);
 	        	    List<String> invalidRows = check.getInvalidRows();
 	        	    accessibilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
-	
-	        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
 	        	}
         	}
         	categorizedResults.put("Accessibility", accessibilityResults);
-
 
             // Execute Interoperability Checks
         	List<IInteroperabilityCheck> interoperabilityChecks = ColumnFairCheckFactory.getInteroperabilityChecks(columnName);
@@ -69,12 +78,9 @@ public class ColumnFairCheckService {
 	        	    boolean result = check.executeCheck(dataset);
 	        	    List<String> invalidRows = check.getInvalidRows();
 	        	    interoperabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
-	
-	        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
 	        	}
         	}
         	categorizedResults.put("Interoperability", interoperabilityResults);
-
 
             // Execute Reusability Checks
         	List<IReusabilityCheck> reusabilityChecks = ColumnFairCheckFactory.getReusabilityChecks(columnName);
@@ -84,8 +90,6 @@ public class ColumnFairCheckService {
 	        	    boolean result = check.executeCheck(dataset);
 	        	    List<String> invalidRows = check.getInvalidRows();
 	        	    reusabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
-	
-	        	    System.out.println("[" + columnName + "] " + check.getCheckId() + ": " + (result ? "PASSED" : "FAILED"));
 	        	}
         	}
         	categorizedResults.put("Reusability", reusabilityResults);
@@ -95,5 +99,4 @@ public class ColumnFairCheckService {
 
         return columnCheckResults;
     }
-
 }

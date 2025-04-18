@@ -4,7 +4,6 @@ import fairchecks.api.IAccessibilityCheck;
 import fairchecks.api.IFindabilityCheck;
 import fairchecks.api.IInteroperabilityCheck;
 import fairchecks.api.IReusabilityCheck;
-//import fairchecks.api.*;
 import fairchecks.factory.GlobalFairCheckFactory;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
@@ -12,6 +11,16 @@ import org.apache.spark.sql.Row;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * Service class responsible for executing all global FAIR checks on a dataset.
+ * <p>
+ * This class executes checks grouped under the FAIR principles:
+ * Findability, Accessibility, Interoperability, and Reusability. It does check instantiation
+ * to {@link GlobalFairCheckFactory} and runs each check sequentially on the full dataset.
+ * </p>
+ * @see fairchecks.factory.GlobalFairCheckFactory
+ * @see fairchecks.api
+ */
 public class GlobalFairCheckService {
 	
 	public Map<String, Boolean> executeGlobalChecks(Dataset<Row> dataset) {
@@ -35,5 +44,4 @@ public class GlobalFairCheckService {
 
         return results;
     }
-
 }

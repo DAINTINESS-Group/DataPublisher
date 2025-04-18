@@ -4,6 +4,18 @@ import java.io.Serializable;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
+/**
+ * This class represents a Dataset, from a CSV file, as well as information about it, as well as
+ * any executed requests and their results.
+ * 
+ * @param alias A string, unique amongst the registered DatasetProfiles.
+ * @param filePath The path of the represented Dataset.
+ * @param fileHasHeader A boolean that represents whether the file has a header. Used in report
+ * generation for accurate line counting.
+ * @param dataset A Spark <code>Dataset<Row></code>. Essentially the collection of rows of data from a CSV.
+ *
+ * @see Dataset
+ */
 public class DatasetProfile implements Serializable{
 	
 	private static final long serialVersionUID = 1L;

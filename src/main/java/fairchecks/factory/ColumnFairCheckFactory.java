@@ -10,10 +10,18 @@ import fairchecks.checks.columnChecks.NullValueMarkingCheck;
 import fairchecks.checks.columnChecks.SpecialCharacterCheck;
 import fairchecks.checks.columnChecks.ThousandsSeparatorCheck;
 
-//import fairchecks.checks.columnChecks.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Factory class responsible for creating instances of column FAIR checks, organized by FAIR principle.
+ * <p>
+ * Each method returns a list of check implementations related to a specific principle:
+ * Findability, Accessibility, Interoperability, or Reusability.
+ * </p>
+ * 
+ * @see fairchecks.checks.columnChecks
+ */
 public class ColumnFairCheckFactory {
 	
 	public static List<IFindabilityCheck> getFindabilityChecks(String columnName){

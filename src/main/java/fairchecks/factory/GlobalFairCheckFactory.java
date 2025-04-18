@@ -21,6 +21,15 @@ import fairchecks.checks.globalChecks.Utf8EncodingCheck;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Factory class responsible for creating instances of global FAIR checks, organized by FAIR principle.
+ * <p>
+ * Each method returns a list of check implementations related to a specific principle:
+ * Findability, Accessibility, Interoperability, or Reusability.
+ * </p>
+ * 
+ * @see fairchecks.checks.globalChecks
+ */
 public class GlobalFairCheckFactory {
 	
 	public static List<IFindabilityCheck> getFindabilityChecks(){

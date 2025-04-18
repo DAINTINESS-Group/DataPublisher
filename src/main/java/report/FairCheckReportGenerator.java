@@ -8,6 +8,13 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Class for generating human-readable FAIR check reports in plain text format.
+ * <p>
+ * This class provides methods to export the results of global and column-based FAIR checks
+ * to a specified output file. These reports are intended for manual review.
+ * </p>
+ */
 public class FairCheckReportGenerator {
 	
 	public static void generateGlobalReport(String alias, Map<String, Boolean> results, String outputPath) {
@@ -56,5 +63,4 @@ public class FairCheckReportGenerator {
             System.err.println("Error writing column report: " + e.getMessage());
         }
     }
-
 }
