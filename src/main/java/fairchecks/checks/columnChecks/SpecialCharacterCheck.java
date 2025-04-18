@@ -9,6 +9,13 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
 
+/**
+ * A check that verifies whether values in a column contain special characters.
+ * <p>It flags any non-null value that includes characters outside letters, digits,
+ * and whitespace using the regex {@code .*[^\\p{Alnum}\\s].*}.
+ *
+ * <p>Check ID: IEU3.2
+ */
 public class SpecialCharacterCheck implements IInteroperabilityCheck {
 	
 	private final String columnName;
@@ -52,5 +59,4 @@ public class SpecialCharacterCheck implements IInteroperabilityCheck {
     public List<String> getInvalidRows() {
         return invalidRows;
     }
-
 }

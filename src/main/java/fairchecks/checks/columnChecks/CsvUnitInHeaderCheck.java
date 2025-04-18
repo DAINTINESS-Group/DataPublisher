@@ -15,6 +15,13 @@ import org.apache.spark.sql.types.FloatType;
 import org.apache.spark.sql.types.IntegerType;
 import org.apache.spark.sql.types.LongType;
 
+/**
+ * A check that ensures numeric columns declare their measurement unit
+ * explicitly in the column header, promoting clarity and semantic interoperability.
+ * <p>Applicable only to numeric column types (int, long, float, double, decimal).
+ *
+ * <p>Check ID: IEU17.1
+ */
 public class CsvUnitInHeaderCheck implements IInteroperabilityCheck{
 	
 	private final String columnName;

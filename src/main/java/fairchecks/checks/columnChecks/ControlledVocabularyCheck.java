@@ -16,6 +16,14 @@ import java.net.URL;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * A check that validates whether the values in a specified column
+ * conform to a controlled RDF vocabulary defined by the Publications Office of the EU.
+ *
+ * <p>This supports FAIR principle I2, ensuring that data reuses standard vocabularies.
+ * It queries a SPARQL endpoint to fetch valid terms and compares dataset values against them.
+ * Check ID: IEU4
+ */
 public class ControlledVocabularyCheck implements IInteroperabilityCheck {
 	
 	private final String columnName;
@@ -137,5 +145,4 @@ public class ControlledVocabularyCheck implements IInteroperabilityCheck {
 
         return terms;
     }
-
 }

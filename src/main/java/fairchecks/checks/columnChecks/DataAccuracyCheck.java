@@ -9,6 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * A check that infers commonly expected values from a column and flags outliers
+ * to assess the accuracy of the data.
+ *
+ * <p>Check ID: REU4
+ */
 public class DataAccuracyCheck implements IReusabilityCheck {
 	
 	private final String columnName;
@@ -81,5 +87,4 @@ public class DataAccuracyCheck implements IReusabilityCheck {
     public List<String> getInferredAllowedValues() {
         return allowedValues;
     }
-
 }

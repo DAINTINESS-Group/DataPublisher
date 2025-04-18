@@ -10,6 +10,13 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
 import org.apache.spark.sql.types.*;
 
+/**
+ * A check that ensures numeric values do not use thousands separators 
+ * such as commas, dots, or spaces (e.g., "1,000" or "1 000").
+ * <p>Applicable to all standard numeric types including integers, decimals, and floats.
+ *
+ * <p>Check ID: IEU2.2
+ */
 public class ThousandsSeparatorCheck implements IInteroperabilityCheck  {
 	
 	private final String columnName;
@@ -66,5 +73,4 @@ public class ThousandsSeparatorCheck implements IInteroperabilityCheck  {
                columnType.equals(DataTypes.FloatType) ||
                columnType instanceof DecimalType;
     }
-
 }

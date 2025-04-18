@@ -15,6 +15,14 @@ import org.apache.spark.sql.types.FloatType;
 import org.apache.spark.sql.types.IntegerType;
 import org.apache.spark.sql.types.LongType;
 
+/**
+ * A check that ensures numeric values in a column use a dot (.) to separate
+ * integers from decimals, in compliance with standard decimal notation.
+ *
+ * <p>Applicable to numeric column types including integer, long, float, double, and decimal.
+ *
+ * <p>Check ID: IEU2.1
+ */
 public class DecimalFormatCheck implements IInteroperabilityCheck {
 	
 	private final String columnName;

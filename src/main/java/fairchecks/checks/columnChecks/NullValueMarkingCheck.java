@@ -6,6 +6,17 @@ import org.apache.spark.sql.Row;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A check that verifies whether null or missing values in a column are explicitly marked,
+ * supporting data clarity and findability.
+ *
+ * <p>It considers a value invalid if it is either:
+ * <ul>
+ *   <li>SQL null</li>
+ *   <li>An empty string ("")</li>
+ * </ul>
+ * <p>Check ID: FEU2
+ */
 public class NullValueMarkingCheck implements IFindabilityCheck {
 	
 	private final String columnName;
@@ -48,5 +59,4 @@ public class NullValueMarkingCheck implements IFindabilityCheck {
     public List<String> getInvalidRows() {
         return invalidRows;
     }
-
 }

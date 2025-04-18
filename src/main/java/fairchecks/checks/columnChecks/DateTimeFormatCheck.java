@@ -11,6 +11,19 @@ import org.apache.spark.sql.functions;
 import org.apache.spark.sql.types.DataType;
 import org.apache.spark.sql.types.DataTypes;
 
+/**
+ * A check that validates whether date/time values in a column conform to the ISO 8601 format.
+ *
+ * <p>The expected format is: {@code YYYY-MM-DD hh:mm:ss ±hh:mm}, where:
+ * <ul>
+ *   <li>Date and time must be present</li>
+ *   <li>Time zone (optional) must be derived from UTC (e.g., +00:00)</li>
+ * </ul>
+ *
+ * <p>Only string-typed columns that contain date/time-related keywords in their names are applicable.
+ *
+ * <p>Check ID: IEU1
+ */
 public class DateTimeFormatCheck implements IInteroperabilityCheck {
 	
 	private final String columnName;
@@ -68,5 +81,4 @@ public class DateTimeFormatCheck implements IInteroperabilityCheck {
         String col = columnName.toLowerCase();
         return keywords.stream().anyMatch(col::contains);
     }
-
 }
