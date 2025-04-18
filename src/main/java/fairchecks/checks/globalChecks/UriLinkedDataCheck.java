@@ -9,6 +9,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
+/**
+ * A global check that verifies whether the dataset uses URIs to express Linked Data,
+ * reflecting semantic web standards for data interoperability and discoverability.
+ * 
+ * <p>The check looks for:
+ * <ul>
+ *   <li>At least one column with subject-like URIs (e.g., {@code @id}, {@code subject}, {@code identifier})</li>
+ *   <li>At least one other column with object-like URIs referencing external resources</li>
+ * </ul>
+ *
+ * <p>Both types must be present and contain at least 50% URI-formatted values
+ * in a sample of ≥3 rows to pass the check.
+ *
+ * <p>Check ID: IEU7
+ */
 public class UriLinkedDataCheck implements IInteroperabilityCheck{
 	
 	private static final Pattern uriPattern = Pattern.compile("^(https?|ftp)://.+$");
@@ -65,5 +80,4 @@ public class UriLinkedDataCheck implements IInteroperabilityCheck{
 
         return hasSubjectUriColumn && hasObjectUriColumn;
     }
-
 }

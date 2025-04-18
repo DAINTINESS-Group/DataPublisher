@@ -11,6 +11,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * A global check that ensures datasets do not contain duplicate rows.
+ * It identifies groups of rows that appear more than once and flags each duplicated instance.
+ * 
+ * <p>Check ID: REU3
+ */
 public class DuplicateDataCheck implements IReusabilityCheck {
 	
 	private final List<String> invalidRows = new ArrayList<>();

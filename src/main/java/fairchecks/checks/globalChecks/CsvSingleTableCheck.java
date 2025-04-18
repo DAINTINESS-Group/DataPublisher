@@ -9,6 +9,11 @@ import java.io.*;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * A global check that verifies whether a CSV file contains exactly one table.
+ * 
+ * <p>Check ID: IEU10
+ */
 public class CsvSingleTableCheck implements IInteroperabilityCheck{
 	
 	@Override
@@ -86,5 +91,4 @@ public class CsvSingleTableCheck implements IInteroperabilityCheck{
         }
         return count;
     }
-
 }

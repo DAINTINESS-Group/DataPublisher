@@ -5,6 +5,12 @@ import fairchecks.api.IInteroperabilityCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
+/**
+ * A global check that verifies whether a CSV file uses a semicolon (";") as the value separator,
+ * instead of a comma (",") or other delimiters.
+ * 
+ * <p>Check ID: IEU9
+ */
 public class CsvSemicolonSeparatorCheck implements IInteroperabilityCheck{
 	
 	@Override
@@ -28,5 +34,4 @@ public class CsvSemicolonSeparatorCheck implements IInteroperabilityCheck{
             return false;
         }
     }
-
 }

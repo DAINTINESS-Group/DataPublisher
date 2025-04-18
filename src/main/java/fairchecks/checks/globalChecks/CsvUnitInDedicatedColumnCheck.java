@@ -11,6 +11,12 @@ import org.apache.spark.sql.types.StructField;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
+/**
+ * A global check that ensures measurement units are not embedded within data values
+ * when units vary and are instead represented in a dedicated column.
+ *
+ * <p>Check ID: IEU17.3
+ */
 public class CsvUnitInDedicatedColumnCheck implements IInteroperabilityCheck {
 	
     @Override

@@ -11,6 +11,19 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.file.Paths;
 
+/**
+ * A global check that verifies whether the dataset file is encoded in UTF-8,
+ * the standard encoding for web-based data exchange.
+ *
+ * <p>The check:
+ * <ul>
+ *   <li>Loads the dataset's source file as binary</li>
+ *   <li>Performs a byte-level validation to confirm UTF-8 conformance</li>
+ *   <li>Fails if invalid UTF-8 byte sequences are detected</li>
+ * </ul>
+ *
+ * <p>Check ID: IEU3.1
+ */
 public class Utf8EncodingCheck implements IInteroperabilityCheck {
 
     @Override
@@ -79,5 +92,4 @@ public class Utf8EncodingCheck implements IInteroperabilityCheck {
         }
         return true;
     }
-    
 }

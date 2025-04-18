@@ -4,6 +4,12 @@ import fairchecks.api.IReusabilityCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
+/**
+ * A global check that verifies whether a dataset contains a sufficient amount of data
+ * to be considered meaningful and useful for reuse.
+ *
+ * <p>Check ID: REU1
+ */
 public class SufficientDataCheck implements IReusabilityCheck {
 	
 	@Override
@@ -28,5 +34,4 @@ public class SufficientDataCheck implements IReusabilityCheck {
             return false;
         }
     }
-
 }

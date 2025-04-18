@@ -8,6 +8,12 @@ import org.apache.spark.sql.functions;
 import java.util.*;
 import java.util.regex.Pattern;
 
+/**
+ * A global check that ensures each column containing URIs from controlled vocabularies
+ * is accompanied by a corresponding column that provides human-readable labels.
+ *
+ * <p>Check ID: IEU6
+ */
 public class UriDetailsRetrievalCheck implements IInteroperabilityCheck{
 	
 	private static final Pattern uriPattern = Pattern.compile("^(https?|ftp)://[\\w.-]+(/[\\w\\-./]*)?$");
@@ -86,5 +92,4 @@ public class UriDetailsRetrievalCheck implements IInteroperabilityCheck{
         }
         return false;
     }
-
 }

@@ -8,6 +8,12 @@ import org.apache.spark.sql.functions;
 
 import java.util.Arrays;
 
+/**
+ * A global check that ensures CSV data files do not contain extraneous
+ * non-tabular information such as notes, metadata, explanations, or sheet names.
+ * 
+ * <p>Check ID: IEU11.1
+ */
 public class CsvNoAdditionalInfoCheck implements IInteroperabilityCheck{
 	
 	@Override
@@ -39,5 +45,4 @@ public class CsvNoAdditionalInfoCheck implements IInteroperabilityCheck{
             return false;
         }
     }
-
 }

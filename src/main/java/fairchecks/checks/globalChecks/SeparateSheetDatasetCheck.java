@@ -11,6 +11,12 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
+/**
+ * A global check that ensures each sheet in an Excel file is published as a separate dataset,
+ * rather than bundling multiple tables into one file.
+ *
+ * <p>Check ID: REU7.5
+ */
 public class SeparateSheetDatasetCheck implements IReusabilityCheck {
 	
 	@Override
@@ -48,5 +54,4 @@ public class SeparateSheetDatasetCheck implements IReusabilityCheck {
             return false;
         }
     }
-
 }

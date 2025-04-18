@@ -9,6 +9,12 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
 
+/**
+ * A global check that ensures the title of the dataset is expressed in the distribution's metadata
+ * (i.e., the filename), and not redundantly repeated within the contents of the CSV file itself.
+ *
+ * <p>Check ID: IEU11.2
+ */
 public class CsvTitleInDistributionCheck implements IInteroperabilityCheck{
 	
 	@Override

@@ -12,6 +12,12 @@ import java.net.URI;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * A global check that ensures CSV files contain only a single header line
+ * and no repeated header rows throughout the data.
+ * 
+ * <p>Check ID: IEU11.3
+ */
 public class CsvSingleHeaderCheck implements IInteroperabilityCheck{
 	
 	@Override
@@ -56,5 +62,4 @@ public class CsvSingleHeaderCheck implements IInteroperabilityCheck{
             return false;
         }
     }
-
 }

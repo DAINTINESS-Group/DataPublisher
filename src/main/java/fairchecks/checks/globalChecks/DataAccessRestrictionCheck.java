@@ -8,6 +8,12 @@ import java.io.FileInputStream;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
+/**
+ * A global accessibility check that verifies whether the dataset can be accessed
+ * without restrictions, both through configuration metadata and actual file access.
+ *
+ * <p>Check ID: AEU1
+ */
 public class DataAccessRestrictionCheck implements IAccessibilityCheck {
 	
 	@Override
@@ -59,5 +65,4 @@ public class DataAccessRestrictionCheck implements IAccessibilityCheck {
 
         return true;
     }
-
 }

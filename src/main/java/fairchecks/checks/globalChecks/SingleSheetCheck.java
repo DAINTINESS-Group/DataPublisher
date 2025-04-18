@@ -5,6 +5,11 @@ import fairchecks.api.IInteroperabilityCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
+/**
+ * A global check that ensures each file (specifically Excel files) contains only one sheet.
+ *
+ * <p>Check ID: IEU11.4
+ */
 public class SingleSheetCheck implements IInteroperabilityCheck{
 	
 	@Override
@@ -33,5 +38,4 @@ public class SingleSheetCheck implements IInteroperabilityCheck{
             return false;
         }
     }
-
 }

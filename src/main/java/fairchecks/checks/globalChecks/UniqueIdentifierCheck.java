@@ -10,6 +10,12 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
 
+/**
+ * A global check that ensures dataset values are referenced using unique identifiers,
+ * specifically URIs, to support interoperability.
+ *
+ * <p>Check ID: IEU5
+ */
 public class UniqueIdentifierCheck implements IInteroperabilityCheck {
 	
 	private final List<String> invalidRows = new ArrayList<>();
@@ -79,5 +85,4 @@ public class UniqueIdentifierCheck implements IInteroperabilityCheck {
         }
         return false;
     }
-
 }

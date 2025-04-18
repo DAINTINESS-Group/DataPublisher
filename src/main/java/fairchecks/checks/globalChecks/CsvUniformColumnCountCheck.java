@@ -10,6 +10,12 @@ import java.net.URI;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
+/**
+ * A global check that verifies all rows in a CSV file have the same number of columns
+ * as defined by the header row.
+ *
+ * <p>Check ID: IEU16
+ */
 public class CsvUniformColumnCountCheck implements IInteroperabilityCheck {
 	
 	@Override
@@ -50,5 +56,4 @@ public class CsvUniformColumnCountCheck implements IInteroperabilityCheck {
             return false;
         }
     }
-
 }
