@@ -3,3 +3,9 @@ http://example.org/person/alice,Alice,30,http://publications.europa.eu/resource/
 http://example.org/person/bob,Bob,25,http://publications.europa.eu/resource/authority/country/FRA,France,French,€
 http://example.org/person/carlos,Carlos,22,http://publications.europa.eu/resource/authority/country/ESP,Spain,Spanish,₹
 http://example.org/person/diana,Diana,35,http://publications.europa.eu/resource/authority/country/ITA,Italy,Italian,₽
+http://example.org/person/emma,Emma,28,http://publications.europa.eu/resource/authority/country/SWE,Sweden,Swedish,$
+http://example.org/person/felix,Felix,31,http://publications.europa.eu/resource/authority/country/AUT,Austria,German,€
+http://example.org/person/giulia,Giulia,27,http://publications.europa.eu/resource/authority/country/ITA,Italy,Italian,€
+http://example.org/person/hiro,Hiro,40,http://publications.europa.eu/resource/authority/country/JPN,Japan,Japanese,¥
+http://example.org/person/ines,Ines,33,http://publications.europa.eu/resource/authority/country/PRT,Portugal,Portuguese,€
+http://example.org/person/john,John,29,http://publications.europa.eu/resource/authority/country/GBR,United Kingdom,English,£
