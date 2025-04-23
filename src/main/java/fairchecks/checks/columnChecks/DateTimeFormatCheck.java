@@ -3,6 +3,7 @@ package fairchecks.checks.columnChecks;
 import fairchecks.api.IInteroperabilityCheck;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.spark.sql.Dataset;
@@ -74,7 +75,7 @@ public class DateTimeFormatCheck implements IInteroperabilityCheck {
     
     @Override
     public boolean isApplicable(DataType columnType) {
-        List<String> keywords = List.of("date", "time", "datetime", "timestamp");
+    	List<String> keywords = Arrays.asList("date", "time", "datetime", "timestamp");
 
         if (!columnType.equals(DataTypes.StringType)) return false;
 
