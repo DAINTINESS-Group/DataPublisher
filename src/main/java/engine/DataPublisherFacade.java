@@ -42,6 +42,17 @@ public class DataPublisherFacade implements IDataPublisherFacade{
         return columnCheckService.executeColumnChecks(profile);
     }
 	
+	@Override
+	public void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath) {
+	    report.FairCheckReportGenerator.generateGlobalReport(datasetAlias, globalResults, outputPath);
+	}
+
+	@Override
+	public void generateColumnReport(String datasetAlias, Map<String, Map<String, List<FairCheckResult>>> columnResults, String outputPath) {
+	    report.FairCheckReportGenerator.generateColumnReport(datasetAlias, columnResults, outputPath);
+	}
+
+	
 	public DatasetProfile getProfile(String alias) {
 		return datasetController.getProfile(alias);
 	}

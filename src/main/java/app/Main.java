@@ -6,7 +6,6 @@ import java.util.Map;
 import engine.FacadeFactory;
 import engine.IDataPublisherFacade;
 import model.FairCheckResult;
-import report.FairCheckReportGenerator;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,7 +19,7 @@ public class Main {
         
         String outputPath = "src/main/resources/reports/FAIR_Report.txt";
 
-        FairCheckReportGenerator.generateGlobalReport("myDataset", globalResults, outputPath);
-        FairCheckReportGenerator.generateColumnReport("myDataset", columnResults, outputPath);
+        facade.generateGlobalReport("myDataset", globalResults, outputPath);
+        facade.generateColumnReport("myDataset", columnResults, outputPath);
     }
 }
