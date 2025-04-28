@@ -10,7 +10,7 @@ import utils.RegistrationResponse;
 /**
  * Interface representing the main gateway for FAIR-compliant dataset validation and processing.
  * Classes implementing <code>IDataPublisherFacade</code> handle the registration of datasets, execution of 
- * FAIR data quality checks (both global and column-based), and access to dataset profiles.
+ * FAIR data quality checks (both global and column-based), generation of a report with the results of the checks and access to dataset profiles.
  * 
  * This interface acts as the primary abstraction layer between external clients and the internal components 
  * of the data quality checking engine, following the Facade design pattern.
