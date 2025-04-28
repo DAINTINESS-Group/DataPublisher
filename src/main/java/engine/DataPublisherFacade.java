@@ -29,10 +29,6 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 
 	    Map<String, Boolean> results = fairCheckService.executeGlobalChecks(profile.getDataset());
 
-	    System.out.println("FAIR Check Results for: " + datasetAlias);
-	    results.forEach((question, passed) ->
-	        System.out.println(question + ": " + (passed ? "Passed" : "Failed"))
-	    );
 	    return results;
 	}
 	

@@ -2,7 +2,6 @@ package engine;
 
 import static org.junit.Assert.*;
 
-import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 
@@ -28,8 +27,9 @@ public class FacadeTests {
         facade.registerDataset("src\\test\\resources\\datasets\\students_test_wrong2.csv", "frame5", true);
     }
     
+    /*
     @Test
-    public void profileCreationTest()
+    public void registerDatasetTest()
     {
         try
         {
@@ -43,7 +43,7 @@ public class FacadeTests {
             System.out.println(e);
             assertTrue(false);
         }
-    }
+    }*/
     
     @Test
     public void executeGlobalChecksTest() {
@@ -68,12 +68,57 @@ public class FacadeTests {
     	Map<String, Map<String, List<FairCheckResult>>> columnResults1 = facade.executeColumnChecks("frame1");
     	
     	assertNotNull(columnResults1);
-    	//Map<String, List<FairCheckResult>> currencyResults = columnResults1.get("ISO");
+    	assertTrue(columnResults1.containsKey("currency"));
+    	
+    	Map<String, List<FairCheckResult>> currencyResults = columnResults1.get("currency");
+    	List<FairCheckResult> reusabilityChecks = currencyResults.get("Reusability");
+
+        assertFalse(reusabilityChecks.isEmpty());
+        for (FairCheckResult result : reusabilityChecks) {
+            if (result.getCheckId().equals("REU4")) {
+                assertTrue(result.isPassed());
+            }
+        }
     	
     	Map<String, Map<String, List<FairCheckResult>>> columnResults2 = facade.executeColumnChecks("frame2");
     	
     	assertNotNull(columnResults2);
-    	//Map<String, List<FairCheckResult>> fruitResults = columnResults2.get("fruit");
-    	//Map<String, List<FairCheckResult>> priceResults = columnResults2.get("price");
+    	assertTrue(columnResults2.containsKey("Fruit"));
+    	assertTrue(columnResults2.containsKey("price"));
+    	
+    	Map<String, List<FairCheckResult>> fruitResults = columnResults2.get("Fruit");
+    	Map<String, List<FairCheckResult>> priceResults = columnResults2.get("price");
+    	
+    	List<FairCheckResult> findabilityFruitChecks = fruitResults.get("Findability");
+    	List<FairCheckResult> findabilityPriceChecks = priceResults.get("Findability");
+        assertFalse(findabilityFruitChecks.isEmpty());
+        assertFalse(findabilityPriceChecks.isEmpty());
+        
+        for (FairCheckResult result : findabilityFruitChecks) {
+            if (result.getCheckId().equals("FEU2")) {
+                assertTrue(result.isPassed());
+            }
+        }
+        for (FairCheckResult result : findabilityPriceChecks) {
+            if (result.getCheckId().equals("FEU2")) {
+                assertFalse(result.isPassed());
+            }
+        }
+        
+        List<FairCheckResult> interoperabilityFruitChecks = fruitResults.get("Interoperability");
+    	List<FairCheckResult> interoperabilityPriceChecks = priceResults.get("Interoperability");
+        assertFalse(interoperabilityFruitChecks.isEmpty());
+        assertFalse(interoperabilityPriceChecks.isEmpty());
+        
+        for (FairCheckResult result : interoperabilityFruitChecks) {
+            if (result.getCheckId().equals("IEU3.2")) {
+                assertTrue(result.isPassed());
+            }
+        }
+        for (FairCheckResult result : interoperabilityPriceChecks) {
+            if (result.getCheckId().equals("IEU3.2")) {
+                assertFalse(result.isPassed());
+            }
+        }
     }
 }

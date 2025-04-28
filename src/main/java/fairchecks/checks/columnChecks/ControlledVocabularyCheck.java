@@ -50,7 +50,6 @@ public class ControlledVocabularyCheck implements IInteroperabilityCheck {
             String vocabularyURI = resolveVocabularyURI(columnName);
 
             if (vocabularyURI == null) {
-                System.err.println("No vocabulary mapping found for column: " + columnName);
                 return false;
             }
 
