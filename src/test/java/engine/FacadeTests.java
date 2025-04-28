@@ -2,14 +2,17 @@ package engine;
 
 import static org.junit.Assert.*;
 
+import java.io.File;
 import java.util.List;
 import java.util.Map;
 
 import org.junit.Before;
 import org.junit.Test;
 
+
 import model.DatasetProfile;
 import model.FairCheckResult;
+import utils.RegistrationResponse;
 
 public class FacadeTests {
 	
@@ -27,23 +30,17 @@ public class FacadeTests {
         facade.registerDataset("src\\test\\resources\\datasets\\students_test_wrong2.csv", "frame5", true);
     }
     
-    /*
     @Test
     public void registerDatasetTest()
     {
-        try
-        {
-            Method method = DataPublisherFacade.class.getDeclaredMethod("getProfile", String.class);
-            method.setAccessible(true);
-            assertNotNull((DatasetProfile) method.invoke(facade, "frame1"));
-            assertNull((DatasetProfile) method.invoke(facade, "notFrame"));
-        }
-        catch (Exception e)
-        {
-            System.out.println(e);
-            assertTrue(false);
-        }
-    }*/
+    	RegistrationResponse response = facade.registerDataset("src/test/resources/datasets/countries.csv", "testDataset", true);
+        assertEquals(RegistrationResponse.SUCCESS, response);
+        
+        DatasetProfile profile = facade.getProfile("frame1");
+        assertNotNull(profile);
+        assertEquals("frame1", profile.getAlias());
+        assertEquals("src\\test\\resources\\datasets\\fruits_test.csv", profile.getFilePath());
+    }
     
     @Test
     public void executeGlobalChecksTest() {
@@ -120,5 +117,29 @@ public class FacadeTests {
                 assertFalse(result.isPassed());
             }
         }
+    }
+    
+    @Test
+    public void generateGlobalReportTest() throws Exception {
+    	String globalReportPath = "src/test/resources/reports/ReportTest.txt";
+    	Map<String, Boolean> globalResults = facade.executeGlobalChecks("frame1");
+
+        facade.generateGlobalReport("frame1", globalResults, globalReportPath);
+
+        File reportFile = new File(globalReportPath);
+        assertTrue("Global report file should exist", reportFile.exists());
+        assertTrue("Global report file should not be empty", reportFile.length() > 0);
+    }
+    
+    @Test
+    public void generateColumnReportTest() throws Exception {
+    	String columnReportPath = "src/test/resources/reports/ReportTest.txt";
+        Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("frame1");
+
+        facade.generateColumnReport("frame1", columnResults, columnReportPath);
+
+        File reportFile = new File(columnReportPath);
+        assertTrue("Column report file should exist", reportFile.exists());
+        assertTrue("Column report file should not be empty", reportFile.length() > 0);
     }
 }
