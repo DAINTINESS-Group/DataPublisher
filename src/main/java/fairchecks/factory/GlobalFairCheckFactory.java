@@ -11,7 +11,6 @@ import fairchecks.checks.globalChecks.CsvUnitInDedicatedColumnCheck;
 import fairchecks.checks.globalChecks.DataAccessRestrictionCheck;
 import fairchecks.checks.globalChecks.DuplicateDataCheck;
 import fairchecks.checks.globalChecks.SeparateSheetDatasetCheck;
-import fairchecks.checks.globalChecks.SingleSheetCheck;
 import fairchecks.checks.globalChecks.SufficientDataCheck;
 import fairchecks.checks.globalChecks.UniqueIdentifierCheck;
 import fairchecks.checks.globalChecks.UriDetailsRetrievalCheck;
@@ -56,7 +55,6 @@ public class GlobalFairCheckFactory {
 	    checks.add(new CsvNoAdditionalInfoCheck());  // IEU11.1
 	    checks.add(new CsvTitleInDistributionCheck());  // IEU11.2
 	    checks.add(new CsvSingleHeaderCheck());  // IEU11.3
-	    checks.add(new SingleSheetCheck());  // IEU11.4
 	    checks.add(new CsvColumnHeaderCheck());  // IEU15
 	    checks.add(new CsvUniformColumnCountCheck());  // IEU16
 	    checks.add(new CsvUnitInDedicatedColumnCheck()); // IEU17.3
