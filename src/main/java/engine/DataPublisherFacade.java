@@ -2,6 +2,7 @@ package engine;
 
 import model.DatasetProfile;
 import model.FairCheckResult;
+import report.FairCheckReportGenerator;
 import utils.RegistrationResponse;
 
 import java.util.LinkedHashMap;
@@ -44,12 +45,12 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 	
 	@Override
 	public void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath) {
-	    report.FairCheckReportGenerator.generateGlobalReport(datasetAlias, globalResults, outputPath);
+	    FairCheckReportGenerator.generateGlobalReport(datasetAlias, globalResults, outputPath);
 	}
 
 	@Override
 	public void generateColumnReport(String datasetAlias, Map<String, Map<String, List<FairCheckResult>>> columnResults, String outputPath) {
-	    report.FairCheckReportGenerator.generateColumnReport(datasetAlias, columnResults, outputPath);
+	    FairCheckReportGenerator.generateColumnReport(datasetAlias, columnResults, outputPath);
 	}
 
 	
