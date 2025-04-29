@@ -2,6 +2,12 @@ package fairchecks.checks.globalChecks;
 
 import fairchecks.api.IInteroperabilityCheck;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.net.URI;
+import java.nio.file.Paths;
+
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
@@ -12,6 +18,8 @@ import org.apache.spark.sql.Row;
  * <p>Check ID: IEU9
  */
 public class CsvSemicolonSeparatorCheck implements IInteroperabilityCheck{
+	
+	private static final int MAX_LINES_TO_SAMPLE = 10;
 	
 	@Override
     public String getCheckId() {
@@ -26,12 +34,57 @@ public class CsvSemicolonSeparatorCheck implements IInteroperabilityCheck{
     @Override
     public boolean executeCheck(Dataset<Row> dataset) {
         try {
-            String delimiter = dataset.sparkSession().conf().get("spark.sql.csv.delimiter", ",");
-            System.out.println("the delimiter is: "+ delimiter);
-            return delimiter.equals(";");
+            String uriPath = dataset.inputFiles()[0];
+            URI uri = new URI(uriPath);
+            String filePath = Paths.get(uri).toString();
+
+            int linesChecked = 0;
+            int semicolonOkCount = 0;
+
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filePath)))) {
+                String line;
+                while ((line = reader.readLine()) != null && linesChecked < MAX_LINES_TO_SAMPLE) {
+                    line = line.trim();
+                    if (line.isEmpty()) continue;
+
+                    linesChecked++;
+
+                    if (isSemicolonSeparated(line)) {
+                        semicolonOkCount++;
+                    }
+                }
+            }
+
+            if (linesChecked == 0) {
+                System.out.println("No lines to check (empty file?).");
+                return false;
+            }
+
+            double validRatio = (double) semicolonOkCount / linesChecked;
+
+            return validRatio >= 0.8;
+
         } catch (Exception e) {
-            System.err.println("Error executing CSV Semicolon Separator Check: " + e.getMessage());
+            System.err.println("Error executing Semicolon Separator Check: " + e.getMessage());
             return false;
         }
     }
+
+	private boolean isSemicolonSeparated(String line) {
+	    int semicolonCount = 0;
+	    int commaOutsideQuotesCount = 0;
+	
+	    boolean insideQuotes = false;
+	    for (char c : line.toCharArray()) {
+	        if (c == '"') {
+	            insideQuotes = !insideQuotes;
+	        } else if (c == ';' && !insideQuotes) {
+	            semicolonCount++;
+	        } else if (c == ',' && !insideQuotes) {
+	            commaOutsideQuotesCount++;
+	        }
+	    }
+
+	    return semicolonCount >= 1 && commaOutsideQuotesCount == 0;
+	}
 }

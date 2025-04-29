@@ -3,6 +3,7 @@ package fairchecks.factory;
 import fairchecks.api.*;
 import fairchecks.checks.globalChecks.CsvColumnHeaderCheck;
 import fairchecks.checks.globalChecks.CsvNoAdditionalInfoCheck;
+import fairchecks.checks.globalChecks.CsvSemicolonSeparatorCheck;
 import fairchecks.checks.globalChecks.CsvSingleHeaderCheck;
 import fairchecks.checks.globalChecks.CsvSingleTableCheck;
 import fairchecks.checks.globalChecks.CsvTitleInDistributionCheck;
@@ -50,7 +51,7 @@ public class GlobalFairCheckFactory {
 	    checks.add(new UniqueIdentifierCheck());  // IEU5
 	    checks.add(new UriDetailsRetrievalCheck());  // IEU6
 	    checks.add(new UriLinkedDataCheck());  // IEU7
-	    //checks.add(new CsvSemicolonSeparatorCheck());  // IEU9
+	    checks.add(new CsvSemicolonSeparatorCheck());  // IEU9
 	    checks.add(new CsvSingleTableCheck());  // IEU10
 	    checks.add(new CsvNoAdditionalInfoCheck());  // IEU11.1
 	    checks.add(new CsvTitleInDistributionCheck());  // IEU11.2

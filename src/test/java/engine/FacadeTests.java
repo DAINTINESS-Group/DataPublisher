@@ -47,8 +47,14 @@ public class FacadeTests {
     	Map<String, Boolean> globalResultsCorrect = facade.executeGlobalChecks("frame3");
     	
     	assertNotNull(globalResultsCorrect);
+    	
+    	String expectedFailingCheck = "IEU9 - CSV - Data shall use the semicolon, not the comma, as a separator between values, with no spaces or tabs on either side.";
     	for (Map.Entry<String, Boolean> entry : globalResultsCorrect.entrySet()) {
-            assertTrue("Expected check to pass: " + entry.getKey(), entry.getValue());
+            if (entry.getKey().equals(expectedFailingCheck)) {
+                assertFalse("Expected check to fail: " + entry.getKey(), entry.getValue());
+            } else {
+                assertTrue("Expected check to pass: " + entry.getKey(), entry.getValue());
+            }
         }
     	
     	Map<String, Boolean> globalResultsWrong = facade.executeGlobalChecks("frame5");

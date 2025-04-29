@@ -30,6 +30,7 @@ public class CheckGlobalTests {
         facade.registerDataset("src\\test\\resources\\datasets\\excel_test.xlsx", "frame7", true);
         facade.registerDataset("src\\test\\resources\\datasets\\excel_test_wrong.xlsx", "frame8", true);
         //facade.registerDataset("src\\test\\resources\\datasets\\noAccess_test.csv", "frame9", true);
+        facade.registerDataset("src\\test\\resources\\datasets\\fruits_test_wrong2.csv", "frame10", true);
         
     }
     
@@ -98,6 +99,47 @@ public class CheckGlobalTests {
         } catch (Exception e) {
             e.printStackTrace();
             fail("Test threw an exception: " + e.getMessage());
+        }
+    }
+    
+    @Test
+    public void semicolonSparatorTest()
+    {
+    	try 
+    	{
+    		DatasetProfile profile = facade.getProfile("frame10");
+        	
+            Dataset<Row> dataset = profile.getDataset();
+            
+        	CsvSemicolonSeparatorCheck check = new CsvSemicolonSeparatorCheck();
+        	boolean validResult = check.executeCheck(dataset);
+            assertTrue("Expected correct dataset to pass the semicolon separator check.", validResult);
+    	}
+    	catch (Exception e)
+        {
+            System.out.println(e);
+            assertTrue(false);
+        }
+    	
+    }
+    
+    @Test
+    public void semicolonSeparatorWrongTest()
+    {
+    	try 
+    	{
+    		DatasetProfile profile = facade.getProfile("frame1");
+        	
+            Dataset<Row> dataset = profile.getDataset();
+            
+        	CsvSemicolonSeparatorCheck check = new CsvSemicolonSeparatorCheck();
+        	boolean result = check.executeCheck(dataset);
+        	assertFalse("Expected wrong semicolon separator.", result);
+    	}
+    	catch (Exception e)
+        {
+            System.out.println(e);
+            assertTrue(false);
         }
     }
     
@@ -234,6 +276,47 @@ public class CheckGlobalTests {
         } catch (Exception e) {
             e.printStackTrace();
             fail("Test threw an exception: " + e.getMessage());
+        }
+    }
+    
+    @Test
+    public void unitInDedicatedColumnTest()
+    {
+    	try 
+    	{
+    		DatasetProfile profile = facade.getProfile("frame1");
+        	
+            Dataset<Row> dataset = profile.getDataset();
+            
+        	CsvUnitInDedicatedColumnCheck check = new CsvUnitInDedicatedColumnCheck();
+        	boolean validResult = check.executeCheck(dataset);
+            assertTrue("Expected correct dataset to pass the unit-in-column check.", validResult);
+    	}
+    	catch (Exception e)
+        {
+            System.out.println(e);
+            assertTrue(false);
+        }
+    	
+    }
+    
+    @Test
+    public void unitInDedicatedColumnWrongTest()
+    {
+    	try 
+    	{
+    		DatasetProfile profile = facade.getProfile("frame2");
+        	
+            Dataset<Row> dataset = profile.getDataset();
+            
+        	CsvUnitInDedicatedColumnCheck check = new CsvUnitInDedicatedColumnCheck();
+        	boolean result = check.executeCheck(dataset);
+        	assertFalse("Expected multiple units in a dedicated column.", result);
+    	}
+    	catch (Exception e)
+        {
+            System.out.println(e);
+            assertTrue(false);
         }
     }
     
@@ -548,46 +631,4 @@ public class CheckGlobalTests {
             assertTrue(false);
         }
     }
-    
-    @Test
-    public void unitInDedicatedColumnTest()
-    {
-    	try 
-    	{
-    		DatasetProfile profile = facade.getProfile("frame1");
-        	
-            Dataset<Row> dataset = profile.getDataset();
-            
-        	CsvUnitInDedicatedColumnCheck check = new CsvUnitInDedicatedColumnCheck();
-        	boolean validResult = check.executeCheck(dataset);
-            assertTrue("Expected correct dataset to pass the unit-in-column check.", validResult);
-    	}
-    	catch (Exception e)
-        {
-            System.out.println(e);
-            assertTrue(false);
-        }
-    	
-    }
-    
-    @Test
-    public void unitInDedicatedColumnWrongTest()
-    {
-    	try 
-    	{
-    		DatasetProfile profile = facade.getProfile("frame2");
-        	
-            Dataset<Row> dataset = profile.getDataset();
-            
-        	CsvUnitInDedicatedColumnCheck check = new CsvUnitInDedicatedColumnCheck();
-        	boolean result = check.executeCheck(dataset);
-        	assertFalse("Expected multiple units in a dedicated column.", result);
-    	}
-    	catch (Exception e)
-        {
-            System.out.println(e);
-            assertTrue(false);
-        }
-    }
-
 }

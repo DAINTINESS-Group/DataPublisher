@@ -5,11 +5,11 @@ FAIR Report for Dataset: myDataset
 [IEU5 - Data labels shall be referenced by unique identifiers, i.e. URIs] FAILED
 [IEU6 - Once tags are referenced by unique identifiers from controlled vocabularies, URI details shall be retrieved in the data.] PASSED
 [IEU7 - Data shall leverage URIs and be published as Linked Data in the form of semantic characters.] FAILED
+[IEU9 - CSV - Data shall use the semicolon, not the comma, as a separator between values, with no spaces or tabs on either side.] FAILED
 [IEU10 - CSV - Each data file shall contain a single table.] PASSED
 [IEU11.1 - CSV - Data should not contain explanations, dates, modifications, sheet names, etc.] PASSED
 [IEU11.2 - CSV - The title should be represented within the distribution name, and not contained in the actual file.] PASSED
 [IEU11.3 - CSV - Files should contain only one header line.] PASSED
-[IEU11.4 - CSV - Each file should contain only one sheet.] PASSED
 [IEU15 - CSV - Data files should contain column headers as their first row.] PASSED
 [IEU16 - CSV - Data files should have the same number of columns for all rows.] PASSED
 [IEU17.3 - If the unit varies within a column, the dataset shall have a special column for it.] PASSED
