@@ -1,12 +1,12 @@
-Fruit,price,weight (g),color,currency,quantity,purchase timestamp
-banana,1,150,yellow,US dollar,1000,2023-08-20 16:45:00 +02:00
-strawberry,3,20,red,US dollar,1987,2023-08-20 16:45:00 -05:30
-kiwi,5.5,35,green,Euro,10,2023-12-21 18:55:10
-orange,2.6,100,orange,Euro,300,2023-08-20 16:45:00 +02:00
-cherry,null,10,red,null,1200,2023-08-20 16:45:00 -05:30
-banana,1.5,150,yellow,US dollar,1234,2023-12-21 18:55:10
-mango,10,50, yellow,Euro,5,2023-08-20 16:45:00 -05:30
-pomegranate,9,50, pink,US dollar,9,2023-12-21 18:55:10
-pineapple,10,40, yellow,Euro,10,2023-08-20 16:45:00 -05:30
-blueberry,5,1, blue,Euro,1001,null
-watermelon,10,1000, green,Euro,5,2023-08-20 16:45:00 +02:00
+Fruit;price;weight (g);color;currency;quantity;purchase timestamp
+banana;1;150;yellow;US dollar;1000;2023-08-20 16:45:00 +02:00
+strawberry;3;20;red;US dollar;1987;2023-08-20 16:45:00 -05:30
+kiwi;5.5;35;green;Euro;10;2023-12-21 18:55:10
+orange;2.6;100;orange;Euro;300;2023-08-20 16:45:00 +02:00
+cherry;null;10;red;null;1200;2023-08-20 16:45:00 -05:30
+banana;1.5;150;yellow;US dollar;1234;2023-12-21 18:55:10
+mango;10;50; yellow;Euro;5;2023-08-20 16:45:00 -05:30
+pomegranate;9;50;pink;US dollar;9;2023-12-21 18:55:10
+pineapple;10;40; yellow;Euro;10;2023-08-20 16:45:00 -05:30
+blueberry;5;1; blue;Euro;1001;null
+watermelon;10;1000; green;Euro;5;2023-08-20 16:45:00 +02:00

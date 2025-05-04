@@ -30,8 +30,6 @@ public class CheckGlobalTests {
         facade.registerDataset("src\\test\\resources\\datasets\\excel_test.xlsx", "frame7", true);
         facade.registerDataset("src\\test\\resources\\datasets\\excel_test_wrong.xlsx", "frame8", true);
         //facade.registerDataset("src\\test\\resources\\datasets\\noAccess_test.csv", "frame9", true);
-        facade.registerDataset("src\\test\\resources\\datasets\\fruits_test_wrong2.csv", "frame10", true);
-        
     }
     
     @Test
@@ -107,7 +105,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		DatasetProfile profile = facade.getProfile("frame10");
+    		DatasetProfile profile = facade.getProfile("frame1");
         	
             Dataset<Row> dataset = profile.getDataset();
             
@@ -128,7 +126,7 @@ public class CheckGlobalTests {
     {
     	try 
     	{
-    		DatasetProfile profile = facade.getProfile("frame1");
+    		DatasetProfile profile = facade.getProfile("frame2");
         	
             Dataset<Row> dataset = profile.getDataset();
             
