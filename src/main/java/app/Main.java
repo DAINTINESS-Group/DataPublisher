@@ -17,9 +17,9 @@ public class Main {
         Map<String, Boolean> globalResults = facade.executeGlobalChecks("myDataset");
         Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("myDataset");
         
-        String outputPath = "src/main/resources/reports/FAIR_Report.txt";
+        String outputFolder = "src/main/resources/reports/";
 
-        facade.generateGlobalReport("myDataset", globalResults, outputPath);
-        facade.generateColumnReport("myDataset", columnResults, outputPath);
+        facade.generateGlobalReport("myDataset", globalResults, outputFolder + "FAIR_Report.txt");
+        facade.generateColumnReport("myDataset", columnResults, outputFolder + "FAIR_Report.txt");
     }
 }

@@ -20,11 +20,49 @@ import utils.RegistrationResponse;
  */
 public interface IDataPublisherFacade {
 	
+	/**
+	 * 
+	 * @param path
+	 * @param alias
+	 * @param hasHeader
+	 * @return
+	 */
 	public RegistrationResponse registerDataset(String path, String alias, boolean hasHeader);
-	public Map<String, Boolean> executeGlobalChecks(String datasetAlias);
-	public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias);
-	void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath);
-	void generateColumnReport(String datasetAlias, Map<String, Map<String, List<FairCheckResult>>> columnResults, String outputPath);
+	
+	/**
+	 * 
+	 * @param datasetAlias
+	 * @return
+	 */
+	public Map<String, Boolean> executeGlobalChecks(String datasetAlias) throws IllegalStateException;
+	
+	/**
+	 * 
+	 * @param datasetAlias
+	 * @return
+	 */
+	public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias) throws IllegalStateException;
+	
+	/**
+	 * 
+	 * @param datasetAlias
+	 * @param globalResults
+	 * @param outputPath
+	 */
+	public void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath);
+	
+	/**
+	 * 
+	 * @param datasetAlias
+	 * @param columnResults
+	 * @param outputPath
+	 */
+	public void generateColumnReport(String datasetAlias, Map<String, Map<String, List<FairCheckResult>>> columnResults, String outputPath);
 
+	/**
+	 * 
+	 * @param alias
+	 * @return
+	 */
 	public DatasetProfile getProfile(String alias);
 }

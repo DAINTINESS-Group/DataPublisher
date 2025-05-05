@@ -127,7 +127,7 @@ public class FacadeTests {
     
     @Test
     public void generateGlobalReportTest() throws Exception {
-    	String globalReportPath = "src/test/resources/reports/ReportTest.txt";
+    	String globalReportPath = "src/test/resources/reports/GlobalReportTest.txt";
     	Map<String, Boolean> globalResults = facade.executeGlobalChecks("frame1");
 
         facade.generateGlobalReport("frame1", globalResults, globalReportPath);
@@ -139,7 +139,7 @@ public class FacadeTests {
     
     @Test
     public void generateColumnReportTest() throws Exception {
-    	String columnReportPath = "src/test/resources/reports/ReportTest.txt";
+    	String columnReportPath = "src/test/resources/reports/ColumnReportTest.txt";
         Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("frame1");
 
         facade.generateColumnReport("frame1", columnResults, columnReportPath);

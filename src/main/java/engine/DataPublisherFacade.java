@@ -5,27 +5,26 @@ import model.FairCheckResult;
 import report.FairCheckReportGenerator;
 import utils.RegistrationResponse;
 
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 public class DataPublisherFacade implements IDataPublisherFacade{
 	
-	private DatasetRegistrationController datasetController = new DatasetRegistrationController();
+	private DatasetRegistrationController datasetRegistrationController = new DatasetRegistrationController();
 	private GlobalFairCheckService fairCheckService = new GlobalFairCheckService();
 	private ColumnFairCheckService columnCheckService = new ColumnFairCheckService();
 	
+	@Override
 	public RegistrationResponse registerDataset(String path, String alias, boolean hasHeader) {
-		return datasetController.registerDataset(path, alias, hasHeader);
+		return datasetRegistrationController.registerDataset(path, alias, hasHeader);
 	}
 	
 	@Override
-	public Map<String, Boolean> executeGlobalChecks(String datasetAlias) {
-	    DatasetProfile profile = datasetController.getProfile(datasetAlias);
+	public Map<String, Boolean> executeGlobalChecks(String datasetAlias) throws IllegalStateException {
+	    DatasetProfile profile = datasetRegistrationController.getProfile(datasetAlias);
 
 	    if (profile == null) {
-	        System.out.println("Error: Dataset not found.");
-	        return new LinkedHashMap<>();
+	    	throw new IllegalStateException("Error: Dataset has not been registered");
 	    }
 
 	    Map<String, Boolean> results = fairCheckService.executeGlobalChecks(profile.getDataset());
@@ -34,11 +33,10 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 	}
 	
 	@Override
-    public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias) {
-        DatasetProfile profile = datasetController.getProfile(datasetAlias);
+    public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias) throws IllegalStateException {
+        DatasetProfile profile = datasetRegistrationController.getProfile(datasetAlias);
         if (profile == null) {
-            System.out.println("Dataset not found: " + datasetAlias);
-            return null;
+        	throw new IllegalStateException("Error: Dataset has not been registered");
         }
         return columnCheckService.executeColumnChecks(profile);
     }
@@ -55,7 +53,7 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 
 	
 	public DatasetProfile getProfile(String alias) {
-		return datasetController.getProfile(alias);
+		return datasetRegistrationController.getProfile(alias);
 	}
 
 }

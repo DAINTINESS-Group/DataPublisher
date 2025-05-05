@@ -17,9 +17,9 @@ import org.apache.spark.sql.types.DataType;
  * @see fairchecks.checks
  */
 public interface IAccessibilityCheck {
-	String getCheckId();
-	String getCheckDescription();
-    boolean executeCheck(Dataset<Row> dataset);
-    default List<String> getInvalidRows() { return null; }
-    default boolean isApplicable(DataType columnType) { return true; }
+	public String getCheckId();
+	public String getCheckDescription();
+    public boolean executeCheck(Dataset<Row> dataset);
+    public default List<String> getInvalidRows() { return null; }
+    public default boolean isApplicable(DataType columnType) { return true; }
 }
