@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./logo.jpeg" alt="Preview" width="200"/>
+</p>
+
 # <p align="center"> **Data Publisher**</p>
 
 #### **A java application that validates datasets based on the FAIR principles (Findability, Accessibility, Interoperability, Reusability)**
