@@ -1,7 +1,6 @@
 package fairchecks.checks.columnChecks;
 
-import fairchecks.api.IGenericApplicableCheck;
-import fairchecks.api.IGenericCheckWithInvalidRows;
+import fairchecks.api.IGenericColumnCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.types.DataType;
@@ -20,7 +19,7 @@ import java.util.List;
  * </ul>
  * <p>Check ID: FEU2
  */
-public class NullValueMarkingCheck implements IGenericCheckWithInvalidRows, IGenericApplicableCheck {
+public class NullValueMarkingCheck implements IGenericColumnCheck {
 	
 	private final String columnName;
     private final List<String> invalidRows = new ArrayList<>();

@@ -2,8 +2,7 @@ package engine;
 
 import model.FairCheckResult;
 import fairchecks.api.IGenericCheck;
-import fairchecks.api.IGenericCheckWithInvalidRows;
-import fairchecks.api.IGenericApplicableCheck;
+import fairchecks.api.IGenericColumnCheck;
 import fairchecks.factory.ColumnFairCheckFactory;
 import model.DatasetProfile;
 import org.apache.spark.sql.Dataset;
@@ -49,9 +48,9 @@ public class ColumnFairCheckService {
         	List<IGenericCheck> findabilityChecks = ColumnFairCheckFactory.getFindabilityChecks(columnName);
         	List<FairCheckResult> findabilityResults = new ArrayList<>();
         	for (IGenericCheck check : findabilityChecks) {
-        		if (((IGenericApplicableCheck) check).isApplicable(columnType)) {
+        		if (((IGenericColumnCheck) check).isApplicable(columnType)) {
 	        	    boolean result = check.executeCheck(dataset);
-	        	    List<String> invalidRows = ((IGenericCheckWithInvalidRows) check).getInvalidRows();
+	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
 	        	    findabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
         		}
         	}
@@ -61,9 +60,9 @@ public class ColumnFairCheckService {
         	List<IGenericCheck> accessibilityChecks = ColumnFairCheckFactory.getAccessibilityChecks(columnName);
         	List<FairCheckResult> accessibilityResults = new ArrayList<>();
         	for (IGenericCheck check : accessibilityChecks) {
-        		if (((IGenericApplicableCheck) check).isApplicable(columnType)) {
+        		if (((IGenericColumnCheck) check).isApplicable(columnType)) {
 	        	    boolean result = check.executeCheck(dataset);
-	        	    List<String> invalidRows = ((IGenericCheckWithInvalidRows) check).getInvalidRows();
+	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
 	        	    accessibilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
 	        	}
         	}
@@ -73,9 +72,9 @@ public class ColumnFairCheckService {
         	List<IGenericCheck> interoperabilityChecks = ColumnFairCheckFactory.getInteroperabilityChecks(columnName);
         	List<FairCheckResult> interoperabilityResults = new ArrayList<>();
         	for (IGenericCheck check : interoperabilityChecks) {
-        		if (((IGenericApplicableCheck) check).isApplicable(columnType)) {
+        		if (((IGenericColumnCheck) check).isApplicable(columnType)) {
 	        	    boolean result = check.executeCheck(dataset);
-	        	    List<String> invalidRows = ((IGenericCheckWithInvalidRows) check).getInvalidRows();
+	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
 	        	    interoperabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
 	        	}
         	}
@@ -85,9 +84,9 @@ public class ColumnFairCheckService {
         	List<IGenericCheck> reusabilityChecks = ColumnFairCheckFactory.getReusabilityChecks(columnName);
         	List<FairCheckResult> reusabilityResults = new ArrayList<>();
         	for (IGenericCheck check : reusabilityChecks) {
-        		if (((IGenericApplicableCheck) check).isApplicable(columnType)) {
+        		if (((IGenericColumnCheck) check).isApplicable(columnType)) {
 	        	    boolean result = check.executeCheck(dataset);
-	        	    List<String> invalidRows = ((IGenericCheckWithInvalidRows) check).getInvalidRows();
+	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
 	        	    reusabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
 	        	}
         	}

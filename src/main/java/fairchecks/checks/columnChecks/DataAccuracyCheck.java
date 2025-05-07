@@ -1,7 +1,6 @@
 package fairchecks.checks.columnChecks;
 
-import fairchecks.api.IGenericApplicableCheck;
-import fairchecks.api.IGenericCheckWithInvalidRows;
+import fairchecks.api.IGenericColumnCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
@@ -17,7 +16,7 @@ import java.util.stream.Collectors;
  *
  * <p>Check ID: REU4
  */
-public class DataAccuracyCheck implements IGenericCheckWithInvalidRows, IGenericApplicableCheck {
+public class DataAccuracyCheck implements IGenericColumnCheck {
 	
 	private final String columnName;
     private List<String> allowedValues;

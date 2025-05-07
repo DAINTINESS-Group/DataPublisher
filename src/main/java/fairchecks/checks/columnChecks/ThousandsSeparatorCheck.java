@@ -1,7 +1,6 @@
 package fairchecks.checks.columnChecks;
 
-import fairchecks.api.IGenericApplicableCheck;
-import fairchecks.api.IGenericCheckWithInvalidRows;
+import fairchecks.api.IGenericColumnCheck;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +17,7 @@ import org.apache.spark.sql.types.*;
  *
  * <p>Check ID: IEU2.2
  */
-public class ThousandsSeparatorCheck implements IGenericCheckWithInvalidRows, IGenericApplicableCheck  {
+public class ThousandsSeparatorCheck implements IGenericColumnCheck  {
 	
 	private final String columnName;
 	private final List<String> invalidRows = new ArrayList<>();

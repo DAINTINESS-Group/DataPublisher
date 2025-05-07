@@ -1,7 +1,6 @@
 package fairchecks.checks.columnChecks;
 
-import fairchecks.api.IGenericApplicableCheck;
-import fairchecks.api.IGenericCheckWithInvalidRows;
+import fairchecks.api.IGenericColumnCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
@@ -25,7 +24,7 @@ import java.util.stream.Collectors;
  * It queries a SPARQL endpoint to fetch valid terms and compares dataset values against them.
  * Check ID: IEU4
  */
-public class ControlledVocabularyCheck implements IGenericCheckWithInvalidRows, IGenericApplicableCheck {
+public class ControlledVocabularyCheck implements IGenericColumnCheck {
 	
 	private final String columnName;
     private final List<String> invalidRows = new ArrayList<>();
