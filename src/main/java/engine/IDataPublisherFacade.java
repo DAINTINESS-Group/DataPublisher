@@ -25,21 +25,23 @@ public interface IDataPublisherFacade {
 	 * @param path
 	 * @param alias
 	 * @param hasHeader
-	 * @return
+	 * @return a {@link RegistrationResponse} containing success or error metadata
 	 */
 	public RegistrationResponse registerDataset(String path, String alias, boolean hasHeader);
 	
 	/**
 	 * 
 	 * @param datasetAlias
-	 * @return
+	 * @return a map of check IDs to boolean results
+	 * @throws IllegalStateException if the dataset is not registered or accessible
 	 */
 	public Map<String, Boolean> executeGlobalChecks(String datasetAlias) throws IllegalStateException;
 	
 	/**
 	 * 
 	 * @param datasetAlias
-	 * @return
+	 * @return a nested map: column name, check ID, list of results
+	 * @throws IllegalStateException if the dataset is not registered or accessible
 	 */
 	public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias) throws IllegalStateException;
 	
@@ -62,7 +64,7 @@ public interface IDataPublisherFacade {
 	/**
 	 * 
 	 * @param alias
-	 * @return
+	 * @return a {@link DatasetProfile} object
 	 */
 	public DatasetProfile getProfile(String alias);
 }
