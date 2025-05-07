@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericCheck;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ import org.apache.spark.sql.functions;
  *
  * <p>Check ID: IEU5
  */
-public class UniqueIdentifierCheck implements IInteroperabilityCheck {
+public class UniqueIdentifierCheck implements IGenericCheck {
 	
 	private final List<String> invalidRows = new ArrayList<>();
     private static final Pattern uriPattern = Pattern.compile("^(https?|ftp)://[\\w.-]+(/[\\w\\-./]*)?$");
@@ -74,10 +74,10 @@ public class UniqueIdentifierCheck implements IInteroperabilityCheck {
         return foundUriColumn && invalidRows.isEmpty();
     }
     
-    @Override
+    /*@Override
     public List<String> getInvalidRows() {
         return invalidRows;
-    }
+    }*/
     
     boolean isKnownVocabularyUri(String uri) {
         for (String base : knownBases) {

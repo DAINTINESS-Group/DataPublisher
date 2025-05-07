@@ -1,10 +1,9 @@
 package engine;
 
 import model.FairCheckResult;
-import fairchecks.api.IAccessibilityCheck;
-import fairchecks.api.IFindabilityCheck;
-import fairchecks.api.IInteroperabilityCheck;
-import fairchecks.api.IReusabilityCheck;
+import fairchecks.api.IGenericCheck;
+import fairchecks.api.IGenericCheckWithInvalidRows;
+import fairchecks.api.IGenericApplicableCheck;
 import fairchecks.factory.ColumnFairCheckFactory;
 import model.DatasetProfile;
 import org.apache.spark.sql.Dataset;
@@ -47,48 +46,48 @@ public class ColumnFairCheckService {
         	Map<String, List<FairCheckResult>> categorizedResults = new HashMap<>();
         	
         	// Execute Findability Checks
-        	List<IFindabilityCheck> findabilityChecks = ColumnFairCheckFactory.getFindabilityChecks(columnName);
+        	List<IGenericCheck> findabilityChecks = ColumnFairCheckFactory.getFindabilityChecks(columnName);
         	List<FairCheckResult> findabilityResults = new ArrayList<>();
-        	for (IFindabilityCheck check : findabilityChecks) {
-        		if (check.isApplicable(columnType)) {
+        	for (IGenericCheck check : findabilityChecks) {
+        		if (((IGenericApplicableCheck) check).isApplicable(columnType)) {
 	        	    boolean result = check.executeCheck(dataset);
-	        	    List<String> invalidRows = check.getInvalidRows();
+	        	    List<String> invalidRows = ((IGenericCheckWithInvalidRows) check).getInvalidRows();
 	        	    findabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
         		}
         	}
         	categorizedResults.put("Findability", findabilityResults);
 
             // Execute Accessibility Checks
-        	List<IAccessibilityCheck> accessibilityChecks = ColumnFairCheckFactory.getAccessibilityChecks(columnName);
+        	List<IGenericCheck> accessibilityChecks = ColumnFairCheckFactory.getAccessibilityChecks(columnName);
         	List<FairCheckResult> accessibilityResults = new ArrayList<>();
-        	for (IAccessibilityCheck check : accessibilityChecks) {
-        		if (check.isApplicable(columnType)) {
+        	for (IGenericCheck check : accessibilityChecks) {
+        		if (((IGenericApplicableCheck) check).isApplicable(columnType)) {
 	        	    boolean result = check.executeCheck(dataset);
-	        	    List<String> invalidRows = check.getInvalidRows();
+	        	    List<String> invalidRows = ((IGenericCheckWithInvalidRows) check).getInvalidRows();
 	        	    accessibilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
 	        	}
         	}
         	categorizedResults.put("Accessibility", accessibilityResults);
 
             // Execute Interoperability Checks
-        	List<IInteroperabilityCheck> interoperabilityChecks = ColumnFairCheckFactory.getInteroperabilityChecks(columnName);
+        	List<IGenericCheck> interoperabilityChecks = ColumnFairCheckFactory.getInteroperabilityChecks(columnName);
         	List<FairCheckResult> interoperabilityResults = new ArrayList<>();
-        	for (IInteroperabilityCheck check : interoperabilityChecks) {
-        		if (check.isApplicable(columnType)) {
+        	for (IGenericCheck check : interoperabilityChecks) {
+        		if (((IGenericApplicableCheck) check).isApplicable(columnType)) {
 	        	    boolean result = check.executeCheck(dataset);
-	        	    List<String> invalidRows = check.getInvalidRows();
+	        	    List<String> invalidRows = ((IGenericCheckWithInvalidRows) check).getInvalidRows();
 	        	    interoperabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
 	        	}
         	}
         	categorizedResults.put("Interoperability", interoperabilityResults);
 
             // Execute Reusability Checks
-        	List<IReusabilityCheck> reusabilityChecks = ColumnFairCheckFactory.getReusabilityChecks(columnName);
+        	List<IGenericCheck> reusabilityChecks = ColumnFairCheckFactory.getReusabilityChecks(columnName);
         	List<FairCheckResult> reusabilityResults = new ArrayList<>();
-        	for (IReusabilityCheck check : reusabilityChecks) {
-        		if (check.isApplicable(columnType)) {
+        	for (IGenericCheck check : reusabilityChecks) {
+        		if (((IGenericApplicableCheck) check).isApplicable(columnType)) {
 	        	    boolean result = check.executeCheck(dataset);
-	        	    List<String> invalidRows = check.getInvalidRows();
+	        	    List<String> invalidRows = ((IGenericCheckWithInvalidRows) check).getInvalidRows();
 	        	    reusabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
 	        	}
         	}

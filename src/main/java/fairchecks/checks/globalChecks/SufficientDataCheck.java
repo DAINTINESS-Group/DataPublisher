@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IReusabilityCheck;
+import fairchecks.api.IGenericCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
@@ -10,7 +10,7 @@ import org.apache.spark.sql.Row;
  *
  * <p>Check ID: REU1
  */
-public class SufficientDataCheck implements IReusabilityCheck {
+public class SufficientDataCheck implements IGenericCheck {
 	
 	@Override
     public String getCheckId() {

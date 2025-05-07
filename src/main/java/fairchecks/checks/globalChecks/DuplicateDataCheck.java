@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IReusabilityCheck;
+import fairchecks.api.IGenericCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.Column;
@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  * 
  * <p>Check ID: REU3
  */
-public class DuplicateDataCheck implements IReusabilityCheck {
+public class DuplicateDataCheck implements IGenericCheck {
 	
 	private final List<String> invalidRows = new ArrayList<>();
 
@@ -55,8 +55,8 @@ public class DuplicateDataCheck implements IReusabilityCheck {
         return invalidRows.isEmpty();
     }
 
-    @Override
+    /*@Override
     public List<String> getInvalidRows() {
         return invalidRows;
-    }
+    }*/
 }

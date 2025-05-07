@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericCheck;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -19,7 +19,7 @@ import org.apache.spark.sql.Row;
  * 
  * <p>Check ID: IEU15
  */
-public class CsvColumnHeaderCheck implements IInteroperabilityCheck{
+public class CsvColumnHeaderCheck implements IGenericCheck{
 	
 	@Override
     public String getCheckId() {

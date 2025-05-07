@@ -1,9 +1,11 @@
 package fairchecks.checks.columnChecks;
 
-import fairchecks.api.IReusabilityCheck;
+import fairchecks.api.IGenericApplicableCheck;
+import fairchecks.api.IGenericCheckWithInvalidRows;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
+import org.apache.spark.sql.types.DataType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +17,7 @@ import java.util.stream.Collectors;
  *
  * <p>Check ID: REU4
  */
-public class DataAccuracyCheck implements IReusabilityCheck {
+public class DataAccuracyCheck implements IGenericCheckWithInvalidRows, IGenericApplicableCheck {
 	
 	private final String columnName;
     private List<String> allowedValues;
@@ -86,5 +88,10 @@ public class DataAccuracyCheck implements IReusabilityCheck {
 
     public List<String> getInferredAllowedValues() {
         return allowedValues;
+    }
+    
+    @Override
+    public boolean isApplicable(DataType columnType) {
+        return true;
     }
 }

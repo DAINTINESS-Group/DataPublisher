@@ -1,8 +1,11 @@
 package fairchecks.checks.columnChecks;
 
-import fairchecks.api.IFindabilityCheck;
+import fairchecks.api.IGenericApplicableCheck;
+import fairchecks.api.IGenericCheckWithInvalidRows;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
+import org.apache.spark.sql.types.DataType;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +20,7 @@ import java.util.List;
  * </ul>
  * <p>Check ID: FEU2
  */
-public class NullValueMarkingCheck implements IFindabilityCheck {
+public class NullValueMarkingCheck implements IGenericCheckWithInvalidRows, IGenericApplicableCheck {
 	
 	private final String columnName;
     private final List<String> invalidRows = new ArrayList<>();
@@ -58,5 +61,10 @@ public class NullValueMarkingCheck implements IFindabilityCheck {
     @Override
     public List<String> getInvalidRows() {
         return invalidRows;
+    }
+    
+    @Override
+    public boolean isApplicable(DataType columnType) {
+        return true;
     }
 }

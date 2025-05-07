@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IReusabilityCheck;
+import fairchecks.api.IGenericCheck;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,7 +17,7 @@ import org.apache.spark.sql.Row;
  *
  * <p>Check ID: REU7.5
  */
-public class SeparateSheetDatasetCheck implements IReusabilityCheck {
+public class SeparateSheetDatasetCheck implements IGenericCheck {
 	
 	@Override
     public String getCheckId() {

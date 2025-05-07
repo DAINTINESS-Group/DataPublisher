@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
@@ -24,7 +24,7 @@ import java.nio.file.Paths;
  *
  * <p>Check ID: IEU3.1
  */
-public class Utf8EncodingCheck implements IInteroperabilityCheck {
+public class Utf8EncodingCheck implements IGenericCheck {
 
     @Override
     public String getCheckId() {

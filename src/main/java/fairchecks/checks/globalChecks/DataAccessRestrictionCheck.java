@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IAccessibilityCheck;
+import fairchecks.api.IGenericCheck;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,7 +14,7 @@ import org.apache.spark.sql.Row;
  *
  * <p>Check ID: AEU1
  */
-public class DataAccessRestrictionCheck implements IAccessibilityCheck {
+public class DataAccessRestrictionCheck implements IGenericCheck {
 	
 	@Override
     public String getCheckId() {

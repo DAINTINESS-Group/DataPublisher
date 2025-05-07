@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericCheck;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -17,7 +17,7 @@ import org.apache.spark.sql.Row;
  * 
  * <p>Check ID: IEU9
  */
-public class CsvSemicolonSeparatorCheck implements IInteroperabilityCheck{
+public class CsvSemicolonSeparatorCheck implements IGenericCheck{
 	
 	private static final int MAX_LINES_TO_SAMPLE = 10;
 	

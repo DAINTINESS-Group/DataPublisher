@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
  *
  * <p>Check ID: IEU6
  */
-public class UriDetailsRetrievalCheck implements IInteroperabilityCheck{
+public class UriDetailsRetrievalCheck implements IGenericCheck{
 	
 	private static final Pattern uriPattern = Pattern.compile("^(https?|ftp)://[\\w.-]+(/[\\w\\-./]*)?$");
 

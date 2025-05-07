@@ -1,6 +1,7 @@
 package fairchecks.checks.columnChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericApplicableCheck;
+import fairchecks.api.IGenericCheckWithInvalidRows;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,7 +23,7 @@ import org.apache.spark.sql.types.LongType;
  *
  * <p>Check ID: IEU17.1
  */
-public class CsvUnitInHeaderCheck implements IInteroperabilityCheck{
+public class CsvUnitInHeaderCheck implements IGenericCheckWithInvalidRows, IGenericApplicableCheck {
 	
 	private final String columnName;
     private final List<String> invalidRows = new ArrayList<>();

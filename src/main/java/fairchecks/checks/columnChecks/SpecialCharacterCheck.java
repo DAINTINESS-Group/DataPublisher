@@ -1,6 +1,7 @@
 package fairchecks.checks.columnChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericApplicableCheck;
+import fairchecks.api.IGenericCheckWithInvalidRows;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
+import org.apache.spark.sql.types.DataType;
 
 /**
  * A check that verifies whether values in a column contain special characters.
@@ -16,7 +18,7 @@ import org.apache.spark.sql.functions;
  *
  * <p>Check ID: IEU3.2
  */
-public class SpecialCharacterCheck implements IInteroperabilityCheck {
+public class SpecialCharacterCheck implements IGenericCheckWithInvalidRows, IGenericApplicableCheck {
 	
 	private final String columnName;
 	private final List<String> invalidRows = new ArrayList<>();
@@ -58,5 +60,10 @@ public class SpecialCharacterCheck implements IInteroperabilityCheck {
     @Override
     public List<String> getInvalidRows() {
         return invalidRows;
+    }
+    
+    @Override
+    public boolean isApplicable(DataType columnType) {
+        return true;
     }
 }

@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
@@ -24,7 +24,7 @@ import java.util.regex.Pattern;
  *
  * <p>Check ID: IEU7
  */
-public class UriLinkedDataCheck implements IInteroperabilityCheck{
+public class UriLinkedDataCheck implements IGenericCheck{
 	
 	private static final Pattern uriPattern = Pattern.compile("^(https?|ftp)://.+$");
     private final List<String> invalidRows = new ArrayList<>();

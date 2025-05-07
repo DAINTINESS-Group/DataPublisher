@@ -1,6 +1,6 @@
 package fairchecks.checks.globalChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericCheck;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -16,7 +16,7 @@ import org.apache.spark.sql.Row;
  *
  * <p>Check ID: IEU16
  */
-public class CsvUniformColumnCountCheck implements IInteroperabilityCheck {
+public class CsvUniformColumnCountCheck implements IGenericCheck {
 	
 	@Override
     public String getCheckId() {

@@ -1,10 +1,11 @@
 package fairchecks.checks.columnChecks;
 
-import fairchecks.api.IInteroperabilityCheck;
+import fairchecks.api.IGenericApplicableCheck;
+import fairchecks.api.IGenericCheckWithInvalidRows;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
-
+import org.apache.spark.sql.types.DataType;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -24,7 +25,7 @@ import java.util.stream.Collectors;
  * It queries a SPARQL endpoint to fetch valid terms and compares dataset values against them.
  * Check ID: IEU4
  */
-public class ControlledVocabularyCheck implements IInteroperabilityCheck {
+public class ControlledVocabularyCheck implements IGenericCheckWithInvalidRows, IGenericApplicableCheck {
 	
 	private final String columnName;
     private final List<String> invalidRows = new ArrayList<>();
@@ -143,5 +144,10 @@ public class ControlledVocabularyCheck implements IInteroperabilityCheck {
         }
 
         return terms;
+    }
+    
+    @Override
+    public boolean isApplicable(DataType columnType) {
+        return true;
     }
 }

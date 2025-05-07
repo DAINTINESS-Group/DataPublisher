@@ -1,6 +1,6 @@
 package fairchecks.factory;
 
-import fairchecks.api.*;
+import fairchecks.api.IGenericCheck;
 import fairchecks.checks.columnChecks.ControlledVocabularyCheck;
 import fairchecks.checks.columnChecks.CsvUnitInHeaderCheck;
 import fairchecks.checks.columnChecks.DataAccuracyCheck;
@@ -24,21 +24,21 @@ import java.util.List;
  */
 public class ColumnFairCheckFactory {
 	
-	public static List<IFindabilityCheck> getFindabilityChecks(String columnName){
-		List<IFindabilityCheck> columnChecks = new ArrayList<>();
+	public static List<IGenericCheck> getFindabilityChecks(String columnName){
+		List<IGenericCheck> columnChecks = new ArrayList<>();
 		columnChecks.add(new NullValueMarkingCheck(columnName)); // FEU2
 		
 		return columnChecks;
 	}
 	
-	public static List<IAccessibilityCheck> getAccessibilityChecks(String columnName){
-		List<IAccessibilityCheck> columnChecks = new ArrayList<>();
+	public static List<IGenericCheck> getAccessibilityChecks(String columnName){
+		List<IGenericCheck> columnChecks = new ArrayList<>();
 		
 		return columnChecks;
 	}
 	
-	public static List<IInteroperabilityCheck> getInteroperabilityChecks(String columnName){
-		List<IInteroperabilityCheck> columnChecks = new ArrayList<>();
+	public static List<IGenericCheck> getInteroperabilityChecks(String columnName){
+		List<IGenericCheck> columnChecks = new ArrayList<>();
 		columnChecks.add(new DateTimeFormatCheck(columnName));   // IEU1
         columnChecks.add(new DecimalFormatCheck(columnName));    // IEU2.1
         columnChecks.add(new ThousandsSeparatorCheck(columnName)); // IEU2.2
@@ -49,8 +49,8 @@ public class ColumnFairCheckFactory {
 		return columnChecks;
 	}
 	
-	public static List<IReusabilityCheck> getReusabilityChecks(String columnName){
-		List<IReusabilityCheck> columnChecks = new ArrayList<>();
+	public static List<IGenericCheck> getReusabilityChecks(String columnName){
+		List<IGenericCheck> columnChecks = new ArrayList<>();
 		columnChecks.add(new DataAccuracyCheck(columnName)); // REU4
 		
 		return columnChecks;
