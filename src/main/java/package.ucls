@@ -1,112 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
   realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <package id="1" language="java" name="model" project="DataPublisher" file="/DataPublisher/src/main/java/model" 
+  <package id="1" language="java" name="config" project="PublisherData" file="/PublisherData/src/main/java/config" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="693" y="307"/>    
+    <position height="-1" width="-1" x="351" y="168"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
-  <package id="2" language="java" name="config" project="DataPublisher" file="/DataPublisher/src/main/java/config" 
+  <package id="2" language="java" name="engine" project="PublisherData" file="/PublisherData/src/main/java/engine" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="166" y="178"/>    
+    <position height="55" width="122" x="654" y="132"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
-  <package id="3" language="java" name="app" project="DataPublisher" file="/DataPublisher/src/main/java/app" 
+  <package id="3" language="java" name="fairchecks.api" project="PublisherData" 
+    file="/PublisherData/src/main/java/fairchecks/api" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="674" y="501"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="fairchecks.checks.columnChecks" project="PublisherData" 
+    file="/PublisherData/src/main/java/fairchecks/checks/columnChecks" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="259" x="332" y="322"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="fairchecks.checks.globalChecks" project="PublisherData" 
+    file="/PublisherData/src/main/java/fairchecks/checks/globalChecks" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="251" x="41" y="322"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="fairchecks.factory" project="PublisherData" 
+    file="/PublisherData/src/main/java/fairchecks/factory" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="149" x="463" y="227"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="7" language="java" name="model" project="PublisherData" file="/PublisherData/src/main/java/model" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="693" y="37"/>    
+    <position height="-1" width="-1" x="751" y="417"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
-  <package id="4" language="java" name="utils" project="DataPublisher" file="/DataPublisher/src/main/java/utils" 
+  <package id="8" language="java" name="report" project="PublisherData" file="/PublisherData/src/main/java/report" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="409" y="217"/>    
+    <position height="-1" width="-1" x="752" y="250"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
-  <package id="5" language="java" name="engine" project="DataPublisher" file="/DataPublisher/src/main/java/engine" 
+  <package id="9" language="java" name="utils" project="PublisherData" file="/PublisherData/src/main/java/utils" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="531" y="127"/>    
+    <position height="-1" width="-1" x="1026" y="321"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
-  <package id="6" language="java" name="fairchecks.factory" project="DataPublisher" 
-    file="/DataPublisher/src/main/java/fairchecks/factory" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="50" width="128" x="241" y="217"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <package id="7" language="java" name="fairchecks.checks.globalChecks" project="DataPublisher" 
-    file="/DataPublisher/src/main/java/fairchecks/checks/globalChecks" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="50" width="210" x="300" y="307"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <package id="8" language="java" name="fairchecks.api" project="DataPublisher" 
-    file="/DataPublisher/src/main/java/fairchecks/api" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="50" width="105" x="351" y="397"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <package id="9" language="java" name="fairchecks.checks.columnChecks" project="DataPublisher" 
-    file="/DataPublisher/src/main/java/fairchecks/checks/columnChecks" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="50" width="218" x="42" y="307"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <package id="10" language="java" name="report" project="DataPublisher" file="/DataPublisher/src/main/java/report" 
+  <package id="10" language="java" name="app" project="PublisherData" file="/PublisherData/src/main/java/app" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="571" y="217"/>    
+    <position height="55" width="122" x="858" y="37"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
   <dependency id="11">    
-    <bendpoint x="723" y="127"/>    
-    <bendpoint x="723" y="217"/>    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
   </dependency>  
   <dependency id="12">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="5"/>  
+    <bendpoint x="621" y="322"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
   </dependency>  
   <dependency id="13">    
-    <bendpoint x="540" y="217"/>    
-    <bendpoint x="540" y="307"/>    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="8"/>  
+    <bendpoint x="888" y="132"/>    
+    <bendpoint x="888" y="227"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
   </dependency>  
   <dependency id="14">    
-    <bendpoint x="702" y="217"/>    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
+    <bendpoint x="663" y="227"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
   </dependency>  
   <dependency id="15">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="7"/>  
   </dependency>  
   <dependency id="16">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
   </dependency>  
   <dependency id="17">    
-    <end type="SOURCE" refId="6"/>    
+    <bendpoint x="846" y="227"/>    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="9"/>  
   </dependency>  
   <dependency id="18">    
     <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
+    <end type="TARGET" refId="3"/>  
   </dependency>  
   <dependency id="19">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="20">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <dependency id="21">    
-    <end type="SOURCE" refId="6"/>    
+    <bendpoint x="867" y="132"/>    
+    <bendpoint x="867" y="227"/>    
+    <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="7"/>  
   </dependency>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
   <dependency id="22">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="10"/>  
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
   </dependency>  
   <dependency id="23">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="8"/>  
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="24">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="25">    
+    <bendpoint x="642" y="227"/>    
+    <bendpoint x="642" y="322"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="26">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
   </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
