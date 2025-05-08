@@ -6,6 +6,7 @@ import java.util.Map;
 import engine.FacadeFactory;
 import engine.IDataPublisherFacade;
 import model.FairCheckResult;
+import utils.ReportType;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,8 +19,9 @@ public class Main {
         Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("myDataset");
         
         String outputFolder = "src/main/resources/reports/";
-
-        facade.generateGlobalReport("myDataset", globalResults, outputFolder + "FAIR_Report.txt");
-        facade.generateColumnReport("myDataset", columnResults, outputFolder + "FAIR_Report.txt");
+        ReportType reportType = ReportType.TEXT;
+        
+        facade.generateGlobalReport("myDataset", globalResults, outputFolder + "FAIR_Report.txt", reportType);
+        facade.generateColumnReport("myDataset", columnResults, outputFolder + "FAIR_Report.txt", reportType);
     }
 }

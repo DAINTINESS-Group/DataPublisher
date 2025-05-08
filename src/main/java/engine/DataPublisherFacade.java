@@ -2,8 +2,10 @@ package engine;
 
 import model.DatasetProfile;
 import model.FairCheckResult;
-import report.FairCheckReportGenerator;
+import report.IChecksReportGenerator;
+import report.ChecksReportGeneratorFactory;
 import utils.RegistrationResponse;
+import utils.ReportType;
 
 import java.util.List;
 import java.util.Map;
@@ -11,7 +13,7 @@ import java.util.Map;
 public class DataPublisherFacade implements IDataPublisherFacade{
 	
 	private DatasetRegistrationController datasetRegistrationController = new DatasetRegistrationController();
-	private GlobalFairCheckService fairCheckService = new GlobalFairCheckService();
+	private GlobalFairCheckService globalCheckService = new GlobalFairCheckService();
 	private ColumnFairCheckService columnCheckService = new ColumnFairCheckService();
 	
 	@Override
@@ -27,7 +29,7 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 	    	throw new IllegalStateException("Error: Dataset has not been registered");
 	    }
 
-	    Map<String, Boolean> results = fairCheckService.executeGlobalChecks(profile.getDataset());
+	    Map<String, Boolean> results = globalCheckService.executeGlobalChecks(profile.getDataset());
 
 	    return results;
 	}
@@ -42,16 +44,25 @@ public class DataPublisherFacade implements IDataPublisherFacade{
     }
 	
 	@Override
-	public void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath) {
-	    FairCheckReportGenerator.generateGlobalReport(datasetAlias, globalResults, outputPath);
+	public void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath, ReportType reportType) {
+		IChecksReportGenerator reportGenerator = new ChecksReportGeneratorFactory().createReportGenerator(reportType);
+		if (reportGenerator != null) {
+			reportGenerator.generateGlobalReport(datasetAlias, globalResults, outputPath);
+		} else {
+			throw new IllegalArgumentException("Unsupported report type: " + reportType);
+		}
 	}
 
 	@Override
-	public void generateColumnReport(String datasetAlias, Map<String, Map<String, List<FairCheckResult>>> columnResults, String outputPath) {
-	    FairCheckReportGenerator.generateColumnReport(datasetAlias, columnResults, outputPath);
+	public void generateColumnReport(String datasetAlias, Map<String, Map<String, List<FairCheckResult>>> columnResults, String outputPath, ReportType reportType) {
+		IChecksReportGenerator reportGenerator = new ChecksReportGeneratorFactory().createReportGenerator(reportType);
+		if (reportGenerator != null) {
+			reportGenerator.generateColumnReport(datasetAlias, columnResults, outputPath);
+		} else {
+			throw new IllegalArgumentException("Unsupported report type: " + reportType);
+		}
 	}
 
-	
 	public DatasetProfile getProfile(String alias) {
 		return datasetRegistrationController.getProfile(alias);
 	}

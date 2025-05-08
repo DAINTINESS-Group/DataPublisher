@@ -13,6 +13,7 @@ import org.junit.Test;
 import model.DatasetProfile;
 import model.FairCheckResult;
 import utils.RegistrationResponse;
+import utils.ReportType;
 
 public class FacadeTests {
 	
@@ -21,25 +22,25 @@ public class FacadeTests {
     @Before
     public void setUp()
     {
-        FacadeFactory facadeFactory = new FacadeFactory();
-
-        facade = facadeFactory.createDataPublisherFacade();
-        facade.registerDataset("src\\test\\resources\\datasets\\fruits_test.csv", "frame1", true);
-        facade.registerDataset("src\\test\\resources\\datasets\\fruits_test_wrong.csv", "frame2", true);
-        facade.registerDataset("src\\test\\resources\\datasets\\students_test.csv", "frame3", true);
-        facade.registerDataset("src\\test\\resources\\datasets\\students_test_wrong2.csv", "frame5", true);
+		FacadeFactory facadeFactory = new FacadeFactory();
+		
+		facade = facadeFactory.createDataPublisherFacade();
+		facade.registerDataset("src\\test\\resources\\datasets\\fruits_test.csv", "frame1", true);
+		facade.registerDataset("src\\test\\resources\\datasets\\fruits_test_wrong.csv", "frame2", true);
+		facade.registerDataset("src\\test\\resources\\datasets\\students_test.csv", "frame3", true);
+		facade.registerDataset("src\\test\\resources\\datasets\\students_test_wrong2.csv", "frame5", true);
     }
     
     @Test
     public void registerDatasetTest()
     {
-    	RegistrationResponse response = facade.registerDataset("src/test/resources/datasets/countries.csv", "testDataset", true);
-        assertEquals(RegistrationResponse.SUCCESS, response);
-        
-        DatasetProfile profile = facade.getProfile("frame1");
-        assertNotNull(profile);
-        assertEquals("frame1", profile.getAlias());
-        assertEquals("src\\test\\resources\\datasets\\fruits_test.csv", profile.getFilePath());
+		RegistrationResponse response = facade.registerDataset("src/test/resources/datasets/countries.csv", "testDataset", true);
+		assertEquals(RegistrationResponse.SUCCESS, response);
+		
+		DatasetProfile profile = facade.getProfile("frame1");
+		assertNotNull(profile);
+		assertEquals("frame1", profile.getAlias());
+		assertEquals("src\\test\\resources\\datasets\\fruits_test.csv", profile.getFilePath());
     }
     
     @Test
@@ -127,25 +128,27 @@ public class FacadeTests {
     
     @Test
     public void generateGlobalReportTest() throws Exception {
-    	String globalReportPath = "src/test/resources/reports/GlobalReportTest.txt";
-    	Map<String, Boolean> globalResults = facade.executeGlobalChecks("frame1");
-
-        facade.generateGlobalReport("frame1", globalResults, globalReportPath);
-
-        File reportFile = new File(globalReportPath);
-        assertTrue("Global report file should exist", reportFile.exists());
-        assertTrue("Global report file should not be empty", reportFile.length() > 0);
+		String globalReportPath = "src/test/resources/reports/GlobalReportTest.txt";
+		Map<String, Boolean> globalResults = facade.executeGlobalChecks("frame1");
+		ReportType reportType = ReportType.TEXT;
+		
+		facade.generateGlobalReport("frame1", globalResults, globalReportPath, reportType);
+		
+		File reportFile = new File(globalReportPath);
+		assertTrue("Global report file should exist", reportFile.exists());
+		assertTrue("Global report file should not be empty", reportFile.length() > 0);
     }
     
     @Test
     public void generateColumnReportTest() throws Exception {
-    	String columnReportPath = "src/test/resources/reports/ColumnReportTest.txt";
-        Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("frame1");
-
-        facade.generateColumnReport("frame1", columnResults, columnReportPath);
-
-        File reportFile = new File(columnReportPath);
-        assertTrue("Column report file should exist", reportFile.exists());
-        assertTrue("Column report file should not be empty", reportFile.length() > 0);
+		String columnReportPath = "src/test/resources/reports/ColumnReportTest.txt";
+		Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("frame1");
+		ReportType reportType = ReportType.TEXT;
+		
+		facade.generateColumnReport("frame1", columnResults, columnReportPath, reportType);
+		
+		File reportFile = new File(columnReportPath);
+		assertTrue("Column report file should exist", reportFile.exists());
+		assertTrue("Column report file should not be empty", reportFile.length() > 0);
     }
 }

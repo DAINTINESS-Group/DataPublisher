@@ -6,6 +6,7 @@ import java.util.Map;
 import model.DatasetProfile;
 import model.FairCheckResult;
 import utils.RegistrationResponse;
+import utils.ReportType;
 
 /**
  * Interface representing the main gateway for FAIR-compliant dataset validation and processing.
@@ -50,16 +51,18 @@ public interface IDataPublisherFacade {
 	 * @param datasetAlias
 	 * @param globalResults
 	 * @param outputPath
+	 * @param reportType
 	 */
-	public void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath);
+	public void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath, ReportType reportType);
 	
 	/**
 	 * 
 	 * @param datasetAlias
 	 * @param columnResults
 	 * @param outputPath
+	 * @param reportType
 	 */
-	public void generateColumnReport(String datasetAlias, Map<String, Map<String, List<FairCheckResult>>> columnResults, String outputPath);
+	public void generateColumnReport(String datasetAlias, Map<String, Map<String, List<FairCheckResult>>> columnResults, String outputPath, ReportType reportType);
 
 	/**
 	 * 

@@ -9,15 +9,16 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Class for generating human-readable FAIR check reports in plain text format.
+ * Class for generating human-readable FAIR check reports in plain TEXT format.
  * <p>
  * This class provides methods to export the results of global and column-based FAIR checks
  * to a specified output file. These reports are intended for manual review.
  * </p>
  */
-public class FairCheckReportGenerator {
+public class TxtChecksReportGenerator implements IChecksReportGenerator {
 	
-	public static void generateGlobalReport(String alias, Map<String, Boolean> results, String outputPath) {
+	@Override
+	public void generateGlobalReport(String alias, Map<String, Boolean> results, String outputPath) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputPath))) {
             writer.write("FAIR Report for Dataset: " + alias + "\n\n");
             writer.write("=== GLOBAL CHECKS ===\n");
@@ -32,8 +33,9 @@ public class FairCheckReportGenerator {
             System.err.println("Error writing global report: " + e.getMessage());
         }
     }
-
-    public static void generateColumnReport(String alias, Map<String, Map<String, List<FairCheckResult>>> results, String outputPath) {
+	
+	@Override
+    public void generateColumnReport(String alias, Map<String, Map<String, List<FairCheckResult>>> results, String outputPath) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputPath, true))) {
             writer.write("=== COLUMN CHECKS ===\n");
 
