@@ -130,9 +130,9 @@ public class FacadeTests {
     public void generateGlobalReportTest() throws Exception {
 		String globalReportPath = "src/test/resources/reports/GlobalReportTest.txt";
 		Map<String, Boolean> globalResults = facade.executeGlobalChecks("frame1");
-		ReportType reportType = ReportType.TEXT;
+		ReportType reportTypeTXT = ReportType.TEXT;
 		
-		facade.generateGlobalReport("frame1", globalResults, globalReportPath, reportType);
+		facade.generateGlobalReport("frame1", globalResults, globalReportPath, reportTypeTXT);
 		
 		File reportFile = new File(globalReportPath);
 		assertTrue("Global report file should exist", reportFile.exists());
@@ -143,9 +143,9 @@ public class FacadeTests {
     public void generateColumnReportTest() throws Exception {
 		String columnReportPath = "src/test/resources/reports/ColumnReportTest.txt";
 		Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("frame1");
-		ReportType reportType = ReportType.TEXT;
+		ReportType reportTypeTXT = ReportType.TEXT;
 		
-		facade.generateColumnReport("frame1", columnResults, columnReportPath, reportType);
+		facade.generateColumnReport("frame1", columnResults, columnReportPath, reportTypeTXT);
 		
 		File reportFile = new File(columnReportPath);
 		assertTrue("Column report file should exist", reportFile.exists());
