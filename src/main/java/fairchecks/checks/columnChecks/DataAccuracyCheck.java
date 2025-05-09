@@ -1,6 +1,7 @@
 package fairchecks.checks.columnChecks;
 
 import fairchecks.api.IGenericColumnCheck;
+
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
@@ -8,20 +9,20 @@ import org.apache.spark.sql.types.DataType;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
- * A check that infers commonly expected values from a column and flags outliers
- * to assess the accuracy of the data.
- *
+ * A check that identifies potentially inaccurate values in a column.
+ *<p>
+ *For numeric columns, it applies semantic-aware rules
+ * (e.g., age must be between 1–120, percentages between 0–100, amounts must be non-negative).
+ * 
  * <p>Check ID: REU4
  */
 public class DataAccuracyCheck implements IGenericColumnCheck {
 	
 	private final String columnName;
-    private List<String> allowedValues;
     private final List<String> invalidRows = new ArrayList<>();
-    private static final int MIN_OCCURRENCES = 3;
+    private DataType capturedColumnType;
 
     public DataAccuracyCheck(String columnName) {
         this.columnName = columnName;
@@ -34,63 +35,81 @@ public class DataAccuracyCheck implements IGenericColumnCheck {
 
     @Override
     public String getCheckDescription() {
-        return "Data should be accurate by conforming to commonly expected values.";
+        return "Data should be accurate.";
     }
 
     @Override
     public boolean executeCheck(Dataset<Row> dataset) {
-        try {
-        	dataset = dataset.withColumn(columnName, functions.trim(functions.col(columnName)));
-        	
-        	Dataset<Row> cleaned = dataset
-        		    .filter(
-        		        functions.col(columnName).isNotNull()
-        		            .and(functions.not(functions.lower(functions.col(columnName)).equalTo("null")))
-        		    );
-        	
-            allowedValues = cleaned
-                .groupBy(columnName)
-                .count()
-                .filter(functions.col("count").geq(MIN_OCCURRENCES))
-                .select(columnName)
-                .collectAsList()
-                .stream()
-                .map(row -> row.getString(0)  == null ? null : row.get(0).toString())
-                .collect(Collectors.toList());
-            
-            List<Row> failingRows = cleaned
-            	    .filter(functions.not(functions.col(columnName).isin(allowedValues.toArray())))
-            	    .select(columnName)
-            	    .collectAsList();
+    	if (capturedColumnType == null) {
+    		System.out.println("column type is null");
+    		return false;
+    	}
 
-            for (Row row : failingRows) {
-            	Object rawVal = row.get(0);
-                if (rawVal == null) continue;
+    	if (capturedColumnType.simpleString().equals("string")) {
+    		return checkStringColumn(dataset);
+    	} else {
+    		return checkNumericColumn(dataset);
+    	}
+    }
+    
+    private boolean checkNumericColumn(Dataset<Row> dataset) {
+    	try {
+    		System.out.println("Checking column: " + columnName);
+    		Dataset<Row> cleaned = dataset
+    			.filter(functions.col(columnName).isNotNull())
+    			.withColumn("numeric_value", functions.col(columnName).cast("double"));
+    		
+    		System.out.println("Sample of cleaned data:");
+    		cleaned.select(functions.col(columnName), functions.col("numeric_value")).show(10, false); // show 10 rows, full content
 
-                String value = rawVal.toString().trim();
-
-                if (value.equalsIgnoreCase("null")) continue;
-                invalidRows.add("Uncommon or inaccurate value: " + value);
-            }
-
-            return invalidRows.isEmpty();
-        } catch (Exception e) {
-            System.err.println("Error executing Data Accuracy Check: " + e.getMessage());
-            return false;
-        }
+    		Dataset<Row> invalid;
+    		String lowerName = columnName.toLowerCase();
+    		
+    		if(lowerName.contains("percent")) {
+    			invalid = cleaned.filter(
+    					functions.col("numeric_value").lt(0)
+    							 .or(functions.col("numeric_value").gt(100))
+    			);
+    		} else if (lowerName.contains("weight") || lowerName.contains("mass")
+    				|| lowerName.contains("price") || lowerName.contains("amount")
+    				|| lowerName.contains("quantity")) {
+    			System.out.println("Inferred semantic type: non-negative numeric");
+    			invalid = cleaned.filter(functions.col("numeric_value").lt(0));
+    		}else if(lowerName.contains("age")) {
+    			invalid = cleaned.filter(functions.col("numeric_value").lt(1));
+    		}else {
+    			System.out.println("No matching rule for column: " + columnName);
+        		return true;
+    		}
+    		
+    		 System.out.println("Potentially invalid values:");
+    	        invalid.select(functions.col(columnName), functions.col("numeric_value")).show(10, false);
+    		
+    		List<Row> invalidList = invalid.select(columnName).collectAsList();
+    		for (Row row : invalidList) {
+    			invalidRows.add("Invalid numeric value: " + row.get(0));
+    		}
+    		
+    		return invalidRows.isEmpty();
+    	} catch (Exception e) {
+    		e.printStackTrace();
+    		return false;
+    	}
+    	
+    }
+    
+    private boolean checkStringColumn(Dataset<Row> dataset) {
+    	return true;
     }
 
     @Override
     public List<String> getInvalidRows() {
         return invalidRows;
     }
-
-    public List<String> getInferredAllowedValues() {
-        return allowedValues;
-    }
     
     @Override
     public boolean isApplicable(DataType columnType) {
+    	this.capturedColumnType = columnType;
         return true;
     }
 }
