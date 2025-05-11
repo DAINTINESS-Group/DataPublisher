@@ -13,7 +13,7 @@ import org.apache.spark.sql.types.DataType;
 /**
  * A check that verifies whether values in a column contain special characters.
  * <p>It flags any non-null value that includes characters outside letters, digits,
- * and whitespace using the regex {@code .*[^\\p{Alnum}\\s].*}.
+ * and whitespace and excludes ",", ":", "-", "+", ".", using the regex {@code .*[^\\p{Alnum}\\s,\\.\\-\\+:].*}.
  *
  * <p>Check ID: IEU3.2
  */
@@ -22,7 +22,7 @@ public class SpecialCharacterCheck implements IGenericColumnCheck {
 	private final String columnName;
 	private final List<String> invalidRows = new ArrayList<>();
 	
-	private static final String specialCharRegex = ".*[^\\p{Alnum}\\s].*";
+	private static final String specialCharRegex = ".*[^\\p{Alnum}\\s,\\.\\-\\+:].*";
 
     public SpecialCharacterCheck(String columnName) {
         this.columnName = columnName;

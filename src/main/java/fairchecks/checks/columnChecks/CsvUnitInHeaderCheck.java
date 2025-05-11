@@ -27,6 +27,10 @@ public class CsvUnitInHeaderCheck implements IGenericColumnCheck {
 	private final String columnName;
     private final List<String> invalidRows = new ArrayList<>();
     
+    private static final List<String> EXEMPT_KEYWORDS = Arrays.asList(
+    	"quantity", "count", "number", "total", "amount"
+    );
+    
     private static final List<String> COMMON_UNITS = Arrays.asList(
             "kg", "g", "mg", "lb", "oz", // Weight
             "m", "cm", "mm", "inch", "ft", // Length
@@ -64,6 +68,12 @@ public class CsvUnitInHeaderCheck implements IGenericColumnCheck {
         if (matchedColumn == null) {
             invalidRows.add("Column '" + columnName + "' not found in dataset.");
             return false;
+        }
+        
+        for (String keyword : EXEMPT_KEYWORDS) {
+        	if (matchedColumn.toLowerCase().contains(keyword)) {
+            	return true;
+            }
         }
 
         boolean hasUnit = containsUnit(matchedColumn);
