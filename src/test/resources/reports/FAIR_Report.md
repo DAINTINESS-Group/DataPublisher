@@ -21,174 +21,17 @@
 ## COLUMN CHECKS
 
 ### Column: `Status`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: Territory of US
-    - Uncommon or inaccurate value: Associated with NZ
-    - Uncommon or inaccurate value: Crown dependency of GB
-    - Uncommon or inaccurate value: In contention
-    - Uncommon or inaccurate value: Territory of US
+    - Unusual or inaccurate value: Associated with NZ
+    - Unusual or inaccurate value: Crown dependency of GB
+    - Unusual or inaccurate value: In contention
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `ISO_Code`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
-  - Invalid rows:
-    - Uncommon or inaccurate value: 8
-    - Uncommon or inaccurate value: 12
-    - Uncommon or inaccurate value: 16
-    - Uncommon or inaccurate value: 24
-    - Uncommon or inaccurate value: 660
-    - Uncommon or inaccurate value: 28
-    - Uncommon or inaccurate value: 32
-    - Uncommon or inaccurate value: 36
-    - Uncommon or inaccurate value: 40
-    - Uncommon or inaccurate value: 50
-    - Uncommon or inaccurate value: 52
-    - Uncommon or inaccurate value: 56
-    - Uncommon or inaccurate value: 84
-    - Uncommon or inaccurate value: 204
-    - Uncommon or inaccurate value: 64
-    - Uncommon or inaccurate value: 68
-    - Uncommon or inaccurate value: 70
-    - Uncommon or inaccurate value: 72
-    - Uncommon or inaccurate value: 76
-    - Uncommon or inaccurate value: 92
-    - Uncommon or inaccurate value: 96
-    - Uncommon or inaccurate value: 100
-    - Uncommon or inaccurate value: 854
-    - Uncommon or inaccurate value: 108
-    - Uncommon or inaccurate value: 116
-    - Uncommon or inaccurate value: 120
-    - Uncommon or inaccurate value: 124
-    - Uncommon or inaccurate value: 132
-    - Uncommon or inaccurate value: 136
-    - Uncommon or inaccurate value: 140
-    - Uncommon or inaccurate value: 148
-    - Uncommon or inaccurate value: 152
-    - Uncommon or inaccurate value: 170
-    - Uncommon or inaccurate value: 184
-    - Uncommon or inaccurate value: 188
-    - Uncommon or inaccurate value: 192
-    - Uncommon or inaccurate value: 196
-    - Uncommon or inaccurate value: 203
-    - Uncommon or inaccurate value: 208
-    - Uncommon or inaccurate value: 262
-    - Uncommon or inaccurate value: 212
-    - Uncommon or inaccurate value: 214
-    - Uncommon or inaccurate value: 218
-    - Uncommon or inaccurate value: 222
-    - Uncommon or inaccurate value: 246
-    - Uncommon or inaccurate value: 250
-    - Uncommon or inaccurate value: 258
-    - Uncommon or inaccurate value: 266
-    - Uncommon or inaccurate value: 268
-    - Uncommon or inaccurate value: 276
-    - Uncommon or inaccurate value: 288
-    - Uncommon or inaccurate value: 300
-    - Uncommon or inaccurate value: 308
-    - Uncommon or inaccurate value: 320
-    - Uncommon or inaccurate value: 324
-    - Uncommon or inaccurate value: 624
-    - Uncommon or inaccurate value: 328
-    - Uncommon or inaccurate value: 332
-    - Uncommon or inaccurate value: 340
-    - Uncommon or inaccurate value: 348
-    - Uncommon or inaccurate value: 352
-    - Uncommon or inaccurate value: 356
-    - Uncommon or inaccurate value: 360
-    - Uncommon or inaccurate value: 368
-    - Uncommon or inaccurate value: 372
-    - Uncommon or inaccurate value: 833
-    - Uncommon or inaccurate value: 376
-    - Uncommon or inaccurate value: 380
-    - Uncommon or inaccurate value: 388
-    - Uncommon or inaccurate value: 392
-    - Uncommon or inaccurate value: 400
-    - Uncommon or inaccurate value: 404
-    - Uncommon or inaccurate value: 296
-    - Uncommon or inaccurate value: 414
-    - Uncommon or inaccurate value: 417
-    - Uncommon or inaccurate value: 418
-    - Uncommon or inaccurate value: 428
-    - Uncommon or inaccurate value: 422
-    - Uncommon or inaccurate value: 430
-    - Uncommon or inaccurate value: 434
-    - Uncommon or inaccurate value: 440
-    - Uncommon or inaccurate value: 442
-    - Uncommon or inaccurate value: 454
-    - Uncommon or inaccurate value: 458
-    - Uncommon or inaccurate value: 462
-    - Uncommon or inaccurate value: 466
-    - Uncommon or inaccurate value: 480
-    - Uncommon or inaccurate value: 484
-    - Uncommon or inaccurate value: 496
-    - Uncommon or inaccurate value: 499
-    - Uncommon or inaccurate value: 500
-    - Uncommon or inaccurate value: 504
-    - Uncommon or inaccurate value: 104
-    - Uncommon or inaccurate value: 516
-    - Uncommon or inaccurate value: 524
-    - Uncommon or inaccurate value: 540
-    - Uncommon or inaccurate value: 554
-    - Uncommon or inaccurate value: 558
-    - Uncommon or inaccurate value: 562
-    - Uncommon or inaccurate value: 566
-    - Uncommon or inaccurate value: 578
-    - Uncommon or inaccurate value: 512
-    - Uncommon or inaccurate value: 586
-    - Uncommon or inaccurate value: 275
-    - Uncommon or inaccurate value: 591
-    - Uncommon or inaccurate value: 598
-    - Uncommon or inaccurate value: 600
-    - Uncommon or inaccurate value: 604
-    - Uncommon or inaccurate value: 608
-    - Uncommon or inaccurate value: 620
-    - Uncommon or inaccurate value: 634
-    - Uncommon or inaccurate value: 642
-    - Uncommon or inaccurate value: 643
-    - Uncommon or inaccurate value: 646
-    - Uncommon or inaccurate value: 654
-    - Uncommon or inaccurate value: 659
-    - Uncommon or inaccurate value: 662
-    - Uncommon or inaccurate value: 670
-    - Uncommon or inaccurate value: 882
-    - Uncommon or inaccurate value: 682
-    - Uncommon or inaccurate value: 686
-    - Uncommon or inaccurate value: 690
-    - Uncommon or inaccurate value: 694
-    - Uncommon or inaccurate value: 703
-    - Uncommon or inaccurate value: 90
-    - Uncommon or inaccurate value: 706
-    - Uncommon or inaccurate value: 710
-    - Uncommon or inaccurate value: 724
-    - Uncommon or inaccurate value: 144
-    - Uncommon or inaccurate value: 729
-    - Uncommon or inaccurate value: 740
-    - Uncommon or inaccurate value: 752
-    - Uncommon or inaccurate value: 756
-    - Uncommon or inaccurate value: 760
-    - Uncommon or inaccurate value: 764
-    - Uncommon or inaccurate value: 768
-    - Uncommon or inaccurate value: 776
-    - Uncommon or inaccurate value: 780
-    - Uncommon or inaccurate value: 788
-    - Uncommon or inaccurate value: 795
-    - Uncommon or inaccurate value: 796
-    - Uncommon or inaccurate value: 798
-    - Uncommon or inaccurate value: 850
-    - Uncommon or inaccurate value: 800
-    - Uncommon or inaccurate value: 804
-    - Uncommon or inaccurate value: 784
-    - Uncommon or inaccurate value: 826
-    - Uncommon or inaccurate value: 840
-    - Uncommon or inaccurate value: 858
-    - Uncommon or inaccurate value: 548
-    - Uncommon or inaccurate value: 704
-    - Uncommon or inaccurate value: 876
-    - Uncommon or inaccurate value: 894
-    - Uncommon or inaccurate value: 716
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU2.1]** Integers are separated from decimals by a dot “.”.: `PASSED`
 - **[IEU2.2]** Thousands must not use separators.: `PASSED`
@@ -199,404 +42,349 @@
     - Column 'ISO_Code' does not contain a unit in its header.
 
 ### Column: `Sub-region Name`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: Australia and New Zealand
-    - Uncommon or inaccurate value: Northern America
-    - Uncommon or inaccurate value: Eastern Asia
-    - Uncommon or inaccurate value: Micronesia
-    - Uncommon or inaccurate value: Central Asia
-    - Uncommon or inaccurate value: Eastern Asia
-    - Uncommon or inaccurate value: Australia and New Zealand
-    - Uncommon or inaccurate value: Central Asia
-    - Uncommon or inaccurate value: Northern America
+    - Unusual or inaccurate value: Australia and New Zealand
+    - Unusual or inaccurate value: Eastern Asia
+    - Unusual or inaccurate value: Micronesia
+    - Unusual or inaccurate value: Central Asia
+    - Unusual or inaccurate value: Eastern Asia
+    - Unusual or inaccurate value: Australia and New Zealand
+    - Unusual or inaccurate value: Central Asia
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
-- **[IEU3.2]** Data shall not consist of special characters.: `FAILED`
-  - Invalid rows:
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: South-eastern Asia
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: South-eastern Asia
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: South-eastern Asia
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: South-eastern Asia
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: South-eastern Asia
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: South-eastern Asia
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: South-eastern Asia
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: South-eastern Asia
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: South-eastern Asia
-    - Special character found in value: Sub-Saharan Africa
-    - Special character found in value: Sub-Saharan Africa
+- **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `ISO`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: AL
-    - Uncommon or inaccurate value: DZ
-    - Uncommon or inaccurate value: AS
-    - Uncommon or inaccurate value: AO
-    - Uncommon or inaccurate value: AI
-    - Uncommon or inaccurate value: AG
-    - Uncommon or inaccurate value: AR
-    - Uncommon or inaccurate value: AU
-    - Uncommon or inaccurate value: AT
-    - Uncommon or inaccurate value: BD
-    - Uncommon or inaccurate value: BB
-    - Uncommon or inaccurate value: BE
-    - Uncommon or inaccurate value: BZ
-    - Uncommon or inaccurate value: BJ
-    - Uncommon or inaccurate value: BT
-    - Uncommon or inaccurate value: BO
-    - Uncommon or inaccurate value: BA
-    - Uncommon or inaccurate value: BW
-    - Uncommon or inaccurate value: BR
-    - Uncommon or inaccurate value: VG
-    - Uncommon or inaccurate value: BN
-    - Uncommon or inaccurate value: BG
-    - Uncommon or inaccurate value: BF
-    - Uncommon or inaccurate value: BI
-    - Uncommon or inaccurate value: KH
-    - Uncommon or inaccurate value: CM
-    - Uncommon or inaccurate value: CA
-    - Uncommon or inaccurate value: CV
-    - Uncommon or inaccurate value: KY
-    - Uncommon or inaccurate value: CF
-    - Uncommon or inaccurate value: TD
-    - Uncommon or inaccurate value: CL
-    - Uncommon or inaccurate value: CO
-    - Uncommon or inaccurate value: CK
-    - Uncommon or inaccurate value: CR
-    - Uncommon or inaccurate value: CU
-    - Uncommon or inaccurate value: CY
-    - Uncommon or inaccurate value: CZ
-    - Uncommon or inaccurate value: DK
-    - Uncommon or inaccurate value: DJ
-    - Uncommon or inaccurate value: DM
-    - Uncommon or inaccurate value: DO
-    - Uncommon or inaccurate value: EC
-    - Uncommon or inaccurate value: SV
-    - Uncommon or inaccurate value: FI
-    - Uncommon or inaccurate value: FR
-    - Uncommon or inaccurate value: PF
-    - Uncommon or inaccurate value: GA
-    - Uncommon or inaccurate value: GE
-    - Uncommon or inaccurate value: DE
-    - Uncommon or inaccurate value: GH
-    - Uncommon or inaccurate value: GR
-    - Uncommon or inaccurate value: GD
-    - Uncommon or inaccurate value: GT
-    - Uncommon or inaccurate value: GN
-    - Uncommon or inaccurate value: GW
-    - Uncommon or inaccurate value: GY
-    - Uncommon or inaccurate value: HT
-    - Uncommon or inaccurate value: HN
-    - Uncommon or inaccurate value: HU
-    - Uncommon or inaccurate value: IS
-    - Uncommon or inaccurate value: IN
-    - Uncommon or inaccurate value: ID
-    - Uncommon or inaccurate value: IQ
-    - Uncommon or inaccurate value: IE
-    - Uncommon or inaccurate value: IM
-    - Uncommon or inaccurate value: IL
-    - Uncommon or inaccurate value: IT
-    - Uncommon or inaccurate value: JM
-    - Uncommon or inaccurate value: JP
-    - Uncommon or inaccurate value: JO
-    - Uncommon or inaccurate value: KE
-    - Uncommon or inaccurate value: KI
-    - Uncommon or inaccurate value: KW
-    - Uncommon or inaccurate value: KG
-    - Uncommon or inaccurate value: LA
-    - Uncommon or inaccurate value: LV
-    - Uncommon or inaccurate value: LB
-    - Uncommon or inaccurate value: LR
-    - Uncommon or inaccurate value: LY
-    - Uncommon or inaccurate value: LT
-    - Uncommon or inaccurate value: LU
-    - Uncommon or inaccurate value: MW
-    - Uncommon or inaccurate value: MY
-    - Uncommon or inaccurate value: MV
-    - Uncommon or inaccurate value: ML
-    - Uncommon or inaccurate value: MU
-    - Uncommon or inaccurate value: MX
-    - Uncommon or inaccurate value: MN
-    - Uncommon or inaccurate value: ME
-    - Uncommon or inaccurate value: MS
-    - Uncommon or inaccurate value: MA
-    - Uncommon or inaccurate value: MM
-    - Uncommon or inaccurate value: NA
-    - Uncommon or inaccurate value: NP
-    - Uncommon or inaccurate value: NC
-    - Uncommon or inaccurate value: NZ
-    - Uncommon or inaccurate value: NI
-    - Uncommon or inaccurate value: NE
-    - Uncommon or inaccurate value: NG
-    - Uncommon or inaccurate value: NO
-    - Uncommon or inaccurate value: OM
-    - Uncommon or inaccurate value: PK
-    - Uncommon or inaccurate value: PS
-    - Uncommon or inaccurate value: PA
-    - Uncommon or inaccurate value: PG
-    - Uncommon or inaccurate value: PY
-    - Uncommon or inaccurate value: PE
-    - Uncommon or inaccurate value: PH
-    - Uncommon or inaccurate value: PT
-    - Uncommon or inaccurate value: QA
-    - Uncommon or inaccurate value: RO
-    - Uncommon or inaccurate value: RU
-    - Uncommon or inaccurate value: RW
-    - Uncommon or inaccurate value: SH
-    - Uncommon or inaccurate value: KN
-    - Uncommon or inaccurate value: LC
-    - Uncommon or inaccurate value: VC
-    - Uncommon or inaccurate value: WS
-    - Uncommon or inaccurate value: SA
-    - Uncommon or inaccurate value: SN
-    - Uncommon or inaccurate value: SC
-    - Uncommon or inaccurate value: SL
-    - Uncommon or inaccurate value: SK
-    - Uncommon or inaccurate value: SB
-    - Uncommon or inaccurate value: SO
-    - Uncommon or inaccurate value: ZA
-    - Uncommon or inaccurate value: ES
-    - Uncommon or inaccurate value: LK
-    - Uncommon or inaccurate value: SD
-    - Uncommon or inaccurate value: SR
-    - Uncommon or inaccurate value: SE
-    - Uncommon or inaccurate value: CH
-    - Uncommon or inaccurate value: SY
-    - Uncommon or inaccurate value: TH
-    - Uncommon or inaccurate value: TG
-    - Uncommon or inaccurate value: TO
-    - Uncommon or inaccurate value: TT
-    - Uncommon or inaccurate value: TN
-    - Uncommon or inaccurate value: TM
-    - Uncommon or inaccurate value: TC
-    - Uncommon or inaccurate value: TV
-    - Uncommon or inaccurate value: VI
-    - Uncommon or inaccurate value: UG
-    - Uncommon or inaccurate value: UA
-    - Uncommon or inaccurate value: AE
-    - Uncommon or inaccurate value: GB
-    - Uncommon or inaccurate value: US
-    - Uncommon or inaccurate value: UY
-    - Uncommon or inaccurate value: VU
-    - Uncommon or inaccurate value: VN
-    - Uncommon or inaccurate value: WF
-    - Uncommon or inaccurate value: ZM
-    - Uncommon or inaccurate value: ZW
+    - Unusual or inaccurate value: AL
+    - Unusual or inaccurate value: DZ
+    - Unusual or inaccurate value: AS
+    - Unusual or inaccurate value: AO
+    - Unusual or inaccurate value: AI
+    - Unusual or inaccurate value: AG
+    - Unusual or inaccurate value: AR
+    - Unusual or inaccurate value: AU
+    - Unusual or inaccurate value: AT
+    - Unusual or inaccurate value: BD
+    - Unusual or inaccurate value: BB
+    - Unusual or inaccurate value: BE
+    - Unusual or inaccurate value: BZ
+    - Unusual or inaccurate value: BJ
+    - Unusual or inaccurate value: BT
+    - Unusual or inaccurate value: BO
+    - Unusual or inaccurate value: BA
+    - Unusual or inaccurate value: BW
+    - Unusual or inaccurate value: BR
+    - Unusual or inaccurate value: VG
+    - Unusual or inaccurate value: BN
+    - Unusual or inaccurate value: BG
+    - Unusual or inaccurate value: BF
+    - Unusual or inaccurate value: BI
+    - Unusual or inaccurate value: KH
+    - Unusual or inaccurate value: CM
+    - Unusual or inaccurate value: CA
+    - Unusual or inaccurate value: CV
+    - Unusual or inaccurate value: KY
+    - Unusual or inaccurate value: CF
+    - Unusual or inaccurate value: TD
+    - Unusual or inaccurate value: CL
+    - Unusual or inaccurate value: CO
+    - Unusual or inaccurate value: CK
+    - Unusual or inaccurate value: CR
+    - Unusual or inaccurate value: CU
+    - Unusual or inaccurate value: CY
+    - Unusual or inaccurate value: CZ
+    - Unusual or inaccurate value: DK
+    - Unusual or inaccurate value: DJ
+    - Unusual or inaccurate value: DM
+    - Unusual or inaccurate value: DO
+    - Unusual or inaccurate value: EC
+    - Unusual or inaccurate value: SV
+    - Unusual or inaccurate value: FI
+    - Unusual or inaccurate value: FR
+    - Unusual or inaccurate value: PF
+    - Unusual or inaccurate value: GA
+    - Unusual or inaccurate value: GE
+    - Unusual or inaccurate value: DE
+    - Unusual or inaccurate value: GH
+    - Unusual or inaccurate value: GR
+    - Unusual or inaccurate value: GD
+    - Unusual or inaccurate value: GT
+    - Unusual or inaccurate value: GN
+    - Unusual or inaccurate value: GW
+    - Unusual or inaccurate value: GY
+    - Unusual or inaccurate value: HT
+    - Unusual or inaccurate value: HN
+    - Unusual or inaccurate value: HU
+    - Unusual or inaccurate value: IS
+    - Unusual or inaccurate value: IN
+    - Unusual or inaccurate value: ID
+    - Unusual or inaccurate value: IQ
+    - Unusual or inaccurate value: IE
+    - Unusual or inaccurate value: IM
+    - Unusual or inaccurate value: IL
+    - Unusual or inaccurate value: IT
+    - Unusual or inaccurate value: JM
+    - Unusual or inaccurate value: JP
+    - Unusual or inaccurate value: JO
+    - Unusual or inaccurate value: KE
+    - Unusual or inaccurate value: KI
+    - Unusual or inaccurate value: KW
+    - Unusual or inaccurate value: KG
+    - Unusual or inaccurate value: LA
+    - Unusual or inaccurate value: LV
+    - Unusual or inaccurate value: LB
+    - Unusual or inaccurate value: LR
+    - Unusual or inaccurate value: LY
+    - Unusual or inaccurate value: LT
+    - Unusual or inaccurate value: LU
+    - Unusual or inaccurate value: MW
+    - Unusual or inaccurate value: MY
+    - Unusual or inaccurate value: MV
+    - Unusual or inaccurate value: ML
+    - Unusual or inaccurate value: MU
+    - Unusual or inaccurate value: MX
+    - Unusual or inaccurate value: MN
+    - Unusual or inaccurate value: ME
+    - Unusual or inaccurate value: MS
+    - Unusual or inaccurate value: MA
+    - Unusual or inaccurate value: MM
+    - Unusual or inaccurate value: NA
+    - Unusual or inaccurate value: NP
+    - Unusual or inaccurate value: NC
+    - Unusual or inaccurate value: NZ
+    - Unusual or inaccurate value: NI
+    - Unusual or inaccurate value: NE
+    - Unusual or inaccurate value: NG
+    - Unusual or inaccurate value: NO
+    - Unusual or inaccurate value: OM
+    - Unusual or inaccurate value: PK
+    - Unusual or inaccurate value: PS
+    - Unusual or inaccurate value: PA
+    - Unusual or inaccurate value: PG
+    - Unusual or inaccurate value: PY
+    - Unusual or inaccurate value: PE
+    - Unusual or inaccurate value: PH
+    - Unusual or inaccurate value: PT
+    - Unusual or inaccurate value: QA
+    - Unusual or inaccurate value: RO
+    - Unusual or inaccurate value: RU
+    - Unusual or inaccurate value: RW
+    - Unusual or inaccurate value: SH
+    - Unusual or inaccurate value: KN
+    - Unusual or inaccurate value: LC
+    - Unusual or inaccurate value: VC
+    - Unusual or inaccurate value: WS
+    - Unusual or inaccurate value: SA
+    - Unusual or inaccurate value: SN
+    - Unusual or inaccurate value: SC
+    - Unusual or inaccurate value: SL
+    - Unusual or inaccurate value: SK
+    - Unusual or inaccurate value: SB
+    - Unusual or inaccurate value: SO
+    - Unusual or inaccurate value: ZA
+    - Unusual or inaccurate value: ES
+    - Unusual or inaccurate value: LK
+    - Unusual or inaccurate value: SD
+    - Unusual or inaccurate value: SR
+    - Unusual or inaccurate value: SE
+    - Unusual or inaccurate value: CH
+    - Unusual or inaccurate value: SY
+    - Unusual or inaccurate value: TH
+    - Unusual or inaccurate value: TG
+    - Unusual or inaccurate value: TO
+    - Unusual or inaccurate value: TT
+    - Unusual or inaccurate value: TN
+    - Unusual or inaccurate value: TM
+    - Unusual or inaccurate value: TC
+    - Unusual or inaccurate value: TV
+    - Unusual or inaccurate value: VI
+    - Unusual or inaccurate value: UG
+    - Unusual or inaccurate value: UA
+    - Unusual or inaccurate value: AE
+    - Unusual or inaccurate value: GB
+    - Unusual or inaccurate value: US
+    - Unusual or inaccurate value: UY
+    - Unusual or inaccurate value: VU
+    - Unusual or inaccurate value: VN
+    - Unusual or inaccurate value: WF
+    - Unusual or inaccurate value: ZM
+    - Unusual or inaccurate value: ZW
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `FIPS`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: AL
-    - Uncommon or inaccurate value: AG
-    - Uncommon or inaccurate value: AQ
-    - Uncommon or inaccurate value: AO
-    - Uncommon or inaccurate value: AV
-    - Uncommon or inaccurate value: AC
-    - Uncommon or inaccurate value: AR
-    - Uncommon or inaccurate value: AS
-    - Uncommon or inaccurate value: AU
-    - Uncommon or inaccurate value: BG
-    - Uncommon or inaccurate value: BB
-    - Uncommon or inaccurate value: BE
-    - Uncommon or inaccurate value: BH
-    - Uncommon or inaccurate value: BN
-    - Uncommon or inaccurate value: BT
-    - Uncommon or inaccurate value: BL
-    - Uncommon or inaccurate value: BK
-    - Uncommon or inaccurate value: BC
-    - Uncommon or inaccurate value: BR
-    - Uncommon or inaccurate value: VI
-    - Uncommon or inaccurate value: BX
-    - Uncommon or inaccurate value: BU
-    - Uncommon or inaccurate value: UV
-    - Uncommon or inaccurate value: BY
-    - Uncommon or inaccurate value: CB
-    - Uncommon or inaccurate value: CM
-    - Uncommon or inaccurate value: CA
-    - Uncommon or inaccurate value: CV
-    - Uncommon or inaccurate value: CJ
-    - Uncommon or inaccurate value: CT
-    - Uncommon or inaccurate value: CD
-    - Uncommon or inaccurate value: CI
-    - Uncommon or inaccurate value: CO
-    - Uncommon or inaccurate value: CW
-    - Uncommon or inaccurate value: CS
-    - Uncommon or inaccurate value: CU
-    - Uncommon or inaccurate value: CY
-    - Uncommon or inaccurate value: EZ
-    - Uncommon or inaccurate value: DA
-    - Uncommon or inaccurate value: DJ
-    - Uncommon or inaccurate value: DO
-    - Uncommon or inaccurate value: DR
-    - Uncommon or inaccurate value: EC
-    - Uncommon or inaccurate value: ES
-    - Uncommon or inaccurate value: FI
-    - Uncommon or inaccurate value: FR
-    - Uncommon or inaccurate value: FP
-    - Uncommon or inaccurate value: GB
-    - Uncommon or inaccurate value: GG
-    - Uncommon or inaccurate value: GM
-    - Uncommon or inaccurate value: GH
-    - Uncommon or inaccurate value: GR
-    - Uncommon or inaccurate value: GJ
-    - Uncommon or inaccurate value: GT
-    - Uncommon or inaccurate value: GV
-    - Uncommon or inaccurate value: PU
-    - Uncommon or inaccurate value: GY
-    - Uncommon or inaccurate value: HA
-    - Uncommon or inaccurate value: HO
-    - Uncommon or inaccurate value: HU
-    - Uncommon or inaccurate value: IC
-    - Uncommon or inaccurate value: IN
-    - Uncommon or inaccurate value: ID
-    - Uncommon or inaccurate value: IZ
-    - Uncommon or inaccurate value: EI
-    - Uncommon or inaccurate value: IM
-    - Uncommon or inaccurate value: IS
-    - Uncommon or inaccurate value: IT
-    - Uncommon or inaccurate value: JM
-    - Uncommon or inaccurate value: JA
-    - Uncommon or inaccurate value: JO
-    - Uncommon or inaccurate value: KE
-    - Uncommon or inaccurate value: KR
-    - Uncommon or inaccurate value: KU
-    - Uncommon or inaccurate value: KG
-    - Uncommon or inaccurate value: LA
-    - Uncommon or inaccurate value: LG
-    - Uncommon or inaccurate value: LE
-    - Uncommon or inaccurate value: LI
-    - Uncommon or inaccurate value: LY
-    - Uncommon or inaccurate value: LH
-    - Uncommon or inaccurate value: LU
-    - Uncommon or inaccurate value: MI
-    - Uncommon or inaccurate value: MY
-    - Uncommon or inaccurate value: MV
-    - Uncommon or inaccurate value: ML
-    - Uncommon or inaccurate value: MP
-    - Uncommon or inaccurate value: MX
-    - Uncommon or inaccurate value: MG
-    - Uncommon or inaccurate value: MJ
-    - Uncommon or inaccurate value: MH
-    - Uncommon or inaccurate value: MO
-    - Uncommon or inaccurate value: BM
-    - Uncommon or inaccurate value: WA
-    - Uncommon or inaccurate value: NP
-    - Uncommon or inaccurate value: NC
-    - Uncommon or inaccurate value: NZ
-    - Uncommon or inaccurate value: NU
-    - Uncommon or inaccurate value: NG
-    - Uncommon or inaccurate value: NI
-    - Uncommon or inaccurate value: NO
-    - Uncommon or inaccurate value: MU
-    - Uncommon or inaccurate value: PK
-    - Uncommon or inaccurate value: WE
-    - Uncommon or inaccurate value: PM
-    - Uncommon or inaccurate value: PP
-    - Uncommon or inaccurate value: PA
-    - Uncommon or inaccurate value: PE
-    - Uncommon or inaccurate value: RP
-    - Uncommon or inaccurate value: PO
-    - Uncommon or inaccurate value: QA
-    - Uncommon or inaccurate value: RO
-    - Uncommon or inaccurate value: RS
-    - Uncommon or inaccurate value: RW
-    - Uncommon or inaccurate value: SH
-    - Uncommon or inaccurate value: SC
-    - Uncommon or inaccurate value: ST
-    - Uncommon or inaccurate value: VC
-    - Uncommon or inaccurate value: WS
-    - Uncommon or inaccurate value: SA
-    - Uncommon or inaccurate value: SG
-    - Uncommon or inaccurate value: SE
-    - Uncommon or inaccurate value: SL
-    - Uncommon or inaccurate value: LO
-    - Uncommon or inaccurate value: BP
-    - Uncommon or inaccurate value: SO
-    - Uncommon or inaccurate value: SF
-    - Uncommon or inaccurate value: SP
-    - Uncommon or inaccurate value: CE
-    - Uncommon or inaccurate value: SU
-    - Uncommon or inaccurate value: NS
-    - Uncommon or inaccurate value: SW
-    - Uncommon or inaccurate value: SZ
-    - Uncommon or inaccurate value: SY
-    - Uncommon or inaccurate value: TH
-    - Uncommon or inaccurate value: TO
-    - Uncommon or inaccurate value: TN
-    - Uncommon or inaccurate value: TD
-    - Uncommon or inaccurate value: TS
-    - Uncommon or inaccurate value: TX
-    - Uncommon or inaccurate value: TK
-    - Uncommon or inaccurate value: TV
-    - Uncommon or inaccurate value: VQ
-    - Uncommon or inaccurate value: UG
-    - Uncommon or inaccurate value: UP
-    - Uncommon or inaccurate value: AE
-    - Uncommon or inaccurate value: UK
-    - Uncommon or inaccurate value: US
-    - Uncommon or inaccurate value: UY
-    - Uncommon or inaccurate value: NH
-    - Uncommon or inaccurate value: VM
-    - Uncommon or inaccurate value: WF
-    - Uncommon or inaccurate value: ZA
-    - Uncommon or inaccurate value: ZI
+    - Unusual or inaccurate value: AL
+    - Unusual or inaccurate value: AG
+    - Unusual or inaccurate value: AQ
+    - Unusual or inaccurate value: AO
+    - Unusual or inaccurate value: AV
+    - Unusual or inaccurate value: AC
+    - Unusual or inaccurate value: AR
+    - Unusual or inaccurate value: AS
+    - Unusual or inaccurate value: AU
+    - Unusual or inaccurate value: BG
+    - Unusual or inaccurate value: BB
+    - Unusual or inaccurate value: BE
+    - Unusual or inaccurate value: BH
+    - Unusual or inaccurate value: BN
+    - Unusual or inaccurate value: BT
+    - Unusual or inaccurate value: BL
+    - Unusual or inaccurate value: BK
+    - Unusual or inaccurate value: BC
+    - Unusual or inaccurate value: BR
+    - Unusual or inaccurate value: VI
+    - Unusual or inaccurate value: BX
+    - Unusual or inaccurate value: BU
+    - Unusual or inaccurate value: UV
+    - Unusual or inaccurate value: BY
+    - Unusual or inaccurate value: CB
+    - Unusual or inaccurate value: CM
+    - Unusual or inaccurate value: CA
+    - Unusual or inaccurate value: CV
+    - Unusual or inaccurate value: CJ
+    - Unusual or inaccurate value: CT
+    - Unusual or inaccurate value: CD
+    - Unusual or inaccurate value: CI
+    - Unusual or inaccurate value: CO
+    - Unusual or inaccurate value: CW
+    - Unusual or inaccurate value: CS
+    - Unusual or inaccurate value: CU
+    - Unusual or inaccurate value: CY
+    - Unusual or inaccurate value: EZ
+    - Unusual or inaccurate value: DA
+    - Unusual or inaccurate value: DJ
+    - Unusual or inaccurate value: DO
+    - Unusual or inaccurate value: DR
+    - Unusual or inaccurate value: EC
+    - Unusual or inaccurate value: ES
+    - Unusual or inaccurate value: FI
+    - Unusual or inaccurate value: FR
+    - Unusual or inaccurate value: FP
+    - Unusual or inaccurate value: GB
+    - Unusual or inaccurate value: GG
+    - Unusual or inaccurate value: GM
+    - Unusual or inaccurate value: GH
+    - Unusual or inaccurate value: GR
+    - Unusual or inaccurate value: GJ
+    - Unusual or inaccurate value: GT
+    - Unusual or inaccurate value: GV
+    - Unusual or inaccurate value: PU
+    - Unusual or inaccurate value: GY
+    - Unusual or inaccurate value: HA
+    - Unusual or inaccurate value: HO
+    - Unusual or inaccurate value: HU
+    - Unusual or inaccurate value: IC
+    - Unusual or inaccurate value: IN
+    - Unusual or inaccurate value: ID
+    - Unusual or inaccurate value: IZ
+    - Unusual or inaccurate value: EI
+    - Unusual or inaccurate value: IM
+    - Unusual or inaccurate value: IS
+    - Unusual or inaccurate value: IT
+    - Unusual or inaccurate value: JM
+    - Unusual or inaccurate value: JA
+    - Unusual or inaccurate value: JO
+    - Unusual or inaccurate value: KE
+    - Unusual or inaccurate value: KR
+    - Unusual or inaccurate value: KU
+    - Unusual or inaccurate value: KG
+    - Unusual or inaccurate value: LA
+    - Unusual or inaccurate value: LG
+    - Unusual or inaccurate value: LE
+    - Unusual or inaccurate value: LI
+    - Unusual or inaccurate value: LY
+    - Unusual or inaccurate value: LH
+    - Unusual or inaccurate value: LU
+    - Unusual or inaccurate value: MI
+    - Unusual or inaccurate value: MY
+    - Unusual or inaccurate value: MV
+    - Unusual or inaccurate value: ML
+    - Unusual or inaccurate value: MP
+    - Unusual or inaccurate value: MX
+    - Unusual or inaccurate value: MG
+    - Unusual or inaccurate value: MJ
+    - Unusual or inaccurate value: MH
+    - Unusual or inaccurate value: MO
+    - Unusual or inaccurate value: BM
+    - Unusual or inaccurate value: WA
+    - Unusual or inaccurate value: NP
+    - Unusual or inaccurate value: NC
+    - Unusual or inaccurate value: NZ
+    - Unusual or inaccurate value: NU
+    - Unusual or inaccurate value: NG
+    - Unusual or inaccurate value: NI
+    - Unusual or inaccurate value: NO
+    - Unusual or inaccurate value: MU
+    - Unusual or inaccurate value: PK
+    - Unusual or inaccurate value: WE
+    - Unusual or inaccurate value: PM
+    - Unusual or inaccurate value: PP
+    - Unusual or inaccurate value: PA
+    - Unusual or inaccurate value: PE
+    - Unusual or inaccurate value: RP
+    - Unusual or inaccurate value: PO
+    - Unusual or inaccurate value: QA
+    - Unusual or inaccurate value: RO
+    - Unusual or inaccurate value: RS
+    - Unusual or inaccurate value: RW
+    - Unusual or inaccurate value: SH
+    - Unusual or inaccurate value: SC
+    - Unusual or inaccurate value: ST
+    - Unusual or inaccurate value: VC
+    - Unusual or inaccurate value: WS
+    - Unusual or inaccurate value: SA
+    - Unusual or inaccurate value: SG
+    - Unusual or inaccurate value: SE
+    - Unusual or inaccurate value: SL
+    - Unusual or inaccurate value: LO
+    - Unusual or inaccurate value: BP
+    - Unusual or inaccurate value: SO
+    - Unusual or inaccurate value: SF
+    - Unusual or inaccurate value: SP
+    - Unusual or inaccurate value: CE
+    - Unusual or inaccurate value: SU
+    - Unusual or inaccurate value: NS
+    - Unusual or inaccurate value: SW
+    - Unusual or inaccurate value: SZ
+    - Unusual or inaccurate value: SY
+    - Unusual or inaccurate value: TH
+    - Unusual or inaccurate value: TO
+    - Unusual or inaccurate value: TN
+    - Unusual or inaccurate value: TD
+    - Unusual or inaccurate value: TS
+    - Unusual or inaccurate value: TX
+    - Unusual or inaccurate value: TK
+    - Unusual or inaccurate value: TV
+    - Unusual or inaccurate value: VQ
+    - Unusual or inaccurate value: UG
+    - Unusual or inaccurate value: UP
+    - Unusual or inaccurate value: AE
+    - Unusual or inaccurate value: UK
+    - Unusual or inaccurate value: US
+    - Unusual or inaccurate value: UY
+    - Unusual or inaccurate value: NH
+    - Unusual or inaccurate value: VM
+    - Unusual or inaccurate value: WF
+    - Unusual or inaccurate value: ZA
+    - Unusual or inaccurate value: ZI
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Developed or Developing`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `PASSED`
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Sub-region Code`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
-  - Invalid rows:
-    - Uncommon or inaccurate value: 53
-    - Uncommon or inaccurate value: 21
-    - Uncommon or inaccurate value: 30
-    - Uncommon or inaccurate value: 57
-    - Uncommon or inaccurate value: 143
-    - Uncommon or inaccurate value: 30
-    - Uncommon or inaccurate value: 53
-    - Uncommon or inaccurate value: 143
-    - Uncommon or inaccurate value: 21
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU2.1]** Integers are separated from decimals by a dot “.”.: `PASSED`
 - **[IEU2.2]** Thousands must not use separators.: `PASSED`
@@ -607,555 +395,550 @@
     - Column 'Sub-region Code' does not contain a unit in its header.
 
 ### Column: `Display_Name`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: Albania
-    - Uncommon or inaccurate value: Algeria
-    - Uncommon or inaccurate value: American Samoa
-    - Uncommon or inaccurate value: Angola
-    - Uncommon or inaccurate value: Anguilla
-    - Uncommon or inaccurate value: Antigua and Barbuda
-    - Uncommon or inaccurate value: Argentina
-    - Uncommon or inaccurate value: Australia
-    - Uncommon or inaccurate value: Austria
-    - Uncommon or inaccurate value: Bangladesh
-    - Uncommon or inaccurate value: Barbados
-    - Uncommon or inaccurate value: Belgium
-    - Uncommon or inaccurate value: Belize
-    - Uncommon or inaccurate value: Benin
-    - Uncommon or inaccurate value: Bhutan
-    - Uncommon or inaccurate value: Bolivia
-    - Uncommon or inaccurate value: Bosnia and Herzegovina
-    - Uncommon or inaccurate value: Botswana
-    - Uncommon or inaccurate value: Brazil
-    - Uncommon or inaccurate value: British Virgin Islands
-    - Uncommon or inaccurate value: Brunei
-    - Uncommon or inaccurate value: Bulgaria
-    - Uncommon or inaccurate value: Burkina Faso
-    - Uncommon or inaccurate value: Burundi
-    - Uncommon or inaccurate value: Cambodia
-    - Uncommon or inaccurate value: Cameroon
-    - Uncommon or inaccurate value: Canada
-    - Uncommon or inaccurate value: Cape Verde
-    - Uncommon or inaccurate value: Cayman Islands
-    - Uncommon or inaccurate value: Central African Republic
-    - Uncommon or inaccurate value: Chad
-    - Uncommon or inaccurate value: Chile
-    - Uncommon or inaccurate value: Colombia
-    - Uncommon or inaccurate value: Cook Islands
-    - Uncommon or inaccurate value: Costa Rica
-    - Uncommon or inaccurate value: Cuba
-    - Uncommon or inaccurate value: Cyprus
-    - Uncommon or inaccurate value: Czechia
-    - Uncommon or inaccurate value: Denmark
-    - Uncommon or inaccurate value: Djibouti
-    - Uncommon or inaccurate value: Dominica
-    - Uncommon or inaccurate value: Dominican Republic
-    - Uncommon or inaccurate value: Ecuador
-    - Uncommon or inaccurate value: El Salvador
-    - Uncommon or inaccurate value: Finland
-    - Uncommon or inaccurate value: France
-    - Uncommon or inaccurate value: French Polynesia
-    - Uncommon or inaccurate value: Gabon
-    - Uncommon or inaccurate value: Georgia
-    - Uncommon or inaccurate value: Germany
-    - Uncommon or inaccurate value: Ghana
-    - Uncommon or inaccurate value: Greece
-    - Uncommon or inaccurate value: Grenada
-    - Uncommon or inaccurate value: Guatemala
-    - Uncommon or inaccurate value: Guinea
-    - Uncommon or inaccurate value: Guinea-Bissau
-    - Uncommon or inaccurate value: Guyana
-    - Uncommon or inaccurate value: Haiti
-    - Uncommon or inaccurate value: Honduras
-    - Uncommon or inaccurate value: Hungary
-    - Uncommon or inaccurate value: Iceland
-    - Uncommon or inaccurate value: India
-    - Uncommon or inaccurate value: Indonesia
-    - Uncommon or inaccurate value: Iraq
-    - Uncommon or inaccurate value: Ireland
-    - Uncommon or inaccurate value: Isle of Man
-    - Uncommon or inaccurate value: Israel
-    - Uncommon or inaccurate value: Italy
-    - Uncommon or inaccurate value: Jamaica
-    - Uncommon or inaccurate value: Japan
-    - Uncommon or inaccurate value: Jordan
-    - Uncommon or inaccurate value: Kenya
-    - Uncommon or inaccurate value: Kiribati
-    - Uncommon or inaccurate value: Kuwait
-    - Uncommon or inaccurate value: Kyrgyzstan
-    - Uncommon or inaccurate value: Laos
-    - Uncommon or inaccurate value: Latvia
-    - Uncommon or inaccurate value: Lebanon
-    - Uncommon or inaccurate value: Liberia
-    - Uncommon or inaccurate value: Libya
-    - Uncommon or inaccurate value: Lithuania
-    - Uncommon or inaccurate value: Luxembourg
-    - Uncommon or inaccurate value: Malawi
-    - Uncommon or inaccurate value: Malaysia
-    - Uncommon or inaccurate value: Maldives
-    - Uncommon or inaccurate value: Mali
-    - Uncommon or inaccurate value: Mauritius
-    - Uncommon or inaccurate value: Mexico
-    - Uncommon or inaccurate value: Mongolia
-    - Uncommon or inaccurate value: Montenegro
-    - Uncommon or inaccurate value: Montserrat
-    - Uncommon or inaccurate value: Morocco
-    - Uncommon or inaccurate value: Myanmar
-    - Uncommon or inaccurate value: Namibia
-    - Uncommon or inaccurate value: Nepal
-    - Uncommon or inaccurate value: New Caledonia
-    - Uncommon or inaccurate value: New Zealand
-    - Uncommon or inaccurate value: Nicaragua
-    - Uncommon or inaccurate value: Niger
-    - Uncommon or inaccurate value: Nigeria
-    - Uncommon or inaccurate value: Norway
-    - Uncommon or inaccurate value: Oman
-    - Uncommon or inaccurate value: Pakistan
-    - Uncommon or inaccurate value: Palestinian Territory
-    - Uncommon or inaccurate value: Panama
-    - Uncommon or inaccurate value: Papua New Guinea
-    - Uncommon or inaccurate value: Paraguay
-    - Uncommon or inaccurate value: Peru
-    - Uncommon or inaccurate value: Philippines
-    - Uncommon or inaccurate value: Portugal
-    - Uncommon or inaccurate value: Qatar
-    - Uncommon or inaccurate value: Romania
-    - Uncommon or inaccurate value: Russia
-    - Uncommon or inaccurate value: Rwanda
-    - Uncommon or inaccurate value: Saint Helena
-    - Uncommon or inaccurate value: Saint Kitts and Nevis
-    - Uncommon or inaccurate value: Saint Lucia
-    - Uncommon or inaccurate value: Saint Vincent and the Grenadines
-    - Uncommon or inaccurate value: Samoa
-    - Uncommon or inaccurate value: Saudi Arabia
-    - Uncommon or inaccurate value: Senegal
-    - Uncommon or inaccurate value: Seychelles
-    - Uncommon or inaccurate value: Sierra Leone
-    - Uncommon or inaccurate value: Slovakia
-    - Uncommon or inaccurate value: Solomon Islands
-    - Uncommon or inaccurate value: Somalia
-    - Uncommon or inaccurate value: South Africa
-    - Uncommon or inaccurate value: Spain
-    - Uncommon or inaccurate value: Sri Lanka
-    - Uncommon or inaccurate value: Sudan
-    - Uncommon or inaccurate value: Suriname
-    - Uncommon or inaccurate value: Sweden
-    - Uncommon or inaccurate value: Switzerland
-    - Uncommon or inaccurate value: Syria
-    - Uncommon or inaccurate value: Thailand
-    - Uncommon or inaccurate value: Togo
-    - Uncommon or inaccurate value: Tonga
-    - Uncommon or inaccurate value: Trinidad and Tobago
-    - Uncommon or inaccurate value: Tunisia
-    - Uncommon or inaccurate value: Turkmenistan
-    - Uncommon or inaccurate value: Turks and Caicos Islands
-    - Uncommon or inaccurate value: Tuvalu
-    - Uncommon or inaccurate value: U.S. Virgin Islands
-    - Uncommon or inaccurate value: Uganda
-    - Uncommon or inaccurate value: Ukraine
-    - Uncommon or inaccurate value: United Arab Emirates
-    - Uncommon or inaccurate value: United Kingdom
-    - Uncommon or inaccurate value: United States
-    - Uncommon or inaccurate value: Uruguay
-    - Uncommon or inaccurate value: Vanuatu
-    - Uncommon or inaccurate value: Vietnam
-    - Uncommon or inaccurate value: Wallis and Futuna
-    - Uncommon or inaccurate value: Zambia
-    - Uncommon or inaccurate value: Zimbabwe
+    - Unusual or inaccurate value: Albania
+    - Unusual or inaccurate value: Algeria
+    - Unusual or inaccurate value: American Samoa
+    - Unusual or inaccurate value: Angola
+    - Unusual or inaccurate value: Anguilla
+    - Unusual or inaccurate value: Antigua and Barbuda
+    - Unusual or inaccurate value: Argentina
+    - Unusual or inaccurate value: Australia
+    - Unusual or inaccurate value: Austria
+    - Unusual or inaccurate value: Bangladesh
+    - Unusual or inaccurate value: Barbados
+    - Unusual or inaccurate value: Belgium
+    - Unusual or inaccurate value: Belize
+    - Unusual or inaccurate value: Benin
+    - Unusual or inaccurate value: Bhutan
+    - Unusual or inaccurate value: Bolivia
+    - Unusual or inaccurate value: Bosnia and Herzegovina
+    - Unusual or inaccurate value: Botswana
+    - Unusual or inaccurate value: Brazil
+    - Unusual or inaccurate value: British Virgin Islands
+    - Unusual or inaccurate value: Brunei
+    - Unusual or inaccurate value: Bulgaria
+    - Unusual or inaccurate value: Burkina Faso
+    - Unusual or inaccurate value: Burundi
+    - Unusual or inaccurate value: Cambodia
+    - Unusual or inaccurate value: Cameroon
+    - Unusual or inaccurate value: Canada
+    - Unusual or inaccurate value: Cape Verde
+    - Unusual or inaccurate value: Cayman Islands
+    - Unusual or inaccurate value: Central African Republic
+    - Unusual or inaccurate value: Chad
+    - Unusual or inaccurate value: Chile
+    - Unusual or inaccurate value: Colombia
+    - Unusual or inaccurate value: Cook Islands
+    - Unusual or inaccurate value: Costa Rica
+    - Unusual or inaccurate value: Cuba
+    - Unusual or inaccurate value: Cyprus
+    - Unusual or inaccurate value: Czechia
+    - Unusual or inaccurate value: Denmark
+    - Unusual or inaccurate value: Djibouti
+    - Unusual or inaccurate value: Dominica
+    - Unusual or inaccurate value: Dominican Republic
+    - Unusual or inaccurate value: Ecuador
+    - Unusual or inaccurate value: El Salvador
+    - Unusual or inaccurate value: Finland
+    - Unusual or inaccurate value: France
+    - Unusual or inaccurate value: French Polynesia
+    - Unusual or inaccurate value: Gabon
+    - Unusual or inaccurate value: Georgia
+    - Unusual or inaccurate value: Germany
+    - Unusual or inaccurate value: Ghana
+    - Unusual or inaccurate value: Greece
+    - Unusual or inaccurate value: Grenada
+    - Unusual or inaccurate value: Guatemala
+    - Unusual or inaccurate value: Guinea
+    - Unusual or inaccurate value: Guinea-Bissau
+    - Unusual or inaccurate value: Guyana
+    - Unusual or inaccurate value: Haiti
+    - Unusual or inaccurate value: Honduras
+    - Unusual or inaccurate value: Hungary
+    - Unusual or inaccurate value: Iceland
+    - Unusual or inaccurate value: India
+    - Unusual or inaccurate value: Indonesia
+    - Unusual or inaccurate value: Iraq
+    - Unusual or inaccurate value: Ireland
+    - Unusual or inaccurate value: Isle of Man
+    - Unusual or inaccurate value: Israel
+    - Unusual or inaccurate value: Italy
+    - Unusual or inaccurate value: Jamaica
+    - Unusual or inaccurate value: Japan
+    - Unusual or inaccurate value: Jordan
+    - Unusual or inaccurate value: Kenya
+    - Unusual or inaccurate value: Kiribati
+    - Unusual or inaccurate value: Kuwait
+    - Unusual or inaccurate value: Kyrgyzstan
+    - Unusual or inaccurate value: Laos
+    - Unusual or inaccurate value: Latvia
+    - Unusual or inaccurate value: Lebanon
+    - Unusual or inaccurate value: Liberia
+    - Unusual or inaccurate value: Libya
+    - Unusual or inaccurate value: Lithuania
+    - Unusual or inaccurate value: Luxembourg
+    - Unusual or inaccurate value: Malawi
+    - Unusual or inaccurate value: Malaysia
+    - Unusual or inaccurate value: Maldives
+    - Unusual or inaccurate value: Mali
+    - Unusual or inaccurate value: Mauritius
+    - Unusual or inaccurate value: Mexico
+    - Unusual or inaccurate value: Mongolia
+    - Unusual or inaccurate value: Montenegro
+    - Unusual or inaccurate value: Montserrat
+    - Unusual or inaccurate value: Morocco
+    - Unusual or inaccurate value: Myanmar
+    - Unusual or inaccurate value: Namibia
+    - Unusual or inaccurate value: Nepal
+    - Unusual or inaccurate value: New Caledonia
+    - Unusual or inaccurate value: New Zealand
+    - Unusual or inaccurate value: Nicaragua
+    - Unusual or inaccurate value: Niger
+    - Unusual or inaccurate value: Nigeria
+    - Unusual or inaccurate value: Norway
+    - Unusual or inaccurate value: Oman
+    - Unusual or inaccurate value: Pakistan
+    - Unusual or inaccurate value: Palestinian Territory
+    - Unusual or inaccurate value: Panama
+    - Unusual or inaccurate value: Papua New Guinea
+    - Unusual or inaccurate value: Paraguay
+    - Unusual or inaccurate value: Peru
+    - Unusual or inaccurate value: Philippines
+    - Unusual or inaccurate value: Portugal
+    - Unusual or inaccurate value: Qatar
+    - Unusual or inaccurate value: Romania
+    - Unusual or inaccurate value: Russia
+    - Unusual or inaccurate value: Rwanda
+    - Unusual or inaccurate value: Saint Helena
+    - Unusual or inaccurate value: Saint Kitts and Nevis
+    - Unusual or inaccurate value: Saint Lucia
+    - Unusual or inaccurate value: Saint Vincent and the Grenadines
+    - Unusual or inaccurate value: Samoa
+    - Unusual or inaccurate value: Saudi Arabia
+    - Unusual or inaccurate value: Senegal
+    - Unusual or inaccurate value: Seychelles
+    - Unusual or inaccurate value: Sierra Leone
+    - Unusual or inaccurate value: Slovakia
+    - Unusual or inaccurate value: Solomon Islands
+    - Unusual or inaccurate value: Somalia
+    - Unusual or inaccurate value: South Africa
+    - Unusual or inaccurate value: Spain
+    - Unusual or inaccurate value: Sri Lanka
+    - Unusual or inaccurate value: Sudan
+    - Unusual or inaccurate value: Suriname
+    - Unusual or inaccurate value: Sweden
+    - Unusual or inaccurate value: Switzerland
+    - Unusual or inaccurate value: Syria
+    - Unusual or inaccurate value: Thailand
+    - Unusual or inaccurate value: Togo
+    - Unusual or inaccurate value: Tonga
+    - Unusual or inaccurate value: Trinidad and Tobago
+    - Unusual or inaccurate value: Tunisia
+    - Unusual or inaccurate value: Turkmenistan
+    - Unusual or inaccurate value: Turks and Caicos Islands
+    - Unusual or inaccurate value: Tuvalu
+    - Unusual or inaccurate value: U.S. Virgin Islands
+    - Unusual or inaccurate value: Uganda
+    - Unusual or inaccurate value: Ukraine
+    - Unusual or inaccurate value: United Arab Emirates
+    - Unusual or inaccurate value: United Kingdom
+    - Unusual or inaccurate value: United States
+    - Unusual or inaccurate value: Uruguay
+    - Unusual or inaccurate value: Vanuatu
+    - Unusual or inaccurate value: Vietnam
+    - Unusual or inaccurate value: Wallis and Futuna
+    - Unusual or inaccurate value: Zambia
+    - Unusual or inaccurate value: Zimbabwe
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
-- **[IEU3.2]** Data shall not consist of special characters.: `FAILED`
-  - Invalid rows:
-    - Special character found in value: Guinea-Bissau
-    - Special character found in value: U.S. Virgin Islands
+- **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Capital`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: Tirana
-    - Uncommon or inaccurate value: Algiers
-    - Uncommon or inaccurate value: Pago Pago
-    - Uncommon or inaccurate value: Luanda
-    - Uncommon or inaccurate value: The Valley
-    - Uncommon or inaccurate value: St. John's
-    - Uncommon or inaccurate value: Buenos Aires
-    - Uncommon or inaccurate value: Canberra
-    - Uncommon or inaccurate value: Vienna
-    - Uncommon or inaccurate value: Dhaka
-    - Uncommon or inaccurate value: Bridgetown
-    - Uncommon or inaccurate value: Brussels
-    - Uncommon or inaccurate value: Belmopan
-    - Uncommon or inaccurate value: Porto-Novo
-    - Uncommon or inaccurate value: Thimphu
-    - Uncommon or inaccurate value: Sucre
-    - Uncommon or inaccurate value: Sarajevo
-    - Uncommon or inaccurate value: Gaborone
-    - Uncommon or inaccurate value: Brasilia
-    - Uncommon or inaccurate value: Road Town
-    - Uncommon or inaccurate value: Bandar Seri Begawan
-    - Uncommon or inaccurate value: Sofia
-    - Uncommon or inaccurate value: Ouagadougou
-    - Uncommon or inaccurate value: Bujumbura
-    - Uncommon or inaccurate value: Phnom Penh
-    - Uncommon or inaccurate value: Yaounde
-    - Uncommon or inaccurate value: Ottawa
-    - Uncommon or inaccurate value: Praia
-    - Uncommon or inaccurate value: George Town
-    - Uncommon or inaccurate value: Bangui
-    - Uncommon or inaccurate value: N'Djamena
-    - Uncommon or inaccurate value: Santiago
-    - Uncommon or inaccurate value: Bogota
-    - Uncommon or inaccurate value: Avarua
-    - Uncommon or inaccurate value: San Jose
-    - Uncommon or inaccurate value: Havana
-    - Uncommon or inaccurate value: Nicosia
-    - Uncommon or inaccurate value: Prague
-    - Uncommon or inaccurate value: Copenhagen
-    - Uncommon or inaccurate value: Djibouti
-    - Uncommon or inaccurate value: Roseau
-    - Uncommon or inaccurate value: Santo Domingo
-    - Uncommon or inaccurate value: Quito
-    - Uncommon or inaccurate value: San Salvador
-    - Uncommon or inaccurate value: Helsinki
-    - Uncommon or inaccurate value: Paris
-    - Uncommon or inaccurate value: Papeete
-    - Uncommon or inaccurate value: Libreville
-    - Uncommon or inaccurate value: Tbilisi
-    - Uncommon or inaccurate value: Berlin
-    - Uncommon or inaccurate value: Accra
-    - Uncommon or inaccurate value: Athens
-    - Uncommon or inaccurate value: St. George's
-    - Uncommon or inaccurate value: Guatemala City
-    - Uncommon or inaccurate value: Conakry
-    - Uncommon or inaccurate value: Bissau
-    - Uncommon or inaccurate value: Georgetown
-    - Uncommon or inaccurate value: Port-au-Prince
-    - Uncommon or inaccurate value: Tegucigalpa
-    - Uncommon or inaccurate value: Budapest
-    - Uncommon or inaccurate value: Reykjavik
-    - Uncommon or inaccurate value: New Delhi
-    - Uncommon or inaccurate value: Jakarta
-    - Uncommon or inaccurate value: Baghdad
-    - Uncommon or inaccurate value: Dublin
-    - Uncommon or inaccurate value: Douglas
-    - Uncommon or inaccurate value: Jerusalem
-    - Uncommon or inaccurate value: Rome
-    - Uncommon or inaccurate value: Kingston
-    - Uncommon or inaccurate value: Tokyo
-    - Uncommon or inaccurate value: Amman
-    - Uncommon or inaccurate value: Nairobi
-    - Uncommon or inaccurate value: Tarawa
-    - Uncommon or inaccurate value: Kuwait City
-    - Uncommon or inaccurate value: Bishkek
-    - Uncommon or inaccurate value: Vientiane
-    - Uncommon or inaccurate value: Riga
-    - Uncommon or inaccurate value: Beirut
-    - Uncommon or inaccurate value: Monrovia
-    - Uncommon or inaccurate value: Tripoli
-    - Uncommon or inaccurate value: Vilnius
-    - Uncommon or inaccurate value: Luxembourg
-    - Uncommon or inaccurate value: Lilongwe
-    - Uncommon or inaccurate value: Kuala Lumpur
-    - Uncommon or inaccurate value: Male
-    - Uncommon or inaccurate value: Bamako
-    - Uncommon or inaccurate value: Port Louis
-    - Uncommon or inaccurate value: Mexico City
-    - Uncommon or inaccurate value: Ulan Bator
-    - Uncommon or inaccurate value: Podgorica
-    - Uncommon or inaccurate value: Plymouth
-    - Uncommon or inaccurate value: Rabat
-    - Uncommon or inaccurate value: Nay Pyi Taw
-    - Uncommon or inaccurate value: Windhoek
-    - Uncommon or inaccurate value: Kathmandu
-    - Uncommon or inaccurate value: Noumea
-    - Uncommon or inaccurate value: Wellington
-    - Uncommon or inaccurate value: Managua
-    - Uncommon or inaccurate value: Niamey
-    - Uncommon or inaccurate value: Abuja
-    - Uncommon or inaccurate value: Oslo
-    - Uncommon or inaccurate value: Muscat
-    - Uncommon or inaccurate value: Islamabad
-    - Uncommon or inaccurate value: East Jerusalem
-    - Uncommon or inaccurate value: Panama City
-    - Uncommon or inaccurate value: Port Moresby
-    - Uncommon or inaccurate value: Asuncion
-    - Uncommon or inaccurate value: Lima
-    - Uncommon or inaccurate value: Manila
-    - Uncommon or inaccurate value: Lisbon
-    - Uncommon or inaccurate value: Doha
-    - Uncommon or inaccurate value: Bucharest
-    - Uncommon or inaccurate value: Moscow
-    - Uncommon or inaccurate value: Kigali
-    - Uncommon or inaccurate value: Jamestown
-    - Uncommon or inaccurate value: Basseterre
-    - Uncommon or inaccurate value: Castries
-    - Uncommon or inaccurate value: Kingstown
-    - Uncommon or inaccurate value: Apia
-    - Uncommon or inaccurate value: Riyadh
-    - Uncommon or inaccurate value: Dakar
-    - Uncommon or inaccurate value: Victoria
-    - Uncommon or inaccurate value: Freetown
-    - Uncommon or inaccurate value: Bratislava
-    - Uncommon or inaccurate value: Honiara
-    - Uncommon or inaccurate value: Mogadishu
-    - Uncommon or inaccurate value: Pretoria
-    - Uncommon or inaccurate value: Madrid
-    - Uncommon or inaccurate value: Colombo
-    - Uncommon or inaccurate value: Khartoum
-    - Uncommon or inaccurate value: Paramaribo
-    - Uncommon or inaccurate value: Stockholm
-    - Uncommon or inaccurate value: Bern
-    - Uncommon or inaccurate value: Damascus
-    - Uncommon or inaccurate value: Bangkok
-    - Uncommon or inaccurate value: Lome
-    - Uncommon or inaccurate value: Nuku'alofa
-    - Uncommon or inaccurate value: Port of Spain
-    - Uncommon or inaccurate value: Tunis
-    - Uncommon or inaccurate value: Ashgabat
-    - Uncommon or inaccurate value: Cockburn Town
-    - Uncommon or inaccurate value: Funafuti
-    - Uncommon or inaccurate value: Charlotte Amalie
-    - Uncommon or inaccurate value: Kampala
-    - Uncommon or inaccurate value: Kyiv
-    - Uncommon or inaccurate value: Abu Dhabi
-    - Uncommon or inaccurate value: London
-    - Uncommon or inaccurate value: Washington
-    - Uncommon or inaccurate value: Montevideo
-    - Uncommon or inaccurate value: Port Vila
-    - Uncommon or inaccurate value: Hanoi
-    - Uncommon or inaccurate value: Mata Utu
-    - Uncommon or inaccurate value: Lusaka
-    - Uncommon or inaccurate value: Harare
+    - Unusual or inaccurate value: Tirana
+    - Unusual or inaccurate value: Algiers
+    - Unusual or inaccurate value: Pago Pago
+    - Unusual or inaccurate value: Luanda
+    - Unusual or inaccurate value: The Valley
+    - Unusual or inaccurate value: St. John's
+    - Unusual or inaccurate value: Buenos Aires
+    - Unusual or inaccurate value: Canberra
+    - Unusual or inaccurate value: Vienna
+    - Unusual or inaccurate value: Dhaka
+    - Unusual or inaccurate value: Bridgetown
+    - Unusual or inaccurate value: Brussels
+    - Unusual or inaccurate value: Belmopan
+    - Unusual or inaccurate value: Porto-Novo
+    - Unusual or inaccurate value: Thimphu
+    - Unusual or inaccurate value: Sucre
+    - Unusual or inaccurate value: Sarajevo
+    - Unusual or inaccurate value: Gaborone
+    - Unusual or inaccurate value: Brasilia
+    - Unusual or inaccurate value: Road Town
+    - Unusual or inaccurate value: Bandar Seri Begawan
+    - Unusual or inaccurate value: Sofia
+    - Unusual or inaccurate value: Ouagadougou
+    - Unusual or inaccurate value: Bujumbura
+    - Unusual or inaccurate value: Phnom Penh
+    - Unusual or inaccurate value: Yaounde
+    - Unusual or inaccurate value: Ottawa
+    - Unusual or inaccurate value: Praia
+    - Unusual or inaccurate value: George Town
+    - Unusual or inaccurate value: Bangui
+    - Unusual or inaccurate value: N'Djamena
+    - Unusual or inaccurate value: Santiago
+    - Unusual or inaccurate value: Bogota
+    - Unusual or inaccurate value: Avarua
+    - Unusual or inaccurate value: San Jose
+    - Unusual or inaccurate value: Havana
+    - Unusual or inaccurate value: Nicosia
+    - Unusual or inaccurate value: Prague
+    - Unusual or inaccurate value: Copenhagen
+    - Unusual or inaccurate value: Djibouti
+    - Unusual or inaccurate value: Roseau
+    - Unusual or inaccurate value: Santo Domingo
+    - Unusual or inaccurate value: Quito
+    - Unusual or inaccurate value: San Salvador
+    - Unusual or inaccurate value: Helsinki
+    - Unusual or inaccurate value: Paris
+    - Unusual or inaccurate value: Papeete
+    - Unusual or inaccurate value: Libreville
+    - Unusual or inaccurate value: Tbilisi
+    - Unusual or inaccurate value: Berlin
+    - Unusual or inaccurate value: Accra
+    - Unusual or inaccurate value: Athens
+    - Unusual or inaccurate value: St. George's
+    - Unusual or inaccurate value: Guatemala City
+    - Unusual or inaccurate value: Conakry
+    - Unusual or inaccurate value: Bissau
+    - Unusual or inaccurate value: Georgetown
+    - Unusual or inaccurate value: Port-au-Prince
+    - Unusual or inaccurate value: Tegucigalpa
+    - Unusual or inaccurate value: Budapest
+    - Unusual or inaccurate value: Reykjavik
+    - Unusual or inaccurate value: New Delhi
+    - Unusual or inaccurate value: Jakarta
+    - Unusual or inaccurate value: Baghdad
+    - Unusual or inaccurate value: Dublin
+    - Unusual or inaccurate value: Douglas
+    - Unusual or inaccurate value: Jerusalem
+    - Unusual or inaccurate value: Rome
+    - Unusual or inaccurate value: Kingston
+    - Unusual or inaccurate value: Tokyo
+    - Unusual or inaccurate value: Amman
+    - Unusual or inaccurate value: Nairobi
+    - Unusual or inaccurate value: Tarawa
+    - Unusual or inaccurate value: Kuwait City
+    - Unusual or inaccurate value: Bishkek
+    - Unusual or inaccurate value: Vientiane
+    - Unusual or inaccurate value: Riga
+    - Unusual or inaccurate value: Beirut
+    - Unusual or inaccurate value: Monrovia
+    - Unusual or inaccurate value: Tripoli
+    - Unusual or inaccurate value: Vilnius
+    - Unusual or inaccurate value: Luxembourg
+    - Unusual or inaccurate value: Lilongwe
+    - Unusual or inaccurate value: Kuala Lumpur
+    - Unusual or inaccurate value: Male
+    - Unusual or inaccurate value: Bamako
+    - Unusual or inaccurate value: Port Louis
+    - Unusual or inaccurate value: Mexico City
+    - Unusual or inaccurate value: Ulan Bator
+    - Unusual or inaccurate value: Podgorica
+    - Unusual or inaccurate value: Plymouth
+    - Unusual or inaccurate value: Rabat
+    - Unusual or inaccurate value: Nay Pyi Taw
+    - Unusual or inaccurate value: Windhoek
+    - Unusual or inaccurate value: Kathmandu
+    - Unusual or inaccurate value: Noumea
+    - Unusual or inaccurate value: Wellington
+    - Unusual or inaccurate value: Managua
+    - Unusual or inaccurate value: Niamey
+    - Unusual or inaccurate value: Abuja
+    - Unusual or inaccurate value: Oslo
+    - Unusual or inaccurate value: Muscat
+    - Unusual or inaccurate value: Islamabad
+    - Unusual or inaccurate value: East Jerusalem
+    - Unusual or inaccurate value: Panama City
+    - Unusual or inaccurate value: Port Moresby
+    - Unusual or inaccurate value: Asuncion
+    - Unusual or inaccurate value: Lima
+    - Unusual or inaccurate value: Manila
+    - Unusual or inaccurate value: Lisbon
+    - Unusual or inaccurate value: Doha
+    - Unusual or inaccurate value: Bucharest
+    - Unusual or inaccurate value: Moscow
+    - Unusual or inaccurate value: Kigali
+    - Unusual or inaccurate value: Jamestown
+    - Unusual or inaccurate value: Basseterre
+    - Unusual or inaccurate value: Castries
+    - Unusual or inaccurate value: Kingstown
+    - Unusual or inaccurate value: Apia
+    - Unusual or inaccurate value: Riyadh
+    - Unusual or inaccurate value: Dakar
+    - Unusual or inaccurate value: Victoria
+    - Unusual or inaccurate value: Freetown
+    - Unusual or inaccurate value: Bratislava
+    - Unusual or inaccurate value: Honiara
+    - Unusual or inaccurate value: Mogadishu
+    - Unusual or inaccurate value: Pretoria
+    - Unusual or inaccurate value: Madrid
+    - Unusual or inaccurate value: Colombo
+    - Unusual or inaccurate value: Khartoum
+    - Unusual or inaccurate value: Paramaribo
+    - Unusual or inaccurate value: Stockholm
+    - Unusual or inaccurate value: Bern
+    - Unusual or inaccurate value: Damascus
+    - Unusual or inaccurate value: Bangkok
+    - Unusual or inaccurate value: Lome
+    - Unusual or inaccurate value: Nuku'alofa
+    - Unusual or inaccurate value: Port of Spain
+    - Unusual or inaccurate value: Tunis
+    - Unusual or inaccurate value: Ashgabat
+    - Unusual or inaccurate value: Cockburn Town
+    - Unusual or inaccurate value: Funafuti
+    - Unusual or inaccurate value: Charlotte Amalie
+    - Unusual or inaccurate value: Kampala
+    - Unusual or inaccurate value: Kyiv
+    - Unusual or inaccurate value: Abu Dhabi
+    - Unusual or inaccurate value: London
+    - Unusual or inaccurate value: Washington
+    - Unusual or inaccurate value: Montevideo
+    - Unusual or inaccurate value: Port Vila
+    - Unusual or inaccurate value: Hanoi
+    - Unusual or inaccurate value: Mata Utu
+    - Unusual or inaccurate value: Lusaka
+    - Unusual or inaccurate value: Harare
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `FAILED`
   - Invalid rows:
     - Special character found in value: St. John's
-    - Special character found in value: Porto-Novo
     - Special character found in value: N'Djamena
     - Special character found in value: St. George's
-    - Special character found in value: Port-au-Prince
     - Special character found in value: Nuku'alofa
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `ISO3`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: ALB
-    - Uncommon or inaccurate value: DZA
-    - Uncommon or inaccurate value: ASM
-    - Uncommon or inaccurate value: AGO
-    - Uncommon or inaccurate value: AIA
-    - Uncommon or inaccurate value: ATG
-    - Uncommon or inaccurate value: ARG
-    - Uncommon or inaccurate value: AUS
-    - Uncommon or inaccurate value: AUT
-    - Uncommon or inaccurate value: BGD
-    - Uncommon or inaccurate value: BRB
-    - Uncommon or inaccurate value: BEL
-    - Uncommon or inaccurate value: BLZ
-    - Uncommon or inaccurate value: BEN
-    - Uncommon or inaccurate value: BTN
-    - Uncommon or inaccurate value: BOL
-    - Uncommon or inaccurate value: BIH
-    - Uncommon or inaccurate value: BWA
-    - Uncommon or inaccurate value: BRA
-    - Uncommon or inaccurate value: VGB
-    - Uncommon or inaccurate value: BRN
-    - Uncommon or inaccurate value: BGR
-    - Uncommon or inaccurate value: BFA
-    - Uncommon or inaccurate value: BDI
-    - Uncommon or inaccurate value: KHM
-    - Uncommon or inaccurate value: CMR
-    - Uncommon or inaccurate value: CAN
-    - Uncommon or inaccurate value: CPV
-    - Uncommon or inaccurate value: CYM
-    - Uncommon or inaccurate value: CAF
-    - Uncommon or inaccurate value: TCD
-    - Uncommon or inaccurate value: CHL
-    - Uncommon or inaccurate value: COL
-    - Uncommon or inaccurate value: COK
-    - Uncommon or inaccurate value: CRI
-    - Uncommon or inaccurate value: CUB
-    - Uncommon or inaccurate value: CYP
-    - Uncommon or inaccurate value: CZE
-    - Uncommon or inaccurate value: DNK
-    - Uncommon or inaccurate value: DJI
-    - Uncommon or inaccurate value: DMA
-    - Uncommon or inaccurate value: DOM
-    - Uncommon or inaccurate value: ECU
-    - Uncommon or inaccurate value: SLV
-    - Uncommon or inaccurate value: FIN
-    - Uncommon or inaccurate value: FRA
-    - Uncommon or inaccurate value: PYF
-    - Uncommon or inaccurate value: GAB
-    - Uncommon or inaccurate value: GEO
-    - Uncommon or inaccurate value: DEU
-    - Uncommon or inaccurate value: GHA
-    - Uncommon or inaccurate value: GRC
-    - Uncommon or inaccurate value: GRD
-    - Uncommon or inaccurate value: GTM
-    - Uncommon or inaccurate value: GIN
-    - Uncommon or inaccurate value: GNB
-    - Uncommon or inaccurate value: GUY
-    - Uncommon or inaccurate value: HTI
-    - Uncommon or inaccurate value: HND
-    - Uncommon or inaccurate value: HUN
-    - Uncommon or inaccurate value: ISL
-    - Uncommon or inaccurate value: IND
-    - Uncommon or inaccurate value: IDN
-    - Uncommon or inaccurate value: IRQ
-    - Uncommon or inaccurate value: IRL
-    - Uncommon or inaccurate value: IMN
-    - Uncommon or inaccurate value: ISR
-    - Uncommon or inaccurate value: ITA
-    - Uncommon or inaccurate value: JAM
-    - Uncommon or inaccurate value: JPN
-    - Uncommon or inaccurate value: JOR
-    - Uncommon or inaccurate value: KEN
-    - Uncommon or inaccurate value: KIR
-    - Uncommon or inaccurate value: KWT
-    - Uncommon or inaccurate value: KGZ
-    - Uncommon or inaccurate value: LAO
-    - Uncommon or inaccurate value: LVA
-    - Uncommon or inaccurate value: LBN
-    - Uncommon or inaccurate value: LBR
-    - Uncommon or inaccurate value: LBY
-    - Uncommon or inaccurate value: LTU
-    - Uncommon or inaccurate value: LUX
-    - Uncommon or inaccurate value: MWI
-    - Uncommon or inaccurate value: MYS
-    - Uncommon or inaccurate value: MDV
-    - Uncommon or inaccurate value: MLI
-    - Uncommon or inaccurate value: MUS
-    - Uncommon or inaccurate value: MEX
-    - Uncommon or inaccurate value: MNG
-    - Uncommon or inaccurate value: MNE
-    - Uncommon or inaccurate value: MSR
-    - Uncommon or inaccurate value: MAR
-    - Uncommon or inaccurate value: MMR
-    - Uncommon or inaccurate value: NAM
-    - Uncommon or inaccurate value: NPL
-    - Uncommon or inaccurate value: NCL
-    - Uncommon or inaccurate value: NZL
-    - Uncommon or inaccurate value: NIC
-    - Uncommon or inaccurate value: NER
-    - Uncommon or inaccurate value: NGA
-    - Uncommon or inaccurate value: NOR
-    - Uncommon or inaccurate value: OMN
-    - Uncommon or inaccurate value: PAK
-    - Uncommon or inaccurate value: PSE
-    - Uncommon or inaccurate value: PAN
-    - Uncommon or inaccurate value: PNG
-    - Uncommon or inaccurate value: PRY
-    - Uncommon or inaccurate value: PER
-    - Uncommon or inaccurate value: PHL
-    - Uncommon or inaccurate value: PRT
-    - Uncommon or inaccurate value: QAT
-    - Uncommon or inaccurate value: ROU
-    - Uncommon or inaccurate value: RUS
-    - Uncommon or inaccurate value: RWA
-    - Uncommon or inaccurate value: SHN
-    - Uncommon or inaccurate value: KNA
-    - Uncommon or inaccurate value: LCA
-    - Uncommon or inaccurate value: VCT
-    - Uncommon or inaccurate value: WSM
-    - Uncommon or inaccurate value: SAU
-    - Uncommon or inaccurate value: SEN
-    - Uncommon or inaccurate value: SYC
-    - Uncommon or inaccurate value: SLE
-    - Uncommon or inaccurate value: SVK
-    - Uncommon or inaccurate value: SLB
-    - Uncommon or inaccurate value: SOM
-    - Uncommon or inaccurate value: ZAF
-    - Uncommon or inaccurate value: ESP
-    - Uncommon or inaccurate value: LKA
-    - Uncommon or inaccurate value: SDN
-    - Uncommon or inaccurate value: SUR
-    - Uncommon or inaccurate value: SWE
-    - Uncommon or inaccurate value: CHE
-    - Uncommon or inaccurate value: SYR
-    - Uncommon or inaccurate value: THA
-    - Uncommon or inaccurate value: TGO
-    - Uncommon or inaccurate value: TON
-    - Uncommon or inaccurate value: TTO
-    - Uncommon or inaccurate value: TUN
-    - Uncommon or inaccurate value: TKM
-    - Uncommon or inaccurate value: TCA
-    - Uncommon or inaccurate value: TUV
-    - Uncommon or inaccurate value: VIR
-    - Uncommon or inaccurate value: UGA
-    - Uncommon or inaccurate value: UKR
-    - Uncommon or inaccurate value: ARE
-    - Uncommon or inaccurate value: GBR
-    - Uncommon or inaccurate value: USA
-    - Uncommon or inaccurate value: URY
-    - Uncommon or inaccurate value: VUT
-    - Uncommon or inaccurate value: VNM
-    - Uncommon or inaccurate value: WLF
-    - Uncommon or inaccurate value: ZMB
-    - Uncommon or inaccurate value: ZWE
+    - Unusual or inaccurate value: ALB
+    - Unusual or inaccurate value: DZA
+    - Unusual or inaccurate value: ASM
+    - Unusual or inaccurate value: AGO
+    - Unusual or inaccurate value: AIA
+    - Unusual or inaccurate value: ATG
+    - Unusual or inaccurate value: ARG
+    - Unusual or inaccurate value: AUS
+    - Unusual or inaccurate value: AUT
+    - Unusual or inaccurate value: BGD
+    - Unusual or inaccurate value: BRB
+    - Unusual or inaccurate value: BEL
+    - Unusual or inaccurate value: BLZ
+    - Unusual or inaccurate value: BEN
+    - Unusual or inaccurate value: BTN
+    - Unusual or inaccurate value: BOL
+    - Unusual or inaccurate value: BIH
+    - Unusual or inaccurate value: BWA
+    - Unusual or inaccurate value: BRA
+    - Unusual or inaccurate value: VGB
+    - Unusual or inaccurate value: BRN
+    - Unusual or inaccurate value: BGR
+    - Unusual or inaccurate value: BFA
+    - Unusual or inaccurate value: BDI
+    - Unusual or inaccurate value: KHM
+    - Unusual or inaccurate value: CMR
+    - Unusual or inaccurate value: CAN
+    - Unusual or inaccurate value: CPV
+    - Unusual or inaccurate value: CYM
+    - Unusual or inaccurate value: CAF
+    - Unusual or inaccurate value: TCD
+    - Unusual or inaccurate value: CHL
+    - Unusual or inaccurate value: COL
+    - Unusual or inaccurate value: COK
+    - Unusual or inaccurate value: CRI
+    - Unusual or inaccurate value: CUB
+    - Unusual or inaccurate value: CYP
+    - Unusual or inaccurate value: CZE
+    - Unusual or inaccurate value: DNK
+    - Unusual or inaccurate value: DJI
+    - Unusual or inaccurate value: DMA
+    - Unusual or inaccurate value: DOM
+    - Unusual or inaccurate value: ECU
+    - Unusual or inaccurate value: SLV
+    - Unusual or inaccurate value: FIN
+    - Unusual or inaccurate value: FRA
+    - Unusual or inaccurate value: PYF
+    - Unusual or inaccurate value: GAB
+    - Unusual or inaccurate value: GEO
+    - Unusual or inaccurate value: DEU
+    - Unusual or inaccurate value: GHA
+    - Unusual or inaccurate value: GRC
+    - Unusual or inaccurate value: GRD
+    - Unusual or inaccurate value: GTM
+    - Unusual or inaccurate value: GIN
+    - Unusual or inaccurate value: GNB
+    - Unusual or inaccurate value: GUY
+    - Unusual or inaccurate value: HTI
+    - Unusual or inaccurate value: HND
+    - Unusual or inaccurate value: HUN
+    - Unusual or inaccurate value: ISL
+    - Unusual or inaccurate value: IND
+    - Unusual or inaccurate value: IDN
+    - Unusual or inaccurate value: IRQ
+    - Unusual or inaccurate value: IRL
+    - Unusual or inaccurate value: IMN
+    - Unusual or inaccurate value: ISR
+    - Unusual or inaccurate value: ITA
+    - Unusual or inaccurate value: JAM
+    - Unusual or inaccurate value: JPN
+    - Unusual or inaccurate value: JOR
+    - Unusual or inaccurate value: KEN
+    - Unusual or inaccurate value: KIR
+    - Unusual or inaccurate value: KWT
+    - Unusual or inaccurate value: KGZ
+    - Unusual or inaccurate value: LAO
+    - Unusual or inaccurate value: LVA
+    - Unusual or inaccurate value: LBN
+    - Unusual or inaccurate value: LBR
+    - Unusual or inaccurate value: LBY
+    - Unusual or inaccurate value: LTU
+    - Unusual or inaccurate value: LUX
+    - Unusual or inaccurate value: MWI
+    - Unusual or inaccurate value: MYS
+    - Unusual or inaccurate value: MDV
+    - Unusual or inaccurate value: MLI
+    - Unusual or inaccurate value: MUS
+    - Unusual or inaccurate value: MEX
+    - Unusual or inaccurate value: MNG
+    - Unusual or inaccurate value: MNE
+    - Unusual or inaccurate value: MSR
+    - Unusual or inaccurate value: MAR
+    - Unusual or inaccurate value: MMR
+    - Unusual or inaccurate value: NAM
+    - Unusual or inaccurate value: NPL
+    - Unusual or inaccurate value: NCL
+    - Unusual or inaccurate value: NZL
+    - Unusual or inaccurate value: NIC
+    - Unusual or inaccurate value: NER
+    - Unusual or inaccurate value: NGA
+    - Unusual or inaccurate value: NOR
+    - Unusual or inaccurate value: OMN
+    - Unusual or inaccurate value: PAK
+    - Unusual or inaccurate value: PSE
+    - Unusual or inaccurate value: PAN
+    - Unusual or inaccurate value: PNG
+    - Unusual or inaccurate value: PRY
+    - Unusual or inaccurate value: PER
+    - Unusual or inaccurate value: PHL
+    - Unusual or inaccurate value: PRT
+    - Unusual or inaccurate value: QAT
+    - Unusual or inaccurate value: ROU
+    - Unusual or inaccurate value: RUS
+    - Unusual or inaccurate value: RWA
+    - Unusual or inaccurate value: SHN
+    - Unusual or inaccurate value: KNA
+    - Unusual or inaccurate value: LCA
+    - Unusual or inaccurate value: VCT
+    - Unusual or inaccurate value: WSM
+    - Unusual or inaccurate value: SAU
+    - Unusual or inaccurate value: SEN
+    - Unusual or inaccurate value: SYC
+    - Unusual or inaccurate value: SLE
+    - Unusual or inaccurate value: SVK
+    - Unusual or inaccurate value: SLB
+    - Unusual or inaccurate value: SOM
+    - Unusual or inaccurate value: ZAF
+    - Unusual or inaccurate value: ESP
+    - Unusual or inaccurate value: LKA
+    - Unusual or inaccurate value: SDN
+    - Unusual or inaccurate value: SUR
+    - Unusual or inaccurate value: SWE
+    - Unusual or inaccurate value: CHE
+    - Unusual or inaccurate value: SYR
+    - Unusual or inaccurate value: THA
+    - Unusual or inaccurate value: TGO
+    - Unusual or inaccurate value: TON
+    - Unusual or inaccurate value: TTO
+    - Unusual or inaccurate value: TUN
+    - Unusual or inaccurate value: TKM
+    - Unusual or inaccurate value: TCA
+    - Unusual or inaccurate value: TUV
+    - Unusual or inaccurate value: VIR
+    - Unusual or inaccurate value: UGA
+    - Unusual or inaccurate value: UKR
+    - Unusual or inaccurate value: ARE
+    - Unusual or inaccurate value: GBR
+    - Unusual or inaccurate value: USA
+    - Unusual or inaccurate value: URY
+    - Unusual or inaccurate value: VUT
+    - Unusual or inaccurate value: VNM
+    - Unusual or inaccurate value: WLF
+    - Unusual or inaccurate value: ZMB
+    - Unusual or inaccurate value: ZWE
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `CurrencyName`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: Lek
-    - Uncommon or inaccurate value: Kwanza
-    - Uncommon or inaccurate value: Taka
-    - Uncommon or inaccurate value: Ngultrum
-    - Uncommon or inaccurate value: Boliviano
-    - Uncommon or inaccurate value: Marka
-    - Uncommon or inaccurate value: Pula
-    - Uncommon or inaccurate value: Real
-    - Uncommon or inaccurate value: Lev
-    - Uncommon or inaccurate value: Riels
-    - Uncommon or inaccurate value: Escudo
-    - Uncommon or inaccurate value: Colon
-    - Uncommon or inaccurate value: Koruna
-    - Uncommon or inaccurate value: Krone
-    - Uncommon or inaccurate value: Lari
-    - Uncommon or inaccurate value: Cedi
-    - Uncommon or inaccurate value: Quetzal
-    - Uncommon or inaccurate value: Gourde
-    - Uncommon or inaccurate value: Lempira
-    - Uncommon or inaccurate value: Forint
-    - Uncommon or inaccurate value: Krona
-    - Uncommon or inaccurate value: Rupiah
-    - Uncommon or inaccurate value: Shekel
-    - Uncommon or inaccurate value: Yen
-    - Uncommon or inaccurate value: Som
-    - Uncommon or inaccurate value: Kip
-    - Uncommon or inaccurate value: Kwacha
-    - Uncommon or inaccurate value: Ringgit
-    - Uncommon or inaccurate value: Rufiyaa
-    - Uncommon or inaccurate value: Tugrik
-    - Uncommon or inaccurate value: Dirham
-    - Uncommon or inaccurate value: Kyat
-    - Uncommon or inaccurate value: Cordoba
-    - Uncommon or inaccurate value: Naira
-    - Uncommon or inaccurate value: Krone
-    - Uncommon or inaccurate value: Shekel
-    - Uncommon or inaccurate value: Balboa
-    - Uncommon or inaccurate value: Kina
-    - Uncommon or inaccurate value: Guarani
-    - Uncommon or inaccurate value: Sol
-    - Uncommon or inaccurate value: Leu
-    - Uncommon or inaccurate value: Ruble
-    - Uncommon or inaccurate value: Tala
-    - Uncommon or inaccurate value: Leone
-    - Uncommon or inaccurate value: Rand
-    - Uncommon or inaccurate value: Krona
-    - Uncommon or inaccurate value: Baht
-    - Uncommon or inaccurate value: Pa'anga
-    - Uncommon or inaccurate value: Manat
-    - Uncommon or inaccurate value: Hryvnia
-    - Uncommon or inaccurate value: Dirham
-    - Uncommon or inaccurate value: Vatu
-    - Uncommon or inaccurate value: Dong
-    - Uncommon or inaccurate value: Kwacha
+    - Unusual or inaccurate value: Lek
+    - Unusual or inaccurate value: Kwanza
+    - Unusual or inaccurate value: Taka
+    - Unusual or inaccurate value: Ngultrum
+    - Unusual or inaccurate value: Boliviano
+    - Unusual or inaccurate value: Marka
+    - Unusual or inaccurate value: Pula
+    - Unusual or inaccurate value: Real
+    - Unusual or inaccurate value: Lev
+    - Unusual or inaccurate value: Riels
+    - Unusual or inaccurate value: Escudo
+    - Unusual or inaccurate value: Colon
+    - Unusual or inaccurate value: Koruna
+    - Unusual or inaccurate value: Krone
+    - Unusual or inaccurate value: Lari
+    - Unusual or inaccurate value: Cedi
+    - Unusual or inaccurate value: Quetzal
+    - Unusual or inaccurate value: Gourde
+    - Unusual or inaccurate value: Lempira
+    - Unusual or inaccurate value: Forint
+    - Unusual or inaccurate value: Krona
+    - Unusual or inaccurate value: Rupiah
+    - Unusual or inaccurate value: Shekel
+    - Unusual or inaccurate value: Yen
+    - Unusual or inaccurate value: Som
+    - Unusual or inaccurate value: Kip
+    - Unusual or inaccurate value: Kwacha
+    - Unusual or inaccurate value: Ringgit
+    - Unusual or inaccurate value: Rufiyaa
+    - Unusual or inaccurate value: Tugrik
+    - Unusual or inaccurate value: Dirham
+    - Unusual or inaccurate value: Kyat
+    - Unusual or inaccurate value: Cordoba
+    - Unusual or inaccurate value: Naira
+    - Unusual or inaccurate value: Krone
+    - Unusual or inaccurate value: Shekel
+    - Unusual or inaccurate value: Balboa
+    - Unusual or inaccurate value: Kina
+    - Unusual or inaccurate value: Guarani
+    - Unusual or inaccurate value: Sol
+    - Unusual or inaccurate value: Leu
+    - Unusual or inaccurate value: Ruble
+    - Unusual or inaccurate value: Tala
+    - Unusual or inaccurate value: Leone
+    - Unusual or inaccurate value: Rand
+    - Unusual or inaccurate value: Krona
+    - Unusual or inaccurate value: Baht
+    - Unusual or inaccurate value: Pa'anga
+    - Unusual or inaccurate value: Manat
+    - Unusual or inaccurate value: Hryvnia
+    - Unusual or inaccurate value: Dirham
+    - Unusual or inaccurate value: Vatu
+    - Unusual or inaccurate value: Dong
+    - Unusual or inaccurate value: Kwacha
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `FAILED`
   - Invalid rows:
@@ -1163,7 +946,7 @@
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Small Island Developing States (SIDS)`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `PASSED`
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `FAILED`
   - Invalid rows:
     - Missing or improperly marked null value: <null>
@@ -1289,440 +1072,284 @@
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Official_Name`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: Albania
-    - Uncommon or inaccurate value: Algeria
-    - Uncommon or inaccurate value: American Samoa
-    - Uncommon or inaccurate value: Angola
-    - Uncommon or inaccurate value: Anguilla
-    - Uncommon or inaccurate value: Antigua and Barbuda
-    - Uncommon or inaccurate value: Argentina
-    - Uncommon or inaccurate value: Australia
-    - Uncommon or inaccurate value: Austria
-    - Uncommon or inaccurate value: Bangladesh
-    - Uncommon or inaccurate value: Barbados
-    - Uncommon or inaccurate value: Belgium
-    - Uncommon or inaccurate value: Belize
-    - Uncommon or inaccurate value: Benin
-    - Uncommon or inaccurate value: Bhutan
-    - Uncommon or inaccurate value: Bolivia (Plurinational State of)
-    - Uncommon or inaccurate value: Bosnia and Herzegovina
-    - Uncommon or inaccurate value: Botswana
-    - Uncommon or inaccurate value: Brazil
-    - Uncommon or inaccurate value: British Virgin Islands
-    - Uncommon or inaccurate value: Brunei Darussalam
-    - Uncommon or inaccurate value: Bulgaria
-    - Uncommon or inaccurate value: Burkina Faso
-    - Uncommon or inaccurate value: Burundi
-    - Uncommon or inaccurate value: Cambodia
-    - Uncommon or inaccurate value: Cameroon
-    - Uncommon or inaccurate value: Canada
-    - Uncommon or inaccurate value: Cabo Verde
-    - Uncommon or inaccurate value: Cayman Islands
-    - Uncommon or inaccurate value: Central African Republic
-    - Uncommon or inaccurate value: Chad
-    - Uncommon or inaccurate value: Chile
-    - Uncommon or inaccurate value: Colombia
-    - Uncommon or inaccurate value: Cook Islands
-    - Uncommon or inaccurate value: Costa Rica
-    - Uncommon or inaccurate value: Cuba
-    - Uncommon or inaccurate value: Cyprus
-    - Uncommon or inaccurate value: Czechia
-    - Uncommon or inaccurate value: Denmark
-    - Uncommon or inaccurate value: Djibouti
-    - Uncommon or inaccurate value: Dominica
-    - Uncommon or inaccurate value: Dominican Republic
-    - Uncommon or inaccurate value: Ecuador
-    - Uncommon or inaccurate value: El Salvador
-    - Uncommon or inaccurate value: Finland
-    - Uncommon or inaccurate value: France
-    - Uncommon or inaccurate value: French Polynesia
-    - Uncommon or inaccurate value: Gabon
-    - Uncommon or inaccurate value: Georgia
-    - Uncommon or inaccurate value: Germany
-    - Uncommon or inaccurate value: Ghana
-    - Uncommon or inaccurate value: Greece
-    - Uncommon or inaccurate value: Grenada
-    - Uncommon or inaccurate value: Guatemala
-    - Uncommon or inaccurate value: Guinea
-    - Uncommon or inaccurate value: Guinea-Bissau
-    - Uncommon or inaccurate value: Guyana
-    - Uncommon or inaccurate value: Haiti
-    - Uncommon or inaccurate value: Honduras
-    - Uncommon or inaccurate value: Hungary
-    - Uncommon or inaccurate value: Iceland
-    - Uncommon or inaccurate value: India
-    - Uncommon or inaccurate value: Indonesia
-    - Uncommon or inaccurate value: Iraq
-    - Uncommon or inaccurate value: Ireland
-    - Uncommon or inaccurate value: Isle of Man
-    - Uncommon or inaccurate value: Israel
-    - Uncommon or inaccurate value: Italy
-    - Uncommon or inaccurate value: Jamaica
-    - Uncommon or inaccurate value: Japan
-    - Uncommon or inaccurate value: Jordan
-    - Uncommon or inaccurate value: Kenya
-    - Uncommon or inaccurate value: Kiribati
-    - Uncommon or inaccurate value: Kuwait
-    - Uncommon or inaccurate value: Kyrgyzstan
-    - Uncommon or inaccurate value: Lao People's Democratic Republic
-    - Uncommon or inaccurate value: Latvia
-    - Uncommon or inaccurate value: Lebanon
-    - Uncommon or inaccurate value: Liberia
-    - Uncommon or inaccurate value: Libya
-    - Uncommon or inaccurate value: Lithuania
-    - Uncommon or inaccurate value: Luxembourg
-    - Uncommon or inaccurate value: Malawi
-    - Uncommon or inaccurate value: Malaysia
-    - Uncommon or inaccurate value: Maldives
-    - Uncommon or inaccurate value: Mali
-    - Uncommon or inaccurate value: Mauritius
-    - Uncommon or inaccurate value: Mexico
-    - Uncommon or inaccurate value: Mongolia
-    - Uncommon or inaccurate value: Montenegro
-    - Uncommon or inaccurate value: Montserrat
-    - Uncommon or inaccurate value: Morocco
-    - Uncommon or inaccurate value: Myanmar
-    - Uncommon or inaccurate value: Namibia
-    - Uncommon or inaccurate value: Nepal
-    - Uncommon or inaccurate value: New Caledonia
-    - Uncommon or inaccurate value: New Zealand
-    - Uncommon or inaccurate value: Nicaragua
-    - Uncommon or inaccurate value: Niger
-    - Uncommon or inaccurate value: Nigeria
-    - Uncommon or inaccurate value: Norway
-    - Uncommon or inaccurate value: Oman
-    - Uncommon or inaccurate value: Pakistan
-    - Uncommon or inaccurate value: State of Palestine
-    - Uncommon or inaccurate value: Panama
-    - Uncommon or inaccurate value: Papua New Guinea
-    - Uncommon or inaccurate value: Paraguay
-    - Uncommon or inaccurate value: Peru
-    - Uncommon or inaccurate value: Philippines
-    - Uncommon or inaccurate value: Portugal
-    - Uncommon or inaccurate value: Qatar
-    - Uncommon or inaccurate value: Romania
-    - Uncommon or inaccurate value: Russian Federation
-    - Uncommon or inaccurate value: Rwanda
-    - Uncommon or inaccurate value: Saint Helena
-    - Uncommon or inaccurate value: Saint Kitts and Nevis
-    - Uncommon or inaccurate value: Saint Lucia
-    - Uncommon or inaccurate value: Saint Vincent and the Grenadines
-    - Uncommon or inaccurate value: Samoa
-    - Uncommon or inaccurate value: Saudi Arabia
-    - Uncommon or inaccurate value: Senegal
-    - Uncommon or inaccurate value: Seychelles
-    - Uncommon or inaccurate value: Sierra Leone
-    - Uncommon or inaccurate value: Slovakia
-    - Uncommon or inaccurate value: Solomon Islands
-    - Uncommon or inaccurate value: Somalia
-    - Uncommon or inaccurate value: South Africa
-    - Uncommon or inaccurate value: Spain
-    - Uncommon or inaccurate value: Sri Lanka
-    - Uncommon or inaccurate value: Sudan
-    - Uncommon or inaccurate value: Suriname
-    - Uncommon or inaccurate value: Sweden
-    - Uncommon or inaccurate value: Switzerland
-    - Uncommon or inaccurate value: Syrian Arab Republic
-    - Uncommon or inaccurate value: Thailand
-    - Uncommon or inaccurate value: Togo
-    - Uncommon or inaccurate value: Tonga
-    - Uncommon or inaccurate value: Trinidad and Tobago
-    - Uncommon or inaccurate value: Tunisia
-    - Uncommon or inaccurate value: Turkmenistan
-    - Uncommon or inaccurate value: Turks and Caicos Islands
-    - Uncommon or inaccurate value: Tuvalu
-    - Uncommon or inaccurate value: United States Virgin Islands
-    - Uncommon or inaccurate value: Uganda
-    - Uncommon or inaccurate value: Ukraine
-    - Uncommon or inaccurate value: United Arab Emirates
-    - Uncommon or inaccurate value: United Kingdom of Great Britain and Northern Ireland
-    - Uncommon or inaccurate value: United States of America
-    - Uncommon or inaccurate value: Uruguay
-    - Uncommon or inaccurate value: Vanuatu
-    - Uncommon or inaccurate value: Viet Nam
-    - Uncommon or inaccurate value: Wallis and Futuna Islands
-    - Uncommon or inaccurate value: Zambia
-    - Uncommon or inaccurate value: Zimbabwe
+    - Unusual or inaccurate value: Albania
+    - Unusual or inaccurate value: Algeria
+    - Unusual or inaccurate value: American Samoa
+    - Unusual or inaccurate value: Angola
+    - Unusual or inaccurate value: Anguilla
+    - Unusual or inaccurate value: Antigua and Barbuda
+    - Unusual or inaccurate value: Argentina
+    - Unusual or inaccurate value: Australia
+    - Unusual or inaccurate value: Austria
+    - Unusual or inaccurate value: Bangladesh
+    - Unusual or inaccurate value: Barbados
+    - Unusual or inaccurate value: Belgium
+    - Unusual or inaccurate value: Belize
+    - Unusual or inaccurate value: Benin
+    - Unusual or inaccurate value: Bhutan
+    - Unusual or inaccurate value: Bolivia (Plurinational State of)
+    - Unusual or inaccurate value: Bosnia and Herzegovina
+    - Unusual or inaccurate value: Botswana
+    - Unusual or inaccurate value: Brazil
+    - Unusual or inaccurate value: British Virgin Islands
+    - Unusual or inaccurate value: Brunei Darussalam
+    - Unusual or inaccurate value: Bulgaria
+    - Unusual or inaccurate value: Burkina Faso
+    - Unusual or inaccurate value: Burundi
+    - Unusual or inaccurate value: Cambodia
+    - Unusual or inaccurate value: Cameroon
+    - Unusual or inaccurate value: Canada
+    - Unusual or inaccurate value: Cabo Verde
+    - Unusual or inaccurate value: Cayman Islands
+    - Unusual or inaccurate value: Central African Republic
+    - Unusual or inaccurate value: Chad
+    - Unusual or inaccurate value: Chile
+    - Unusual or inaccurate value: Colombia
+    - Unusual or inaccurate value: Cook Islands
+    - Unusual or inaccurate value: Costa Rica
+    - Unusual or inaccurate value: Cuba
+    - Unusual or inaccurate value: Cyprus
+    - Unusual or inaccurate value: Czechia
+    - Unusual or inaccurate value: Denmark
+    - Unusual or inaccurate value: Djibouti
+    - Unusual or inaccurate value: Dominica
+    - Unusual or inaccurate value: Dominican Republic
+    - Unusual or inaccurate value: Ecuador
+    - Unusual or inaccurate value: El Salvador
+    - Unusual or inaccurate value: Finland
+    - Unusual or inaccurate value: France
+    - Unusual or inaccurate value: French Polynesia
+    - Unusual or inaccurate value: Gabon
+    - Unusual or inaccurate value: Georgia
+    - Unusual or inaccurate value: Germany
+    - Unusual or inaccurate value: Ghana
+    - Unusual or inaccurate value: Greece
+    - Unusual or inaccurate value: Grenada
+    - Unusual or inaccurate value: Guatemala
+    - Unusual or inaccurate value: Guinea
+    - Unusual or inaccurate value: Guinea-Bissau
+    - Unusual or inaccurate value: Guyana
+    - Unusual or inaccurate value: Haiti
+    - Unusual or inaccurate value: Honduras
+    - Unusual or inaccurate value: Hungary
+    - Unusual or inaccurate value: Iceland
+    - Unusual or inaccurate value: India
+    - Unusual or inaccurate value: Indonesia
+    - Unusual or inaccurate value: Iraq
+    - Unusual or inaccurate value: Ireland
+    - Unusual or inaccurate value: Isle of Man
+    - Unusual or inaccurate value: Israel
+    - Unusual or inaccurate value: Italy
+    - Unusual or inaccurate value: Jamaica
+    - Unusual or inaccurate value: Japan
+    - Unusual or inaccurate value: Jordan
+    - Unusual or inaccurate value: Kenya
+    - Unusual or inaccurate value: Kiribati
+    - Unusual or inaccurate value: Kuwait
+    - Unusual or inaccurate value: Kyrgyzstan
+    - Unusual or inaccurate value: Lao People's Democratic Republic
+    - Unusual or inaccurate value: Latvia
+    - Unusual or inaccurate value: Lebanon
+    - Unusual or inaccurate value: Liberia
+    - Unusual or inaccurate value: Libya
+    - Unusual or inaccurate value: Lithuania
+    - Unusual or inaccurate value: Luxembourg
+    - Unusual or inaccurate value: Malawi
+    - Unusual or inaccurate value: Malaysia
+    - Unusual or inaccurate value: Maldives
+    - Unusual or inaccurate value: Mali
+    - Unusual or inaccurate value: Mauritius
+    - Unusual or inaccurate value: Mexico
+    - Unusual or inaccurate value: Mongolia
+    - Unusual or inaccurate value: Montenegro
+    - Unusual or inaccurate value: Montserrat
+    - Unusual or inaccurate value: Morocco
+    - Unusual or inaccurate value: Myanmar
+    - Unusual or inaccurate value: Namibia
+    - Unusual or inaccurate value: Nepal
+    - Unusual or inaccurate value: New Caledonia
+    - Unusual or inaccurate value: New Zealand
+    - Unusual or inaccurate value: Nicaragua
+    - Unusual or inaccurate value: Niger
+    - Unusual or inaccurate value: Nigeria
+    - Unusual or inaccurate value: Norway
+    - Unusual or inaccurate value: Oman
+    - Unusual or inaccurate value: Pakistan
+    - Unusual or inaccurate value: State of Palestine
+    - Unusual or inaccurate value: Panama
+    - Unusual or inaccurate value: Papua New Guinea
+    - Unusual or inaccurate value: Paraguay
+    - Unusual or inaccurate value: Peru
+    - Unusual or inaccurate value: Philippines
+    - Unusual or inaccurate value: Portugal
+    - Unusual or inaccurate value: Qatar
+    - Unusual or inaccurate value: Romania
+    - Unusual or inaccurate value: Russian Federation
+    - Unusual or inaccurate value: Rwanda
+    - Unusual or inaccurate value: Saint Helena
+    - Unusual or inaccurate value: Saint Kitts and Nevis
+    - Unusual or inaccurate value: Saint Lucia
+    - Unusual or inaccurate value: Saint Vincent and the Grenadines
+    - Unusual or inaccurate value: Samoa
+    - Unusual or inaccurate value: Saudi Arabia
+    - Unusual or inaccurate value: Senegal
+    - Unusual or inaccurate value: Seychelles
+    - Unusual or inaccurate value: Sierra Leone
+    - Unusual or inaccurate value: Slovakia
+    - Unusual or inaccurate value: Solomon Islands
+    - Unusual or inaccurate value: Somalia
+    - Unusual or inaccurate value: South Africa
+    - Unusual or inaccurate value: Spain
+    - Unusual or inaccurate value: Sri Lanka
+    - Unusual or inaccurate value: Sudan
+    - Unusual or inaccurate value: Suriname
+    - Unusual or inaccurate value: Sweden
+    - Unusual or inaccurate value: Switzerland
+    - Unusual or inaccurate value: Syrian Arab Republic
+    - Unusual or inaccurate value: Thailand
+    - Unusual or inaccurate value: Togo
+    - Unusual or inaccurate value: Tonga
+    - Unusual or inaccurate value: Trinidad and Tobago
+    - Unusual or inaccurate value: Tunisia
+    - Unusual or inaccurate value: Turkmenistan
+    - Unusual or inaccurate value: Turks and Caicos Islands
+    - Unusual or inaccurate value: Tuvalu
+    - Unusual or inaccurate value: United States Virgin Islands
+    - Unusual or inaccurate value: Uganda
+    - Unusual or inaccurate value: Ukraine
+    - Unusual or inaccurate value: United Arab Emirates
+    - Unusual or inaccurate value: United Kingdom of Great Britain and Northern Ireland
+    - Unusual or inaccurate value: United States of America
+    - Unusual or inaccurate value: Uruguay
+    - Unusual or inaccurate value: Vanuatu
+    - Unusual or inaccurate value: Viet Nam
+    - Unusual or inaccurate value: Wallis and Futuna Islands
+    - Unusual or inaccurate value: Zambia
+    - Unusual or inaccurate value: Zimbabwe
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `FAILED`
   - Invalid rows:
     - Special character found in value: Bolivia (Plurinational State of)
-    - Special character found in value: Guinea-Bissau
     - Special character found in value: Lao People's Democratic Republic
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `CurrencyCode`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: ALL
-    - Uncommon or inaccurate value: DZD
-    - Uncommon or inaccurate value: AOA
-    - Uncommon or inaccurate value: ARS
-    - Uncommon or inaccurate value: BDT
-    - Uncommon or inaccurate value: BBD
-    - Uncommon or inaccurate value: BZD
-    - Uncommon or inaccurate value: BTN
-    - Uncommon or inaccurate value: BOB
-    - Uncommon or inaccurate value: BAM
-    - Uncommon or inaccurate value: BWP
-    - Uncommon or inaccurate value: BRL
-    - Uncommon or inaccurate value: BND
-    - Uncommon or inaccurate value: BGN
-    - Uncommon or inaccurate value: BIF
-    - Uncommon or inaccurate value: KHR
-    - Uncommon or inaccurate value: CAD
-    - Uncommon or inaccurate value: CVE
-    - Uncommon or inaccurate value: KYD
-    - Uncommon or inaccurate value: CLP
-    - Uncommon or inaccurate value: COP
-    - Uncommon or inaccurate value: NZD
-    - Uncommon or inaccurate value: CRC
-    - Uncommon or inaccurate value: CUP
-    - Uncommon or inaccurate value: CZK
-    - Uncommon or inaccurate value: DKK
-    - Uncommon or inaccurate value: DJF
-    - Uncommon or inaccurate value: DOP
-    - Uncommon or inaccurate value: GEL
-    - Uncommon or inaccurate value: GHS
-    - Uncommon or inaccurate value: GTQ
-    - Uncommon or inaccurate value: GNF
-    - Uncommon or inaccurate value: GYD
-    - Uncommon or inaccurate value: HTG
-    - Uncommon or inaccurate value: HNL
-    - Uncommon or inaccurate value: HUF
-    - Uncommon or inaccurate value: ISK
-    - Uncommon or inaccurate value: INR
-    - Uncommon or inaccurate value: IDR
-    - Uncommon or inaccurate value: IQD
-    - Uncommon or inaccurate value: GBP
-    - Uncommon or inaccurate value: ILS
-    - Uncommon or inaccurate value: JMD
-    - Uncommon or inaccurate value: JPY
-    - Uncommon or inaccurate value: JOD
-    - Uncommon or inaccurate value: KES
-    - Uncommon or inaccurate value: KWD
-    - Uncommon or inaccurate value: KGS
-    - Uncommon or inaccurate value: LAK
-    - Uncommon or inaccurate value: LBP
-    - Uncommon or inaccurate value: LRD
-    - Uncommon or inaccurate value: LYD
-    - Uncommon or inaccurate value: MWK
-    - Uncommon or inaccurate value: MYR
-    - Uncommon or inaccurate value: MVR
-    - Uncommon or inaccurate value: MUR
-    - Uncommon or inaccurate value: MXN
-    - Uncommon or inaccurate value: MNT
-    - Uncommon or inaccurate value: MAD
-    - Uncommon or inaccurate value: MMK
-    - Uncommon or inaccurate value: NAD
-    - Uncommon or inaccurate value: NPR
-    - Uncommon or inaccurate value: NZD
-    - Uncommon or inaccurate value: NIO
-    - Uncommon or inaccurate value: NGN
-    - Uncommon or inaccurate value: NOK
-    - Uncommon or inaccurate value: OMR
-    - Uncommon or inaccurate value: PKR
-    - Uncommon or inaccurate value: ILS
-    - Uncommon or inaccurate value: PAB
-    - Uncommon or inaccurate value: PGK
-    - Uncommon or inaccurate value: PYG
-    - Uncommon or inaccurate value: PEN
-    - Uncommon or inaccurate value: PHP
-    - Uncommon or inaccurate value: QAR
-    - Uncommon or inaccurate value: RON
-    - Uncommon or inaccurate value: RUB
-    - Uncommon or inaccurate value: RWF
-    - Uncommon or inaccurate value: SHP
-    - Uncommon or inaccurate value: WST
-    - Uncommon or inaccurate value: SAR
-    - Uncommon or inaccurate value: SCR
-    - Uncommon or inaccurate value: SLL
-    - Uncommon or inaccurate value: SBD
-    - Uncommon or inaccurate value: SOS
-    - Uncommon or inaccurate value: ZAR
-    - Uncommon or inaccurate value: LKR
-    - Uncommon or inaccurate value: SDG
-    - Uncommon or inaccurate value: SRD
-    - Uncommon or inaccurate value: SEK
-    - Uncommon or inaccurate value: CHF
-    - Uncommon or inaccurate value: SYP
-    - Uncommon or inaccurate value: THB
-    - Uncommon or inaccurate value: TOP
-    - Uncommon or inaccurate value: TTD
-    - Uncommon or inaccurate value: TND
-    - Uncommon or inaccurate value: TMT
-    - Uncommon or inaccurate value: UGX
-    - Uncommon or inaccurate value: UAH
-    - Uncommon or inaccurate value: AED
-    - Uncommon or inaccurate value: GBP
-    - Uncommon or inaccurate value: UYU
-    - Uncommon or inaccurate value: VUV
-    - Uncommon or inaccurate value: VND
-    - Uncommon or inaccurate value: ZMW
-    - Uncommon or inaccurate value: ZWL
+    - Unusual or inaccurate value: ALL
+    - Unusual or inaccurate value: DZD
+    - Unusual or inaccurate value: AOA
+    - Unusual or inaccurate value: ARS
+    - Unusual or inaccurate value: BDT
+    - Unusual or inaccurate value: BBD
+    - Unusual or inaccurate value: BZD
+    - Unusual or inaccurate value: BTN
+    - Unusual or inaccurate value: BOB
+    - Unusual or inaccurate value: BAM
+    - Unusual or inaccurate value: BWP
+    - Unusual or inaccurate value: BRL
+    - Unusual or inaccurate value: BND
+    - Unusual or inaccurate value: BGN
+    - Unusual or inaccurate value: BIF
+    - Unusual or inaccurate value: KHR
+    - Unusual or inaccurate value: CAD
+    - Unusual or inaccurate value: CVE
+    - Unusual or inaccurate value: KYD
+    - Unusual or inaccurate value: CLP
+    - Unusual or inaccurate value: COP
+    - Unusual or inaccurate value: NZD
+    - Unusual or inaccurate value: CRC
+    - Unusual or inaccurate value: CUP
+    - Unusual or inaccurate value: CZK
+    - Unusual or inaccurate value: DKK
+    - Unusual or inaccurate value: DJF
+    - Unusual or inaccurate value: DOP
+    - Unusual or inaccurate value: GEL
+    - Unusual or inaccurate value: GHS
+    - Unusual or inaccurate value: GTQ
+    - Unusual or inaccurate value: GNF
+    - Unusual or inaccurate value: GYD
+    - Unusual or inaccurate value: HTG
+    - Unusual or inaccurate value: HNL
+    - Unusual or inaccurate value: HUF
+    - Unusual or inaccurate value: ISK
+    - Unusual or inaccurate value: INR
+    - Unusual or inaccurate value: IDR
+    - Unusual or inaccurate value: IQD
+    - Unusual or inaccurate value: GBP
+    - Unusual or inaccurate value: ILS
+    - Unusual or inaccurate value: JMD
+    - Unusual or inaccurate value: JPY
+    - Unusual or inaccurate value: JOD
+    - Unusual or inaccurate value: KES
+    - Unusual or inaccurate value: KWD
+    - Unusual or inaccurate value: KGS
+    - Unusual or inaccurate value: LAK
+    - Unusual or inaccurate value: LBP
+    - Unusual or inaccurate value: LRD
+    - Unusual or inaccurate value: LYD
+    - Unusual or inaccurate value: MWK
+    - Unusual or inaccurate value: MYR
+    - Unusual or inaccurate value: MVR
+    - Unusual or inaccurate value: MUR
+    - Unusual or inaccurate value: MXN
+    - Unusual or inaccurate value: MNT
+    - Unusual or inaccurate value: MAD
+    - Unusual or inaccurate value: MMK
+    - Unusual or inaccurate value: NAD
+    - Unusual or inaccurate value: NPR
+    - Unusual or inaccurate value: NZD
+    - Unusual or inaccurate value: NIO
+    - Unusual or inaccurate value: NGN
+    - Unusual or inaccurate value: NOK
+    - Unusual or inaccurate value: OMR
+    - Unusual or inaccurate value: PKR
+    - Unusual or inaccurate value: ILS
+    - Unusual or inaccurate value: PAB
+    - Unusual or inaccurate value: PGK
+    - Unusual or inaccurate value: PYG
+    - Unusual or inaccurate value: PEN
+    - Unusual or inaccurate value: PHP
+    - Unusual or inaccurate value: QAR
+    - Unusual or inaccurate value: RON
+    - Unusual or inaccurate value: RUB
+    - Unusual or inaccurate value: RWF
+    - Unusual or inaccurate value: SHP
+    - Unusual or inaccurate value: WST
+    - Unusual or inaccurate value: SAR
+    - Unusual or inaccurate value: SCR
+    - Unusual or inaccurate value: SLL
+    - Unusual or inaccurate value: SBD
+    - Unusual or inaccurate value: SOS
+    - Unusual or inaccurate value: ZAR
+    - Unusual or inaccurate value: LKR
+    - Unusual or inaccurate value: SDG
+    - Unusual or inaccurate value: SRD
+    - Unusual or inaccurate value: SEK
+    - Unusual or inaccurate value: CHF
+    - Unusual or inaccurate value: SYP
+    - Unusual or inaccurate value: THB
+    - Unusual or inaccurate value: TOP
+    - Unusual or inaccurate value: TTD
+    - Unusual or inaccurate value: TND
+    - Unusual or inaccurate value: TMT
+    - Unusual or inaccurate value: UGX
+    - Unusual or inaccurate value: UAH
+    - Unusual or inaccurate value: AED
+    - Unusual or inaccurate value: GBP
+    - Unusual or inaccurate value: UYU
+    - Unusual or inaccurate value: VUV
+    - Unusual or inaccurate value: VND
+    - Unusual or inaccurate value: ZMW
+    - Unusual or inaccurate value: ZWL
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Area_SqKm`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
-  - Invalid rows:
-    - Uncommon or inaccurate value: 28748
-    - Uncommon or inaccurate value: 2381740
-    - Uncommon or inaccurate value: 199
-    - Uncommon or inaccurate value: 1246700
-    - Uncommon or inaccurate value: 102
-    - Uncommon or inaccurate value: 443
-    - Uncommon or inaccurate value: 2766890
-    - Uncommon or inaccurate value: 7686850
-    - Uncommon or inaccurate value: 83858
-    - Uncommon or inaccurate value: 144000
-    - Uncommon or inaccurate value: 431
-    - Uncommon or inaccurate value: 30510
-    - Uncommon or inaccurate value: 22966
-    - Uncommon or inaccurate value: 112620
-    - Uncommon or inaccurate value: 47000
-    - Uncommon or inaccurate value: 1098580
-    - Uncommon or inaccurate value: 51129
-    - Uncommon or inaccurate value: 600370
-    - Uncommon or inaccurate value: 8511965
-    - Uncommon or inaccurate value: 153
-    - Uncommon or inaccurate value: 5770
-    - Uncommon or inaccurate value: 110910
-    - Uncommon or inaccurate value: 274200
-    - Uncommon or inaccurate value: 27830
-    - Uncommon or inaccurate value: 181040
-    - Uncommon or inaccurate value: 475440
-    - Uncommon or inaccurate value: 9984670
-    - Uncommon or inaccurate value: 4033
-    - Uncommon or inaccurate value: 262
-    - Uncommon or inaccurate value: 622984
-    - Uncommon or inaccurate value: 1284000
-    - Uncommon or inaccurate value: 756950
-    - Uncommon or inaccurate value: 1138910
-    - Uncommon or inaccurate value: 240
-    - Uncommon or inaccurate value: 51100
-    - Uncommon or inaccurate value: 110860
-    - Uncommon or inaccurate value: 9250
-    - Uncommon or inaccurate value: 78866
-    - Uncommon or inaccurate value: 43094
-    - Uncommon or inaccurate value: 23000
-    - Uncommon or inaccurate value: 754
-    - Uncommon or inaccurate value: 48730
-    - Uncommon or inaccurate value: 283560
-    - Uncommon or inaccurate value: 21040
-    - Uncommon or inaccurate value: 337030
-    - Uncommon or inaccurate value: 547030
-    - Uncommon or inaccurate value: 4167
-    - Uncommon or inaccurate value: 267667
-    - Uncommon or inaccurate value: 69700
-    - Uncommon or inaccurate value: 357021
-    - Uncommon or inaccurate value: 239460
-    - Uncommon or inaccurate value: 131940
-    - Uncommon or inaccurate value: 344
-    - Uncommon or inaccurate value: 108890
-    - Uncommon or inaccurate value: 245857
-    - Uncommon or inaccurate value: 36120
-    - Uncommon or inaccurate value: 214970
-    - Uncommon or inaccurate value: 27750
-    - Uncommon or inaccurate value: 112090
-    - Uncommon or inaccurate value: 93030
-    - Uncommon or inaccurate value: 103000
-    - Uncommon or inaccurate value: 3287590
-    - Uncommon or inaccurate value: 1919440
-    - Uncommon or inaccurate value: 437072
-    - Uncommon or inaccurate value: 70280
-    - Uncommon or inaccurate value: 572
-    - Uncommon or inaccurate value: 20770
-    - Uncommon or inaccurate value: 301230
-    - Uncommon or inaccurate value: 10991
-    - Uncommon or inaccurate value: 377835
-    - Uncommon or inaccurate value: 92300
-    - Uncommon or inaccurate value: 582650
-    - Uncommon or inaccurate value: 811
-    - Uncommon or inaccurate value: 17820
-    - Uncommon or inaccurate value: 198500
-    - Uncommon or inaccurate value: 236800
-    - Uncommon or inaccurate value: 64589
-    - Uncommon or inaccurate value: 10400
-    - Uncommon or inaccurate value: 111370
-    - Uncommon or inaccurate value: 1759540
-    - Uncommon or inaccurate value: 65200
-    - Uncommon or inaccurate value: 2586
-    - Uncommon or inaccurate value: 118480
-    - Uncommon or inaccurate value: 329750
-    - Uncommon or inaccurate value: 300
-    - Uncommon or inaccurate value: 1240000
-    - Uncommon or inaccurate value: 2040
-    - Uncommon or inaccurate value: 1972550
-    - Uncommon or inaccurate value: 1565000
-    - Uncommon or inaccurate value: 14026
-    - Uncommon or inaccurate value: 102
-    - Uncommon or inaccurate value: 446550
-    - Uncommon or inaccurate value: 678500
-    - Uncommon or inaccurate value: 825418
-    - Uncommon or inaccurate value: 140800
-    - Uncommon or inaccurate value: 19060
-    - Uncommon or inaccurate value: 268680
-    - Uncommon or inaccurate value: 129494
-    - Uncommon or inaccurate value: 1267000
-    - Uncommon or inaccurate value: 923768
-    - Uncommon or inaccurate value: 324220
-    - Uncommon or inaccurate value: 212460
-    - Uncommon or inaccurate value: 803940
-    - Uncommon or inaccurate value: 5970
-    - Uncommon or inaccurate value: 78200
-    - Uncommon or inaccurate value: 462840
-    - Uncommon or inaccurate value: 406750
-    - Uncommon or inaccurate value: 1285220
-    - Uncommon or inaccurate value: 300000
-    - Uncommon or inaccurate value: 92391
-    - Uncommon or inaccurate value: 11437
-    - Uncommon or inaccurate value: 237500
-    - Uncommon or inaccurate value: 17100000
-    - Uncommon or inaccurate value: 26338
-    - Uncommon or inaccurate value: 410
-    - Uncommon or inaccurate value: 261
-    - Uncommon or inaccurate value: 616
-    - Uncommon or inaccurate value: 389
-    - Uncommon or inaccurate value: 2944
-    - Uncommon or inaccurate value: 1960582
-    - Uncommon or inaccurate value: 196190
-    - Uncommon or inaccurate value: 455
-    - Uncommon or inaccurate value: 71740
-    - Uncommon or inaccurate value: 48845
-    - Uncommon or inaccurate value: 28450
-    - Uncommon or inaccurate value: 637657
-    - Uncommon or inaccurate value: 1219912
-    - Uncommon or inaccurate value: 504782
-    - Uncommon or inaccurate value: 65610
-    - Uncommon or inaccurate value: 1861484
-    - Uncommon or inaccurate value: 163270
-    - Uncommon or inaccurate value: 449964
-    - Uncommon or inaccurate value: 41290
-    - Uncommon or inaccurate value: 185180
-    - Uncommon or inaccurate value: 514000
-    - Uncommon or inaccurate value: 56785
-    - Uncommon or inaccurate value: 748
-    - Uncommon or inaccurate value: 5128
-    - Uncommon or inaccurate value: 163610
-    - Uncommon or inaccurate value: 488100
-    - Uncommon or inaccurate value: 430
-    - Uncommon or inaccurate value: 26
-    - Uncommon or inaccurate value: 352
-    - Uncommon or inaccurate value: 236040
-    - Uncommon or inaccurate value: 603700
-    - Uncommon or inaccurate value: 82880
-    - Uncommon or inaccurate value: 244820
-    - Uncommon or inaccurate value: 9629091
-    - Uncommon or inaccurate value: 176220
-    - Uncommon or inaccurate value: 12200
-    - Uncommon or inaccurate value: 329560
-    - Uncommon or inaccurate value: 274
-    - Uncommon or inaccurate value: 752614
-    - Uncommon or inaccurate value: 390580
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU2.1]** Integers are separated from decimals by a dot “.”.: `PASSED`
 - **[IEU2.2]** Thousands must not use separators.: `PASSED`
@@ -1733,13 +1360,13 @@
     - Column 'Area_SqKm' does not contain a unit in its header.
 
 ### Column: `Continent`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `PASSED`
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Intermediate Region Code`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `PASSED`
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `FAILED`
   - Invalid rows:
     - Missing or improperly marked null value: <null>
@@ -1835,7 +1462,7 @@
     - Column 'Intermediate Region Code' does not contain a unit in its header.
 
 ### Column: `Region Code`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `PASSED`
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU2.1]** Integers are separated from decimals by a dot “.”.: `PASSED`
 - **[IEU2.2]** Thousands must not use separators.: `PASSED`
@@ -1846,7 +1473,7 @@
     - Column 'Region Code' does not contain a unit in its header.
 
 ### Column: `Least Developed Countries (LDC)`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `PASSED`
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `FAILED`
   - Invalid rows:
     - Missing or improperly marked null value: <null>
@@ -1975,7 +1602,7 @@
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Intermediate Region Name`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `PASSED`
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `FAILED`
   - Invalid rows:
     - Missing or improperly marked null value: <null>
@@ -2066,348 +1693,174 @@
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Phone`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
+- **[REU4]** Data should be accurate.: `FAILED`
   - Invalid rows:
-    - Uncommon or inaccurate value: 355
-    - Uncommon or inaccurate value: 213
-    - Uncommon or inaccurate value: -683
-    - Uncommon or inaccurate value: 244
-    - Uncommon or inaccurate value: -263
-    - Uncommon or inaccurate value: -267
-    - Uncommon or inaccurate value: 54
-    - Uncommon or inaccurate value: 61
-    - Uncommon or inaccurate value: 43
-    - Uncommon or inaccurate value: 880
-    - Uncommon or inaccurate value: -245
-    - Uncommon or inaccurate value: 32
-    - Uncommon or inaccurate value: 501
-    - Uncommon or inaccurate value: 229
-    - Uncommon or inaccurate value: 975
-    - Uncommon or inaccurate value: 591
-    - Uncommon or inaccurate value: 387
-    - Uncommon or inaccurate value: 267
-    - Uncommon or inaccurate value: 55
-    - Uncommon or inaccurate value: -283
-    - Uncommon or inaccurate value: 673
-    - Uncommon or inaccurate value: 359
-    - Uncommon or inaccurate value: 226
-    - Uncommon or inaccurate value: 257
-    - Uncommon or inaccurate value: 855
-    - Uncommon or inaccurate value: 237
-    - Uncommon or inaccurate value: 1
-    - Uncommon or inaccurate value: 238
-    - Uncommon or inaccurate value: -344
-    - Uncommon or inaccurate value: 236
-    - Uncommon or inaccurate value: 235
-    - Uncommon or inaccurate value: 56
-    - Uncommon or inaccurate value: 57
-    - Uncommon or inaccurate value: 682
-    - Uncommon or inaccurate value: 506
-    - Uncommon or inaccurate value: 53
-    - Uncommon or inaccurate value: 357
-    - Uncommon or inaccurate value: 420
-    - Uncommon or inaccurate value: 45
-    - Uncommon or inaccurate value: 253
-    - Uncommon or inaccurate value: -766
-    - Uncommon or inaccurate value: +1-809 and 1-829
-    - Uncommon or inaccurate value: 593
-    - Uncommon or inaccurate value: 503
-    - Uncommon or inaccurate value: 358
-    - Uncommon or inaccurate value: 33
-    - Uncommon or inaccurate value: 689
-    - Uncommon or inaccurate value: 241
-    - Uncommon or inaccurate value: 995
-    - Uncommon or inaccurate value: 49
-    - Uncommon or inaccurate value: 233
-    - Uncommon or inaccurate value: 30
-    - Uncommon or inaccurate value: -472
-    - Uncommon or inaccurate value: 502
-    - Uncommon or inaccurate value: 224
-    - Uncommon or inaccurate value: 245
-    - Uncommon or inaccurate value: 592
-    - Uncommon or inaccurate value: 509
-    - Uncommon or inaccurate value: 504
-    - Uncommon or inaccurate value: 36
-    - Uncommon or inaccurate value: 354
-    - Uncommon or inaccurate value: 91
-    - Uncommon or inaccurate value: 62
-    - Uncommon or inaccurate value: 964
-    - Uncommon or inaccurate value: 353
-    - Uncommon or inaccurate value: -1580
-    - Uncommon or inaccurate value: 972
-    - Uncommon or inaccurate value: 39
-    - Uncommon or inaccurate value: -875
-    - Uncommon or inaccurate value: 81
-    - Uncommon or inaccurate value: 962
-    - Uncommon or inaccurate value: 254
-    - Uncommon or inaccurate value: 686
-    - Uncommon or inaccurate value: 965
-    - Uncommon or inaccurate value: 996
-    - Uncommon or inaccurate value: 856
-    - Uncommon or inaccurate value: 371
-    - Uncommon or inaccurate value: 961
-    - Uncommon or inaccurate value: 231
-    - Uncommon or inaccurate value: 218
-    - Uncommon or inaccurate value: 370
-    - Uncommon or inaccurate value: 352
-    - Uncommon or inaccurate value: 265
-    - Uncommon or inaccurate value: 60
-    - Uncommon or inaccurate value: 960
-    - Uncommon or inaccurate value: 223
-    - Uncommon or inaccurate value: 230
-    - Uncommon or inaccurate value: 52
-    - Uncommon or inaccurate value: 976
-    - Uncommon or inaccurate value: 382
-    - Uncommon or inaccurate value: -663
-    - Uncommon or inaccurate value: 212
-    - Uncommon or inaccurate value: 95
-    - Uncommon or inaccurate value: 264
-    - Uncommon or inaccurate value: 977
-    - Uncommon or inaccurate value: 687
-    - Uncommon or inaccurate value: 64
-    - Uncommon or inaccurate value: 505
-    - Uncommon or inaccurate value: 227
-    - Uncommon or inaccurate value: 234
-    - Uncommon or inaccurate value: 47
-    - Uncommon or inaccurate value: 968
-    - Uncommon or inaccurate value: 92
-    - Uncommon or inaccurate value: 970
-    - Uncommon or inaccurate value: 507
-    - Uncommon or inaccurate value: 675
-    - Uncommon or inaccurate value: 595
-    - Uncommon or inaccurate value: 51
-    - Uncommon or inaccurate value: 63
-    - Uncommon or inaccurate value: 351
-    - Uncommon or inaccurate value: 974
-    - Uncommon or inaccurate value: 40
-    - Uncommon or inaccurate value: 7
-    - Uncommon or inaccurate value: 250
-    - Uncommon or inaccurate value: 290
-    - Uncommon or inaccurate value: -868
-    - Uncommon or inaccurate value: -757
-    - Uncommon or inaccurate value: -783
-    - Uncommon or inaccurate value: 685
-    - Uncommon or inaccurate value: 966
-    - Uncommon or inaccurate value: 221
-    - Uncommon or inaccurate value: 248
-    - Uncommon or inaccurate value: 232
-    - Uncommon or inaccurate value: 421
-    - Uncommon or inaccurate value: 677
-    - Uncommon or inaccurate value: 252
-    - Uncommon or inaccurate value: 27
-    - Uncommon or inaccurate value: 34
-    - Uncommon or inaccurate value: 94
-    - Uncommon or inaccurate value: 249
-    - Uncommon or inaccurate value: 597
-    - Uncommon or inaccurate value: 46
-    - Uncommon or inaccurate value: 41
-    - Uncommon or inaccurate value: 963
-    - Uncommon or inaccurate value: 66
-    - Uncommon or inaccurate value: 228
-    - Uncommon or inaccurate value: 676
-    - Uncommon or inaccurate value: -867
-    - Uncommon or inaccurate value: 216
-    - Uncommon or inaccurate value: 993
-    - Uncommon or inaccurate value: -648
-    - Uncommon or inaccurate value: 688
-    - Uncommon or inaccurate value: -339
-    - Uncommon or inaccurate value: 256
-    - Uncommon or inaccurate value: 380
-    - Uncommon or inaccurate value: 971
-    - Uncommon or inaccurate value: 44
-    - Uncommon or inaccurate value: 1
-    - Uncommon or inaccurate value: 598
-    - Uncommon or inaccurate value: 678
-    - Uncommon or inaccurate value: 84
-    - Uncommon or inaccurate value: 681
-    - Uncommon or inaccurate value: 260
-    - Uncommon or inaccurate value: 263
+    - Unusual or inaccurate value: 355
+    - Unusual or inaccurate value: 213
+    - Unusual or inaccurate value: -683
+    - Unusual or inaccurate value: 244
+    - Unusual or inaccurate value: -263
+    - Unusual or inaccurate value: -267
+    - Unusual or inaccurate value: 54
+    - Unusual or inaccurate value: 61
+    - Unusual or inaccurate value: 43
+    - Unusual or inaccurate value: 880
+    - Unusual or inaccurate value: -245
+    - Unusual or inaccurate value: 32
+    - Unusual or inaccurate value: 501
+    - Unusual or inaccurate value: 229
+    - Unusual or inaccurate value: 975
+    - Unusual or inaccurate value: 591
+    - Unusual or inaccurate value: 387
+    - Unusual or inaccurate value: 267
+    - Unusual or inaccurate value: 55
+    - Unusual or inaccurate value: -283
+    - Unusual or inaccurate value: 673
+    - Unusual or inaccurate value: 359
+    - Unusual or inaccurate value: 226
+    - Unusual or inaccurate value: 257
+    - Unusual or inaccurate value: 855
+    - Unusual or inaccurate value: 237
+    - Unusual or inaccurate value: 1
+    - Unusual or inaccurate value: 238
+    - Unusual or inaccurate value: -344
+    - Unusual or inaccurate value: 236
+    - Unusual or inaccurate value: 235
+    - Unusual or inaccurate value: 56
+    - Unusual or inaccurate value: 57
+    - Unusual or inaccurate value: 682
+    - Unusual or inaccurate value: 506
+    - Unusual or inaccurate value: 53
+    - Unusual or inaccurate value: 357
+    - Unusual or inaccurate value: 420
+    - Unusual or inaccurate value: 45
+    - Unusual or inaccurate value: 253
+    - Unusual or inaccurate value: -766
+    - Unusual or inaccurate value: +1-809 and 1-829
+    - Unusual or inaccurate value: 593
+    - Unusual or inaccurate value: 503
+    - Unusual or inaccurate value: 358
+    - Unusual or inaccurate value: 33
+    - Unusual or inaccurate value: 689
+    - Unusual or inaccurate value: 241
+    - Unusual or inaccurate value: 995
+    - Unusual or inaccurate value: 49
+    - Unusual or inaccurate value: 233
+    - Unusual or inaccurate value: 30
+    - Unusual or inaccurate value: -472
+    - Unusual or inaccurate value: 502
+    - Unusual or inaccurate value: 224
+    - Unusual or inaccurate value: 245
+    - Unusual or inaccurate value: 592
+    - Unusual or inaccurate value: 509
+    - Unusual or inaccurate value: 504
+    - Unusual or inaccurate value: 36
+    - Unusual or inaccurate value: 354
+    - Unusual or inaccurate value: 91
+    - Unusual or inaccurate value: 62
+    - Unusual or inaccurate value: 964
+    - Unusual or inaccurate value: 353
+    - Unusual or inaccurate value: -1580
+    - Unusual or inaccurate value: 972
+    - Unusual or inaccurate value: 39
+    - Unusual or inaccurate value: -875
+    - Unusual or inaccurate value: 81
+    - Unusual or inaccurate value: 962
+    - Unusual or inaccurate value: 254
+    - Unusual or inaccurate value: 686
+    - Unusual or inaccurate value: 965
+    - Unusual or inaccurate value: 996
+    - Unusual or inaccurate value: 856
+    - Unusual or inaccurate value: 371
+    - Unusual or inaccurate value: 961
+    - Unusual or inaccurate value: 231
+    - Unusual or inaccurate value: 218
+    - Unusual or inaccurate value: 370
+    - Unusual or inaccurate value: 352
+    - Unusual or inaccurate value: 265
+    - Unusual or inaccurate value: 60
+    - Unusual or inaccurate value: 960
+    - Unusual or inaccurate value: 223
+    - Unusual or inaccurate value: 230
+    - Unusual or inaccurate value: 52
+    - Unusual or inaccurate value: 976
+    - Unusual or inaccurate value: 382
+    - Unusual or inaccurate value: -663
+    - Unusual or inaccurate value: 212
+    - Unusual or inaccurate value: 95
+    - Unusual or inaccurate value: 264
+    - Unusual or inaccurate value: 977
+    - Unusual or inaccurate value: 687
+    - Unusual or inaccurate value: 64
+    - Unusual or inaccurate value: 505
+    - Unusual or inaccurate value: 227
+    - Unusual or inaccurate value: 234
+    - Unusual or inaccurate value: 47
+    - Unusual or inaccurate value: 968
+    - Unusual or inaccurate value: 92
+    - Unusual or inaccurate value: 970
+    - Unusual or inaccurate value: 507
+    - Unusual or inaccurate value: 675
+    - Unusual or inaccurate value: 595
+    - Unusual or inaccurate value: 51
+    - Unusual or inaccurate value: 63
+    - Unusual or inaccurate value: 351
+    - Unusual or inaccurate value: 974
+    - Unusual or inaccurate value: 40
+    - Unusual or inaccurate value: 7
+    - Unusual or inaccurate value: 250
+    - Unusual or inaccurate value: 290
+    - Unusual or inaccurate value: -868
+    - Unusual or inaccurate value: -757
+    - Unusual or inaccurate value: -783
+    - Unusual or inaccurate value: 685
+    - Unusual or inaccurate value: 966
+    - Unusual or inaccurate value: 221
+    - Unusual or inaccurate value: 248
+    - Unusual or inaccurate value: 232
+    - Unusual or inaccurate value: 421
+    - Unusual or inaccurate value: 677
+    - Unusual or inaccurate value: 252
+    - Unusual or inaccurate value: 27
+    - Unusual or inaccurate value: 34
+    - Unusual or inaccurate value: 94
+    - Unusual or inaccurate value: 249
+    - Unusual or inaccurate value: 597
+    - Unusual or inaccurate value: 46
+    - Unusual or inaccurate value: 41
+    - Unusual or inaccurate value: 963
+    - Unusual or inaccurate value: 66
+    - Unusual or inaccurate value: 228
+    - Unusual or inaccurate value: 676
+    - Unusual or inaccurate value: -867
+    - Unusual or inaccurate value: 216
+    - Unusual or inaccurate value: 993
+    - Unusual or inaccurate value: -648
+    - Unusual or inaccurate value: 688
+    - Unusual or inaccurate value: -339
+    - Unusual or inaccurate value: 256
+    - Unusual or inaccurate value: 380
+    - Unusual or inaccurate value: 971
+    - Unusual or inaccurate value: 44
+    - Unusual or inaccurate value: 1
+    - Unusual or inaccurate value: 598
+    - Unusual or inaccurate value: 678
+    - Unusual or inaccurate value: 84
+    - Unusual or inaccurate value: 681
+    - Unusual or inaccurate value: 260
+    - Unusual or inaccurate value: 263
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
-- **[IEU3.2]** Data shall not consist of special characters.: `FAILED`
-  - Invalid rows:
-    - Special character found in value: -683
-    - Special character found in value: -263
-    - Special character found in value: -267
-    - Special character found in value: -245
-    - Special character found in value: -283
-    - Special character found in value: -344
-    - Special character found in value: -766
-    - Special character found in value: +1-809 and 1-829
-    - Special character found in value: -472
-    - Special character found in value: -1580
-    - Special character found in value: -875
-    - Special character found in value: -663
-    - Special character found in value: -868
-    - Special character found in value: -757
-    - Special character found in value: -783
-    - Special character found in value: -867
-    - Special character found in value: -648
-    - Special character found in value: -339
+- **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Region Name`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `PASSED`
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU3.2]** Data shall not consist of special characters.: `PASSED`
 - **[IEU4]** Data shall clearly reuse concepts from controlled RDF vocabularies.: `FAILED`
 
 ### Column: `Population`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `FAILED`
-  - Invalid rows:
-    - Uncommon or inaccurate value: 2986952
-    - Uncommon or inaccurate value: 34586184
-    - Uncommon or inaccurate value: 57881
-    - Uncommon or inaccurate value: 13068161
-    - Uncommon or inaccurate value: 13254
-    - Uncommon or inaccurate value: 86754
-    - Uncommon or inaccurate value: 41343201
-    - Uncommon or inaccurate value: 21515754
-    - Uncommon or inaccurate value: 8205000
-    - Uncommon or inaccurate value: 156118464
-    - Uncommon or inaccurate value: 285653
-    - Uncommon or inaccurate value: 10403000
-    - Uncommon or inaccurate value: 314522
-    - Uncommon or inaccurate value: 9056010
-    - Uncommon or inaccurate value: 699847
-    - Uncommon or inaccurate value: 9947418
-    - Uncommon or inaccurate value: 4590000
-    - Uncommon or inaccurate value: 2029307
-    - Uncommon or inaccurate value: 201103330
-    - Uncommon or inaccurate value: 21730
-    - Uncommon or inaccurate value: 395027
-    - Uncommon or inaccurate value: 7148785
-    - Uncommon or inaccurate value: 16241811
-    - Uncommon or inaccurate value: 9863117
-    - Uncommon or inaccurate value: 14453680
-    - Uncommon or inaccurate value: 19294149
-    - Uncommon or inaccurate value: 33679000
-    - Uncommon or inaccurate value: 508659
-    - Uncommon or inaccurate value: 44270
-    - Uncommon or inaccurate value: 4844927
-    - Uncommon or inaccurate value: 10543464
-    - Uncommon or inaccurate value: 16746491
-    - Uncommon or inaccurate value: 47790000
-    - Uncommon or inaccurate value: 21388
-    - Uncommon or inaccurate value: 4516220
-    - Uncommon or inaccurate value: 11423000
-    - Uncommon or inaccurate value: 1102677
-    - Uncommon or inaccurate value: 10476000
-    - Uncommon or inaccurate value: 5484000
-    - Uncommon or inaccurate value: 740528
-    - Uncommon or inaccurate value: 72813
-    - Uncommon or inaccurate value: 9823821
-    - Uncommon or inaccurate value: 14790608
-    - Uncommon or inaccurate value: 6052064
-    - Uncommon or inaccurate value: 5244000
-    - Uncommon or inaccurate value: 64768389
-    - Uncommon or inaccurate value: 270485
-    - Uncommon or inaccurate value: 1545255
-    - Uncommon or inaccurate value: 4630000
-    - Uncommon or inaccurate value: 81802257
-    - Uncommon or inaccurate value: 24339838
-    - Uncommon or inaccurate value: 11000000
-    - Uncommon or inaccurate value: 107818
-    - Uncommon or inaccurate value: 13550440
-    - Uncommon or inaccurate value: 10324025
-    - Uncommon or inaccurate value: 1565126
-    - Uncommon or inaccurate value: 748486
-    - Uncommon or inaccurate value: 9648924
-    - Uncommon or inaccurate value: 7989415
-    - Uncommon or inaccurate value: 9982000
-    - Uncommon or inaccurate value: 308910
-    - Uncommon or inaccurate value: 1173108018
-    - Uncommon or inaccurate value: 242968342
-    - Uncommon or inaccurate value: 29671605
-    - Uncommon or inaccurate value: 4622917
-    - Uncommon or inaccurate value: 75049
-    - Uncommon or inaccurate value: 7353985
-    - Uncommon or inaccurate value: 60340328
-    - Uncommon or inaccurate value: 2847232
-    - Uncommon or inaccurate value: 127288000
-    - Uncommon or inaccurate value: 6407085
-    - Uncommon or inaccurate value: 40046566
-    - Uncommon or inaccurate value: 92533
-    - Uncommon or inaccurate value: 2789132
-    - Uncommon or inaccurate value: 5776500
-    - Uncommon or inaccurate value: 6368162
-    - Uncommon or inaccurate value: 2217969
-    - Uncommon or inaccurate value: 4125247
-    - Uncommon or inaccurate value: 3685076
-    - Uncommon or inaccurate value: 6461454
-    - Uncommon or inaccurate value: 2944459
-    - Uncommon or inaccurate value: 497538
-    - Uncommon or inaccurate value: 15447500
-    - Uncommon or inaccurate value: 28274729
-    - Uncommon or inaccurate value: 395650
-    - Uncommon or inaccurate value: 13796354
-    - Uncommon or inaccurate value: 1294104
-    - Uncommon or inaccurate value: 112468855
-    - Uncommon or inaccurate value: 3086918
-    - Uncommon or inaccurate value: 666730
-    - Uncommon or inaccurate value: 9341
-    - Uncommon or inaccurate value: 33848242
-    - Uncommon or inaccurate value: 53414374
-    - Uncommon or inaccurate value: 2128471
-    - Uncommon or inaccurate value: 28951852
-    - Uncommon or inaccurate value: 216494
-    - Uncommon or inaccurate value: 4252277
-    - Uncommon or inaccurate value: 5995928
-    - Uncommon or inaccurate value: 15878271
-    - Uncommon or inaccurate value: 154000000
-    - Uncommon or inaccurate value: 5009150
-    - Uncommon or inaccurate value: 2967717
-    - Uncommon or inaccurate value: 184404791
-    - Uncommon or inaccurate value: 3800000
-    - Uncommon or inaccurate value: 3410676
-    - Uncommon or inaccurate value: 6064515
-    - Uncommon or inaccurate value: 6375830
-    - Uncommon or inaccurate value: 29907003
-    - Uncommon or inaccurate value: 99900177
-    - Uncommon or inaccurate value: 10676000
-    - Uncommon or inaccurate value: 840926
-    - Uncommon or inaccurate value: 21959278
-    - Uncommon or inaccurate value: 140702000
-    - Uncommon or inaccurate value: 11055976
-    - Uncommon or inaccurate value: 7460
-    - Uncommon or inaccurate value: 51134
-    - Uncommon or inaccurate value: 160922
-    - Uncommon or inaccurate value: 104217
-    - Uncommon or inaccurate value: 192001
-    - Uncommon or inaccurate value: 25731776
-    - Uncommon or inaccurate value: 12323252
-    - Uncommon or inaccurate value: 88340
-    - Uncommon or inaccurate value: 5245695
-    - Uncommon or inaccurate value: 5455000
-    - Uncommon or inaccurate value: 559198
-    - Uncommon or inaccurate value: 10112453
-    - Uncommon or inaccurate value: 49000000
-    - Uncommon or inaccurate value: 46505963
-    - Uncommon or inaccurate value: 21513990
-    - Uncommon or inaccurate value: 35000000
-    - Uncommon or inaccurate value: 492829
-    - Uncommon or inaccurate value: 9828655
-    - Uncommon or inaccurate value: 7581000
-    - Uncommon or inaccurate value: 22198110
-    - Uncommon or inaccurate value: 67089500
-    - Uncommon or inaccurate value: 6587239
-    - Uncommon or inaccurate value: 122580
-    - Uncommon or inaccurate value: 1328019
-    - Uncommon or inaccurate value: 10589025
-    - Uncommon or inaccurate value: 4940916
-    - Uncommon or inaccurate value: 20556
-    - Uncommon or inaccurate value: 10472
-    - Uncommon or inaccurate value: 108708
-    - Uncommon or inaccurate value: 33398682
-    - Uncommon or inaccurate value: 45415596
-    - Uncommon or inaccurate value: 4975593
-    - Uncommon or inaccurate value: 62348447
-    - Uncommon or inaccurate value: 310232863
-    - Uncommon or inaccurate value: 3477000
-    - Uncommon or inaccurate value: 221552
-    - Uncommon or inaccurate value: 89571130
-    - Uncommon or inaccurate value: 16025
-    - Uncommon or inaccurate value: 13460305
-    - Uncommon or inaccurate value: 13061000
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `PASSED`
 - **[IEU2.1]** Integers are separated from decimals by a dot “.”.: `PASSED`
 - **[IEU2.2]** Thousands must not use separators.: `PASSED`
@@ -2418,7 +1871,7 @@
     - Column 'Population' does not contain a unit in its header.
 
 ### Column: `Land Locked Developing Countries (LLDC)`
-- **[REU4]** Data should be accurate by conforming to commonly expected values.: `PASSED`
+- **[REU4]** Data should be accurate.: `PASSED`
 - **[FEU2]** Data with a null value should be marked as such.: `FAILED`
   - Invalid rows:
     - Missing or improperly marked null value: <null>
