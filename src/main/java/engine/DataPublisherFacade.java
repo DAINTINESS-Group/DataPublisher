@@ -18,12 +18,16 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 	
 	@Override
 	public RegistrationResponse registerDataset(String path, String alias, boolean hasHeader) {
+		System.out.print("Registering the dataset...");
+		System.out.print("\n");
 		return datasetRegistrationController.registerDataset(path, alias, hasHeader);
 	}
 	
 	@Override
 	public Map<String, Boolean> executeGlobalChecks(String datasetAlias) throws IllegalStateException {
-	    DatasetProfile profile = datasetRegistrationController.getProfile(datasetAlias);
+		System.out.print("Executing global checks on the dataset...");
+		System.out.print("\n");
+		DatasetProfile profile = datasetRegistrationController.getProfile(datasetAlias);
 
 	    if (profile == null) {
 	    	throw new IllegalStateException("Error: Dataset has not been registered");
@@ -36,7 +40,9 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 	
 	@Override
     public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias) throws IllegalStateException {
-        DatasetProfile profile = datasetRegistrationController.getProfile(datasetAlias);
+		System.out.print("Executing checks on individual columns...");
+		System.out.print("\n");
+		DatasetProfile profile = datasetRegistrationController.getProfile(datasetAlias);
         if (profile == null) {
         	throw new IllegalStateException("Error: Dataset has not been registered");
         }
@@ -45,6 +51,8 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 	
 	@Override
 	public void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath, ReportType reportType) {
+		System.out.print("Generating report based on global checks...");
+		System.out.print("\n");
 		IChecksReportGenerator reportGenerator = new ChecksReportGeneratorFactory().createReportGenerator(reportType);
 		if (reportGenerator != null) {
 			reportGenerator.generateGlobalReport(datasetAlias, globalResults, outputPath);
@@ -55,6 +63,8 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 
 	@Override
 	public void generateColumnReport(String datasetAlias, Map<String, Map<String, List<FairCheckResult>>> columnResults, String outputPath, ReportType reportType) {
+		System.out.print("Generating report based on individual - column checks...");
+		System.out.print("\n");
 		IChecksReportGenerator reportGenerator = new ChecksReportGeneratorFactory().createReportGenerator(reportType);
 		if (reportGenerator != null) {
 			reportGenerator.generateColumnReport(datasetAlias, columnResults, outputPath);
