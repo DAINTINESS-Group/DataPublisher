@@ -38,4 +38,14 @@ public class SufficientDataCheckTest {
 		boolean result = check.executeCheck(dataset);
 		assertFalse("The dataset has not enough data", result);
 	}
+	
+	@Test
+	public void sufficientDataWrongNullTest() throws Exception {
+		
+		Dataset<Row> dataset = GlobalHelperClass.getDataset(facade, "frame10");
+		
+		SufficientDataCheck check = new SufficientDataCheck();
+		boolean result = check.executeCheck(dataset);
+		assertFalse("The dataset has not enough data", result);
+	}
 }

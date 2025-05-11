@@ -27,8 +27,28 @@ public class SufficientDataCheck implements IGenericCheck {
         try {
             long rowCount = dataset.count();
             int columnCount = dataset.columns().length;
-
-            return rowCount >= 10 && columnCount >= 3;
+            if (rowCount < 10 || columnCount < 3) {
+            	return false;
+            }
+            
+            long totalCells = rowCount * columnCount;
+            long nullCount = dataset.javaRDD().map(row -> {
+            	int nulls = 0;
+            	for (int i = 0; i < row.size(); i++) {
+            		Object val = row.get(i);
+            		if (val== null || (val instanceof String && ((String) val).trim().equalsIgnoreCase("null"))) {
+            			nulls++;
+            		}
+            	}
+            	return nulls;
+            }).reduce(Integer::sum);
+            
+            double nullRatio = (double) nullCount / totalCells;
+            if (nullRatio > 0.5) {
+            	return false;
+            }
+            return true;
+            
         } catch (Exception e) {
             System.err.println("Error executing Sufficient Data Check: " + e.getMessage());
             return false;

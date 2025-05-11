@@ -20,6 +20,7 @@ public class GlobalHelperClass {
 		facade.registerDataset("src\\test\\resources\\datasets\\excel_test.xlsx", "frame7", true);
 		facade.registerDataset("src\\test\\resources\\datasets\\excel_test_wrong.xlsx", "frame8", true);
 		//facade.registerDataset("src\\test\\resources\\datasets\\noAccess_test.csv", "frame9", true);
+		facade.registerDataset("src\\test\\resources\\datasets\\null_dataset.csv", "frame10", true);
 		return facade;
 	}
 	
