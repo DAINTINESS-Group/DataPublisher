@@ -7,7 +7,11 @@ import java.util.List;
 import java.util.Map;
 
 import model.FairCheckResult;
-
+/**
+ * 
+ * Implementation of {@link IChecksReportGenerator} that generates FAIR check reports in Markdown (.md) format.
+ *
+ */
 public class MarkdownChecksReportGenerator implements IChecksReportGenerator {
 
 	@Override

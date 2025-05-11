@@ -9,11 +9,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Class for generating human-readable FAIR check reports in plain TEXT format.
- * <p>
- * This class provides methods to export the results of global and column-based FAIR checks
- * to a specified output file. These reports are intended for manual review.
- * </p>
+ * Implementation of {@link IChecksReportGenerator} that generates FAIR check reports in plain text format.
+ * 
  */
 public class TxtChecksReportGenerator implements IChecksReportGenerator {
 	

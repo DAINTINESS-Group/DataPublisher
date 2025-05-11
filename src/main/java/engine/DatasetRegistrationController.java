@@ -23,7 +23,7 @@ import utils.RegistrationResponse;
  * This controller manages Spark-based dataset loading, ensures unique aliases,
  * and exposes methods to retrieve or list registered dataset profiles.
  * A <code>RegistrationResponse</code> is returned to represent if the registration
- * was succesful.
+ * was successful.
  * </p>
  * 
  * @see DatasetProfile
