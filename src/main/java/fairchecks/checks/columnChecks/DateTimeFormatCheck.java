@@ -11,6 +11,8 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
 import org.apache.spark.sql.types.DataType;
 import org.apache.spark.sql.types.DataTypes;
+import org.apache.spark.sql.types.DateType;
+import org.apache.spark.sql.types.TimestampType;
 
 /**
  * A check that validates whether date/time values in a column conform to the ISO 8601 format.
@@ -20,8 +22,6 @@ import org.apache.spark.sql.types.DataTypes;
  *   <li>Date and time must be present</li>
  *   <li>Time zone (optional) must be derived from UTC (e.g., +00:00)</li>
  * </ul>
- *
- * <p>Only string-typed columns that contain date/time-related keywords in their names are applicable.
  *
  * <p>Check ID: IEU1
  */
@@ -51,18 +51,21 @@ public class DateTimeFormatCheck implements IGenericColumnCheck {
         List<Row> failingRows = dataset
                 .filter(functions.col(columnName).isNotNull()
                         .and(functions.not(functions.col(columnName).rlike(iso8601Regex))))
-                .select(columnName)
+                .select(functions.col("_id"), functions.col(columnName))
                 .collectAsList();
 
         for (Row row : failingRows) {
-        	Object rawVal = row.get(0);
-            if (rawVal == null) continue;
-
-            String value = rawVal.toString().trim();
+        	Number rowIdNum = (Number) row.getAs("_id");
+        	long rowId = rowIdNum.longValue() + 1;
+        	
+        	Object rawVal = row.get(1);
+        	if (rawVal == null) continue;
+        	
+        	String value = rawVal.toString().trim();
 
             if (value.equalsIgnoreCase("null")) continue;
             
-            invalidRows.add("Invalid date or time format: " + value);
+            invalidRows.add("Row " + rowId + ": Invalid date or time format: " + value);
         }
 
         return invalidRows.isEmpty();
@@ -76,10 +79,10 @@ public class DateTimeFormatCheck implements IGenericColumnCheck {
     @Override
     public boolean isApplicable(DataType columnType) {
     	List<String> keywords = Arrays.asList("date", "time", "datetime", "timestamp");
-
-        if (!columnType.equals(DataTypes.StringType)) return false;
-
-        String col = columnName.toLowerCase();
-        return keywords.stream().anyMatch(col::contains);
+    	String col = columnName.toLowerCase();
+        if (columnType.equals(DataTypes.StringType)) {
+        	return keywords.stream().anyMatch(col::contains);
+        }
+        return columnType instanceof TimestampType || columnType instanceof DateType;
     }
 }

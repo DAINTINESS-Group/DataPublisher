@@ -83,9 +83,15 @@ public class DataAccuracyCheck implements IGenericColumnCheck {
         		return true;
     		}
 
-    		List<Row> invalidList = invalid.select(columnName).collectAsList();
+    		List<Row> invalidList = invalid.select(functions.col("_id"), functions.col(columnName)).collectAsList();
     		for (Row row : invalidList) {
-    			invalidRows.add("Invalid numeric value: " + row.get(0));
+    			Number rowIdNum = (Number) row.getAs("_id");
+            	long rowId = rowIdNum.longValue() + 1;
+            	
+            	Object raw = row.get(1);
+            	String value = (raw == null) ? "<null>" : raw.toString();
+            	
+    			invalidRows.add("Row " + rowId + ": Invalid numeric value: " + value);
     		}
     		
     		return invalidRows.isEmpty();
@@ -93,7 +99,6 @@ public class DataAccuracyCheck implements IGenericColumnCheck {
     		e.printStackTrace();
     		return false;
     	}
-    	
     }
     
     private boolean checkStringColumn(Dataset<Row> dataset) {
@@ -113,15 +118,21 @@ public class DataAccuracyCheck implements IGenericColumnCheck {
     			.map(row -> row.getString(0))
     			.collect(Collectors.toList());
     		
-    		List<Row> allValues = cleaned.select(columnName).collectAsList();
+    		List<Row> allValues = cleaned.select(functions.col("_id"), functions.col(columnName)).collectAsList();
     		for (Row row : allValues) {
-    			String value = row.getString(0);
-    			if(value == null || frequentValues.contains(value)) continue;
+    			Number rowIdNum = (Number) row.getAs("_id");
+            	long rowId = rowIdNum.longValue() + 1;
+            	
+            	Object raw = row.get(1);
+            	if (raw == null) continue;
+            	
+            	String value = raw.toString().trim();
+    			if(frequentValues.contains(value)) continue;
     			
     			boolean isSimilar = frequentValues.stream()
     				.anyMatch(frequent -> similarity.apply(frequent, value) >= SIMILARITY_THRESHOLD);
     			if(!isSimilar) {
-    				invalidRows.add("Unusual or inaccurate value: " + value);
+    				invalidRows.add("Row " + rowId + ": Unusual or inaccurate value: " + value);
     			}
     		}
     		return invalidRows.isEmpty();

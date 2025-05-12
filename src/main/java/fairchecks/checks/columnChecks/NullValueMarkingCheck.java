@@ -3,6 +3,7 @@ package fairchecks.checks.columnChecks;
 import fairchecks.api.IGenericColumnCheck;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
+import org.apache.spark.sql.functions;
 import org.apache.spark.sql.types.DataType;
 
 import java.util.ArrayList;
@@ -43,15 +44,16 @@ public class NullValueMarkingCheck implements IGenericColumnCheck {
         List<Row> failingRows = dataset
                 .filter(dataset.col(columnName).isNull()
                 		.or(dataset.col(columnName).equalTo("")))
-                .select(columnName)
+                .select(functions.col("_id"), functions.col(columnName))
                 .collectAsList();
 
         for (Row row : failingRows) {
-        	if (!row.isNullAt(0)) {
-                invalidRows.add("Missing or improperly marked null value in: " + row.getString(0));
-            } else {
-                invalidRows.add("Missing or improperly marked null value: <null>");
-            }
+        	Number rowIdNum = (Number) row.getAs("_id");
+        	long rowId = rowIdNum.longValue() + 1;
+        	Object raw = row.get(1);
+        	
+        	String value = (raw == null) ? "<null>" : raw.toString();
+        	invalidRows.add("Row " + rowId + ": Invalid null value found in: " + value);
         }
 
         return invalidRows.isEmpty();

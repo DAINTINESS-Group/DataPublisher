@@ -57,19 +57,23 @@ public class ControlledVocabularyCheck implements IGenericColumnCheck {
 
             List<Row> rows = dataset
                     .filter(functions.col(columnName).isNotNull())
-                    .select(columnName)
+                    .select(functions.col("_id"), functions.col(columnName))
                     .collectAsList();
 
             for (Row row : rows) {
-                Object raw = row.get(0);
-                if (raw == null) continue;
+            	Number rowIdNum = (Number) row.getAs("_id");
+            	long rowId = rowIdNum.longValue() + 1;
+            	
+            	Object rawVal = row.get(1);
+            	if (rawVal == null) continue;
+            	
+            	String value = rawVal.toString().trim();
 
-                String value = raw.toString().trim();
                 if (value.equalsIgnoreCase("null")) continue;
 
                 if (!allowedTerms.contains(value)) {
                 	if (value.equalsIgnoreCase("null")) continue;
-                    invalidRows.add("Invalid controlled term: " + value);
+                    invalidRows.add("Row " + rowId + ": Invalid controlled term: " + value);
                 }
             }
 

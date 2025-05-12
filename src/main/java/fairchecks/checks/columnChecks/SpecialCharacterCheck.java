@@ -13,7 +13,7 @@ import org.apache.spark.sql.types.DataType;
 /**
  * A check that verifies whether values in a column contain special characters.
  * <p>It flags any non-null value that includes characters outside letters, digits,
- * and whitespace and excludes ",", ":", "-", "+", ".", using the regex {@code .*[^\\p{Alnum}\\s,\\.\\-\\+:].*}.
+ * and whitespace and excludes ",", ":", "-", "+", ".", using the regex {@code .*[^\\p{Alnum}\\s,\\.\\-\\+:''].*}.
  *
  * <p>Check ID: IEU3.2
  */
@@ -22,7 +22,7 @@ public class SpecialCharacterCheck implements IGenericColumnCheck {
 	private final String columnName;
 	private final List<String> invalidRows = new ArrayList<>();
 	
-	private static final String specialCharRegex = ".*[^\\p{Alnum}\\s,\\.\\-\\+:].*";
+	private static final String specialCharRegex = ".*[^\\p{Alnum}\\s,\\.\\-\\+:''].*";
 
     public SpecialCharacterCheck(String columnName) {
         this.columnName = columnName;
@@ -42,15 +42,16 @@ public class SpecialCharacterCheck implements IGenericColumnCheck {
     public boolean executeCheck(Dataset<Row> dataset) {
     	List<Row> rowsWithSpecialChars = dataset
                 .filter(functions.col(columnName).rlike(specialCharRegex))
-                .select(columnName)
+                .select(functions.col("_id"), functions.col(columnName))
                 .collectAsList();
 
         for (Row row : rowsWithSpecialChars) {
-            if (!row.isNullAt(0)) {
-                invalidRows.add("Special character found in value: " + row.get(0).toString());
-            } else {
-                invalidRows.add("Special character found in value: <null>");
-            }
+        	Number rowIdNum = (Number) row.getAs("_id");
+        	long rowId = rowIdNum.longValue() + 1;
+            Object raw = row.get(1);
+            
+            String value = (raw == null) ? "<null>" : raw.toString();
+            invalidRows.add("Row " + rowId + ": Special character found in value: "+ value);
         }
 
         return invalidRows.isEmpty();

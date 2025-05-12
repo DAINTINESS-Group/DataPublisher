@@ -23,9 +23,9 @@ FAIR Report for Dataset: myDataset
 Column: Status
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: Associated with NZ
-      - Unusual or inaccurate value: Crown dependency of GB
-      - Unusual or inaccurate value: In contention
+      - Row 35: Unusual or inaccurate value: Associated with NZ
+      - Row 67: Unusual or inaccurate value: Crown dependency of GB
+      - Row 105: Unusual or inaccurate value: In contention
   [FEU2] Data with a null value should be marked as such.: PASSED
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
@@ -44,13 +44,13 @@ Column: ISO_Code
 Column: Sub-region Name
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: Australia and New Zealand
-      - Unusual or inaccurate value: Eastern Asia
-      - Unusual or inaccurate value: Micronesia
-      - Unusual or inaccurate value: Central Asia
-      - Unusual or inaccurate value: Eastern Asia
-      - Unusual or inaccurate value: Australia and New Zealand
-      - Unusual or inaccurate value: Central Asia
+      - Row 9: Unusual or inaccurate value: Australia and New Zealand
+      - Row 71: Unusual or inaccurate value: Eastern Asia
+      - Row 74: Unusual or inaccurate value: Micronesia
+      - Row 76: Unusual or inaccurate value: Central Asia
+      - Row 90: Unusual or inaccurate value: Eastern Asia
+      - Row 98: Unusual or inaccurate value: Australia and New Zealand
+      - Row 141: Unusual or inaccurate value: Central Asia
   [FEU2] Data with a null value should be marked as such.: PASSED
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
@@ -58,160 +58,160 @@ Column: Sub-region Name
 Column: ISO
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: AL
-      - Unusual or inaccurate value: DZ
-      - Unusual or inaccurate value: AS
-      - Unusual or inaccurate value: AO
-      - Unusual or inaccurate value: AI
-      - Unusual or inaccurate value: AG
-      - Unusual or inaccurate value: AR
-      - Unusual or inaccurate value: AU
-      - Unusual or inaccurate value: AT
-      - Unusual or inaccurate value: BD
-      - Unusual or inaccurate value: BB
-      - Unusual or inaccurate value: BE
-      - Unusual or inaccurate value: BZ
-      - Unusual or inaccurate value: BJ
-      - Unusual or inaccurate value: BT
-      - Unusual or inaccurate value: BO
-      - Unusual or inaccurate value: BA
-      - Unusual or inaccurate value: BW
-      - Unusual or inaccurate value: BR
-      - Unusual or inaccurate value: VG
-      - Unusual or inaccurate value: BN
-      - Unusual or inaccurate value: BG
-      - Unusual or inaccurate value: BF
-      - Unusual or inaccurate value: BI
-      - Unusual or inaccurate value: KH
-      - Unusual or inaccurate value: CM
-      - Unusual or inaccurate value: CA
-      - Unusual or inaccurate value: CV
-      - Unusual or inaccurate value: KY
-      - Unusual or inaccurate value: CF
-      - Unusual or inaccurate value: TD
-      - Unusual or inaccurate value: CL
-      - Unusual or inaccurate value: CO
-      - Unusual or inaccurate value: CK
-      - Unusual or inaccurate value: CR
-      - Unusual or inaccurate value: CU
-      - Unusual or inaccurate value: CY
-      - Unusual or inaccurate value: CZ
-      - Unusual or inaccurate value: DK
-      - Unusual or inaccurate value: DJ
-      - Unusual or inaccurate value: DM
-      - Unusual or inaccurate value: DO
-      - Unusual or inaccurate value: EC
-      - Unusual or inaccurate value: SV
-      - Unusual or inaccurate value: FI
-      - Unusual or inaccurate value: FR
-      - Unusual or inaccurate value: PF
-      - Unusual or inaccurate value: GA
-      - Unusual or inaccurate value: GE
-      - Unusual or inaccurate value: DE
-      - Unusual or inaccurate value: GH
-      - Unusual or inaccurate value: GR
-      - Unusual or inaccurate value: GD
-      - Unusual or inaccurate value: GT
-      - Unusual or inaccurate value: GN
-      - Unusual or inaccurate value: GW
-      - Unusual or inaccurate value: GY
-      - Unusual or inaccurate value: HT
-      - Unusual or inaccurate value: HN
-      - Unusual or inaccurate value: HU
-      - Unusual or inaccurate value: IS
-      - Unusual or inaccurate value: IN
-      - Unusual or inaccurate value: ID
-      - Unusual or inaccurate value: IQ
-      - Unusual or inaccurate value: IE
-      - Unusual or inaccurate value: IM
-      - Unusual or inaccurate value: IL
-      - Unusual or inaccurate value: IT
-      - Unusual or inaccurate value: JM
-      - Unusual or inaccurate value: JP
-      - Unusual or inaccurate value: JO
-      - Unusual or inaccurate value: KE
-      - Unusual or inaccurate value: KI
-      - Unusual or inaccurate value: KW
-      - Unusual or inaccurate value: KG
-      - Unusual or inaccurate value: LA
-      - Unusual or inaccurate value: LV
-      - Unusual or inaccurate value: LB
-      - Unusual or inaccurate value: LR
-      - Unusual or inaccurate value: LY
-      - Unusual or inaccurate value: LT
-      - Unusual or inaccurate value: LU
-      - Unusual or inaccurate value: MW
-      - Unusual or inaccurate value: MY
-      - Unusual or inaccurate value: MV
-      - Unusual or inaccurate value: ML
-      - Unusual or inaccurate value: MU
-      - Unusual or inaccurate value: MX
-      - Unusual or inaccurate value: MN
-      - Unusual or inaccurate value: ME
-      - Unusual or inaccurate value: MS
-      - Unusual or inaccurate value: MA
-      - Unusual or inaccurate value: MM
-      - Unusual or inaccurate value: NA
-      - Unusual or inaccurate value: NP
-      - Unusual or inaccurate value: NC
-      - Unusual or inaccurate value: NZ
-      - Unusual or inaccurate value: NI
-      - Unusual or inaccurate value: NE
-      - Unusual or inaccurate value: NG
-      - Unusual or inaccurate value: NO
-      - Unusual or inaccurate value: OM
-      - Unusual or inaccurate value: PK
-      - Unusual or inaccurate value: PS
-      - Unusual or inaccurate value: PA
-      - Unusual or inaccurate value: PG
-      - Unusual or inaccurate value: PY
-      - Unusual or inaccurate value: PE
-      - Unusual or inaccurate value: PH
-      - Unusual or inaccurate value: PT
-      - Unusual or inaccurate value: QA
-      - Unusual or inaccurate value: RO
-      - Unusual or inaccurate value: RU
-      - Unusual or inaccurate value: RW
-      - Unusual or inaccurate value: SH
-      - Unusual or inaccurate value: KN
-      - Unusual or inaccurate value: LC
-      - Unusual or inaccurate value: VC
-      - Unusual or inaccurate value: WS
-      - Unusual or inaccurate value: SA
-      - Unusual or inaccurate value: SN
-      - Unusual or inaccurate value: SC
-      - Unusual or inaccurate value: SL
-      - Unusual or inaccurate value: SK
-      - Unusual or inaccurate value: SB
-      - Unusual or inaccurate value: SO
-      - Unusual or inaccurate value: ZA
-      - Unusual or inaccurate value: ES
-      - Unusual or inaccurate value: LK
-      - Unusual or inaccurate value: SD
-      - Unusual or inaccurate value: SR
-      - Unusual or inaccurate value: SE
-      - Unusual or inaccurate value: CH
-      - Unusual or inaccurate value: SY
-      - Unusual or inaccurate value: TH
-      - Unusual or inaccurate value: TG
-      - Unusual or inaccurate value: TO
-      - Unusual or inaccurate value: TT
-      - Unusual or inaccurate value: TN
-      - Unusual or inaccurate value: TM
-      - Unusual or inaccurate value: TC
-      - Unusual or inaccurate value: TV
-      - Unusual or inaccurate value: VI
-      - Unusual or inaccurate value: UG
-      - Unusual or inaccurate value: UA
-      - Unusual or inaccurate value: AE
-      - Unusual or inaccurate value: GB
-      - Unusual or inaccurate value: US
-      - Unusual or inaccurate value: UY
-      - Unusual or inaccurate value: VU
-      - Unusual or inaccurate value: VN
-      - Unusual or inaccurate value: WF
-      - Unusual or inaccurate value: ZM
-      - Unusual or inaccurate value: ZW
+      - Row 2: Unusual or inaccurate value: AL
+      - Row 3: Unusual or inaccurate value: DZ
+      - Row 4: Unusual or inaccurate value: AS
+      - Row 5: Unusual or inaccurate value: AO
+      - Row 6: Unusual or inaccurate value: AI
+      - Row 7: Unusual or inaccurate value: AG
+      - Row 8: Unusual or inaccurate value: AR
+      - Row 9: Unusual or inaccurate value: AU
+      - Row 10: Unusual or inaccurate value: AT
+      - Row 11: Unusual or inaccurate value: BD
+      - Row 12: Unusual or inaccurate value: BB
+      - Row 13: Unusual or inaccurate value: BE
+      - Row 14: Unusual or inaccurate value: BZ
+      - Row 15: Unusual or inaccurate value: BJ
+      - Row 16: Unusual or inaccurate value: BT
+      - Row 17: Unusual or inaccurate value: BO
+      - Row 18: Unusual or inaccurate value: BA
+      - Row 19: Unusual or inaccurate value: BW
+      - Row 20: Unusual or inaccurate value: BR
+      - Row 21: Unusual or inaccurate value: VG
+      - Row 22: Unusual or inaccurate value: BN
+      - Row 23: Unusual or inaccurate value: BG
+      - Row 24: Unusual or inaccurate value: BF
+      - Row 25: Unusual or inaccurate value: BI
+      - Row 26: Unusual or inaccurate value: KH
+      - Row 27: Unusual or inaccurate value: CM
+      - Row 28: Unusual or inaccurate value: CA
+      - Row 29: Unusual or inaccurate value: CV
+      - Row 30: Unusual or inaccurate value: KY
+      - Row 31: Unusual or inaccurate value: CF
+      - Row 32: Unusual or inaccurate value: TD
+      - Row 33: Unusual or inaccurate value: CL
+      - Row 34: Unusual or inaccurate value: CO
+      - Row 35: Unusual or inaccurate value: CK
+      - Row 36: Unusual or inaccurate value: CR
+      - Row 37: Unusual or inaccurate value: CU
+      - Row 38: Unusual or inaccurate value: CY
+      - Row 39: Unusual or inaccurate value: CZ
+      - Row 40: Unusual or inaccurate value: DK
+      - Row 41: Unusual or inaccurate value: DJ
+      - Row 42: Unusual or inaccurate value: DM
+      - Row 43: Unusual or inaccurate value: DO
+      - Row 44: Unusual or inaccurate value: EC
+      - Row 45: Unusual or inaccurate value: SV
+      - Row 46: Unusual or inaccurate value: FI
+      - Row 47: Unusual or inaccurate value: FR
+      - Row 48: Unusual or inaccurate value: PF
+      - Row 49: Unusual or inaccurate value: GA
+      - Row 50: Unusual or inaccurate value: GE
+      - Row 51: Unusual or inaccurate value: DE
+      - Row 52: Unusual or inaccurate value: GH
+      - Row 53: Unusual or inaccurate value: GR
+      - Row 54: Unusual or inaccurate value: GD
+      - Row 55: Unusual or inaccurate value: GT
+      - Row 56: Unusual or inaccurate value: GN
+      - Row 57: Unusual or inaccurate value: GW
+      - Row 58: Unusual or inaccurate value: GY
+      - Row 59: Unusual or inaccurate value: HT
+      - Row 60: Unusual or inaccurate value: HN
+      - Row 61: Unusual or inaccurate value: HU
+      - Row 62: Unusual or inaccurate value: IS
+      - Row 63: Unusual or inaccurate value: IN
+      - Row 64: Unusual or inaccurate value: ID
+      - Row 65: Unusual or inaccurate value: IQ
+      - Row 66: Unusual or inaccurate value: IE
+      - Row 67: Unusual or inaccurate value: IM
+      - Row 68: Unusual or inaccurate value: IL
+      - Row 69: Unusual or inaccurate value: IT
+      - Row 70: Unusual or inaccurate value: JM
+      - Row 71: Unusual or inaccurate value: JP
+      - Row 72: Unusual or inaccurate value: JO
+      - Row 73: Unusual or inaccurate value: KE
+      - Row 74: Unusual or inaccurate value: KI
+      - Row 75: Unusual or inaccurate value: KW
+      - Row 76: Unusual or inaccurate value: KG
+      - Row 77: Unusual or inaccurate value: LA
+      - Row 78: Unusual or inaccurate value: LV
+      - Row 79: Unusual or inaccurate value: LB
+      - Row 80: Unusual or inaccurate value: LR
+      - Row 81: Unusual or inaccurate value: LY
+      - Row 82: Unusual or inaccurate value: LT
+      - Row 83: Unusual or inaccurate value: LU
+      - Row 84: Unusual or inaccurate value: MW
+      - Row 85: Unusual or inaccurate value: MY
+      - Row 86: Unusual or inaccurate value: MV
+      - Row 87: Unusual or inaccurate value: ML
+      - Row 88: Unusual or inaccurate value: MU
+      - Row 89: Unusual or inaccurate value: MX
+      - Row 90: Unusual or inaccurate value: MN
+      - Row 91: Unusual or inaccurate value: ME
+      - Row 92: Unusual or inaccurate value: MS
+      - Row 93: Unusual or inaccurate value: MA
+      - Row 94: Unusual or inaccurate value: MM
+      - Row 95: Unusual or inaccurate value: NA
+      - Row 96: Unusual or inaccurate value: NP
+      - Row 97: Unusual or inaccurate value: NC
+      - Row 98: Unusual or inaccurate value: NZ
+      - Row 99: Unusual or inaccurate value: NI
+      - Row 100: Unusual or inaccurate value: NE
+      - Row 101: Unusual or inaccurate value: NG
+      - Row 102: Unusual or inaccurate value: NO
+      - Row 103: Unusual or inaccurate value: OM
+      - Row 104: Unusual or inaccurate value: PK
+      - Row 105: Unusual or inaccurate value: PS
+      - Row 106: Unusual or inaccurate value: PA
+      - Row 107: Unusual or inaccurate value: PG
+      - Row 108: Unusual or inaccurate value: PY
+      - Row 109: Unusual or inaccurate value: PE
+      - Row 110: Unusual or inaccurate value: PH
+      - Row 111: Unusual or inaccurate value: PT
+      - Row 112: Unusual or inaccurate value: QA
+      - Row 113: Unusual or inaccurate value: RO
+      - Row 114: Unusual or inaccurate value: RU
+      - Row 115: Unusual or inaccurate value: RW
+      - Row 116: Unusual or inaccurate value: SH
+      - Row 117: Unusual or inaccurate value: KN
+      - Row 118: Unusual or inaccurate value: LC
+      - Row 119: Unusual or inaccurate value: VC
+      - Row 120: Unusual or inaccurate value: WS
+      - Row 121: Unusual or inaccurate value: SA
+      - Row 122: Unusual or inaccurate value: SN
+      - Row 123: Unusual or inaccurate value: SC
+      - Row 124: Unusual or inaccurate value: SL
+      - Row 125: Unusual or inaccurate value: SK
+      - Row 126: Unusual or inaccurate value: SB
+      - Row 127: Unusual or inaccurate value: SO
+      - Row 128: Unusual or inaccurate value: ZA
+      - Row 129: Unusual or inaccurate value: ES
+      - Row 130: Unusual or inaccurate value: LK
+      - Row 131: Unusual or inaccurate value: SD
+      - Row 132: Unusual or inaccurate value: SR
+      - Row 133: Unusual or inaccurate value: SE
+      - Row 134: Unusual or inaccurate value: CH
+      - Row 135: Unusual or inaccurate value: SY
+      - Row 136: Unusual or inaccurate value: TH
+      - Row 137: Unusual or inaccurate value: TG
+      - Row 138: Unusual or inaccurate value: TO
+      - Row 139: Unusual or inaccurate value: TT
+      - Row 140: Unusual or inaccurate value: TN
+      - Row 141: Unusual or inaccurate value: TM
+      - Row 142: Unusual or inaccurate value: TC
+      - Row 143: Unusual or inaccurate value: TV
+      - Row 144: Unusual or inaccurate value: VI
+      - Row 145: Unusual or inaccurate value: UG
+      - Row 146: Unusual or inaccurate value: UA
+      - Row 147: Unusual or inaccurate value: AE
+      - Row 148: Unusual or inaccurate value: GB
+      - Row 149: Unusual or inaccurate value: US
+      - Row 150: Unusual or inaccurate value: UY
+      - Row 151: Unusual or inaccurate value: VU
+      - Row 152: Unusual or inaccurate value: VN
+      - Row 153: Unusual or inaccurate value: WF
+      - Row 154: Unusual or inaccurate value: ZM
+      - Row 155: Unusual or inaccurate value: ZW
   [FEU2] Data with a null value should be marked as such.: PASSED
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
@@ -219,160 +219,160 @@ Column: ISO
 Column: FIPS
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: AL
-      - Unusual or inaccurate value: AG
-      - Unusual or inaccurate value: AQ
-      - Unusual or inaccurate value: AO
-      - Unusual or inaccurate value: AV
-      - Unusual or inaccurate value: AC
-      - Unusual or inaccurate value: AR
-      - Unusual or inaccurate value: AS
-      - Unusual or inaccurate value: AU
-      - Unusual or inaccurate value: BG
-      - Unusual or inaccurate value: BB
-      - Unusual or inaccurate value: BE
-      - Unusual or inaccurate value: BH
-      - Unusual or inaccurate value: BN
-      - Unusual or inaccurate value: BT
-      - Unusual or inaccurate value: BL
-      - Unusual or inaccurate value: BK
-      - Unusual or inaccurate value: BC
-      - Unusual or inaccurate value: BR
-      - Unusual or inaccurate value: VI
-      - Unusual or inaccurate value: BX
-      - Unusual or inaccurate value: BU
-      - Unusual or inaccurate value: UV
-      - Unusual or inaccurate value: BY
-      - Unusual or inaccurate value: CB
-      - Unusual or inaccurate value: CM
-      - Unusual or inaccurate value: CA
-      - Unusual or inaccurate value: CV
-      - Unusual or inaccurate value: CJ
-      - Unusual or inaccurate value: CT
-      - Unusual or inaccurate value: CD
-      - Unusual or inaccurate value: CI
-      - Unusual or inaccurate value: CO
-      - Unusual or inaccurate value: CW
-      - Unusual or inaccurate value: CS
-      - Unusual or inaccurate value: CU
-      - Unusual or inaccurate value: CY
-      - Unusual or inaccurate value: EZ
-      - Unusual or inaccurate value: DA
-      - Unusual or inaccurate value: DJ
-      - Unusual or inaccurate value: DO
-      - Unusual or inaccurate value: DR
-      - Unusual or inaccurate value: EC
-      - Unusual or inaccurate value: ES
-      - Unusual or inaccurate value: FI
-      - Unusual or inaccurate value: FR
-      - Unusual or inaccurate value: FP
-      - Unusual or inaccurate value: GB
-      - Unusual or inaccurate value: GG
-      - Unusual or inaccurate value: GM
-      - Unusual or inaccurate value: GH
-      - Unusual or inaccurate value: GR
-      - Unusual or inaccurate value: GJ
-      - Unusual or inaccurate value: GT
-      - Unusual or inaccurate value: GV
-      - Unusual or inaccurate value: PU
-      - Unusual or inaccurate value: GY
-      - Unusual or inaccurate value: HA
-      - Unusual or inaccurate value: HO
-      - Unusual or inaccurate value: HU
-      - Unusual or inaccurate value: IC
-      - Unusual or inaccurate value: IN
-      - Unusual or inaccurate value: ID
-      - Unusual or inaccurate value: IZ
-      - Unusual or inaccurate value: EI
-      - Unusual or inaccurate value: IM
-      - Unusual or inaccurate value: IS
-      - Unusual or inaccurate value: IT
-      - Unusual or inaccurate value: JM
-      - Unusual or inaccurate value: JA
-      - Unusual or inaccurate value: JO
-      - Unusual or inaccurate value: KE
-      - Unusual or inaccurate value: KR
-      - Unusual or inaccurate value: KU
-      - Unusual or inaccurate value: KG
-      - Unusual or inaccurate value: LA
-      - Unusual or inaccurate value: LG
-      - Unusual or inaccurate value: LE
-      - Unusual or inaccurate value: LI
-      - Unusual or inaccurate value: LY
-      - Unusual or inaccurate value: LH
-      - Unusual or inaccurate value: LU
-      - Unusual or inaccurate value: MI
-      - Unusual or inaccurate value: MY
-      - Unusual or inaccurate value: MV
-      - Unusual or inaccurate value: ML
-      - Unusual or inaccurate value: MP
-      - Unusual or inaccurate value: MX
-      - Unusual or inaccurate value: MG
-      - Unusual or inaccurate value: MJ
-      - Unusual or inaccurate value: MH
-      - Unusual or inaccurate value: MO
-      - Unusual or inaccurate value: BM
-      - Unusual or inaccurate value: WA
-      - Unusual or inaccurate value: NP
-      - Unusual or inaccurate value: NC
-      - Unusual or inaccurate value: NZ
-      - Unusual or inaccurate value: NU
-      - Unusual or inaccurate value: NG
-      - Unusual or inaccurate value: NI
-      - Unusual or inaccurate value: NO
-      - Unusual or inaccurate value: MU
-      - Unusual or inaccurate value: PK
-      - Unusual or inaccurate value: WE
-      - Unusual or inaccurate value: PM
-      - Unusual or inaccurate value: PP
-      - Unusual or inaccurate value: PA
-      - Unusual or inaccurate value: PE
-      - Unusual or inaccurate value: RP
-      - Unusual or inaccurate value: PO
-      - Unusual or inaccurate value: QA
-      - Unusual or inaccurate value: RO
-      - Unusual or inaccurate value: RS
-      - Unusual or inaccurate value: RW
-      - Unusual or inaccurate value: SH
-      - Unusual or inaccurate value: SC
-      - Unusual or inaccurate value: ST
-      - Unusual or inaccurate value: VC
-      - Unusual or inaccurate value: WS
-      - Unusual or inaccurate value: SA
-      - Unusual or inaccurate value: SG
-      - Unusual or inaccurate value: SE
-      - Unusual or inaccurate value: SL
-      - Unusual or inaccurate value: LO
-      - Unusual or inaccurate value: BP
-      - Unusual or inaccurate value: SO
-      - Unusual or inaccurate value: SF
-      - Unusual or inaccurate value: SP
-      - Unusual or inaccurate value: CE
-      - Unusual or inaccurate value: SU
-      - Unusual or inaccurate value: NS
-      - Unusual or inaccurate value: SW
-      - Unusual or inaccurate value: SZ
-      - Unusual or inaccurate value: SY
-      - Unusual or inaccurate value: TH
-      - Unusual or inaccurate value: TO
-      - Unusual or inaccurate value: TN
-      - Unusual or inaccurate value: TD
-      - Unusual or inaccurate value: TS
-      - Unusual or inaccurate value: TX
-      - Unusual or inaccurate value: TK
-      - Unusual or inaccurate value: TV
-      - Unusual or inaccurate value: VQ
-      - Unusual or inaccurate value: UG
-      - Unusual or inaccurate value: UP
-      - Unusual or inaccurate value: AE
-      - Unusual or inaccurate value: UK
-      - Unusual or inaccurate value: US
-      - Unusual or inaccurate value: UY
-      - Unusual or inaccurate value: NH
-      - Unusual or inaccurate value: VM
-      - Unusual or inaccurate value: WF
-      - Unusual or inaccurate value: ZA
-      - Unusual or inaccurate value: ZI
+      - Row 2: Unusual or inaccurate value: AL
+      - Row 3: Unusual or inaccurate value: AG
+      - Row 4: Unusual or inaccurate value: AQ
+      - Row 5: Unusual or inaccurate value: AO
+      - Row 6: Unusual or inaccurate value: AV
+      - Row 7: Unusual or inaccurate value: AC
+      - Row 8: Unusual or inaccurate value: AR
+      - Row 9: Unusual or inaccurate value: AS
+      - Row 10: Unusual or inaccurate value: AU
+      - Row 11: Unusual or inaccurate value: BG
+      - Row 12: Unusual or inaccurate value: BB
+      - Row 13: Unusual or inaccurate value: BE
+      - Row 14: Unusual or inaccurate value: BH
+      - Row 15: Unusual or inaccurate value: BN
+      - Row 16: Unusual or inaccurate value: BT
+      - Row 17: Unusual or inaccurate value: BL
+      - Row 18: Unusual or inaccurate value: BK
+      - Row 19: Unusual or inaccurate value: BC
+      - Row 20: Unusual or inaccurate value: BR
+      - Row 21: Unusual or inaccurate value: VI
+      - Row 22: Unusual or inaccurate value: BX
+      - Row 23: Unusual or inaccurate value: BU
+      - Row 24: Unusual or inaccurate value: UV
+      - Row 25: Unusual or inaccurate value: BY
+      - Row 26: Unusual or inaccurate value: CB
+      - Row 27: Unusual or inaccurate value: CM
+      - Row 28: Unusual or inaccurate value: CA
+      - Row 29: Unusual or inaccurate value: CV
+      - Row 30: Unusual or inaccurate value: CJ
+      - Row 31: Unusual or inaccurate value: CT
+      - Row 32: Unusual or inaccurate value: CD
+      - Row 33: Unusual or inaccurate value: CI
+      - Row 34: Unusual or inaccurate value: CO
+      - Row 35: Unusual or inaccurate value: CW
+      - Row 36: Unusual or inaccurate value: CS
+      - Row 37: Unusual or inaccurate value: CU
+      - Row 38: Unusual or inaccurate value: CY
+      - Row 39: Unusual or inaccurate value: EZ
+      - Row 40: Unusual or inaccurate value: DA
+      - Row 41: Unusual or inaccurate value: DJ
+      - Row 42: Unusual or inaccurate value: DO
+      - Row 43: Unusual or inaccurate value: DR
+      - Row 44: Unusual or inaccurate value: EC
+      - Row 45: Unusual or inaccurate value: ES
+      - Row 46: Unusual or inaccurate value: FI
+      - Row 47: Unusual or inaccurate value: FR
+      - Row 48: Unusual or inaccurate value: FP
+      - Row 49: Unusual or inaccurate value: GB
+      - Row 50: Unusual or inaccurate value: GG
+      - Row 51: Unusual or inaccurate value: GM
+      - Row 52: Unusual or inaccurate value: GH
+      - Row 53: Unusual or inaccurate value: GR
+      - Row 54: Unusual or inaccurate value: GJ
+      - Row 55: Unusual or inaccurate value: GT
+      - Row 56: Unusual or inaccurate value: GV
+      - Row 57: Unusual or inaccurate value: PU
+      - Row 58: Unusual or inaccurate value: GY
+      - Row 59: Unusual or inaccurate value: HA
+      - Row 60: Unusual or inaccurate value: HO
+      - Row 61: Unusual or inaccurate value: HU
+      - Row 62: Unusual or inaccurate value: IC
+      - Row 63: Unusual or inaccurate value: IN
+      - Row 64: Unusual or inaccurate value: ID
+      - Row 65: Unusual or inaccurate value: IZ
+      - Row 66: Unusual or inaccurate value: EI
+      - Row 67: Unusual or inaccurate value: IM
+      - Row 68: Unusual or inaccurate value: IS
+      - Row 69: Unusual or inaccurate value: IT
+      - Row 70: Unusual or inaccurate value: JM
+      - Row 71: Unusual or inaccurate value: JA
+      - Row 72: Unusual or inaccurate value: JO
+      - Row 73: Unusual or inaccurate value: KE
+      - Row 74: Unusual or inaccurate value: KR
+      - Row 75: Unusual or inaccurate value: KU
+      - Row 76: Unusual or inaccurate value: KG
+      - Row 77: Unusual or inaccurate value: LA
+      - Row 78: Unusual or inaccurate value: LG
+      - Row 79: Unusual or inaccurate value: LE
+      - Row 80: Unusual or inaccurate value: LI
+      - Row 81: Unusual or inaccurate value: LY
+      - Row 82: Unusual or inaccurate value: LH
+      - Row 83: Unusual or inaccurate value: LU
+      - Row 84: Unusual or inaccurate value: MI
+      - Row 85: Unusual or inaccurate value: MY
+      - Row 86: Unusual or inaccurate value: MV
+      - Row 87: Unusual or inaccurate value: ML
+      - Row 88: Unusual or inaccurate value: MP
+      - Row 89: Unusual or inaccurate value: MX
+      - Row 90: Unusual or inaccurate value: MG
+      - Row 91: Unusual or inaccurate value: MJ
+      - Row 92: Unusual or inaccurate value: MH
+      - Row 93: Unusual or inaccurate value: MO
+      - Row 94: Unusual or inaccurate value: BM
+      - Row 95: Unusual or inaccurate value: WA
+      - Row 96: Unusual or inaccurate value: NP
+      - Row 97: Unusual or inaccurate value: NC
+      - Row 98: Unusual or inaccurate value: NZ
+      - Row 99: Unusual or inaccurate value: NU
+      - Row 100: Unusual or inaccurate value: NG
+      - Row 101: Unusual or inaccurate value: NI
+      - Row 102: Unusual or inaccurate value: NO
+      - Row 103: Unusual or inaccurate value: MU
+      - Row 104: Unusual or inaccurate value: PK
+      - Row 105: Unusual or inaccurate value: WE
+      - Row 106: Unusual or inaccurate value: PM
+      - Row 107: Unusual or inaccurate value: PP
+      - Row 108: Unusual or inaccurate value: PA
+      - Row 109: Unusual or inaccurate value: PE
+      - Row 110: Unusual or inaccurate value: RP
+      - Row 111: Unusual or inaccurate value: PO
+      - Row 112: Unusual or inaccurate value: QA
+      - Row 113: Unusual or inaccurate value: RO
+      - Row 114: Unusual or inaccurate value: RS
+      - Row 115: Unusual or inaccurate value: RW
+      - Row 116: Unusual or inaccurate value: SH
+      - Row 117: Unusual or inaccurate value: SC
+      - Row 118: Unusual or inaccurate value: ST
+      - Row 119: Unusual or inaccurate value: VC
+      - Row 120: Unusual or inaccurate value: WS
+      - Row 121: Unusual or inaccurate value: SA
+      - Row 122: Unusual or inaccurate value: SG
+      - Row 123: Unusual or inaccurate value: SE
+      - Row 124: Unusual or inaccurate value: SL
+      - Row 125: Unusual or inaccurate value: LO
+      - Row 126: Unusual or inaccurate value: BP
+      - Row 127: Unusual or inaccurate value: SO
+      - Row 128: Unusual or inaccurate value: SF
+      - Row 129: Unusual or inaccurate value: SP
+      - Row 130: Unusual or inaccurate value: CE
+      - Row 131: Unusual or inaccurate value: SU
+      - Row 132: Unusual or inaccurate value: NS
+      - Row 133: Unusual or inaccurate value: SW
+      - Row 134: Unusual or inaccurate value: SZ
+      - Row 135: Unusual or inaccurate value: SY
+      - Row 136: Unusual or inaccurate value: TH
+      - Row 137: Unusual or inaccurate value: TO
+      - Row 138: Unusual or inaccurate value: TN
+      - Row 139: Unusual or inaccurate value: TD
+      - Row 140: Unusual or inaccurate value: TS
+      - Row 141: Unusual or inaccurate value: TX
+      - Row 142: Unusual or inaccurate value: TK
+      - Row 143: Unusual or inaccurate value: TV
+      - Row 144: Unusual or inaccurate value: VQ
+      - Row 145: Unusual or inaccurate value: UG
+      - Row 146: Unusual or inaccurate value: UP
+      - Row 147: Unusual or inaccurate value: AE
+      - Row 148: Unusual or inaccurate value: UK
+      - Row 149: Unusual or inaccurate value: US
+      - Row 150: Unusual or inaccurate value: UY
+      - Row 151: Unusual or inaccurate value: NH
+      - Row 152: Unusual or inaccurate value: VM
+      - Row 153: Unusual or inaccurate value: WF
+      - Row 154: Unusual or inaccurate value: ZA
+      - Row 155: Unusual or inaccurate value: ZI
   [FEU2] Data with a null value should be marked as such.: PASSED
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
@@ -397,160 +397,160 @@ Column: Sub-region Code
 Column: Display_Name
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: Albania
-      - Unusual or inaccurate value: Algeria
-      - Unusual or inaccurate value: American Samoa
-      - Unusual or inaccurate value: Angola
-      - Unusual or inaccurate value: Anguilla
-      - Unusual or inaccurate value: Antigua and Barbuda
-      - Unusual or inaccurate value: Argentina
-      - Unusual or inaccurate value: Australia
-      - Unusual or inaccurate value: Austria
-      - Unusual or inaccurate value: Bangladesh
-      - Unusual or inaccurate value: Barbados
-      - Unusual or inaccurate value: Belgium
-      - Unusual or inaccurate value: Belize
-      - Unusual or inaccurate value: Benin
-      - Unusual or inaccurate value: Bhutan
-      - Unusual or inaccurate value: Bolivia
-      - Unusual or inaccurate value: Bosnia and Herzegovina
-      - Unusual or inaccurate value: Botswana
-      - Unusual or inaccurate value: Brazil
-      - Unusual or inaccurate value: British Virgin Islands
-      - Unusual or inaccurate value: Brunei
-      - Unusual or inaccurate value: Bulgaria
-      - Unusual or inaccurate value: Burkina Faso
-      - Unusual or inaccurate value: Burundi
-      - Unusual or inaccurate value: Cambodia
-      - Unusual or inaccurate value: Cameroon
-      - Unusual or inaccurate value: Canada
-      - Unusual or inaccurate value: Cape Verde
-      - Unusual or inaccurate value: Cayman Islands
-      - Unusual or inaccurate value: Central African Republic
-      - Unusual or inaccurate value: Chad
-      - Unusual or inaccurate value: Chile
-      - Unusual or inaccurate value: Colombia
-      - Unusual or inaccurate value: Cook Islands
-      - Unusual or inaccurate value: Costa Rica
-      - Unusual or inaccurate value: Cuba
-      - Unusual or inaccurate value: Cyprus
-      - Unusual or inaccurate value: Czechia
-      - Unusual or inaccurate value: Denmark
-      - Unusual or inaccurate value: Djibouti
-      - Unusual or inaccurate value: Dominica
-      - Unusual or inaccurate value: Dominican Republic
-      - Unusual or inaccurate value: Ecuador
-      - Unusual or inaccurate value: El Salvador
-      - Unusual or inaccurate value: Finland
-      - Unusual or inaccurate value: France
-      - Unusual or inaccurate value: French Polynesia
-      - Unusual or inaccurate value: Gabon
-      - Unusual or inaccurate value: Georgia
-      - Unusual or inaccurate value: Germany
-      - Unusual or inaccurate value: Ghana
-      - Unusual or inaccurate value: Greece
-      - Unusual or inaccurate value: Grenada
-      - Unusual or inaccurate value: Guatemala
-      - Unusual or inaccurate value: Guinea
-      - Unusual or inaccurate value: Guinea-Bissau
-      - Unusual or inaccurate value: Guyana
-      - Unusual or inaccurate value: Haiti
-      - Unusual or inaccurate value: Honduras
-      - Unusual or inaccurate value: Hungary
-      - Unusual or inaccurate value: Iceland
-      - Unusual or inaccurate value: India
-      - Unusual or inaccurate value: Indonesia
-      - Unusual or inaccurate value: Iraq
-      - Unusual or inaccurate value: Ireland
-      - Unusual or inaccurate value: Isle of Man
-      - Unusual or inaccurate value: Israel
-      - Unusual or inaccurate value: Italy
-      - Unusual or inaccurate value: Jamaica
-      - Unusual or inaccurate value: Japan
-      - Unusual or inaccurate value: Jordan
-      - Unusual or inaccurate value: Kenya
-      - Unusual or inaccurate value: Kiribati
-      - Unusual or inaccurate value: Kuwait
-      - Unusual or inaccurate value: Kyrgyzstan
-      - Unusual or inaccurate value: Laos
-      - Unusual or inaccurate value: Latvia
-      - Unusual or inaccurate value: Lebanon
-      - Unusual or inaccurate value: Liberia
-      - Unusual or inaccurate value: Libya
-      - Unusual or inaccurate value: Lithuania
-      - Unusual or inaccurate value: Luxembourg
-      - Unusual or inaccurate value: Malawi
-      - Unusual or inaccurate value: Malaysia
-      - Unusual or inaccurate value: Maldives
-      - Unusual or inaccurate value: Mali
-      - Unusual or inaccurate value: Mauritius
-      - Unusual or inaccurate value: Mexico
-      - Unusual or inaccurate value: Mongolia
-      - Unusual or inaccurate value: Montenegro
-      - Unusual or inaccurate value: Montserrat
-      - Unusual or inaccurate value: Morocco
-      - Unusual or inaccurate value: Myanmar
-      - Unusual or inaccurate value: Namibia
-      - Unusual or inaccurate value: Nepal
-      - Unusual or inaccurate value: New Caledonia
-      - Unusual or inaccurate value: New Zealand
-      - Unusual or inaccurate value: Nicaragua
-      - Unusual or inaccurate value: Niger
-      - Unusual or inaccurate value: Nigeria
-      - Unusual or inaccurate value: Norway
-      - Unusual or inaccurate value: Oman
-      - Unusual or inaccurate value: Pakistan
-      - Unusual or inaccurate value: Palestinian Territory
-      - Unusual or inaccurate value: Panama
-      - Unusual or inaccurate value: Papua New Guinea
-      - Unusual or inaccurate value: Paraguay
-      - Unusual or inaccurate value: Peru
-      - Unusual or inaccurate value: Philippines
-      - Unusual or inaccurate value: Portugal
-      - Unusual or inaccurate value: Qatar
-      - Unusual or inaccurate value: Romania
-      - Unusual or inaccurate value: Russia
-      - Unusual or inaccurate value: Rwanda
-      - Unusual or inaccurate value: Saint Helena
-      - Unusual or inaccurate value: Saint Kitts and Nevis
-      - Unusual or inaccurate value: Saint Lucia
-      - Unusual or inaccurate value: Saint Vincent and the Grenadines
-      - Unusual or inaccurate value: Samoa
-      - Unusual or inaccurate value: Saudi Arabia
-      - Unusual or inaccurate value: Senegal
-      - Unusual or inaccurate value: Seychelles
-      - Unusual or inaccurate value: Sierra Leone
-      - Unusual or inaccurate value: Slovakia
-      - Unusual or inaccurate value: Solomon Islands
-      - Unusual or inaccurate value: Somalia
-      - Unusual or inaccurate value: South Africa
-      - Unusual or inaccurate value: Spain
-      - Unusual or inaccurate value: Sri Lanka
-      - Unusual or inaccurate value: Sudan
-      - Unusual or inaccurate value: Suriname
-      - Unusual or inaccurate value: Sweden
-      - Unusual or inaccurate value: Switzerland
-      - Unusual or inaccurate value: Syria
-      - Unusual or inaccurate value: Thailand
-      - Unusual or inaccurate value: Togo
-      - Unusual or inaccurate value: Tonga
-      - Unusual or inaccurate value: Trinidad and Tobago
-      - Unusual or inaccurate value: Tunisia
-      - Unusual or inaccurate value: Turkmenistan
-      - Unusual or inaccurate value: Turks and Caicos Islands
-      - Unusual or inaccurate value: Tuvalu
-      - Unusual or inaccurate value: U.S. Virgin Islands
-      - Unusual or inaccurate value: Uganda
-      - Unusual or inaccurate value: Ukraine
-      - Unusual or inaccurate value: United Arab Emirates
-      - Unusual or inaccurate value: United Kingdom
-      - Unusual or inaccurate value: United States
-      - Unusual or inaccurate value: Uruguay
-      - Unusual or inaccurate value: Vanuatu
-      - Unusual or inaccurate value: Vietnam
-      - Unusual or inaccurate value: Wallis and Futuna
-      - Unusual or inaccurate value: Zambia
-      - Unusual or inaccurate value: Zimbabwe
+      - Row 2: Unusual or inaccurate value: Albania
+      - Row 3: Unusual or inaccurate value: Algeria
+      - Row 4: Unusual or inaccurate value: American Samoa
+      - Row 5: Unusual or inaccurate value: Angola
+      - Row 6: Unusual or inaccurate value: Anguilla
+      - Row 7: Unusual or inaccurate value: Antigua and Barbuda
+      - Row 8: Unusual or inaccurate value: Argentina
+      - Row 9: Unusual or inaccurate value: Australia
+      - Row 10: Unusual or inaccurate value: Austria
+      - Row 11: Unusual or inaccurate value: Bangladesh
+      - Row 12: Unusual or inaccurate value: Barbados
+      - Row 13: Unusual or inaccurate value: Belgium
+      - Row 14: Unusual or inaccurate value: Belize
+      - Row 15: Unusual or inaccurate value: Benin
+      - Row 16: Unusual or inaccurate value: Bhutan
+      - Row 17: Unusual or inaccurate value: Bolivia
+      - Row 18: Unusual or inaccurate value: Bosnia and Herzegovina
+      - Row 19: Unusual or inaccurate value: Botswana
+      - Row 20: Unusual or inaccurate value: Brazil
+      - Row 21: Unusual or inaccurate value: British Virgin Islands
+      - Row 22: Unusual or inaccurate value: Brunei
+      - Row 23: Unusual or inaccurate value: Bulgaria
+      - Row 24: Unusual or inaccurate value: Burkina Faso
+      - Row 25: Unusual or inaccurate value: Burundi
+      - Row 26: Unusual or inaccurate value: Cambodia
+      - Row 27: Unusual or inaccurate value: Cameroon
+      - Row 28: Unusual or inaccurate value: Canada
+      - Row 29: Unusual or inaccurate value: Cape Verde
+      - Row 30: Unusual or inaccurate value: Cayman Islands
+      - Row 31: Unusual or inaccurate value: Central African Republic
+      - Row 32: Unusual or inaccurate value: Chad
+      - Row 33: Unusual or inaccurate value: Chile
+      - Row 34: Unusual or inaccurate value: Colombia
+      - Row 35: Unusual or inaccurate value: Cook Islands
+      - Row 36: Unusual or inaccurate value: Costa Rica
+      - Row 37: Unusual or inaccurate value: Cuba
+      - Row 38: Unusual or inaccurate value: Cyprus
+      - Row 39: Unusual or inaccurate value: Czechia
+      - Row 40: Unusual or inaccurate value: Denmark
+      - Row 41: Unusual or inaccurate value: Djibouti
+      - Row 42: Unusual or inaccurate value: Dominica
+      - Row 43: Unusual or inaccurate value: Dominican Republic
+      - Row 44: Unusual or inaccurate value: Ecuador
+      - Row 45: Unusual or inaccurate value: El Salvador
+      - Row 46: Unusual or inaccurate value: Finland
+      - Row 47: Unusual or inaccurate value: France
+      - Row 48: Unusual or inaccurate value: French Polynesia
+      - Row 49: Unusual or inaccurate value: Gabon
+      - Row 50: Unusual or inaccurate value: Georgia
+      - Row 51: Unusual or inaccurate value: Germany
+      - Row 52: Unusual or inaccurate value: Ghana
+      - Row 53: Unusual or inaccurate value: Greece
+      - Row 54: Unusual or inaccurate value: Grenada
+      - Row 55: Unusual or inaccurate value: Guatemala
+      - Row 56: Unusual or inaccurate value: Guinea
+      - Row 57: Unusual or inaccurate value: Guinea-Bissau
+      - Row 58: Unusual or inaccurate value: Guyana
+      - Row 59: Unusual or inaccurate value: Haiti
+      - Row 60: Unusual or inaccurate value: Honduras
+      - Row 61: Unusual or inaccurate value: Hungary
+      - Row 62: Unusual or inaccurate value: Iceland
+      - Row 63: Unusual or inaccurate value: India
+      - Row 64: Unusual or inaccurate value: Indonesia
+      - Row 65: Unusual or inaccurate value: Iraq
+      - Row 66: Unusual or inaccurate value: Ireland
+      - Row 67: Unusual or inaccurate value: Isle of Man
+      - Row 68: Unusual or inaccurate value: Israel
+      - Row 69: Unusual or inaccurate value: Italy
+      - Row 70: Unusual or inaccurate value: Jamaica
+      - Row 71: Unusual or inaccurate value: Japan
+      - Row 72: Unusual or inaccurate value: Jordan
+      - Row 73: Unusual or inaccurate value: Kenya
+      - Row 74: Unusual or inaccurate value: Kiribati
+      - Row 75: Unusual or inaccurate value: Kuwait
+      - Row 76: Unusual or inaccurate value: Kyrgyzstan
+      - Row 77: Unusual or inaccurate value: Laos
+      - Row 78: Unusual or inaccurate value: Latvia
+      - Row 79: Unusual or inaccurate value: Lebanon
+      - Row 80: Unusual or inaccurate value: Liberia
+      - Row 81: Unusual or inaccurate value: Libya
+      - Row 82: Unusual or inaccurate value: Lithuania
+      - Row 83: Unusual or inaccurate value: Luxembourg
+      - Row 84: Unusual or inaccurate value: Malawi
+      - Row 85: Unusual or inaccurate value: Malaysia
+      - Row 86: Unusual or inaccurate value: Maldives
+      - Row 87: Unusual or inaccurate value: Mali
+      - Row 88: Unusual or inaccurate value: Mauritius
+      - Row 89: Unusual or inaccurate value: Mexico
+      - Row 90: Unusual or inaccurate value: Mongolia
+      - Row 91: Unusual or inaccurate value: Montenegro
+      - Row 92: Unusual or inaccurate value: Montserrat
+      - Row 93: Unusual or inaccurate value: Morocco
+      - Row 94: Unusual or inaccurate value: Myanmar
+      - Row 95: Unusual or inaccurate value: Namibia
+      - Row 96: Unusual or inaccurate value: Nepal
+      - Row 97: Unusual or inaccurate value: New Caledonia
+      - Row 98: Unusual or inaccurate value: New Zealand
+      - Row 99: Unusual or inaccurate value: Nicaragua
+      - Row 100: Unusual or inaccurate value: Niger
+      - Row 101: Unusual or inaccurate value: Nigeria
+      - Row 102: Unusual or inaccurate value: Norway
+      - Row 103: Unusual or inaccurate value: Oman
+      - Row 104: Unusual or inaccurate value: Pakistan
+      - Row 105: Unusual or inaccurate value: Palestinian Territory
+      - Row 106: Unusual or inaccurate value: Panama
+      - Row 107: Unusual or inaccurate value: Papua New Guinea
+      - Row 108: Unusual or inaccurate value: Paraguay
+      - Row 109: Unusual or inaccurate value: Peru
+      - Row 110: Unusual or inaccurate value: Philippines
+      - Row 111: Unusual or inaccurate value: Portugal
+      - Row 112: Unusual or inaccurate value: Qatar
+      - Row 113: Unusual or inaccurate value: Romania
+      - Row 114: Unusual or inaccurate value: Russia
+      - Row 115: Unusual or inaccurate value: Rwanda
+      - Row 116: Unusual or inaccurate value: Saint Helena
+      - Row 117: Unusual or inaccurate value: Saint Kitts and Nevis
+      - Row 118: Unusual or inaccurate value: Saint Lucia
+      - Row 119: Unusual or inaccurate value: Saint Vincent and the Grenadines
+      - Row 120: Unusual or inaccurate value: Samoa
+      - Row 121: Unusual or inaccurate value: Saudi Arabia
+      - Row 122: Unusual or inaccurate value: Senegal
+      - Row 123: Unusual or inaccurate value: Seychelles
+      - Row 124: Unusual or inaccurate value: Sierra Leone
+      - Row 125: Unusual or inaccurate value: Slovakia
+      - Row 126: Unusual or inaccurate value: Solomon Islands
+      - Row 127: Unusual or inaccurate value: Somalia
+      - Row 128: Unusual or inaccurate value: South Africa
+      - Row 129: Unusual or inaccurate value: Spain
+      - Row 130: Unusual or inaccurate value: Sri Lanka
+      - Row 131: Unusual or inaccurate value: Sudan
+      - Row 132: Unusual or inaccurate value: Suriname
+      - Row 133: Unusual or inaccurate value: Sweden
+      - Row 134: Unusual or inaccurate value: Switzerland
+      - Row 135: Unusual or inaccurate value: Syria
+      - Row 136: Unusual or inaccurate value: Thailand
+      - Row 137: Unusual or inaccurate value: Togo
+      - Row 138: Unusual or inaccurate value: Tonga
+      - Row 139: Unusual or inaccurate value: Trinidad and Tobago
+      - Row 140: Unusual or inaccurate value: Tunisia
+      - Row 141: Unusual or inaccurate value: Turkmenistan
+      - Row 142: Unusual or inaccurate value: Turks and Caicos Islands
+      - Row 143: Unusual or inaccurate value: Tuvalu
+      - Row 144: Unusual or inaccurate value: U.S. Virgin Islands
+      - Row 145: Unusual or inaccurate value: Uganda
+      - Row 146: Unusual or inaccurate value: Ukraine
+      - Row 147: Unusual or inaccurate value: United Arab Emirates
+      - Row 148: Unusual or inaccurate value: United Kingdom
+      - Row 149: Unusual or inaccurate value: United States
+      - Row 150: Unusual or inaccurate value: Uruguay
+      - Row 151: Unusual or inaccurate value: Vanuatu
+      - Row 152: Unusual or inaccurate value: Vietnam
+      - Row 153: Unusual or inaccurate value: Wallis and Futuna
+      - Row 154: Unusual or inaccurate value: Zambia
+      - Row 155: Unusual or inaccurate value: Zimbabwe
   [FEU2] Data with a null value should be marked as such.: PASSED
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
@@ -558,326 +558,321 @@ Column: Display_Name
 Column: Capital
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: Tirana
-      - Unusual or inaccurate value: Algiers
-      - Unusual or inaccurate value: Pago Pago
-      - Unusual or inaccurate value: Luanda
-      - Unusual or inaccurate value: The Valley
-      - Unusual or inaccurate value: St. John's
-      - Unusual or inaccurate value: Buenos Aires
-      - Unusual or inaccurate value: Canberra
-      - Unusual or inaccurate value: Vienna
-      - Unusual or inaccurate value: Dhaka
-      - Unusual or inaccurate value: Bridgetown
-      - Unusual or inaccurate value: Brussels
-      - Unusual or inaccurate value: Belmopan
-      - Unusual or inaccurate value: Porto-Novo
-      - Unusual or inaccurate value: Thimphu
-      - Unusual or inaccurate value: Sucre
-      - Unusual or inaccurate value: Sarajevo
-      - Unusual or inaccurate value: Gaborone
-      - Unusual or inaccurate value: Brasilia
-      - Unusual or inaccurate value: Road Town
-      - Unusual or inaccurate value: Bandar Seri Begawan
-      - Unusual or inaccurate value: Sofia
-      - Unusual or inaccurate value: Ouagadougou
-      - Unusual or inaccurate value: Bujumbura
-      - Unusual or inaccurate value: Phnom Penh
-      - Unusual or inaccurate value: Yaounde
-      - Unusual or inaccurate value: Ottawa
-      - Unusual or inaccurate value: Praia
-      - Unusual or inaccurate value: George Town
-      - Unusual or inaccurate value: Bangui
-      - Unusual or inaccurate value: N'Djamena
-      - Unusual or inaccurate value: Santiago
-      - Unusual or inaccurate value: Bogota
-      - Unusual or inaccurate value: Avarua
-      - Unusual or inaccurate value: San Jose
-      - Unusual or inaccurate value: Havana
-      - Unusual or inaccurate value: Nicosia
-      - Unusual or inaccurate value: Prague
-      - Unusual or inaccurate value: Copenhagen
-      - Unusual or inaccurate value: Djibouti
-      - Unusual or inaccurate value: Roseau
-      - Unusual or inaccurate value: Santo Domingo
-      - Unusual or inaccurate value: Quito
-      - Unusual or inaccurate value: San Salvador
-      - Unusual or inaccurate value: Helsinki
-      - Unusual or inaccurate value: Paris
-      - Unusual or inaccurate value: Papeete
-      - Unusual or inaccurate value: Libreville
-      - Unusual or inaccurate value: Tbilisi
-      - Unusual or inaccurate value: Berlin
-      - Unusual or inaccurate value: Accra
-      - Unusual or inaccurate value: Athens
-      - Unusual or inaccurate value: St. George's
-      - Unusual or inaccurate value: Guatemala City
-      - Unusual or inaccurate value: Conakry
-      - Unusual or inaccurate value: Bissau
-      - Unusual or inaccurate value: Georgetown
-      - Unusual or inaccurate value: Port-au-Prince
-      - Unusual or inaccurate value: Tegucigalpa
-      - Unusual or inaccurate value: Budapest
-      - Unusual or inaccurate value: Reykjavik
-      - Unusual or inaccurate value: New Delhi
-      - Unusual or inaccurate value: Jakarta
-      - Unusual or inaccurate value: Baghdad
-      - Unusual or inaccurate value: Dublin
-      - Unusual or inaccurate value: Douglas
-      - Unusual or inaccurate value: Jerusalem
-      - Unusual or inaccurate value: Rome
-      - Unusual or inaccurate value: Kingston
-      - Unusual or inaccurate value: Tokyo
-      - Unusual or inaccurate value: Amman
-      - Unusual or inaccurate value: Nairobi
-      - Unusual or inaccurate value: Tarawa
-      - Unusual or inaccurate value: Kuwait City
-      - Unusual or inaccurate value: Bishkek
-      - Unusual or inaccurate value: Vientiane
-      - Unusual or inaccurate value: Riga
-      - Unusual or inaccurate value: Beirut
-      - Unusual or inaccurate value: Monrovia
-      - Unusual or inaccurate value: Tripoli
-      - Unusual or inaccurate value: Vilnius
-      - Unusual or inaccurate value: Luxembourg
-      - Unusual or inaccurate value: Lilongwe
-      - Unusual or inaccurate value: Kuala Lumpur
-      - Unusual or inaccurate value: Male
-      - Unusual or inaccurate value: Bamako
-      - Unusual or inaccurate value: Port Louis
-      - Unusual or inaccurate value: Mexico City
-      - Unusual or inaccurate value: Ulan Bator
-      - Unusual or inaccurate value: Podgorica
-      - Unusual or inaccurate value: Plymouth
-      - Unusual or inaccurate value: Rabat
-      - Unusual or inaccurate value: Nay Pyi Taw
-      - Unusual or inaccurate value: Windhoek
-      - Unusual or inaccurate value: Kathmandu
-      - Unusual or inaccurate value: Noumea
-      - Unusual or inaccurate value: Wellington
-      - Unusual or inaccurate value: Managua
-      - Unusual or inaccurate value: Niamey
-      - Unusual or inaccurate value: Abuja
-      - Unusual or inaccurate value: Oslo
-      - Unusual or inaccurate value: Muscat
-      - Unusual or inaccurate value: Islamabad
-      - Unusual or inaccurate value: East Jerusalem
-      - Unusual or inaccurate value: Panama City
-      - Unusual or inaccurate value: Port Moresby
-      - Unusual or inaccurate value: Asuncion
-      - Unusual or inaccurate value: Lima
-      - Unusual or inaccurate value: Manila
-      - Unusual or inaccurate value: Lisbon
-      - Unusual or inaccurate value: Doha
-      - Unusual or inaccurate value: Bucharest
-      - Unusual or inaccurate value: Moscow
-      - Unusual or inaccurate value: Kigali
-      - Unusual or inaccurate value: Jamestown
-      - Unusual or inaccurate value: Basseterre
-      - Unusual or inaccurate value: Castries
-      - Unusual or inaccurate value: Kingstown
-      - Unusual or inaccurate value: Apia
-      - Unusual or inaccurate value: Riyadh
-      - Unusual or inaccurate value: Dakar
-      - Unusual or inaccurate value: Victoria
-      - Unusual or inaccurate value: Freetown
-      - Unusual or inaccurate value: Bratislava
-      - Unusual or inaccurate value: Honiara
-      - Unusual or inaccurate value: Mogadishu
-      - Unusual or inaccurate value: Pretoria
-      - Unusual or inaccurate value: Madrid
-      - Unusual or inaccurate value: Colombo
-      - Unusual or inaccurate value: Khartoum
-      - Unusual or inaccurate value: Paramaribo
-      - Unusual or inaccurate value: Stockholm
-      - Unusual or inaccurate value: Bern
-      - Unusual or inaccurate value: Damascus
-      - Unusual or inaccurate value: Bangkok
-      - Unusual or inaccurate value: Lome
-      - Unusual or inaccurate value: Nuku'alofa
-      - Unusual or inaccurate value: Port of Spain
-      - Unusual or inaccurate value: Tunis
-      - Unusual or inaccurate value: Ashgabat
-      - Unusual or inaccurate value: Cockburn Town
-      - Unusual or inaccurate value: Funafuti
-      - Unusual or inaccurate value: Charlotte Amalie
-      - Unusual or inaccurate value: Kampala
-      - Unusual or inaccurate value: Kyiv
-      - Unusual or inaccurate value: Abu Dhabi
-      - Unusual or inaccurate value: London
-      - Unusual or inaccurate value: Washington
-      - Unusual or inaccurate value: Montevideo
-      - Unusual or inaccurate value: Port Vila
-      - Unusual or inaccurate value: Hanoi
-      - Unusual or inaccurate value: Mata Utu
-      - Unusual or inaccurate value: Lusaka
-      - Unusual or inaccurate value: Harare
+      - Row 2: Unusual or inaccurate value: Tirana
+      - Row 3: Unusual or inaccurate value: Algiers
+      - Row 4: Unusual or inaccurate value: Pago Pago
+      - Row 5: Unusual or inaccurate value: Luanda
+      - Row 6: Unusual or inaccurate value: The Valley
+      - Row 7: Unusual or inaccurate value: St. John's
+      - Row 8: Unusual or inaccurate value: Buenos Aires
+      - Row 9: Unusual or inaccurate value: Canberra
+      - Row 10: Unusual or inaccurate value: Vienna
+      - Row 11: Unusual or inaccurate value: Dhaka
+      - Row 12: Unusual or inaccurate value: Bridgetown
+      - Row 13: Unusual or inaccurate value: Brussels
+      - Row 14: Unusual or inaccurate value: Belmopan
+      - Row 15: Unusual or inaccurate value: Porto-Novo
+      - Row 16: Unusual or inaccurate value: Thimphu
+      - Row 17: Unusual or inaccurate value: Sucre
+      - Row 18: Unusual or inaccurate value: Sarajevo
+      - Row 19: Unusual or inaccurate value: Gaborone
+      - Row 20: Unusual or inaccurate value: Brasilia
+      - Row 21: Unusual or inaccurate value: Road Town
+      - Row 22: Unusual or inaccurate value: Bandar Seri Begawan
+      - Row 23: Unusual or inaccurate value: Sofia
+      - Row 24: Unusual or inaccurate value: Ouagadougou
+      - Row 25: Unusual or inaccurate value: Bujumbura
+      - Row 26: Unusual or inaccurate value: Phnom Penh
+      - Row 27: Unusual or inaccurate value: Yaounde
+      - Row 28: Unusual or inaccurate value: Ottawa
+      - Row 29: Unusual or inaccurate value: Praia
+      - Row 30: Unusual or inaccurate value: George Town
+      - Row 31: Unusual or inaccurate value: Bangui
+      - Row 32: Unusual or inaccurate value: N'Djamena
+      - Row 33: Unusual or inaccurate value: Santiago
+      - Row 34: Unusual or inaccurate value: Bogota
+      - Row 35: Unusual or inaccurate value: Avarua
+      - Row 36: Unusual or inaccurate value: San Jose
+      - Row 37: Unusual or inaccurate value: Havana
+      - Row 38: Unusual or inaccurate value: Nicosia
+      - Row 39: Unusual or inaccurate value: Prague
+      - Row 40: Unusual or inaccurate value: Copenhagen
+      - Row 41: Unusual or inaccurate value: Djibouti
+      - Row 42: Unusual or inaccurate value: Roseau
+      - Row 43: Unusual or inaccurate value: Santo Domingo
+      - Row 44: Unusual or inaccurate value: Quito
+      - Row 45: Unusual or inaccurate value: San Salvador
+      - Row 46: Unusual or inaccurate value: Helsinki
+      - Row 47: Unusual or inaccurate value: Paris
+      - Row 48: Unusual or inaccurate value: Papeete
+      - Row 49: Unusual or inaccurate value: Libreville
+      - Row 50: Unusual or inaccurate value: Tbilisi
+      - Row 51: Unusual or inaccurate value: Berlin
+      - Row 52: Unusual or inaccurate value: Accra
+      - Row 53: Unusual or inaccurate value: Athens
+      - Row 54: Unusual or inaccurate value: St. George's
+      - Row 55: Unusual or inaccurate value: Guatemala City
+      - Row 56: Unusual or inaccurate value: Conakry
+      - Row 57: Unusual or inaccurate value: Bissau
+      - Row 58: Unusual or inaccurate value: Georgetown
+      - Row 59: Unusual or inaccurate value: Port-au-Prince
+      - Row 60: Unusual or inaccurate value: Tegucigalpa
+      - Row 61: Unusual or inaccurate value: Budapest
+      - Row 62: Unusual or inaccurate value: Reykjavik
+      - Row 63: Unusual or inaccurate value: New Delhi
+      - Row 64: Unusual or inaccurate value: Jakarta
+      - Row 65: Unusual or inaccurate value: Baghdad
+      - Row 66: Unusual or inaccurate value: Dublin
+      - Row 67: Unusual or inaccurate value: Douglas
+      - Row 68: Unusual or inaccurate value: Jerusalem
+      - Row 69: Unusual or inaccurate value: Rome
+      - Row 70: Unusual or inaccurate value: Kingston
+      - Row 71: Unusual or inaccurate value: Tokyo
+      - Row 72: Unusual or inaccurate value: Amman
+      - Row 73: Unusual or inaccurate value: Nairobi
+      - Row 74: Unusual or inaccurate value: Tarawa
+      - Row 75: Unusual or inaccurate value: Kuwait City
+      - Row 76: Unusual or inaccurate value: Bishkek
+      - Row 77: Unusual or inaccurate value: Vientiane
+      - Row 78: Unusual or inaccurate value: Riga
+      - Row 79: Unusual or inaccurate value: Beirut
+      - Row 80: Unusual or inaccurate value: Monrovia
+      - Row 81: Unusual or inaccurate value: Tripoli
+      - Row 82: Unusual or inaccurate value: Vilnius
+      - Row 83: Unusual or inaccurate value: Luxembourg
+      - Row 84: Unusual or inaccurate value: Lilongwe
+      - Row 85: Unusual or inaccurate value: Kuala Lumpur
+      - Row 86: Unusual or inaccurate value: Male
+      - Row 87: Unusual or inaccurate value: Bamako
+      - Row 88: Unusual or inaccurate value: Port Louis
+      - Row 89: Unusual or inaccurate value: Mexico City
+      - Row 90: Unusual or inaccurate value: Ulan Bator
+      - Row 91: Unusual or inaccurate value: Podgorica
+      - Row 92: Unusual or inaccurate value: Plymouth
+      - Row 93: Unusual or inaccurate value: Rabat
+      - Row 94: Unusual or inaccurate value: Nay Pyi Taw
+      - Row 95: Unusual or inaccurate value: Windhoek
+      - Row 96: Unusual or inaccurate value: Kathmandu
+      - Row 97: Unusual or inaccurate value: Noumea
+      - Row 98: Unusual or inaccurate value: Wellington
+      - Row 99: Unusual or inaccurate value: Managua
+      - Row 100: Unusual or inaccurate value: Niamey
+      - Row 101: Unusual or inaccurate value: Abuja
+      - Row 102: Unusual or inaccurate value: Oslo
+      - Row 103: Unusual or inaccurate value: Muscat
+      - Row 104: Unusual or inaccurate value: Islamabad
+      - Row 105: Unusual or inaccurate value: East Jerusalem
+      - Row 106: Unusual or inaccurate value: Panama City
+      - Row 107: Unusual or inaccurate value: Port Moresby
+      - Row 108: Unusual or inaccurate value: Asuncion
+      - Row 109: Unusual or inaccurate value: Lima
+      - Row 110: Unusual or inaccurate value: Manila
+      - Row 111: Unusual or inaccurate value: Lisbon
+      - Row 112: Unusual or inaccurate value: Doha
+      - Row 113: Unusual or inaccurate value: Bucharest
+      - Row 114: Unusual or inaccurate value: Moscow
+      - Row 115: Unusual or inaccurate value: Kigali
+      - Row 116: Unusual or inaccurate value: Jamestown
+      - Row 117: Unusual or inaccurate value: Basseterre
+      - Row 118: Unusual or inaccurate value: Castries
+      - Row 119: Unusual or inaccurate value: Kingstown
+      - Row 120: Unusual or inaccurate value: Apia
+      - Row 121: Unusual or inaccurate value: Riyadh
+      - Row 122: Unusual or inaccurate value: Dakar
+      - Row 123: Unusual or inaccurate value: Victoria
+      - Row 124: Unusual or inaccurate value: Freetown
+      - Row 125: Unusual or inaccurate value: Bratislava
+      - Row 126: Unusual or inaccurate value: Honiara
+      - Row 127: Unusual or inaccurate value: Mogadishu
+      - Row 128: Unusual or inaccurate value: Pretoria
+      - Row 129: Unusual or inaccurate value: Madrid
+      - Row 130: Unusual or inaccurate value: Colombo
+      - Row 131: Unusual or inaccurate value: Khartoum
+      - Row 132: Unusual or inaccurate value: Paramaribo
+      - Row 133: Unusual or inaccurate value: Stockholm
+      - Row 134: Unusual or inaccurate value: Bern
+      - Row 135: Unusual or inaccurate value: Damascus
+      - Row 136: Unusual or inaccurate value: Bangkok
+      - Row 137: Unusual or inaccurate value: Lome
+      - Row 138: Unusual or inaccurate value: Nuku'alofa
+      - Row 139: Unusual or inaccurate value: Port of Spain
+      - Row 140: Unusual or inaccurate value: Tunis
+      - Row 141: Unusual or inaccurate value: Ashgabat
+      - Row 142: Unusual or inaccurate value: Cockburn Town
+      - Row 143: Unusual or inaccurate value: Funafuti
+      - Row 144: Unusual or inaccurate value: Charlotte Amalie
+      - Row 145: Unusual or inaccurate value: Kampala
+      - Row 146: Unusual or inaccurate value: Kyiv
+      - Row 147: Unusual or inaccurate value: Abu Dhabi
+      - Row 148: Unusual or inaccurate value: London
+      - Row 149: Unusual or inaccurate value: Washington
+      - Row 150: Unusual or inaccurate value: Montevideo
+      - Row 151: Unusual or inaccurate value: Port Vila
+      - Row 152: Unusual or inaccurate value: Hanoi
+      - Row 153: Unusual or inaccurate value: Mata Utu
+      - Row 154: Unusual or inaccurate value: Lusaka
+      - Row 155: Unusual or inaccurate value: Harare
   [FEU2] Data with a null value should be marked as such.: PASSED
-  [IEU3.2] Data shall not consist of special characters.: FAILED
-    Invalid rows:
-      - Special character found in value: St. John's
-      - Special character found in value: N'Djamena
-      - Special character found in value: St. George's
-      - Special character found in value: Nuku'alofa
+  [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
 
 Column: ISO3
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: ALB
-      - Unusual or inaccurate value: DZA
-      - Unusual or inaccurate value: ASM
-      - Unusual or inaccurate value: AGO
-      - Unusual or inaccurate value: AIA
-      - Unusual or inaccurate value: ATG
-      - Unusual or inaccurate value: ARG
-      - Unusual or inaccurate value: AUS
-      - Unusual or inaccurate value: AUT
-      - Unusual or inaccurate value: BGD
-      - Unusual or inaccurate value: BRB
-      - Unusual or inaccurate value: BEL
-      - Unusual or inaccurate value: BLZ
-      - Unusual or inaccurate value: BEN
-      - Unusual or inaccurate value: BTN
-      - Unusual or inaccurate value: BOL
-      - Unusual or inaccurate value: BIH
-      - Unusual or inaccurate value: BWA
-      - Unusual or inaccurate value: BRA
-      - Unusual or inaccurate value: VGB
-      - Unusual or inaccurate value: BRN
-      - Unusual or inaccurate value: BGR
-      - Unusual or inaccurate value: BFA
-      - Unusual or inaccurate value: BDI
-      - Unusual or inaccurate value: KHM
-      - Unusual or inaccurate value: CMR
-      - Unusual or inaccurate value: CAN
-      - Unusual or inaccurate value: CPV
-      - Unusual or inaccurate value: CYM
-      - Unusual or inaccurate value: CAF
-      - Unusual or inaccurate value: TCD
-      - Unusual or inaccurate value: CHL
-      - Unusual or inaccurate value: COL
-      - Unusual or inaccurate value: COK
-      - Unusual or inaccurate value: CRI
-      - Unusual or inaccurate value: CUB
-      - Unusual or inaccurate value: CYP
-      - Unusual or inaccurate value: CZE
-      - Unusual or inaccurate value: DNK
-      - Unusual or inaccurate value: DJI
-      - Unusual or inaccurate value: DMA
-      - Unusual or inaccurate value: DOM
-      - Unusual or inaccurate value: ECU
-      - Unusual or inaccurate value: SLV
-      - Unusual or inaccurate value: FIN
-      - Unusual or inaccurate value: FRA
-      - Unusual or inaccurate value: PYF
-      - Unusual or inaccurate value: GAB
-      - Unusual or inaccurate value: GEO
-      - Unusual or inaccurate value: DEU
-      - Unusual or inaccurate value: GHA
-      - Unusual or inaccurate value: GRC
-      - Unusual or inaccurate value: GRD
-      - Unusual or inaccurate value: GTM
-      - Unusual or inaccurate value: GIN
-      - Unusual or inaccurate value: GNB
-      - Unusual or inaccurate value: GUY
-      - Unusual or inaccurate value: HTI
-      - Unusual or inaccurate value: HND
-      - Unusual or inaccurate value: HUN
-      - Unusual or inaccurate value: ISL
-      - Unusual or inaccurate value: IND
-      - Unusual or inaccurate value: IDN
-      - Unusual or inaccurate value: IRQ
-      - Unusual or inaccurate value: IRL
-      - Unusual or inaccurate value: IMN
-      - Unusual or inaccurate value: ISR
-      - Unusual or inaccurate value: ITA
-      - Unusual or inaccurate value: JAM
-      - Unusual or inaccurate value: JPN
-      - Unusual or inaccurate value: JOR
-      - Unusual or inaccurate value: KEN
-      - Unusual or inaccurate value: KIR
-      - Unusual or inaccurate value: KWT
-      - Unusual or inaccurate value: KGZ
-      - Unusual or inaccurate value: LAO
-      - Unusual or inaccurate value: LVA
-      - Unusual or inaccurate value: LBN
-      - Unusual or inaccurate value: LBR
-      - Unusual or inaccurate value: LBY
-      - Unusual or inaccurate value: LTU
-      - Unusual or inaccurate value: LUX
-      - Unusual or inaccurate value: MWI
-      - Unusual or inaccurate value: MYS
-      - Unusual or inaccurate value: MDV
-      - Unusual or inaccurate value: MLI
-      - Unusual or inaccurate value: MUS
-      - Unusual or inaccurate value: MEX
-      - Unusual or inaccurate value: MNG
-      - Unusual or inaccurate value: MNE
-      - Unusual or inaccurate value: MSR
-      - Unusual or inaccurate value: MAR
-      - Unusual or inaccurate value: MMR
-      - Unusual or inaccurate value: NAM
-      - Unusual or inaccurate value: NPL
-      - Unusual or inaccurate value: NCL
-      - Unusual or inaccurate value: NZL
-      - Unusual or inaccurate value: NIC
-      - Unusual or inaccurate value: NER
-      - Unusual or inaccurate value: NGA
-      - Unusual or inaccurate value: NOR
-      - Unusual or inaccurate value: OMN
-      - Unusual or inaccurate value: PAK
-      - Unusual or inaccurate value: PSE
-      - Unusual or inaccurate value: PAN
-      - Unusual or inaccurate value: PNG
-      - Unusual or inaccurate value: PRY
-      - Unusual or inaccurate value: PER
-      - Unusual or inaccurate value: PHL
-      - Unusual or inaccurate value: PRT
-      - Unusual or inaccurate value: QAT
-      - Unusual or inaccurate value: ROU
-      - Unusual or inaccurate value: RUS
-      - Unusual or inaccurate value: RWA
-      - Unusual or inaccurate value: SHN
-      - Unusual or inaccurate value: KNA
-      - Unusual or inaccurate value: LCA
-      - Unusual or inaccurate value: VCT
-      - Unusual or inaccurate value: WSM
-      - Unusual or inaccurate value: SAU
-      - Unusual or inaccurate value: SEN
-      - Unusual or inaccurate value: SYC
-      - Unusual or inaccurate value: SLE
-      - Unusual or inaccurate value: SVK
-      - Unusual or inaccurate value: SLB
-      - Unusual or inaccurate value: SOM
-      - Unusual or inaccurate value: ZAF
-      - Unusual or inaccurate value: ESP
-      - Unusual or inaccurate value: LKA
-      - Unusual or inaccurate value: SDN
-      - Unusual or inaccurate value: SUR
-      - Unusual or inaccurate value: SWE
-      - Unusual or inaccurate value: CHE
-      - Unusual or inaccurate value: SYR
-      - Unusual or inaccurate value: THA
-      - Unusual or inaccurate value: TGO
-      - Unusual or inaccurate value: TON
-      - Unusual or inaccurate value: TTO
-      - Unusual or inaccurate value: TUN
-      - Unusual or inaccurate value: TKM
-      - Unusual or inaccurate value: TCA
-      - Unusual or inaccurate value: TUV
-      - Unusual or inaccurate value: VIR
-      - Unusual or inaccurate value: UGA
-      - Unusual or inaccurate value: UKR
-      - Unusual or inaccurate value: ARE
-      - Unusual or inaccurate value: GBR
-      - Unusual or inaccurate value: USA
-      - Unusual or inaccurate value: URY
-      - Unusual or inaccurate value: VUT
-      - Unusual or inaccurate value: VNM
-      - Unusual or inaccurate value: WLF
-      - Unusual or inaccurate value: ZMB
-      - Unusual or inaccurate value: ZWE
+      - Row 2: Unusual or inaccurate value: ALB
+      - Row 3: Unusual or inaccurate value: DZA
+      - Row 4: Unusual or inaccurate value: ASM
+      - Row 5: Unusual or inaccurate value: AGO
+      - Row 6: Unusual or inaccurate value: AIA
+      - Row 7: Unusual or inaccurate value: ATG
+      - Row 8: Unusual or inaccurate value: ARG
+      - Row 9: Unusual or inaccurate value: AUS
+      - Row 10: Unusual or inaccurate value: AUT
+      - Row 11: Unusual or inaccurate value: BGD
+      - Row 12: Unusual or inaccurate value: BRB
+      - Row 13: Unusual or inaccurate value: BEL
+      - Row 14: Unusual or inaccurate value: BLZ
+      - Row 15: Unusual or inaccurate value: BEN
+      - Row 16: Unusual or inaccurate value: BTN
+      - Row 17: Unusual or inaccurate value: BOL
+      - Row 18: Unusual or inaccurate value: BIH
+      - Row 19: Unusual or inaccurate value: BWA
+      - Row 20: Unusual or inaccurate value: BRA
+      - Row 21: Unusual or inaccurate value: VGB
+      - Row 22: Unusual or inaccurate value: BRN
+      - Row 23: Unusual or inaccurate value: BGR
+      - Row 24: Unusual or inaccurate value: BFA
+      - Row 25: Unusual or inaccurate value: BDI
+      - Row 26: Unusual or inaccurate value: KHM
+      - Row 27: Unusual or inaccurate value: CMR
+      - Row 28: Unusual or inaccurate value: CAN
+      - Row 29: Unusual or inaccurate value: CPV
+      - Row 30: Unusual or inaccurate value: CYM
+      - Row 31: Unusual or inaccurate value: CAF
+      - Row 32: Unusual or inaccurate value: TCD
+      - Row 33: Unusual or inaccurate value: CHL
+      - Row 34: Unusual or inaccurate value: COL
+      - Row 35: Unusual or inaccurate value: COK
+      - Row 36: Unusual or inaccurate value: CRI
+      - Row 37: Unusual or inaccurate value: CUB
+      - Row 38: Unusual or inaccurate value: CYP
+      - Row 39: Unusual or inaccurate value: CZE
+      - Row 40: Unusual or inaccurate value: DNK
+      - Row 41: Unusual or inaccurate value: DJI
+      - Row 42: Unusual or inaccurate value: DMA
+      - Row 43: Unusual or inaccurate value: DOM
+      - Row 44: Unusual or inaccurate value: ECU
+      - Row 45: Unusual or inaccurate value: SLV
+      - Row 46: Unusual or inaccurate value: FIN
+      - Row 47: Unusual or inaccurate value: FRA
+      - Row 48: Unusual or inaccurate value: PYF
+      - Row 49: Unusual or inaccurate value: GAB
+      - Row 50: Unusual or inaccurate value: GEO
+      - Row 51: Unusual or inaccurate value: DEU
+      - Row 52: Unusual or inaccurate value: GHA
+      - Row 53: Unusual or inaccurate value: GRC
+      - Row 54: Unusual or inaccurate value: GRD
+      - Row 55: Unusual or inaccurate value: GTM
+      - Row 56: Unusual or inaccurate value: GIN
+      - Row 57: Unusual or inaccurate value: GNB
+      - Row 58: Unusual or inaccurate value: GUY
+      - Row 59: Unusual or inaccurate value: HTI
+      - Row 60: Unusual or inaccurate value: HND
+      - Row 61: Unusual or inaccurate value: HUN
+      - Row 62: Unusual or inaccurate value: ISL
+      - Row 63: Unusual or inaccurate value: IND
+      - Row 64: Unusual or inaccurate value: IDN
+      - Row 65: Unusual or inaccurate value: IRQ
+      - Row 66: Unusual or inaccurate value: IRL
+      - Row 67: Unusual or inaccurate value: IMN
+      - Row 68: Unusual or inaccurate value: ISR
+      - Row 69: Unusual or inaccurate value: ITA
+      - Row 70: Unusual or inaccurate value: JAM
+      - Row 71: Unusual or inaccurate value: JPN
+      - Row 72: Unusual or inaccurate value: JOR
+      - Row 73: Unusual or inaccurate value: KEN
+      - Row 74: Unusual or inaccurate value: KIR
+      - Row 75: Unusual or inaccurate value: KWT
+      - Row 76: Unusual or inaccurate value: KGZ
+      - Row 77: Unusual or inaccurate value: LAO
+      - Row 78: Unusual or inaccurate value: LVA
+      - Row 79: Unusual or inaccurate value: LBN
+      - Row 80: Unusual or inaccurate value: LBR
+      - Row 81: Unusual or inaccurate value: LBY
+      - Row 82: Unusual or inaccurate value: LTU
+      - Row 83: Unusual or inaccurate value: LUX
+      - Row 84: Unusual or inaccurate value: MWI
+      - Row 85: Unusual or inaccurate value: MYS
+      - Row 86: Unusual or inaccurate value: MDV
+      - Row 87: Unusual or inaccurate value: MLI
+      - Row 88: Unusual or inaccurate value: MUS
+      - Row 89: Unusual or inaccurate value: MEX
+      - Row 90: Unusual or inaccurate value: MNG
+      - Row 91: Unusual or inaccurate value: MNE
+      - Row 92: Unusual or inaccurate value: MSR
+      - Row 93: Unusual or inaccurate value: MAR
+      - Row 94: Unusual or inaccurate value: MMR
+      - Row 95: Unusual or inaccurate value: NAM
+      - Row 96: Unusual or inaccurate value: NPL
+      - Row 97: Unusual or inaccurate value: NCL
+      - Row 98: Unusual or inaccurate value: NZL
+      - Row 99: Unusual or inaccurate value: NIC
+      - Row 100: Unusual or inaccurate value: NER
+      - Row 101: Unusual or inaccurate value: NGA
+      - Row 102: Unusual or inaccurate value: NOR
+      - Row 103: Unusual or inaccurate value: OMN
+      - Row 104: Unusual or inaccurate value: PAK
+      - Row 105: Unusual or inaccurate value: PSE
+      - Row 106: Unusual or inaccurate value: PAN
+      - Row 107: Unusual or inaccurate value: PNG
+      - Row 108: Unusual or inaccurate value: PRY
+      - Row 109: Unusual or inaccurate value: PER
+      - Row 110: Unusual or inaccurate value: PHL
+      - Row 111: Unusual or inaccurate value: PRT
+      - Row 112: Unusual or inaccurate value: QAT
+      - Row 113: Unusual or inaccurate value: ROU
+      - Row 114: Unusual or inaccurate value: RUS
+      - Row 115: Unusual or inaccurate value: RWA
+      - Row 116: Unusual or inaccurate value: SHN
+      - Row 117: Unusual or inaccurate value: KNA
+      - Row 118: Unusual or inaccurate value: LCA
+      - Row 119: Unusual or inaccurate value: VCT
+      - Row 120: Unusual or inaccurate value: WSM
+      - Row 121: Unusual or inaccurate value: SAU
+      - Row 122: Unusual or inaccurate value: SEN
+      - Row 123: Unusual or inaccurate value: SYC
+      - Row 124: Unusual or inaccurate value: SLE
+      - Row 125: Unusual or inaccurate value: SVK
+      - Row 126: Unusual or inaccurate value: SLB
+      - Row 127: Unusual or inaccurate value: SOM
+      - Row 128: Unusual or inaccurate value: ZAF
+      - Row 129: Unusual or inaccurate value: ESP
+      - Row 130: Unusual or inaccurate value: LKA
+      - Row 131: Unusual or inaccurate value: SDN
+      - Row 132: Unusual or inaccurate value: SUR
+      - Row 133: Unusual or inaccurate value: SWE
+      - Row 134: Unusual or inaccurate value: CHE
+      - Row 135: Unusual or inaccurate value: SYR
+      - Row 136: Unusual or inaccurate value: THA
+      - Row 137: Unusual or inaccurate value: TGO
+      - Row 138: Unusual or inaccurate value: TON
+      - Row 139: Unusual or inaccurate value: TTO
+      - Row 140: Unusual or inaccurate value: TUN
+      - Row 141: Unusual or inaccurate value: TKM
+      - Row 142: Unusual or inaccurate value: TCA
+      - Row 143: Unusual or inaccurate value: TUV
+      - Row 144: Unusual or inaccurate value: VIR
+      - Row 145: Unusual or inaccurate value: UGA
+      - Row 146: Unusual or inaccurate value: UKR
+      - Row 147: Unusual or inaccurate value: ARE
+      - Row 148: Unusual or inaccurate value: GBR
+      - Row 149: Unusual or inaccurate value: USA
+      - Row 150: Unusual or inaccurate value: URY
+      - Row 151: Unusual or inaccurate value: VUT
+      - Row 152: Unusual or inaccurate value: VNM
+      - Row 153: Unusual or inaccurate value: WLF
+      - Row 154: Unusual or inaccurate value: ZMB
+      - Row 155: Unusual or inaccurate value: ZWE
   [FEU2] Data with a null value should be marked as such.: PASSED
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
@@ -885,465 +880,462 @@ Column: ISO3
 Column: CurrencyName
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: Lek
-      - Unusual or inaccurate value: Kwanza
-      - Unusual or inaccurate value: Taka
-      - Unusual or inaccurate value: Ngultrum
-      - Unusual or inaccurate value: Boliviano
-      - Unusual or inaccurate value: Marka
-      - Unusual or inaccurate value: Pula
-      - Unusual or inaccurate value: Real
-      - Unusual or inaccurate value: Lev
-      - Unusual or inaccurate value: Riels
-      - Unusual or inaccurate value: Escudo
-      - Unusual or inaccurate value: Colon
-      - Unusual or inaccurate value: Koruna
-      - Unusual or inaccurate value: Krone
-      - Unusual or inaccurate value: Lari
-      - Unusual or inaccurate value: Cedi
-      - Unusual or inaccurate value: Quetzal
-      - Unusual or inaccurate value: Gourde
-      - Unusual or inaccurate value: Lempira
-      - Unusual or inaccurate value: Forint
-      - Unusual or inaccurate value: Krona
-      - Unusual or inaccurate value: Rupiah
-      - Unusual or inaccurate value: Shekel
-      - Unusual or inaccurate value: Yen
-      - Unusual or inaccurate value: Som
-      - Unusual or inaccurate value: Kip
-      - Unusual or inaccurate value: Kwacha
-      - Unusual or inaccurate value: Ringgit
-      - Unusual or inaccurate value: Rufiyaa
-      - Unusual or inaccurate value: Tugrik
-      - Unusual or inaccurate value: Dirham
-      - Unusual or inaccurate value: Kyat
-      - Unusual or inaccurate value: Cordoba
-      - Unusual or inaccurate value: Naira
-      - Unusual or inaccurate value: Krone
-      - Unusual or inaccurate value: Shekel
-      - Unusual or inaccurate value: Balboa
-      - Unusual or inaccurate value: Kina
-      - Unusual or inaccurate value: Guarani
-      - Unusual or inaccurate value: Sol
-      - Unusual or inaccurate value: Leu
-      - Unusual or inaccurate value: Ruble
-      - Unusual or inaccurate value: Tala
-      - Unusual or inaccurate value: Leone
-      - Unusual or inaccurate value: Rand
-      - Unusual or inaccurate value: Krona
-      - Unusual or inaccurate value: Baht
-      - Unusual or inaccurate value: Pa'anga
-      - Unusual or inaccurate value: Manat
-      - Unusual or inaccurate value: Hryvnia
-      - Unusual or inaccurate value: Dirham
-      - Unusual or inaccurate value: Vatu
-      - Unusual or inaccurate value: Dong
-      - Unusual or inaccurate value: Kwacha
+      - Row 2: Unusual or inaccurate value: Lek
+      - Row 5: Unusual or inaccurate value: Kwanza
+      - Row 11: Unusual or inaccurate value: Taka
+      - Row 16: Unusual or inaccurate value: Ngultrum
+      - Row 17: Unusual or inaccurate value: Boliviano
+      - Row 18: Unusual or inaccurate value: Marka
+      - Row 19: Unusual or inaccurate value: Pula
+      - Row 20: Unusual or inaccurate value: Real
+      - Row 23: Unusual or inaccurate value: Lev
+      - Row 26: Unusual or inaccurate value: Riels
+      - Row 29: Unusual or inaccurate value: Escudo
+      - Row 36: Unusual or inaccurate value: Colon
+      - Row 39: Unusual or inaccurate value: Koruna
+      - Row 40: Unusual or inaccurate value: Krone
+      - Row 50: Unusual or inaccurate value: Lari
+      - Row 52: Unusual or inaccurate value: Cedi
+      - Row 55: Unusual or inaccurate value: Quetzal
+      - Row 59: Unusual or inaccurate value: Gourde
+      - Row 60: Unusual or inaccurate value: Lempira
+      - Row 61: Unusual or inaccurate value: Forint
+      - Row 62: Unusual or inaccurate value: Krona
+      - Row 64: Unusual or inaccurate value: Rupiah
+      - Row 68: Unusual or inaccurate value: Shekel
+      - Row 71: Unusual or inaccurate value: Yen
+      - Row 76: Unusual or inaccurate value: Som
+      - Row 77: Unusual or inaccurate value: Kip
+      - Row 84: Unusual or inaccurate value: Kwacha
+      - Row 85: Unusual or inaccurate value: Ringgit
+      - Row 86: Unusual or inaccurate value: Rufiyaa
+      - Row 90: Unusual or inaccurate value: Tugrik
+      - Row 93: Unusual or inaccurate value: Dirham
+      - Row 94: Unusual or inaccurate value: Kyat
+      - Row 99: Unusual or inaccurate value: Cordoba
+      - Row 101: Unusual or inaccurate value: Naira
+      - Row 102: Unusual or inaccurate value: Krone
+      - Row 105: Unusual or inaccurate value: Shekel
+      - Row 106: Unusual or inaccurate value: Balboa
+      - Row 107: Unusual or inaccurate value: Kina
+      - Row 108: Unusual or inaccurate value: Guarani
+      - Row 109: Unusual or inaccurate value: Sol
+      - Row 113: Unusual or inaccurate value: Leu
+      - Row 114: Unusual or inaccurate value: Ruble
+      - Row 120: Unusual or inaccurate value: Tala
+      - Row 124: Unusual or inaccurate value: Leone
+      - Row 128: Unusual or inaccurate value: Rand
+      - Row 133: Unusual or inaccurate value: Krona
+      - Row 136: Unusual or inaccurate value: Baht
+      - Row 138: Unusual or inaccurate value: Pa'anga
+      - Row 141: Unusual or inaccurate value: Manat
+      - Row 146: Unusual or inaccurate value: Hryvnia
+      - Row 147: Unusual or inaccurate value: Dirham
+      - Row 151: Unusual or inaccurate value: Vatu
+      - Row 152: Unusual or inaccurate value: Dong
+      - Row 154: Unusual or inaccurate value: Kwacha
   [FEU2] Data with a null value should be marked as such.: PASSED
-  [IEU3.2] Data shall not consist of special characters.: FAILED
-    Invalid rows:
-      - Special character found in value: Pa'anga
+  [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
 
 Column: Small Island Developing States (SIDS)
   [REU4] Data should be accurate.: PASSED
   [FEU2] Data with a null value should be marked as such.: FAILED
     Invalid rows:
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
+      - Row 2: Invalid null value found in: <null>
+      - Row 3: Invalid null value found in: <null>
+      - Row 5: Invalid null value found in: <null>
+      - Row 8: Invalid null value found in: <null>
+      - Row 9: Invalid null value found in: <null>
+      - Row 10: Invalid null value found in: <null>
+      - Row 11: Invalid null value found in: <null>
+      - Row 13: Invalid null value found in: <null>
+      - Row 15: Invalid null value found in: <null>
+      - Row 16: Invalid null value found in: <null>
+      - Row 17: Invalid null value found in: <null>
+      - Row 18: Invalid null value found in: <null>
+      - Row 19: Invalid null value found in: <null>
+      - Row 20: Invalid null value found in: <null>
+      - Row 22: Invalid null value found in: <null>
+      - Row 23: Invalid null value found in: <null>
+      - Row 24: Invalid null value found in: <null>
+      - Row 25: Invalid null value found in: <null>
+      - Row 26: Invalid null value found in: <null>
+      - Row 27: Invalid null value found in: <null>
+      - Row 28: Invalid null value found in: <null>
+      - Row 30: Invalid null value found in: <null>
+      - Row 31: Invalid null value found in: <null>
+      - Row 32: Invalid null value found in: <null>
+      - Row 33: Invalid null value found in: <null>
+      - Row 34: Invalid null value found in: <null>
+      - Row 36: Invalid null value found in: <null>
+      - Row 38: Invalid null value found in: <null>
+      - Row 39: Invalid null value found in: <null>
+      - Row 40: Invalid null value found in: <null>
+      - Row 41: Invalid null value found in: <null>
+      - Row 44: Invalid null value found in: <null>
+      - Row 45: Invalid null value found in: <null>
+      - Row 46: Invalid null value found in: <null>
+      - Row 47: Invalid null value found in: <null>
+      - Row 49: Invalid null value found in: <null>
+      - Row 50: Invalid null value found in: <null>
+      - Row 51: Invalid null value found in: <null>
+      - Row 52: Invalid null value found in: <null>
+      - Row 53: Invalid null value found in: <null>
+      - Row 55: Invalid null value found in: <null>
+      - Row 56: Invalid null value found in: <null>
+      - Row 60: Invalid null value found in: <null>
+      - Row 61: Invalid null value found in: <null>
+      - Row 62: Invalid null value found in: <null>
+      - Row 63: Invalid null value found in: <null>
+      - Row 64: Invalid null value found in: <null>
+      - Row 65: Invalid null value found in: <null>
+      - Row 66: Invalid null value found in: <null>
+      - Row 67: Invalid null value found in: <null>
+      - Row 68: Invalid null value found in: <null>
+      - Row 69: Invalid null value found in: <null>
+      - Row 71: Invalid null value found in: <null>
+      - Row 72: Invalid null value found in: <null>
+      - Row 73: Invalid null value found in: <null>
+      - Row 75: Invalid null value found in: <null>
+      - Row 76: Invalid null value found in: <null>
+      - Row 77: Invalid null value found in: <null>
+      - Row 78: Invalid null value found in: <null>
+      - Row 79: Invalid null value found in: <null>
+      - Row 80: Invalid null value found in: <null>
+      - Row 81: Invalid null value found in: <null>
+      - Row 82: Invalid null value found in: <null>
+      - Row 83: Invalid null value found in: <null>
+      - Row 84: Invalid null value found in: <null>
+      - Row 85: Invalid null value found in: <null>
+      - Row 87: Invalid null value found in: <null>
+      - Row 89: Invalid null value found in: <null>
+      - Row 90: Invalid null value found in: <null>
+      - Row 91: Invalid null value found in: <null>
+      - Row 93: Invalid null value found in: <null>
+      - Row 94: Invalid null value found in: <null>
+      - Row 95: Invalid null value found in: <null>
+      - Row 96: Invalid null value found in: <null>
+      - Row 98: Invalid null value found in: <null>
+      - Row 99: Invalid null value found in: <null>
+      - Row 100: Invalid null value found in: <null>
+      - Row 101: Invalid null value found in: <null>
+      - Row 102: Invalid null value found in: <null>
+      - Row 103: Invalid null value found in: <null>
+      - Row 104: Invalid null value found in: <null>
+      - Row 105: Invalid null value found in: <null>
+      - Row 106: Invalid null value found in: <null>
+      - Row 108: Invalid null value found in: <null>
+      - Row 109: Invalid null value found in: <null>
+      - Row 110: Invalid null value found in: <null>
+      - Row 111: Invalid null value found in: <null>
+      - Row 112: Invalid null value found in: <null>
+      - Row 113: Invalid null value found in: <null>
+      - Row 114: Invalid null value found in: <null>
+      - Row 115: Invalid null value found in: <null>
+      - Row 116: Invalid null value found in: <null>
+      - Row 121: Invalid null value found in: <null>
+      - Row 122: Invalid null value found in: <null>
+      - Row 124: Invalid null value found in: <null>
+      - Row 125: Invalid null value found in: <null>
+      - Row 127: Invalid null value found in: <null>
+      - Row 128: Invalid null value found in: <null>
+      - Row 129: Invalid null value found in: <null>
+      - Row 130: Invalid null value found in: <null>
+      - Row 131: Invalid null value found in: <null>
+      - Row 133: Invalid null value found in: <null>
+      - Row 134: Invalid null value found in: <null>
+      - Row 135: Invalid null value found in: <null>
+      - Row 136: Invalid null value found in: <null>
+      - Row 137: Invalid null value found in: <null>
+      - Row 140: Invalid null value found in: <null>
+      - Row 141: Invalid null value found in: <null>
+      - Row 142: Invalid null value found in: <null>
+      - Row 145: Invalid null value found in: <null>
+      - Row 146: Invalid null value found in: <null>
+      - Row 147: Invalid null value found in: <null>
+      - Row 148: Invalid null value found in: <null>
+      - Row 149: Invalid null value found in: <null>
+      - Row 150: Invalid null value found in: <null>
+      - Row 152: Invalid null value found in: <null>
+      - Row 153: Invalid null value found in: <null>
+      - Row 154: Invalid null value found in: <null>
+      - Row 155: Invalid null value found in: <null>
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
 
 Column: Official_Name
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: Albania
-      - Unusual or inaccurate value: Algeria
-      - Unusual or inaccurate value: American Samoa
-      - Unusual or inaccurate value: Angola
-      - Unusual or inaccurate value: Anguilla
-      - Unusual or inaccurate value: Antigua and Barbuda
-      - Unusual or inaccurate value: Argentina
-      - Unusual or inaccurate value: Australia
-      - Unusual or inaccurate value: Austria
-      - Unusual or inaccurate value: Bangladesh
-      - Unusual or inaccurate value: Barbados
-      - Unusual or inaccurate value: Belgium
-      - Unusual or inaccurate value: Belize
-      - Unusual or inaccurate value: Benin
-      - Unusual or inaccurate value: Bhutan
-      - Unusual or inaccurate value: Bolivia (Plurinational State of)
-      - Unusual or inaccurate value: Bosnia and Herzegovina
-      - Unusual or inaccurate value: Botswana
-      - Unusual or inaccurate value: Brazil
-      - Unusual or inaccurate value: British Virgin Islands
-      - Unusual or inaccurate value: Brunei Darussalam
-      - Unusual or inaccurate value: Bulgaria
-      - Unusual or inaccurate value: Burkina Faso
-      - Unusual or inaccurate value: Burundi
-      - Unusual or inaccurate value: Cambodia
-      - Unusual or inaccurate value: Cameroon
-      - Unusual or inaccurate value: Canada
-      - Unusual or inaccurate value: Cabo Verde
-      - Unusual or inaccurate value: Cayman Islands
-      - Unusual or inaccurate value: Central African Republic
-      - Unusual or inaccurate value: Chad
-      - Unusual or inaccurate value: Chile
-      - Unusual or inaccurate value: Colombia
-      - Unusual or inaccurate value: Cook Islands
-      - Unusual or inaccurate value: Costa Rica
-      - Unusual or inaccurate value: Cuba
-      - Unusual or inaccurate value: Cyprus
-      - Unusual or inaccurate value: Czechia
-      - Unusual or inaccurate value: Denmark
-      - Unusual or inaccurate value: Djibouti
-      - Unusual or inaccurate value: Dominica
-      - Unusual or inaccurate value: Dominican Republic
-      - Unusual or inaccurate value: Ecuador
-      - Unusual or inaccurate value: El Salvador
-      - Unusual or inaccurate value: Finland
-      - Unusual or inaccurate value: France
-      - Unusual or inaccurate value: French Polynesia
-      - Unusual or inaccurate value: Gabon
-      - Unusual or inaccurate value: Georgia
-      - Unusual or inaccurate value: Germany
-      - Unusual or inaccurate value: Ghana
-      - Unusual or inaccurate value: Greece
-      - Unusual or inaccurate value: Grenada
-      - Unusual or inaccurate value: Guatemala
-      - Unusual or inaccurate value: Guinea
-      - Unusual or inaccurate value: Guinea-Bissau
-      - Unusual or inaccurate value: Guyana
-      - Unusual or inaccurate value: Haiti
-      - Unusual or inaccurate value: Honduras
-      - Unusual or inaccurate value: Hungary
-      - Unusual or inaccurate value: Iceland
-      - Unusual or inaccurate value: India
-      - Unusual or inaccurate value: Indonesia
-      - Unusual or inaccurate value: Iraq
-      - Unusual or inaccurate value: Ireland
-      - Unusual or inaccurate value: Isle of Man
-      - Unusual or inaccurate value: Israel
-      - Unusual or inaccurate value: Italy
-      - Unusual or inaccurate value: Jamaica
-      - Unusual or inaccurate value: Japan
-      - Unusual or inaccurate value: Jordan
-      - Unusual or inaccurate value: Kenya
-      - Unusual or inaccurate value: Kiribati
-      - Unusual or inaccurate value: Kuwait
-      - Unusual or inaccurate value: Kyrgyzstan
-      - Unusual or inaccurate value: Lao People's Democratic Republic
-      - Unusual or inaccurate value: Latvia
-      - Unusual or inaccurate value: Lebanon
-      - Unusual or inaccurate value: Liberia
-      - Unusual or inaccurate value: Libya
-      - Unusual or inaccurate value: Lithuania
-      - Unusual or inaccurate value: Luxembourg
-      - Unusual or inaccurate value: Malawi
-      - Unusual or inaccurate value: Malaysia
-      - Unusual or inaccurate value: Maldives
-      - Unusual or inaccurate value: Mali
-      - Unusual or inaccurate value: Mauritius
-      - Unusual or inaccurate value: Mexico
-      - Unusual or inaccurate value: Mongolia
-      - Unusual or inaccurate value: Montenegro
-      - Unusual or inaccurate value: Montserrat
-      - Unusual or inaccurate value: Morocco
-      - Unusual or inaccurate value: Myanmar
-      - Unusual or inaccurate value: Namibia
-      - Unusual or inaccurate value: Nepal
-      - Unusual or inaccurate value: New Caledonia
-      - Unusual or inaccurate value: New Zealand
-      - Unusual or inaccurate value: Nicaragua
-      - Unusual or inaccurate value: Niger
-      - Unusual or inaccurate value: Nigeria
-      - Unusual or inaccurate value: Norway
-      - Unusual or inaccurate value: Oman
-      - Unusual or inaccurate value: Pakistan
-      - Unusual or inaccurate value: State of Palestine
-      - Unusual or inaccurate value: Panama
-      - Unusual or inaccurate value: Papua New Guinea
-      - Unusual or inaccurate value: Paraguay
-      - Unusual or inaccurate value: Peru
-      - Unusual or inaccurate value: Philippines
-      - Unusual or inaccurate value: Portugal
-      - Unusual or inaccurate value: Qatar
-      - Unusual or inaccurate value: Romania
-      - Unusual or inaccurate value: Russian Federation
-      - Unusual or inaccurate value: Rwanda
-      - Unusual or inaccurate value: Saint Helena
-      - Unusual or inaccurate value: Saint Kitts and Nevis
-      - Unusual or inaccurate value: Saint Lucia
-      - Unusual or inaccurate value: Saint Vincent and the Grenadines
-      - Unusual or inaccurate value: Samoa
-      - Unusual or inaccurate value: Saudi Arabia
-      - Unusual or inaccurate value: Senegal
-      - Unusual or inaccurate value: Seychelles
-      - Unusual or inaccurate value: Sierra Leone
-      - Unusual or inaccurate value: Slovakia
-      - Unusual or inaccurate value: Solomon Islands
-      - Unusual or inaccurate value: Somalia
-      - Unusual or inaccurate value: South Africa
-      - Unusual or inaccurate value: Spain
-      - Unusual or inaccurate value: Sri Lanka
-      - Unusual or inaccurate value: Sudan
-      - Unusual or inaccurate value: Suriname
-      - Unusual or inaccurate value: Sweden
-      - Unusual or inaccurate value: Switzerland
-      - Unusual or inaccurate value: Syrian Arab Republic
-      - Unusual or inaccurate value: Thailand
-      - Unusual or inaccurate value: Togo
-      - Unusual or inaccurate value: Tonga
-      - Unusual or inaccurate value: Trinidad and Tobago
-      - Unusual or inaccurate value: Tunisia
-      - Unusual or inaccurate value: Turkmenistan
-      - Unusual or inaccurate value: Turks and Caicos Islands
-      - Unusual or inaccurate value: Tuvalu
-      - Unusual or inaccurate value: United States Virgin Islands
-      - Unusual or inaccurate value: Uganda
-      - Unusual or inaccurate value: Ukraine
-      - Unusual or inaccurate value: United Arab Emirates
-      - Unusual or inaccurate value: United Kingdom of Great Britain and Northern Ireland
-      - Unusual or inaccurate value: United States of America
-      - Unusual or inaccurate value: Uruguay
-      - Unusual or inaccurate value: Vanuatu
-      - Unusual or inaccurate value: Viet Nam
-      - Unusual or inaccurate value: Wallis and Futuna Islands
-      - Unusual or inaccurate value: Zambia
-      - Unusual or inaccurate value: Zimbabwe
+      - Row 2: Unusual or inaccurate value: Albania
+      - Row 3: Unusual or inaccurate value: Algeria
+      - Row 4: Unusual or inaccurate value: American Samoa
+      - Row 5: Unusual or inaccurate value: Angola
+      - Row 6: Unusual or inaccurate value: Anguilla
+      - Row 7: Unusual or inaccurate value: Antigua and Barbuda
+      - Row 8: Unusual or inaccurate value: Argentina
+      - Row 9: Unusual or inaccurate value: Australia
+      - Row 10: Unusual or inaccurate value: Austria
+      - Row 11: Unusual or inaccurate value: Bangladesh
+      - Row 12: Unusual or inaccurate value: Barbados
+      - Row 13: Unusual or inaccurate value: Belgium
+      - Row 14: Unusual or inaccurate value: Belize
+      - Row 15: Unusual or inaccurate value: Benin
+      - Row 16: Unusual or inaccurate value: Bhutan
+      - Row 17: Unusual or inaccurate value: Bolivia (Plurinational State of)
+      - Row 18: Unusual or inaccurate value: Bosnia and Herzegovina
+      - Row 19: Unusual or inaccurate value: Botswana
+      - Row 20: Unusual or inaccurate value: Brazil
+      - Row 21: Unusual or inaccurate value: British Virgin Islands
+      - Row 22: Unusual or inaccurate value: Brunei Darussalam
+      - Row 23: Unusual or inaccurate value: Bulgaria
+      - Row 24: Unusual or inaccurate value: Burkina Faso
+      - Row 25: Unusual or inaccurate value: Burundi
+      - Row 26: Unusual or inaccurate value: Cambodia
+      - Row 27: Unusual or inaccurate value: Cameroon
+      - Row 28: Unusual or inaccurate value: Canada
+      - Row 29: Unusual or inaccurate value: Cabo Verde
+      - Row 30: Unusual or inaccurate value: Cayman Islands
+      - Row 31: Unusual or inaccurate value: Central African Republic
+      - Row 32: Unusual or inaccurate value: Chad
+      - Row 33: Unusual or inaccurate value: Chile
+      - Row 34: Unusual or inaccurate value: Colombia
+      - Row 35: Unusual or inaccurate value: Cook Islands
+      - Row 36: Unusual or inaccurate value: Costa Rica
+      - Row 37: Unusual or inaccurate value: Cuba
+      - Row 38: Unusual or inaccurate value: Cyprus
+      - Row 39: Unusual or inaccurate value: Czechia
+      - Row 40: Unusual or inaccurate value: Denmark
+      - Row 41: Unusual or inaccurate value: Djibouti
+      - Row 42: Unusual or inaccurate value: Dominica
+      - Row 43: Unusual or inaccurate value: Dominican Republic
+      - Row 44: Unusual or inaccurate value: Ecuador
+      - Row 45: Unusual or inaccurate value: El Salvador
+      - Row 46: Unusual or inaccurate value: Finland
+      - Row 47: Unusual or inaccurate value: France
+      - Row 48: Unusual or inaccurate value: French Polynesia
+      - Row 49: Unusual or inaccurate value: Gabon
+      - Row 50: Unusual or inaccurate value: Georgia
+      - Row 51: Unusual or inaccurate value: Germany
+      - Row 52: Unusual or inaccurate value: Ghana
+      - Row 53: Unusual or inaccurate value: Greece
+      - Row 54: Unusual or inaccurate value: Grenada
+      - Row 55: Unusual or inaccurate value: Guatemala
+      - Row 56: Unusual or inaccurate value: Guinea
+      - Row 57: Unusual or inaccurate value: Guinea-Bissau
+      - Row 58: Unusual or inaccurate value: Guyana
+      - Row 59: Unusual or inaccurate value: Haiti
+      - Row 60: Unusual or inaccurate value: Honduras
+      - Row 61: Unusual or inaccurate value: Hungary
+      - Row 62: Unusual or inaccurate value: Iceland
+      - Row 63: Unusual or inaccurate value: India
+      - Row 64: Unusual or inaccurate value: Indonesia
+      - Row 65: Unusual or inaccurate value: Iraq
+      - Row 66: Unusual or inaccurate value: Ireland
+      - Row 67: Unusual or inaccurate value: Isle of Man
+      - Row 68: Unusual or inaccurate value: Israel
+      - Row 69: Unusual or inaccurate value: Italy
+      - Row 70: Unusual or inaccurate value: Jamaica
+      - Row 71: Unusual or inaccurate value: Japan
+      - Row 72: Unusual or inaccurate value: Jordan
+      - Row 73: Unusual or inaccurate value: Kenya
+      - Row 74: Unusual or inaccurate value: Kiribati
+      - Row 75: Unusual or inaccurate value: Kuwait
+      - Row 76: Unusual or inaccurate value: Kyrgyzstan
+      - Row 77: Unusual or inaccurate value: Lao People's Democratic Republic
+      - Row 78: Unusual or inaccurate value: Latvia
+      - Row 79: Unusual or inaccurate value: Lebanon
+      - Row 80: Unusual or inaccurate value: Liberia
+      - Row 81: Unusual or inaccurate value: Libya
+      - Row 82: Unusual or inaccurate value: Lithuania
+      - Row 83: Unusual or inaccurate value: Luxembourg
+      - Row 84: Unusual or inaccurate value: Malawi
+      - Row 85: Unusual or inaccurate value: Malaysia
+      - Row 86: Unusual or inaccurate value: Maldives
+      - Row 87: Unusual or inaccurate value: Mali
+      - Row 88: Unusual or inaccurate value: Mauritius
+      - Row 89: Unusual or inaccurate value: Mexico
+      - Row 90: Unusual or inaccurate value: Mongolia
+      - Row 91: Unusual or inaccurate value: Montenegro
+      - Row 92: Unusual or inaccurate value: Montserrat
+      - Row 93: Unusual or inaccurate value: Morocco
+      - Row 94: Unusual or inaccurate value: Myanmar
+      - Row 95: Unusual or inaccurate value: Namibia
+      - Row 96: Unusual or inaccurate value: Nepal
+      - Row 97: Unusual or inaccurate value: New Caledonia
+      - Row 98: Unusual or inaccurate value: New Zealand
+      - Row 99: Unusual or inaccurate value: Nicaragua
+      - Row 100: Unusual or inaccurate value: Niger
+      - Row 101: Unusual or inaccurate value: Nigeria
+      - Row 102: Unusual or inaccurate value: Norway
+      - Row 103: Unusual or inaccurate value: Oman
+      - Row 104: Unusual or inaccurate value: Pakistan
+      - Row 105: Unusual or inaccurate value: State of Palestine
+      - Row 106: Unusual or inaccurate value: Panama
+      - Row 107: Unusual or inaccurate value: Papua New Guinea
+      - Row 108: Unusual or inaccurate value: Paraguay
+      - Row 109: Unusual or inaccurate value: Peru
+      - Row 110: Unusual or inaccurate value: Philippines
+      - Row 111: Unusual or inaccurate value: Portugal
+      - Row 112: Unusual or inaccurate value: Qatar
+      - Row 113: Unusual or inaccurate value: Romania
+      - Row 114: Unusual or inaccurate value: Russian Federation
+      - Row 115: Unusual or inaccurate value: Rwanda
+      - Row 116: Unusual or inaccurate value: Saint Helena
+      - Row 117: Unusual or inaccurate value: Saint Kitts and Nevis
+      - Row 118: Unusual or inaccurate value: Saint Lucia
+      - Row 119: Unusual or inaccurate value: Saint Vincent and the Grenadines
+      - Row 120: Unusual or inaccurate value: Samoa
+      - Row 121: Unusual or inaccurate value: Saudi Arabia
+      - Row 122: Unusual or inaccurate value: Senegal
+      - Row 123: Unusual or inaccurate value: Seychelles
+      - Row 124: Unusual or inaccurate value: Sierra Leone
+      - Row 125: Unusual or inaccurate value: Slovakia
+      - Row 126: Unusual or inaccurate value: Solomon Islands
+      - Row 127: Unusual or inaccurate value: Somalia
+      - Row 128: Unusual or inaccurate value: South Africa
+      - Row 129: Unusual or inaccurate value: Spain
+      - Row 130: Unusual or inaccurate value: Sri Lanka
+      - Row 131: Unusual or inaccurate value: Sudan
+      - Row 132: Unusual or inaccurate value: Suriname
+      - Row 133: Unusual or inaccurate value: Sweden
+      - Row 134: Unusual or inaccurate value: Switzerland
+      - Row 135: Unusual or inaccurate value: Syrian Arab Republic
+      - Row 136: Unusual or inaccurate value: Thailand
+      - Row 137: Unusual or inaccurate value: Togo
+      - Row 138: Unusual or inaccurate value: Tonga
+      - Row 139: Unusual or inaccurate value: Trinidad and Tobago
+      - Row 140: Unusual or inaccurate value: Tunisia
+      - Row 141: Unusual or inaccurate value: Turkmenistan
+      - Row 142: Unusual or inaccurate value: Turks and Caicos Islands
+      - Row 143: Unusual or inaccurate value: Tuvalu
+      - Row 144: Unusual or inaccurate value: United States Virgin Islands
+      - Row 145: Unusual or inaccurate value: Uganda
+      - Row 146: Unusual or inaccurate value: Ukraine
+      - Row 147: Unusual or inaccurate value: United Arab Emirates
+      - Row 148: Unusual or inaccurate value: United Kingdom of Great Britain and Northern Ireland
+      - Row 149: Unusual or inaccurate value: United States of America
+      - Row 150: Unusual or inaccurate value: Uruguay
+      - Row 151: Unusual or inaccurate value: Vanuatu
+      - Row 152: Unusual or inaccurate value: Viet Nam
+      - Row 153: Unusual or inaccurate value: Wallis and Futuna Islands
+      - Row 154: Unusual or inaccurate value: Zambia
+      - Row 155: Unusual or inaccurate value: Zimbabwe
   [FEU2] Data with a null value should be marked as such.: PASSED
   [IEU3.2] Data shall not consist of special characters.: FAILED
     Invalid rows:
-      - Special character found in value: Bolivia (Plurinational State of)
-      - Special character found in value: Lao People's Democratic Republic
+      - Row 17: Special character found in value: Bolivia (Plurinational State of)
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
 
 Column: CurrencyCode
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: ALL
-      - Unusual or inaccurate value: DZD
-      - Unusual or inaccurate value: AOA
-      - Unusual or inaccurate value: ARS
-      - Unusual or inaccurate value: BDT
-      - Unusual or inaccurate value: BBD
-      - Unusual or inaccurate value: BZD
-      - Unusual or inaccurate value: BTN
-      - Unusual or inaccurate value: BOB
-      - Unusual or inaccurate value: BAM
-      - Unusual or inaccurate value: BWP
-      - Unusual or inaccurate value: BRL
-      - Unusual or inaccurate value: BND
-      - Unusual or inaccurate value: BGN
-      - Unusual or inaccurate value: BIF
-      - Unusual or inaccurate value: KHR
-      - Unusual or inaccurate value: CAD
-      - Unusual or inaccurate value: CVE
-      - Unusual or inaccurate value: KYD
-      - Unusual or inaccurate value: CLP
-      - Unusual or inaccurate value: COP
-      - Unusual or inaccurate value: NZD
-      - Unusual or inaccurate value: CRC
-      - Unusual or inaccurate value: CUP
-      - Unusual or inaccurate value: CZK
-      - Unusual or inaccurate value: DKK
-      - Unusual or inaccurate value: DJF
-      - Unusual or inaccurate value: DOP
-      - Unusual or inaccurate value: GEL
-      - Unusual or inaccurate value: GHS
-      - Unusual or inaccurate value: GTQ
-      - Unusual or inaccurate value: GNF
-      - Unusual or inaccurate value: GYD
-      - Unusual or inaccurate value: HTG
-      - Unusual or inaccurate value: HNL
-      - Unusual or inaccurate value: HUF
-      - Unusual or inaccurate value: ISK
-      - Unusual or inaccurate value: INR
-      - Unusual or inaccurate value: IDR
-      - Unusual or inaccurate value: IQD
-      - Unusual or inaccurate value: GBP
-      - Unusual or inaccurate value: ILS
-      - Unusual or inaccurate value: JMD
-      - Unusual or inaccurate value: JPY
-      - Unusual or inaccurate value: JOD
-      - Unusual or inaccurate value: KES
-      - Unusual or inaccurate value: KWD
-      - Unusual or inaccurate value: KGS
-      - Unusual or inaccurate value: LAK
-      - Unusual or inaccurate value: LBP
-      - Unusual or inaccurate value: LRD
-      - Unusual or inaccurate value: LYD
-      - Unusual or inaccurate value: MWK
-      - Unusual or inaccurate value: MYR
-      - Unusual or inaccurate value: MVR
-      - Unusual or inaccurate value: MUR
-      - Unusual or inaccurate value: MXN
-      - Unusual or inaccurate value: MNT
-      - Unusual or inaccurate value: MAD
-      - Unusual or inaccurate value: MMK
-      - Unusual or inaccurate value: NAD
-      - Unusual or inaccurate value: NPR
-      - Unusual or inaccurate value: NZD
-      - Unusual or inaccurate value: NIO
-      - Unusual or inaccurate value: NGN
-      - Unusual or inaccurate value: NOK
-      - Unusual or inaccurate value: OMR
-      - Unusual or inaccurate value: PKR
-      - Unusual or inaccurate value: ILS
-      - Unusual or inaccurate value: PAB
-      - Unusual or inaccurate value: PGK
-      - Unusual or inaccurate value: PYG
-      - Unusual or inaccurate value: PEN
-      - Unusual or inaccurate value: PHP
-      - Unusual or inaccurate value: QAR
-      - Unusual or inaccurate value: RON
-      - Unusual or inaccurate value: RUB
-      - Unusual or inaccurate value: RWF
-      - Unusual or inaccurate value: SHP
-      - Unusual or inaccurate value: WST
-      - Unusual or inaccurate value: SAR
-      - Unusual or inaccurate value: SCR
-      - Unusual or inaccurate value: SLL
-      - Unusual or inaccurate value: SBD
-      - Unusual or inaccurate value: SOS
-      - Unusual or inaccurate value: ZAR
-      - Unusual or inaccurate value: LKR
-      - Unusual or inaccurate value: SDG
-      - Unusual or inaccurate value: SRD
-      - Unusual or inaccurate value: SEK
-      - Unusual or inaccurate value: CHF
-      - Unusual or inaccurate value: SYP
-      - Unusual or inaccurate value: THB
-      - Unusual or inaccurate value: TOP
-      - Unusual or inaccurate value: TTD
-      - Unusual or inaccurate value: TND
-      - Unusual or inaccurate value: TMT
-      - Unusual or inaccurate value: UGX
-      - Unusual or inaccurate value: UAH
-      - Unusual or inaccurate value: AED
-      - Unusual or inaccurate value: GBP
-      - Unusual or inaccurate value: UYU
-      - Unusual or inaccurate value: VUV
-      - Unusual or inaccurate value: VND
-      - Unusual or inaccurate value: ZMW
-      - Unusual or inaccurate value: ZWL
+      - Row 2: Unusual or inaccurate value: ALL
+      - Row 3: Unusual or inaccurate value: DZD
+      - Row 5: Unusual or inaccurate value: AOA
+      - Row 8: Unusual or inaccurate value: ARS
+      - Row 11: Unusual or inaccurate value: BDT
+      - Row 12: Unusual or inaccurate value: BBD
+      - Row 14: Unusual or inaccurate value: BZD
+      - Row 16: Unusual or inaccurate value: BTN
+      - Row 17: Unusual or inaccurate value: BOB
+      - Row 18: Unusual or inaccurate value: BAM
+      - Row 19: Unusual or inaccurate value: BWP
+      - Row 20: Unusual or inaccurate value: BRL
+      - Row 22: Unusual or inaccurate value: BND
+      - Row 23: Unusual or inaccurate value: BGN
+      - Row 25: Unusual or inaccurate value: BIF
+      - Row 26: Unusual or inaccurate value: KHR
+      - Row 28: Unusual or inaccurate value: CAD
+      - Row 29: Unusual or inaccurate value: CVE
+      - Row 30: Unusual or inaccurate value: KYD
+      - Row 33: Unusual or inaccurate value: CLP
+      - Row 34: Unusual or inaccurate value: COP
+      - Row 35: Unusual or inaccurate value: NZD
+      - Row 36: Unusual or inaccurate value: CRC
+      - Row 37: Unusual or inaccurate value: CUP
+      - Row 39: Unusual or inaccurate value: CZK
+      - Row 40: Unusual or inaccurate value: DKK
+      - Row 41: Unusual or inaccurate value: DJF
+      - Row 43: Unusual or inaccurate value: DOP
+      - Row 50: Unusual or inaccurate value: GEL
+      - Row 52: Unusual or inaccurate value: GHS
+      - Row 55: Unusual or inaccurate value: GTQ
+      - Row 56: Unusual or inaccurate value: GNF
+      - Row 58: Unusual or inaccurate value: GYD
+      - Row 59: Unusual or inaccurate value: HTG
+      - Row 60: Unusual or inaccurate value: HNL
+      - Row 61: Unusual or inaccurate value: HUF
+      - Row 62: Unusual or inaccurate value: ISK
+      - Row 63: Unusual or inaccurate value: INR
+      - Row 64: Unusual or inaccurate value: IDR
+      - Row 65: Unusual or inaccurate value: IQD
+      - Row 67: Unusual or inaccurate value: GBP
+      - Row 68: Unusual or inaccurate value: ILS
+      - Row 70: Unusual or inaccurate value: JMD
+      - Row 71: Unusual or inaccurate value: JPY
+      - Row 72: Unusual or inaccurate value: JOD
+      - Row 73: Unusual or inaccurate value: KES
+      - Row 75: Unusual or inaccurate value: KWD
+      - Row 76: Unusual or inaccurate value: KGS
+      - Row 77: Unusual or inaccurate value: LAK
+      - Row 79: Unusual or inaccurate value: LBP
+      - Row 80: Unusual or inaccurate value: LRD
+      - Row 81: Unusual or inaccurate value: LYD
+      - Row 84: Unusual or inaccurate value: MWK
+      - Row 85: Unusual or inaccurate value: MYR
+      - Row 86: Unusual or inaccurate value: MVR
+      - Row 88: Unusual or inaccurate value: MUR
+      - Row 89: Unusual or inaccurate value: MXN
+      - Row 90: Unusual or inaccurate value: MNT
+      - Row 93: Unusual or inaccurate value: MAD
+      - Row 94: Unusual or inaccurate value: MMK
+      - Row 95: Unusual or inaccurate value: NAD
+      - Row 96: Unusual or inaccurate value: NPR
+      - Row 98: Unusual or inaccurate value: NZD
+      - Row 99: Unusual or inaccurate value: NIO
+      - Row 101: Unusual or inaccurate value: NGN
+      - Row 102: Unusual or inaccurate value: NOK
+      - Row 103: Unusual or inaccurate value: OMR
+      - Row 104: Unusual or inaccurate value: PKR
+      - Row 105: Unusual or inaccurate value: ILS
+      - Row 106: Unusual or inaccurate value: PAB
+      - Row 107: Unusual or inaccurate value: PGK
+      - Row 108: Unusual or inaccurate value: PYG
+      - Row 109: Unusual or inaccurate value: PEN
+      - Row 110: Unusual or inaccurate value: PHP
+      - Row 112: Unusual or inaccurate value: QAR
+      - Row 113: Unusual or inaccurate value: RON
+      - Row 114: Unusual or inaccurate value: RUB
+      - Row 115: Unusual or inaccurate value: RWF
+      - Row 116: Unusual or inaccurate value: SHP
+      - Row 120: Unusual or inaccurate value: WST
+      - Row 121: Unusual or inaccurate value: SAR
+      - Row 123: Unusual or inaccurate value: SCR
+      - Row 124: Unusual or inaccurate value: SLL
+      - Row 126: Unusual or inaccurate value: SBD
+      - Row 127: Unusual or inaccurate value: SOS
+      - Row 128: Unusual or inaccurate value: ZAR
+      - Row 130: Unusual or inaccurate value: LKR
+      - Row 131: Unusual or inaccurate value: SDG
+      - Row 132: Unusual or inaccurate value: SRD
+      - Row 133: Unusual or inaccurate value: SEK
+      - Row 134: Unusual or inaccurate value: CHF
+      - Row 135: Unusual or inaccurate value: SYP
+      - Row 136: Unusual or inaccurate value: THB
+      - Row 138: Unusual or inaccurate value: TOP
+      - Row 139: Unusual or inaccurate value: TTD
+      - Row 140: Unusual or inaccurate value: TND
+      - Row 141: Unusual or inaccurate value: TMT
+      - Row 145: Unusual or inaccurate value: UGX
+      - Row 146: Unusual or inaccurate value: UAH
+      - Row 147: Unusual or inaccurate value: AED
+      - Row 148: Unusual or inaccurate value: GBP
+      - Row 150: Unusual or inaccurate value: UYU
+      - Row 151: Unusual or inaccurate value: VUV
+      - Row 152: Unusual or inaccurate value: VND
+      - Row 154: Unusual or inaccurate value: ZMW
+      - Row 155: Unusual or inaccurate value: ZWL
   [FEU2] Data with a null value should be marked as such.: PASSED
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
@@ -1369,90 +1361,90 @@ Column: Intermediate Region Code
   [REU4] Data should be accurate.: PASSED
   [FEU2] Data with a null value should be marked as such.: FAILED
     Invalid rows:
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
+      - Row 2: Invalid null value found in: <null>
+      - Row 3: Invalid null value found in: <null>
+      - Row 4: Invalid null value found in: <null>
+      - Row 9: Invalid null value found in: <null>
+      - Row 10: Invalid null value found in: <null>
+      - Row 11: Invalid null value found in: <null>
+      - Row 13: Invalid null value found in: <null>
+      - Row 16: Invalid null value found in: <null>
+      - Row 18: Invalid null value found in: <null>
+      - Row 22: Invalid null value found in: <null>
+      - Row 23: Invalid null value found in: <null>
+      - Row 26: Invalid null value found in: <null>
+      - Row 28: Invalid null value found in: <null>
+      - Row 35: Invalid null value found in: <null>
+      - Row 38: Invalid null value found in: <null>
+      - Row 39: Invalid null value found in: <null>
+      - Row 40: Invalid null value found in: <null>
+      - Row 46: Invalid null value found in: <null>
+      - Row 47: Invalid null value found in: <null>
+      - Row 48: Invalid null value found in: <null>
+      - Row 50: Invalid null value found in: <null>
+      - Row 51: Invalid null value found in: <null>
+      - Row 53: Invalid null value found in: <null>
+      - Row 61: Invalid null value found in: <null>
+      - Row 62: Invalid null value found in: <null>
+      - Row 63: Invalid null value found in: <null>
+      - Row 64: Invalid null value found in: <null>
+      - Row 65: Invalid null value found in: <null>
+      - Row 66: Invalid null value found in: <null>
+      - Row 67: Invalid null value found in: <null>
+      - Row 68: Invalid null value found in: <null>
+      - Row 69: Invalid null value found in: <null>
+      - Row 71: Invalid null value found in: <null>
+      - Row 72: Invalid null value found in: <null>
+      - Row 74: Invalid null value found in: <null>
+      - Row 75: Invalid null value found in: <null>
+      - Row 76: Invalid null value found in: <null>
+      - Row 77: Invalid null value found in: <null>
+      - Row 78: Invalid null value found in: <null>
+      - Row 79: Invalid null value found in: <null>
+      - Row 81: Invalid null value found in: <null>
+      - Row 82: Invalid null value found in: <null>
+      - Row 83: Invalid null value found in: <null>
+      - Row 85: Invalid null value found in: <null>
+      - Row 86: Invalid null value found in: <null>
+      - Row 90: Invalid null value found in: <null>
+      - Row 91: Invalid null value found in: <null>
+      - Row 93: Invalid null value found in: <null>
+      - Row 94: Invalid null value found in: <null>
+      - Row 96: Invalid null value found in: <null>
+      - Row 97: Invalid null value found in: <null>
+      - Row 98: Invalid null value found in: <null>
+      - Row 102: Invalid null value found in: <null>
+      - Row 103: Invalid null value found in: <null>
+      - Row 104: Invalid null value found in: <null>
+      - Row 105: Invalid null value found in: <null>
+      - Row 107: Invalid null value found in: <null>
+      - Row 110: Invalid null value found in: <null>
+      - Row 111: Invalid null value found in: <null>
+      - Row 112: Invalid null value found in: <null>
+      - Row 113: Invalid null value found in: <null>
+      - Row 114: Invalid null value found in: <null>
+      - Row 120: Invalid null value found in: <null>
+      - Row 121: Invalid null value found in: <null>
+      - Row 125: Invalid null value found in: <null>
+      - Row 126: Invalid null value found in: <null>
+      - Row 129: Invalid null value found in: <null>
+      - Row 130: Invalid null value found in: <null>
+      - Row 131: Invalid null value found in: <null>
+      - Row 133: Invalid null value found in: <null>
+      - Row 134: Invalid null value found in: <null>
+      - Row 135: Invalid null value found in: <null>
+      - Row 136: Invalid null value found in: <null>
+      - Row 138: Invalid null value found in: <null>
+      - Row 140: Invalid null value found in: <null>
+      - Row 141: Invalid null value found in: <null>
+      - Row 143: Invalid null value found in: <null>
+      - Row 146: Invalid null value found in: <null>
+      - Row 147: Invalid null value found in: <null>
+      - Row 148: Invalid null value found in: <null>
+      - Row 149: Invalid null value found in: <null>
+      - Row 151: Invalid null value found in: <null>
+      - Row 152: Invalid null value found in: <null>
+      - Row 153: Invalid null value found in: <null>
   [IEU2.1] Integers are separated from decimals by a dot “.”.: PASSED
   [IEU2.2] Thousands must not use separators.: PASSED
   [IEU3.2] Data shall not consist of special characters.: PASSED
@@ -1476,128 +1468,128 @@ Column: Least Developed Countries (LDC)
   [REU4] Data should be accurate.: PASSED
   [FEU2] Data with a null value should be marked as such.: FAILED
     Invalid rows:
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
+      - Row 2: Invalid null value found in: <null>
+      - Row 3: Invalid null value found in: <null>
+      - Row 4: Invalid null value found in: <null>
+      - Row 6: Invalid null value found in: <null>
+      - Row 7: Invalid null value found in: <null>
+      - Row 8: Invalid null value found in: <null>
+      - Row 9: Invalid null value found in: <null>
+      - Row 10: Invalid null value found in: <null>
+      - Row 12: Invalid null value found in: <null>
+      - Row 13: Invalid null value found in: <null>
+      - Row 14: Invalid null value found in: <null>
+      - Row 17: Invalid null value found in: <null>
+      - Row 18: Invalid null value found in: <null>
+      - Row 19: Invalid null value found in: <null>
+      - Row 20: Invalid null value found in: <null>
+      - Row 21: Invalid null value found in: <null>
+      - Row 22: Invalid null value found in: <null>
+      - Row 23: Invalid null value found in: <null>
+      - Row 27: Invalid null value found in: <null>
+      - Row 28: Invalid null value found in: <null>
+      - Row 29: Invalid null value found in: <null>
+      - Row 30: Invalid null value found in: <null>
+      - Row 33: Invalid null value found in: <null>
+      - Row 34: Invalid null value found in: <null>
+      - Row 35: Invalid null value found in: <null>
+      - Row 36: Invalid null value found in: <null>
+      - Row 37: Invalid null value found in: <null>
+      - Row 38: Invalid null value found in: <null>
+      - Row 39: Invalid null value found in: <null>
+      - Row 40: Invalid null value found in: <null>
+      - Row 42: Invalid null value found in: <null>
+      - Row 43: Invalid null value found in: <null>
+      - Row 44: Invalid null value found in: <null>
+      - Row 45: Invalid null value found in: <null>
+      - Row 46: Invalid null value found in: <null>
+      - Row 47: Invalid null value found in: <null>
+      - Row 48: Invalid null value found in: <null>
+      - Row 49: Invalid null value found in: <null>
+      - Row 50: Invalid null value found in: <null>
+      - Row 51: Invalid null value found in: <null>
+      - Row 52: Invalid null value found in: <null>
+      - Row 53: Invalid null value found in: <null>
+      - Row 54: Invalid null value found in: <null>
+      - Row 55: Invalid null value found in: <null>
+      - Row 58: Invalid null value found in: <null>
+      - Row 60: Invalid null value found in: <null>
+      - Row 61: Invalid null value found in: <null>
+      - Row 62: Invalid null value found in: <null>
+      - Row 63: Invalid null value found in: <null>
+      - Row 64: Invalid null value found in: <null>
+      - Row 65: Invalid null value found in: <null>
+      - Row 66: Invalid null value found in: <null>
+      - Row 67: Invalid null value found in: <null>
+      - Row 68: Invalid null value found in: <null>
+      - Row 69: Invalid null value found in: <null>
+      - Row 70: Invalid null value found in: <null>
+      - Row 71: Invalid null value found in: <null>
+      - Row 72: Invalid null value found in: <null>
+      - Row 73: Invalid null value found in: <null>
+      - Row 75: Invalid null value found in: <null>
+      - Row 76: Invalid null value found in: <null>
+      - Row 78: Invalid null value found in: <null>
+      - Row 79: Invalid null value found in: <null>
+      - Row 81: Invalid null value found in: <null>
+      - Row 82: Invalid null value found in: <null>
+      - Row 83: Invalid null value found in: <null>
+      - Row 85: Invalid null value found in: <null>
+      - Row 86: Invalid null value found in: <null>
+      - Row 88: Invalid null value found in: <null>
+      - Row 89: Invalid null value found in: <null>
+      - Row 90: Invalid null value found in: <null>
+      - Row 91: Invalid null value found in: <null>
+      - Row 92: Invalid null value found in: <null>
+      - Row 93: Invalid null value found in: <null>
+      - Row 95: Invalid null value found in: <null>
+      - Row 97: Invalid null value found in: <null>
+      - Row 98: Invalid null value found in: <null>
+      - Row 99: Invalid null value found in: <null>
+      - Row 101: Invalid null value found in: <null>
+      - Row 102: Invalid null value found in: <null>
+      - Row 103: Invalid null value found in: <null>
+      - Row 104: Invalid null value found in: <null>
+      - Row 105: Invalid null value found in: <null>
+      - Row 106: Invalid null value found in: <null>
+      - Row 107: Invalid null value found in: <null>
+      - Row 108: Invalid null value found in: <null>
+      - Row 109: Invalid null value found in: <null>
+      - Row 110: Invalid null value found in: <null>
+      - Row 111: Invalid null value found in: <null>
+      - Row 112: Invalid null value found in: <null>
+      - Row 113: Invalid null value found in: <null>
+      - Row 114: Invalid null value found in: <null>
+      - Row 116: Invalid null value found in: <null>
+      - Row 117: Invalid null value found in: <null>
+      - Row 118: Invalid null value found in: <null>
+      - Row 119: Invalid null value found in: <null>
+      - Row 120: Invalid null value found in: <null>
+      - Row 121: Invalid null value found in: <null>
+      - Row 123: Invalid null value found in: <null>
+      - Row 125: Invalid null value found in: <null>
+      - Row 128: Invalid null value found in: <null>
+      - Row 129: Invalid null value found in: <null>
+      - Row 130: Invalid null value found in: <null>
+      - Row 132: Invalid null value found in: <null>
+      - Row 133: Invalid null value found in: <null>
+      - Row 134: Invalid null value found in: <null>
+      - Row 135: Invalid null value found in: <null>
+      - Row 136: Invalid null value found in: <null>
+      - Row 138: Invalid null value found in: <null>
+      - Row 139: Invalid null value found in: <null>
+      - Row 140: Invalid null value found in: <null>
+      - Row 141: Invalid null value found in: <null>
+      - Row 142: Invalid null value found in: <null>
+      - Row 144: Invalid null value found in: <null>
+      - Row 146: Invalid null value found in: <null>
+      - Row 147: Invalid null value found in: <null>
+      - Row 148: Invalid null value found in: <null>
+      - Row 149: Invalid null value found in: <null>
+      - Row 150: Invalid null value found in: <null>
+      - Row 152: Invalid null value found in: <null>
+      - Row 153: Invalid null value found in: <null>
+      - Row 155: Invalid null value found in: <null>
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
 
@@ -1605,250 +1597,250 @@ Column: Intermediate Region Name
   [REU4] Data should be accurate.: PASSED
   [FEU2] Data with a null value should be marked as such.: FAILED
     Invalid rows:
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
+      - Row 2: Invalid null value found in: <null>
+      - Row 3: Invalid null value found in: <null>
+      - Row 4: Invalid null value found in: <null>
+      - Row 9: Invalid null value found in: <null>
+      - Row 10: Invalid null value found in: <null>
+      - Row 11: Invalid null value found in: <null>
+      - Row 13: Invalid null value found in: <null>
+      - Row 16: Invalid null value found in: <null>
+      - Row 18: Invalid null value found in: <null>
+      - Row 22: Invalid null value found in: <null>
+      - Row 23: Invalid null value found in: <null>
+      - Row 26: Invalid null value found in: <null>
+      - Row 28: Invalid null value found in: <null>
+      - Row 35: Invalid null value found in: <null>
+      - Row 38: Invalid null value found in: <null>
+      - Row 39: Invalid null value found in: <null>
+      - Row 40: Invalid null value found in: <null>
+      - Row 46: Invalid null value found in: <null>
+      - Row 47: Invalid null value found in: <null>
+      - Row 48: Invalid null value found in: <null>
+      - Row 50: Invalid null value found in: <null>
+      - Row 51: Invalid null value found in: <null>
+      - Row 53: Invalid null value found in: <null>
+      - Row 61: Invalid null value found in: <null>
+      - Row 62: Invalid null value found in: <null>
+      - Row 63: Invalid null value found in: <null>
+      - Row 64: Invalid null value found in: <null>
+      - Row 65: Invalid null value found in: <null>
+      - Row 66: Invalid null value found in: <null>
+      - Row 67: Invalid null value found in: <null>
+      - Row 68: Invalid null value found in: <null>
+      - Row 69: Invalid null value found in: <null>
+      - Row 71: Invalid null value found in: <null>
+      - Row 72: Invalid null value found in: <null>
+      - Row 74: Invalid null value found in: <null>
+      - Row 75: Invalid null value found in: <null>
+      - Row 76: Invalid null value found in: <null>
+      - Row 77: Invalid null value found in: <null>
+      - Row 78: Invalid null value found in: <null>
+      - Row 79: Invalid null value found in: <null>
+      - Row 81: Invalid null value found in: <null>
+      - Row 82: Invalid null value found in: <null>
+      - Row 83: Invalid null value found in: <null>
+      - Row 85: Invalid null value found in: <null>
+      - Row 86: Invalid null value found in: <null>
+      - Row 90: Invalid null value found in: <null>
+      - Row 91: Invalid null value found in: <null>
+      - Row 93: Invalid null value found in: <null>
+      - Row 94: Invalid null value found in: <null>
+      - Row 96: Invalid null value found in: <null>
+      - Row 97: Invalid null value found in: <null>
+      - Row 98: Invalid null value found in: <null>
+      - Row 102: Invalid null value found in: <null>
+      - Row 103: Invalid null value found in: <null>
+      - Row 104: Invalid null value found in: <null>
+      - Row 105: Invalid null value found in: <null>
+      - Row 107: Invalid null value found in: <null>
+      - Row 110: Invalid null value found in: <null>
+      - Row 111: Invalid null value found in: <null>
+      - Row 112: Invalid null value found in: <null>
+      - Row 113: Invalid null value found in: <null>
+      - Row 114: Invalid null value found in: <null>
+      - Row 120: Invalid null value found in: <null>
+      - Row 121: Invalid null value found in: <null>
+      - Row 125: Invalid null value found in: <null>
+      - Row 126: Invalid null value found in: <null>
+      - Row 129: Invalid null value found in: <null>
+      - Row 130: Invalid null value found in: <null>
+      - Row 131: Invalid null value found in: <null>
+      - Row 133: Invalid null value found in: <null>
+      - Row 134: Invalid null value found in: <null>
+      - Row 135: Invalid null value found in: <null>
+      - Row 136: Invalid null value found in: <null>
+      - Row 138: Invalid null value found in: <null>
+      - Row 140: Invalid null value found in: <null>
+      - Row 141: Invalid null value found in: <null>
+      - Row 143: Invalid null value found in: <null>
+      - Row 146: Invalid null value found in: <null>
+      - Row 147: Invalid null value found in: <null>
+      - Row 148: Invalid null value found in: <null>
+      - Row 149: Invalid null value found in: <null>
+      - Row 151: Invalid null value found in: <null>
+      - Row 152: Invalid null value found in: <null>
+      - Row 153: Invalid null value found in: <null>
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
 
 Column: Phone
   [REU4] Data should be accurate.: FAILED
     Invalid rows:
-      - Unusual or inaccurate value: 355
-      - Unusual or inaccurate value: 213
-      - Unusual or inaccurate value: -683
-      - Unusual or inaccurate value: 244
-      - Unusual or inaccurate value: -263
-      - Unusual or inaccurate value: -267
-      - Unusual or inaccurate value: 54
-      - Unusual or inaccurate value: 61
-      - Unusual or inaccurate value: 43
-      - Unusual or inaccurate value: 880
-      - Unusual or inaccurate value: -245
-      - Unusual or inaccurate value: 32
-      - Unusual or inaccurate value: 501
-      - Unusual or inaccurate value: 229
-      - Unusual or inaccurate value: 975
-      - Unusual or inaccurate value: 591
-      - Unusual or inaccurate value: 387
-      - Unusual or inaccurate value: 267
-      - Unusual or inaccurate value: 55
-      - Unusual or inaccurate value: -283
-      - Unusual or inaccurate value: 673
-      - Unusual or inaccurate value: 359
-      - Unusual or inaccurate value: 226
-      - Unusual or inaccurate value: 257
-      - Unusual or inaccurate value: 855
-      - Unusual or inaccurate value: 237
-      - Unusual or inaccurate value: 1
-      - Unusual or inaccurate value: 238
-      - Unusual or inaccurate value: -344
-      - Unusual or inaccurate value: 236
-      - Unusual or inaccurate value: 235
-      - Unusual or inaccurate value: 56
-      - Unusual or inaccurate value: 57
-      - Unusual or inaccurate value: 682
-      - Unusual or inaccurate value: 506
-      - Unusual or inaccurate value: 53
-      - Unusual or inaccurate value: 357
-      - Unusual or inaccurate value: 420
-      - Unusual or inaccurate value: 45
-      - Unusual or inaccurate value: 253
-      - Unusual or inaccurate value: -766
-      - Unusual or inaccurate value: +1-809 and 1-829
-      - Unusual or inaccurate value: 593
-      - Unusual or inaccurate value: 503
-      - Unusual or inaccurate value: 358
-      - Unusual or inaccurate value: 33
-      - Unusual or inaccurate value: 689
-      - Unusual or inaccurate value: 241
-      - Unusual or inaccurate value: 995
-      - Unusual or inaccurate value: 49
-      - Unusual or inaccurate value: 233
-      - Unusual or inaccurate value: 30
-      - Unusual or inaccurate value: -472
-      - Unusual or inaccurate value: 502
-      - Unusual or inaccurate value: 224
-      - Unusual or inaccurate value: 245
-      - Unusual or inaccurate value: 592
-      - Unusual or inaccurate value: 509
-      - Unusual or inaccurate value: 504
-      - Unusual or inaccurate value: 36
-      - Unusual or inaccurate value: 354
-      - Unusual or inaccurate value: 91
-      - Unusual or inaccurate value: 62
-      - Unusual or inaccurate value: 964
-      - Unusual or inaccurate value: 353
-      - Unusual or inaccurate value: -1580
-      - Unusual or inaccurate value: 972
-      - Unusual or inaccurate value: 39
-      - Unusual or inaccurate value: -875
-      - Unusual or inaccurate value: 81
-      - Unusual or inaccurate value: 962
-      - Unusual or inaccurate value: 254
-      - Unusual or inaccurate value: 686
-      - Unusual or inaccurate value: 965
-      - Unusual or inaccurate value: 996
-      - Unusual or inaccurate value: 856
-      - Unusual or inaccurate value: 371
-      - Unusual or inaccurate value: 961
-      - Unusual or inaccurate value: 231
-      - Unusual or inaccurate value: 218
-      - Unusual or inaccurate value: 370
-      - Unusual or inaccurate value: 352
-      - Unusual or inaccurate value: 265
-      - Unusual or inaccurate value: 60
-      - Unusual or inaccurate value: 960
-      - Unusual or inaccurate value: 223
-      - Unusual or inaccurate value: 230
-      - Unusual or inaccurate value: 52
-      - Unusual or inaccurate value: 976
-      - Unusual or inaccurate value: 382
-      - Unusual or inaccurate value: -663
-      - Unusual or inaccurate value: 212
-      - Unusual or inaccurate value: 95
-      - Unusual or inaccurate value: 264
-      - Unusual or inaccurate value: 977
-      - Unusual or inaccurate value: 687
-      - Unusual or inaccurate value: 64
-      - Unusual or inaccurate value: 505
-      - Unusual or inaccurate value: 227
-      - Unusual or inaccurate value: 234
-      - Unusual or inaccurate value: 47
-      - Unusual or inaccurate value: 968
-      - Unusual or inaccurate value: 92
-      - Unusual or inaccurate value: 970
-      - Unusual or inaccurate value: 507
-      - Unusual or inaccurate value: 675
-      - Unusual or inaccurate value: 595
-      - Unusual or inaccurate value: 51
-      - Unusual or inaccurate value: 63
-      - Unusual or inaccurate value: 351
-      - Unusual or inaccurate value: 974
-      - Unusual or inaccurate value: 40
-      - Unusual or inaccurate value: 7
-      - Unusual or inaccurate value: 250
-      - Unusual or inaccurate value: 290
-      - Unusual or inaccurate value: -868
-      - Unusual or inaccurate value: -757
-      - Unusual or inaccurate value: -783
-      - Unusual or inaccurate value: 685
-      - Unusual or inaccurate value: 966
-      - Unusual or inaccurate value: 221
-      - Unusual or inaccurate value: 248
-      - Unusual or inaccurate value: 232
-      - Unusual or inaccurate value: 421
-      - Unusual or inaccurate value: 677
-      - Unusual or inaccurate value: 252
-      - Unusual or inaccurate value: 27
-      - Unusual or inaccurate value: 34
-      - Unusual or inaccurate value: 94
-      - Unusual or inaccurate value: 249
-      - Unusual or inaccurate value: 597
-      - Unusual or inaccurate value: 46
-      - Unusual or inaccurate value: 41
-      - Unusual or inaccurate value: 963
-      - Unusual or inaccurate value: 66
-      - Unusual or inaccurate value: 228
-      - Unusual or inaccurate value: 676
-      - Unusual or inaccurate value: -867
-      - Unusual or inaccurate value: 216
-      - Unusual or inaccurate value: 993
-      - Unusual or inaccurate value: -648
-      - Unusual or inaccurate value: 688
-      - Unusual or inaccurate value: -339
-      - Unusual or inaccurate value: 256
-      - Unusual or inaccurate value: 380
-      - Unusual or inaccurate value: 971
-      - Unusual or inaccurate value: 44
-      - Unusual or inaccurate value: 1
-      - Unusual or inaccurate value: 598
-      - Unusual or inaccurate value: 678
-      - Unusual or inaccurate value: 84
-      - Unusual or inaccurate value: 681
-      - Unusual or inaccurate value: 260
-      - Unusual or inaccurate value: 263
+      - Row 2: Unusual or inaccurate value: 355
+      - Row 3: Unusual or inaccurate value: 213
+      - Row 4: Unusual or inaccurate value: -683
+      - Row 5: Unusual or inaccurate value: 244
+      - Row 6: Unusual or inaccurate value: -263
+      - Row 7: Unusual or inaccurate value: -267
+      - Row 8: Unusual or inaccurate value: 54
+      - Row 9: Unusual or inaccurate value: 61
+      - Row 10: Unusual or inaccurate value: 43
+      - Row 11: Unusual or inaccurate value: 880
+      - Row 12: Unusual or inaccurate value: -245
+      - Row 13: Unusual or inaccurate value: 32
+      - Row 14: Unusual or inaccurate value: 501
+      - Row 15: Unusual or inaccurate value: 229
+      - Row 16: Unusual or inaccurate value: 975
+      - Row 17: Unusual or inaccurate value: 591
+      - Row 18: Unusual or inaccurate value: 387
+      - Row 19: Unusual or inaccurate value: 267
+      - Row 20: Unusual or inaccurate value: 55
+      - Row 21: Unusual or inaccurate value: -283
+      - Row 22: Unusual or inaccurate value: 673
+      - Row 23: Unusual or inaccurate value: 359
+      - Row 24: Unusual or inaccurate value: 226
+      - Row 25: Unusual or inaccurate value: 257
+      - Row 26: Unusual or inaccurate value: 855
+      - Row 27: Unusual or inaccurate value: 237
+      - Row 28: Unusual or inaccurate value: 1
+      - Row 29: Unusual or inaccurate value: 238
+      - Row 30: Unusual or inaccurate value: -344
+      - Row 31: Unusual or inaccurate value: 236
+      - Row 32: Unusual or inaccurate value: 235
+      - Row 33: Unusual or inaccurate value: 56
+      - Row 34: Unusual or inaccurate value: 57
+      - Row 35: Unusual or inaccurate value: 682
+      - Row 36: Unusual or inaccurate value: 506
+      - Row 37: Unusual or inaccurate value: 53
+      - Row 38: Unusual or inaccurate value: 357
+      - Row 39: Unusual or inaccurate value: 420
+      - Row 40: Unusual or inaccurate value: 45
+      - Row 41: Unusual or inaccurate value: 253
+      - Row 42: Unusual or inaccurate value: -766
+      - Row 43: Unusual or inaccurate value: +1-809 and 1-829
+      - Row 44: Unusual or inaccurate value: 593
+      - Row 45: Unusual or inaccurate value: 503
+      - Row 46: Unusual or inaccurate value: 358
+      - Row 47: Unusual or inaccurate value: 33
+      - Row 48: Unusual or inaccurate value: 689
+      - Row 49: Unusual or inaccurate value: 241
+      - Row 50: Unusual or inaccurate value: 995
+      - Row 51: Unusual or inaccurate value: 49
+      - Row 52: Unusual or inaccurate value: 233
+      - Row 53: Unusual or inaccurate value: 30
+      - Row 54: Unusual or inaccurate value: -472
+      - Row 55: Unusual or inaccurate value: 502
+      - Row 56: Unusual or inaccurate value: 224
+      - Row 57: Unusual or inaccurate value: 245
+      - Row 58: Unusual or inaccurate value: 592
+      - Row 59: Unusual or inaccurate value: 509
+      - Row 60: Unusual or inaccurate value: 504
+      - Row 61: Unusual or inaccurate value: 36
+      - Row 62: Unusual or inaccurate value: 354
+      - Row 63: Unusual or inaccurate value: 91
+      - Row 64: Unusual or inaccurate value: 62
+      - Row 65: Unusual or inaccurate value: 964
+      - Row 66: Unusual or inaccurate value: 353
+      - Row 67: Unusual or inaccurate value: -1580
+      - Row 68: Unusual or inaccurate value: 972
+      - Row 69: Unusual or inaccurate value: 39
+      - Row 70: Unusual or inaccurate value: -875
+      - Row 71: Unusual or inaccurate value: 81
+      - Row 72: Unusual or inaccurate value: 962
+      - Row 73: Unusual or inaccurate value: 254
+      - Row 74: Unusual or inaccurate value: 686
+      - Row 75: Unusual or inaccurate value: 965
+      - Row 76: Unusual or inaccurate value: 996
+      - Row 77: Unusual or inaccurate value: 856
+      - Row 78: Unusual or inaccurate value: 371
+      - Row 79: Unusual or inaccurate value: 961
+      - Row 80: Unusual or inaccurate value: 231
+      - Row 81: Unusual or inaccurate value: 218
+      - Row 82: Unusual or inaccurate value: 370
+      - Row 83: Unusual or inaccurate value: 352
+      - Row 84: Unusual or inaccurate value: 265
+      - Row 85: Unusual or inaccurate value: 60
+      - Row 86: Unusual or inaccurate value: 960
+      - Row 87: Unusual or inaccurate value: 223
+      - Row 88: Unusual or inaccurate value: 230
+      - Row 89: Unusual or inaccurate value: 52
+      - Row 90: Unusual or inaccurate value: 976
+      - Row 91: Unusual or inaccurate value: 382
+      - Row 92: Unusual or inaccurate value: -663
+      - Row 93: Unusual or inaccurate value: 212
+      - Row 94: Unusual or inaccurate value: 95
+      - Row 95: Unusual or inaccurate value: 264
+      - Row 96: Unusual or inaccurate value: 977
+      - Row 97: Unusual or inaccurate value: 687
+      - Row 98: Unusual or inaccurate value: 64
+      - Row 99: Unusual or inaccurate value: 505
+      - Row 100: Unusual or inaccurate value: 227
+      - Row 101: Unusual or inaccurate value: 234
+      - Row 102: Unusual or inaccurate value: 47
+      - Row 103: Unusual or inaccurate value: 968
+      - Row 104: Unusual or inaccurate value: 92
+      - Row 105: Unusual or inaccurate value: 970
+      - Row 106: Unusual or inaccurate value: 507
+      - Row 107: Unusual or inaccurate value: 675
+      - Row 108: Unusual or inaccurate value: 595
+      - Row 109: Unusual or inaccurate value: 51
+      - Row 110: Unusual or inaccurate value: 63
+      - Row 111: Unusual or inaccurate value: 351
+      - Row 112: Unusual or inaccurate value: 974
+      - Row 113: Unusual or inaccurate value: 40
+      - Row 114: Unusual or inaccurate value: 7
+      - Row 115: Unusual or inaccurate value: 250
+      - Row 116: Unusual or inaccurate value: 290
+      - Row 117: Unusual or inaccurate value: -868
+      - Row 118: Unusual or inaccurate value: -757
+      - Row 119: Unusual or inaccurate value: -783
+      - Row 120: Unusual or inaccurate value: 685
+      - Row 121: Unusual or inaccurate value: 966
+      - Row 122: Unusual or inaccurate value: 221
+      - Row 123: Unusual or inaccurate value: 248
+      - Row 124: Unusual or inaccurate value: 232
+      - Row 125: Unusual or inaccurate value: 421
+      - Row 126: Unusual or inaccurate value: 677
+      - Row 127: Unusual or inaccurate value: 252
+      - Row 128: Unusual or inaccurate value: 27
+      - Row 129: Unusual or inaccurate value: 34
+      - Row 130: Unusual or inaccurate value: 94
+      - Row 131: Unusual or inaccurate value: 249
+      - Row 132: Unusual or inaccurate value: 597
+      - Row 133: Unusual or inaccurate value: 46
+      - Row 134: Unusual or inaccurate value: 41
+      - Row 135: Unusual or inaccurate value: 963
+      - Row 136: Unusual or inaccurate value: 66
+      - Row 137: Unusual or inaccurate value: 228
+      - Row 138: Unusual or inaccurate value: 676
+      - Row 139: Unusual or inaccurate value: -867
+      - Row 140: Unusual or inaccurate value: 216
+      - Row 141: Unusual or inaccurate value: 993
+      - Row 142: Unusual or inaccurate value: -648
+      - Row 143: Unusual or inaccurate value: 688
+      - Row 144: Unusual or inaccurate value: -339
+      - Row 145: Unusual or inaccurate value: 256
+      - Row 146: Unusual or inaccurate value: 380
+      - Row 147: Unusual or inaccurate value: 971
+      - Row 148: Unusual or inaccurate value: 44
+      - Row 149: Unusual or inaccurate value: 1
+      - Row 150: Unusual or inaccurate value: 598
+      - Row 151: Unusual or inaccurate value: 678
+      - Row 152: Unusual or inaccurate value: 84
+      - Row 153: Unusual or inaccurate value: 681
+      - Row 154: Unusual or inaccurate value: 260
+      - Row 155: Unusual or inaccurate value: 263
   [FEU2] Data with a null value should be marked as such.: PASSED
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
@@ -1874,140 +1866,140 @@ Column: Land Locked Developing Countries (LLDC)
   [REU4] Data should be accurate.: PASSED
   [FEU2] Data with a null value should be marked as such.: FAILED
     Invalid rows:
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
-      - Missing or improperly marked null value: <null>
+      - Row 2: Invalid null value found in: <null>
+      - Row 3: Invalid null value found in: <null>
+      - Row 4: Invalid null value found in: <null>
+      - Row 5: Invalid null value found in: <null>
+      - Row 6: Invalid null value found in: <null>
+      - Row 7: Invalid null value found in: <null>
+      - Row 8: Invalid null value found in: <null>
+      - Row 9: Invalid null value found in: <null>
+      - Row 10: Invalid null value found in: <null>
+      - Row 11: Invalid null value found in: <null>
+      - Row 12: Invalid null value found in: <null>
+      - Row 13: Invalid null value found in: <null>
+      - Row 14: Invalid null value found in: <null>
+      - Row 15: Invalid null value found in: <null>
+      - Row 18: Invalid null value found in: <null>
+      - Row 20: Invalid null value found in: <null>
+      - Row 21: Invalid null value found in: <null>
+      - Row 22: Invalid null value found in: <null>
+      - Row 23: Invalid null value found in: <null>
+      - Row 26: Invalid null value found in: <null>
+      - Row 27: Invalid null value found in: <null>
+      - Row 28: Invalid null value found in: <null>
+      - Row 29: Invalid null value found in: <null>
+      - Row 30: Invalid null value found in: <null>
+      - Row 33: Invalid null value found in: <null>
+      - Row 34: Invalid null value found in: <null>
+      - Row 35: Invalid null value found in: <null>
+      - Row 36: Invalid null value found in: <null>
+      - Row 37: Invalid null value found in: <null>
+      - Row 38: Invalid null value found in: <null>
+      - Row 39: Invalid null value found in: <null>
+      - Row 40: Invalid null value found in: <null>
+      - Row 41: Invalid null value found in: <null>
+      - Row 42: Invalid null value found in: <null>
+      - Row 43: Invalid null value found in: <null>
+      - Row 44: Invalid null value found in: <null>
+      - Row 45: Invalid null value found in: <null>
+      - Row 46: Invalid null value found in: <null>
+      - Row 47: Invalid null value found in: <null>
+      - Row 48: Invalid null value found in: <null>
+      - Row 49: Invalid null value found in: <null>
+      - Row 50: Invalid null value found in: <null>
+      - Row 51: Invalid null value found in: <null>
+      - Row 52: Invalid null value found in: <null>
+      - Row 53: Invalid null value found in: <null>
+      - Row 54: Invalid null value found in: <null>
+      - Row 55: Invalid null value found in: <null>
+      - Row 56: Invalid null value found in: <null>
+      - Row 57: Invalid null value found in: <null>
+      - Row 58: Invalid null value found in: <null>
+      - Row 59: Invalid null value found in: <null>
+      - Row 60: Invalid null value found in: <null>
+      - Row 61: Invalid null value found in: <null>
+      - Row 62: Invalid null value found in: <null>
+      - Row 63: Invalid null value found in: <null>
+      - Row 64: Invalid null value found in: <null>
+      - Row 65: Invalid null value found in: <null>
+      - Row 66: Invalid null value found in: <null>
+      - Row 67: Invalid null value found in: <null>
+      - Row 68: Invalid null value found in: <null>
+      - Row 69: Invalid null value found in: <null>
+      - Row 70: Invalid null value found in: <null>
+      - Row 71: Invalid null value found in: <null>
+      - Row 72: Invalid null value found in: <null>
+      - Row 73: Invalid null value found in: <null>
+      - Row 74: Invalid null value found in: <null>
+      - Row 75: Invalid null value found in: <null>
+      - Row 78: Invalid null value found in: <null>
+      - Row 79: Invalid null value found in: <null>
+      - Row 80: Invalid null value found in: <null>
+      - Row 81: Invalid null value found in: <null>
+      - Row 82: Invalid null value found in: <null>
+      - Row 83: Invalid null value found in: <null>
+      - Row 85: Invalid null value found in: <null>
+      - Row 86: Invalid null value found in: <null>
+      - Row 88: Invalid null value found in: <null>
+      - Row 89: Invalid null value found in: <null>
+      - Row 91: Invalid null value found in: <null>
+      - Row 92: Invalid null value found in: <null>
+      - Row 93: Invalid null value found in: <null>
+      - Row 94: Invalid null value found in: <null>
+      - Row 95: Invalid null value found in: <null>
+      - Row 97: Invalid null value found in: <null>
+      - Row 98: Invalid null value found in: <null>
+      - Row 99: Invalid null value found in: <null>
+      - Row 101: Invalid null value found in: <null>
+      - Row 102: Invalid null value found in: <null>
+      - Row 103: Invalid null value found in: <null>
+      - Row 104: Invalid null value found in: <null>
+      - Row 105: Invalid null value found in: <null>
+      - Row 106: Invalid null value found in: <null>
+      - Row 107: Invalid null value found in: <null>
+      - Row 109: Invalid null value found in: <null>
+      - Row 110: Invalid null value found in: <null>
+      - Row 111: Invalid null value found in: <null>
+      - Row 112: Invalid null value found in: <null>
+      - Row 113: Invalid null value found in: <null>
+      - Row 114: Invalid null value found in: <null>
+      - Row 116: Invalid null value found in: <null>
+      - Row 117: Invalid null value found in: <null>
+      - Row 118: Invalid null value found in: <null>
+      - Row 119: Invalid null value found in: <null>
+      - Row 120: Invalid null value found in: <null>
+      - Row 121: Invalid null value found in: <null>
+      - Row 122: Invalid null value found in: <null>
+      - Row 123: Invalid null value found in: <null>
+      - Row 124: Invalid null value found in: <null>
+      - Row 125: Invalid null value found in: <null>
+      - Row 126: Invalid null value found in: <null>
+      - Row 127: Invalid null value found in: <null>
+      - Row 128: Invalid null value found in: <null>
+      - Row 129: Invalid null value found in: <null>
+      - Row 130: Invalid null value found in: <null>
+      - Row 131: Invalid null value found in: <null>
+      - Row 132: Invalid null value found in: <null>
+      - Row 133: Invalid null value found in: <null>
+      - Row 134: Invalid null value found in: <null>
+      - Row 135: Invalid null value found in: <null>
+      - Row 136: Invalid null value found in: <null>
+      - Row 137: Invalid null value found in: <null>
+      - Row 138: Invalid null value found in: <null>
+      - Row 139: Invalid null value found in: <null>
+      - Row 140: Invalid null value found in: <null>
+      - Row 142: Invalid null value found in: <null>
+      - Row 143: Invalid null value found in: <null>
+      - Row 144: Invalid null value found in: <null>
+      - Row 146: Invalid null value found in: <null>
+      - Row 147: Invalid null value found in: <null>
+      - Row 148: Invalid null value found in: <null>
+      - Row 149: Invalid null value found in: <null>
+      - Row 150: Invalid null value found in: <null>
+      - Row 151: Invalid null value found in: <null>
+      - Row 152: Invalid null value found in: <null>
+      - Row 153: Invalid null value found in: <null>
   [IEU3.2] Data shall not consist of special characters.: PASSED
   [IEU4] Data shall clearly reuse concepts from controlled RDF vocabularies.: FAILED
 

@@ -48,19 +48,22 @@ public class DecimalFormatCheck implements IGenericColumnCheck {
 
     	List<Row> candidateRows = dataset
                 .filter(functions.col(columnName).isNotNull())
-                .select(columnName)
+                .select(functions.col("_id"), functions.col(columnName))
                 .collectAsList();
 
         for (Row row : candidateRows) {
-            Object rawVal = row.get(0);
-            if (rawVal == null) continue;
-
-            String value = rawVal.toString().trim();
+        	Number rowIdNum = (Number) row.getAs("_id");
+        	long rowId = rowIdNum.longValue() + 1;
+        	
+        	Object rawVal = row.get(1);
+        	if (rawVal == null) continue;
+        	
+        	String value = rawVal.toString().trim();
 
             if (value.equalsIgnoreCase("null")) continue;
 
             if (!value.matches(decimalRegex)) {
-                invalidRows.add("Invalid decimal: " + value);
+                invalidRows.add("Row " + rowId + ": Invalid decimal: " + value);
             }
         }
 

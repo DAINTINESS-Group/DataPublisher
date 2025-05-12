@@ -43,18 +43,16 @@ public class ThousandsSeparatorCheck implements IGenericColumnCheck  {
         List<Row> failingRows = dataset
                 .filter(functions.col(columnName).isNotNull()
                         .and(functions.col(columnName).rlike(thousandsSeparatorRegex)))
-                .select(columnName)
+                .select(functions.col("_id"), functions.col(columnName))
                 .collectAsList();
 
         for (Row row : failingRows) {
-        	Object rawVal = row.get(0);
-            if (rawVal == null) continue;
-
-            String value = rawVal.toString().trim();
-
-            if (value.equalsIgnoreCase("null")) continue;
-            
-            invalidRows.add("Invalid format of number: " + value);
+        	Number rowIdNum = (Number) row.getAs("_id");
+        	long rowId = rowIdNum.longValue() + 1;
+        	
+        	Object raw = row.get(1);
+        	String value = (raw == null) ? "<null>" : raw.toString();
+        	invalidRows.add("Row " + rowId + ": Invalid thousands saparator in value: " + value);
         }
 
         return invalidRows.isEmpty();
