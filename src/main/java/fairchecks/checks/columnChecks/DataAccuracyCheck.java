@@ -2,21 +2,23 @@ package fairchecks.checks.columnChecks;
 
 import fairchecks.api.IGenericColumnCheck;
 
-import org.apache.commons.text.similarity.JaroWinklerSimilarity;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.functions;
 import org.apache.spark.sql.types.DataType;
+import org.languagetool.JLanguageTool;
+import org.languagetool.language.BritishEnglish;
+import org.languagetool.rules.RuleMatch;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Map;
 
 /**
  * A check that identifies potentially inaccurate values in a column.
  *<p>
- * For string columns, it flags uncommon or misspelled values by combining frequency
- * analysis and fuzzy matching. For numeric columns, it applies semantic-aware rules
+ * For string columns, it flags misspelled values. For numeric columns, it applies semantic-aware rules
  * (e.g., age must be between 1–120, percentages between 0–100, amounts must be non-negative).
  * 
  * <p>Check ID: REU4
@@ -27,10 +29,6 @@ public class DataAccuracyCheck implements IGenericColumnCheck {
     private final List<String> invalidRows = new ArrayList<>();
     private DataType capturedColumnType;
     
-    private static final int MIN_OCCURRENCES = 3;
-    private static final double SIMILARITY_THRESHOLD = 0.90;
-    private final JaroWinklerSimilarity similarity = new JaroWinklerSimilarity();
-
     public DataAccuracyCheck(String columnName) {
         this.columnName = columnName;
     }
@@ -103,23 +101,18 @@ public class DataAccuracyCheck implements IGenericColumnCheck {
     
     private boolean checkStringColumn(Dataset<Row> dataset) {
     	try {
+    		JLanguageTool langTool = new JLanguageTool(new BritishEnglish());
+    		
+    		Map<String, Boolean> cache = new HashMap<>();
+    		
     		Dataset<Row> cleaned = dataset
     			.filter(functions.col(columnName).isNotNull()
     					.and(functions.not(functions.lower(functions.col(columnName)).equalTo("null"))))
     			.withColumn(columnName, functions.trim(functions.col(columnName)));
     		
-    		List<String> frequentValues = cleaned
-    			.groupBy(columnName)
-    			.count()
-    			.filter(functions.col("count").geq(MIN_OCCURRENCES))
-    			.select(columnName)
-    			.collectAsList()
-    			.stream()
-    			.map(row -> row.getString(0))
-    			.collect(Collectors.toList());
+    		List<Row> rows = cleaned.select(functions.col("_id"), functions.col(columnName)).collectAsList();
     		
-    		List<Row> allValues = cleaned.select(functions.col("_id"), functions.col(columnName)).collectAsList();
-    		for (Row row : allValues) {
+    		for (Row row : rows) {
     			Number rowIdNum = (Number) row.getAs("_id");
             	long rowId = rowIdNum.longValue() + 1;
             	
@@ -127,12 +120,23 @@ public class DataAccuracyCheck implements IGenericColumnCheck {
             	if (raw == null) continue;
             	
             	String value = raw.toString().trim();
-    			if(frequentValues.contains(value)) continue;
+    			if(value.equalsIgnoreCase("null")) continue;
     			
-    			boolean isSimilar = frequentValues.stream()
-    				.anyMatch(frequent -> similarity.apply(frequent, value) >= SIMILARITY_THRESHOLD);
-    			if(!isSimilar) {
-    				invalidRows.add("Row " + rowId + ": Unusual or inaccurate value: " + value);
+    			Boolean isInvalid = cache.get(value);
+    			if(isInvalid != null) {
+    				if (isInvalid) {
+    					invalidRows.add("Row " + rowId + ": Likely misspelled value: " + value);
+    				}
+    				continue;
+    			}
+    			
+    			List<RuleMatch> matches = langTool.check("This is " + value + ".");
+    			boolean hasSpellingIssue = matches.stream()
+    				.anyMatch(m -> m.getRule().getCategory().getId().toString().equalsIgnoreCase("TYPOS"));
+    			cache.put(value, hasSpellingIssue);
+    			
+    			if (hasSpellingIssue) {
+    				invalidRows.add("Row " + rowId + ": Likely misspelled: " + value);
     			}
     		}
     		return invalidRows.isEmpty();

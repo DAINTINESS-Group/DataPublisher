@@ -24,7 +24,7 @@ public class DataAccuracyCheckTest {
 	public void dataAccuracyTest() throws Exception {
 		Dataset<Row> dataset = ColumnHelperClass.getDataset(facade, "frame1");
 		
-		String[] columnsToCheck = new String[] { "weight (g)", "quantity", "currency", "color" };
+		String[] columnsToCheck = new String[] { "weight (g)", "quantity", "Fruit", "color" };
 		
 		for (String column : columnsToCheck) {
 			DataAccuracyCheck check = new DataAccuracyCheck(column);
@@ -34,7 +34,7 @@ public class DataAccuracyCheckTest {
 			
 			boolean result = check.executeCheck(dataset);
 			
-			if (column.equals("weight (g)") || column.equals("currency")) {
+			if (column.equals("weight (g)") || column.equals("Fruit")) {
 				assertTrue("Expected column '" + column + "' to pass data accuracy check.", result);
 			} else {
 				assertFalse("Expected column '" + column + "' to fail data accuracy check.", result);
