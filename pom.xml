@@ -53,9 +53,15 @@
 	  </dependency>
       
       <dependency>
-    	<groupId>org.apache.commons</groupId>
-    	<artifactId>commons-text</artifactId>
-    	<version>1.10.0</version>
+    	<groupId>org.languagetool</groupId>
+    	<artifactId>languagetool-core</artifactId>
+    	<version>6.3</version>
+	  </dependency>
+	  
+	  <dependency>
+    	<groupId>org.languagetool</groupId>
+    	<artifactId>language-en</artifactId>
+    	<version>6.3</version>
 	  </dependency>
       
   </dependencies>
