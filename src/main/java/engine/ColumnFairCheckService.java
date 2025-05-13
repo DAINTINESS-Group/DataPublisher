@@ -134,13 +134,109 @@ public class ColumnFairCheckService {
 	}
 	
 	public Map<String, Map<String, List<FairCheckResult>>> executeSpecificCheckInSpecificColumn(DatasetProfile profile, String column, String checkId) {
-		//TODO
-		return null;
+		Dataset<Row> dataset = profile.getDataset();
+        String[] columnNames = dataset.columns();
+        Map<String, Map<String, List<FairCheckResult>>> columnCheckResults = new HashMap<>();
+        
+        String fairCategory = getFairCategory(checkId);
+        
+        List<FairCheckResult> checkResults = new ArrayList<>();
+        
+        for (String columnName : columnNames) {
+        	if (columnName.equalsIgnoreCase(column)) {
+        		Map<String, List<FairCheckResult>> categorizedResults = new HashMap<>();
+            	
+            	List<IGenericCheck> columnChecks = ColumnFairCheckFactory.getAllColumnChecks(columnName);
+
+            	for (IGenericCheck check : columnChecks) {
+            		if (check.getCheckId() == checkId) {
+            			boolean result = check.executeCheck(dataset);
+    	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
+            			checkResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+            			break;
+            		}
+            	}
+            	if (checkResults.isEmpty()) {
+            		throw new IllegalArgumentException("Check ID not found: " + checkId);
+            	}
+            	
+            	categorizedResults.put(fairCategory, checkResults);
+            	columnCheckResults.put(columnName, categorizedResults);
+            	break;
+        	}
+        }
+        if (columnCheckResults.isEmpty()) {
+        	throw new IllegalArgumentException("Column name not found: " + column);
+        }
+		return columnCheckResults;
 	}
 	
 	public Map<String, Map<String, List<FairCheckResult>>> executeChecksInSpecificColumn(DatasetProfile profile, String column) {
-		//TODO
-		return null;
+		Dataset<Row> dataset = profile.getDataset();
+        String[] columnNames = dataset.columns();
+        Map<String, Map<String, List<FairCheckResult>>> columnCheckResults = new HashMap<>();
+        
+        for (String columnName : columnNames) {
+        	if (columnName.equalsIgnoreCase(column)) {
+        		DataType columnType = dataset.schema().apply(columnName).dataType();
+            	Map<String, List<FairCheckResult>> categorizedResults = new HashMap<>();
+            	
+            	// Execute Findability Checks
+            	List<IGenericCheck> findabilityChecks = ColumnFairCheckFactory.getFindabilityChecks(columnName);
+            	List<FairCheckResult> findabilityResults = new ArrayList<>();
+            	for (IGenericCheck check : findabilityChecks) {
+            		if (((IGenericColumnCheck) check).isApplicable(columnType)) {
+    	        	    boolean result = check.executeCheck(dataset);
+    	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
+    	        	    findabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+            		}
+            	}
+            	categorizedResults.put("Findability", findabilityResults);
+
+                // Execute Accessibility Checks
+            	List<IGenericCheck> accessibilityChecks = ColumnFairCheckFactory.getAccessibilityChecks(columnName);
+            	List<FairCheckResult> accessibilityResults = new ArrayList<>();
+            	for (IGenericCheck check : accessibilityChecks) {
+            		if (((IGenericColumnCheck) check).isApplicable(columnType)) {
+    	        	    boolean result = check.executeCheck(dataset);
+    	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
+    	        	    accessibilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+    	        	}
+            	}
+            	categorizedResults.put("Accessibility", accessibilityResults);
+
+                // Execute Interoperability Checks
+            	List<IGenericCheck> interoperabilityChecks = ColumnFairCheckFactory.getInteroperabilityChecks(columnName);
+            	List<FairCheckResult> interoperabilityResults = new ArrayList<>();
+            	for (IGenericCheck check : interoperabilityChecks) {
+            		if (((IGenericColumnCheck) check).isApplicable(columnType)) {
+    	        	    boolean result = check.executeCheck(dataset);
+    	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
+    	        	    interoperabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+    	        	}
+            	}
+            	categorizedResults.put("Interoperability", interoperabilityResults);
+
+                // Execute Reusability Checks
+            	List<IGenericCheck> reusabilityChecks = ColumnFairCheckFactory.getReusabilityChecks(columnName);
+            	List<FairCheckResult> reusabilityResults = new ArrayList<>();
+            	for (IGenericCheck check : reusabilityChecks) {
+            		if (((IGenericColumnCheck) check).isApplicable(columnType)) {
+    	        	    boolean result = check.executeCheck(dataset);
+    	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
+    	        	    reusabilityResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+    	        	}
+            	}
+            	categorizedResults.put("Reusability", reusabilityResults);
+
+                columnCheckResults.put(columnName, categorizedResults);
+        		break;
+        	}
+        }
+        if (columnCheckResults.isEmpty()) {
+        	throw new IllegalArgumentException("Column name not found: " + column);
+        }
+		return columnCheckResults;
 	}
 	
 	private String getFairCategory(String checkId) {

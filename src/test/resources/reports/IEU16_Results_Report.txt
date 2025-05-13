@@ -1,0 +1,5 @@
+FAIR Report for Dataset: myDataset
+
+=== GLOBAL CHECKS ===
+[IEU16 - CSV - Data files should have the same number of columns for all rows.] PASSED
+

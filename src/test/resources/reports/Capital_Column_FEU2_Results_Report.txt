@@ -1,0 +1,5 @@
+=== COLUMN CHECKS ===
+
+Column: Capital
+  [FEU2] Data with a null value should be marked as such.: PASSED
+

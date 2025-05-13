@@ -160,6 +160,46 @@ public class FacadeTests {
     }
     
     @Test
+    public void executeSpecificCheckInSpecificColumnTest() {
+    	Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("frame1", "color", "FEU2");
+    	
+    	assertNotNull("Result map should not be null", columnResults);
+    	assertEquals("Expected results for only the 'color' column", 1, columnResults.size());
+    	assertTrue("Expected results for column 'color'", columnResults.containsKey("color"));
+    	
+    	Map<String, List<FairCheckResult>> checkResultsMap = columnResults.get("color");
+    	assertNotNull("Check results map should not be null for column 'color'", checkResultsMap);
+    	assertEquals("Expected only one check result for column 'color'", 1, checkResultsMap.size());
+    	
+    	List<FairCheckResult> results = checkResultsMap.get("Findability");
+    	assertNotNull("Check result list should not be null for 'Findability'", results);
+    	
+    	for (FairCheckResult result : results) {
+    		assertEquals("Unexpected check ID in result", "FEU2", result.getCheckId());
+    		assertTrue("Expected check FEU2 to pass on column 'color'", result.isPassed());
+    	}
+    }
+    
+    @Test
+    public void executeChecksinSpecificColumnTest() {
+    	Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("frame1", "color", "all");
+    	
+    	assertNotNull("Result map should not be null", columnResults);
+    	assertEquals("Expected results for only the 'color' column", 1, columnResults.size());
+    	assertTrue("Expected results for column 'color'", columnResults.containsKey("color"));
+    	
+    	Map<String, List<FairCheckResult>> checkResultsMap = columnResults.get("color");
+    	assertNotNull("Check results map should not be null for column 'color'", checkResultsMap);
+    	
+    	List<FairCheckResult> interoperabiltyResults = checkResultsMap.get("Interoperability");
+    	assertNotNull("Result list for 'Interoperability' should not be null", interoperabiltyResults);
+    	
+    	for (FairCheckResult result : interoperabiltyResults) {
+    		assertNotNull("Check ID should not be null", result.getCheckId());
+    	}
+    }
+    
+    @Test
     public void generateGlobalReportTest() throws Exception {
 		String globalReportPath = "src/test/resources/reports/GlobalReportTest.txt";
 		Map<String, Boolean> globalResults = facade.executeGlobalChecks("frame1");
