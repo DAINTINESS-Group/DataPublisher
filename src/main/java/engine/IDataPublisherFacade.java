@@ -41,10 +41,29 @@ public interface IDataPublisherFacade {
 	/**
 	 * 
 	 * @param datasetAlias
+	 * @param checkId
+	 * @return
+	 * @throws IllegalStateException
+	 */
+	public Map<String, Boolean> executeGlobalChecks(String datasetAlias, String checkId) throws IllegalStateException;
+	
+	/**
+	 * 
+	 * @param datasetAlias
 	 * @return a nested map: column name, check ID, list of results
 	 * @throws IllegalStateException if the dataset is not registered or accessible
 	 */
 	public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias) throws IllegalStateException;
+	
+	/**
+	 * 
+	 * @param datasetAlias
+	 * @param column
+	 * @param checkId
+	 * @return
+	 * @throws IllegalStateException
+	 */
+	public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias, String column, String checkId) throws IllegalStateException;
 	
 	/**
 	 * 

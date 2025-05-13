@@ -39,6 +39,21 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 	}
 	
 	@Override
+	public Map<String, Boolean> executeGlobalChecks(String datasetAlias, String checkId) throws IllegalStateException {
+		System.out.print("Executing global check with ID: " + checkId + " on the dataset...");
+		System.out.print("\n");
+		DatasetProfile profile = datasetRegistrationController.getProfile(datasetAlias);
+
+	    if (profile == null) {
+	    	throw new IllegalStateException("Error: Dataset has not been registered");
+	    }
+	    
+	    Map<String, Boolean> results = globalCheckService.executeGlobalCheckById(profile.getDataset(), checkId);
+
+	    return results;
+	}
+	
+	@Override
     public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias) throws IllegalStateException {
 		System.out.print("Executing checks on individual columns...");
 		System.out.print("\n");
@@ -48,6 +63,26 @@ public class DataPublisherFacade implements IDataPublisherFacade{
         }
         return columnCheckService.executeColumnChecks(profile);
     }
+	
+	@Override
+	public Map<String, Map<String, List<FairCheckResult>>> executeColumnChecks(String datasetAlias, String column,
+			String checkId) throws IllegalStateException {
+		System.out.print("Executing column check with ID: " + checkId + " on  " + column + " column(s)...");
+		System.out.print("\n");
+		DatasetProfile profile = datasetRegistrationController.getProfile(datasetAlias);
+        if (profile == null) {
+        	throw new IllegalStateException("Error: Dataset has not been registered");
+        }
+        if (column == "all") {
+        	return columnCheckService.executeColumnCheckById(profile, checkId);
+        }
+        else if (checkId == "all"){
+        	return columnCheckService.executeChecksInSpecificColumn(profile, column);
+        }
+        else {
+        	return columnCheckService.executeSpecificCheckInSpecificColumn(profile, column, checkId);
+        }
+	}
 	
 	@Override
 	public void generateGlobalReport(String datasetAlias, Map<String, Boolean> globalResults, String outputPath, ReportType reportType) {
@@ -76,5 +111,4 @@ public class DataPublisherFacade implements IDataPublisherFacade{
 	public DatasetProfile getProfile(String alias) {
 		return datasetRegistrationController.getProfile(alias);
 	}
-
 }

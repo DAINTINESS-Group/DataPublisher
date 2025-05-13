@@ -97,4 +97,65 @@ public class ColumnFairCheckService {
 
         return columnCheckResults;
     }
+	
+	public Map<String, Map<String, List<FairCheckResult>>> executeColumnCheckById(DatasetProfile profile, String checkId) {
+		Dataset<Row> dataset = profile.getDataset();
+        String[] columnNames = dataset.columns();
+        Map<String, Map<String, List<FairCheckResult>>> columnCheckResults = new HashMap<>();
+        
+        String fairCategory = getFairCategory(checkId);
+        
+        List<FairCheckResult> checkResults = new ArrayList<>();
+        
+        for (String columnName : columnNames) {
+        	if (columnName.equalsIgnoreCase("_id")) continue;
+        	
+        	//DataType columnType = dataset.schema().apply(columnName).dataType();
+        	Map<String, List<FairCheckResult>> categorizedResults = new HashMap<>();
+        	
+        	List<IGenericCheck> columnChecks = ColumnFairCheckFactory.getAllColumnChecks(columnName);
+
+        	for (IGenericCheck check : columnChecks) {
+        		if (check.getCheckId() == checkId) {
+        			boolean result = check.executeCheck(dataset);
+	        	    List<String> invalidRows = ((IGenericColumnCheck) check).getInvalidRows();
+        			checkResults.add(new FairCheckResult(check.getCheckId(), check.getCheckDescription(), result, invalidRows));
+        			break;
+        		}
+        	}
+        	if (checkResults.isEmpty()) {
+        		throw new IllegalArgumentException("Check ID not found: " + checkId);
+        	}
+        	
+        	categorizedResults.put(fairCategory, checkResults);
+        	columnCheckResults.put(columnName, categorizedResults);
+        }
+		return columnCheckResults;
+	}
+	
+	public Map<String, Map<String, List<FairCheckResult>>> executeSpecificCheckInSpecificColumn(DatasetProfile profile, String column, String checkId) {
+		//TODO
+		return null;
+	}
+	
+	public Map<String, Map<String, List<FairCheckResult>>> executeChecksInSpecificColumn(DatasetProfile profile, String column) {
+		//TODO
+		return null;
+	}
+	
+	private String getFairCategory(String checkId) {
+		if (checkId.startsWith("F")) {
+			return "Findability";
+		}
+		else if (checkId.startsWith("A")) {
+			return "Accessibility";
+		}
+		else if (checkId.startsWith("I")) {
+			return "Interoperability";
+		}
+		else if (checkId.startsWith("R")) {
+			return "Reusability";
+		}
+		return null;
+	}
 }

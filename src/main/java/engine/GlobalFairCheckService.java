@@ -41,4 +41,18 @@ public class GlobalFairCheckService {
 
         return results;
     }
+	
+	public Map<String, Boolean> executeGlobalCheckById(Dataset<Row> dataset, String checkId) {
+		Map<String, Boolean> results = new LinkedHashMap<>();
+		for (IGenericCheck check : GlobalFairCheckFactory.getAllGlobalChecks()) {
+			if (check.getCheckId() == checkId) {
+				results.put(check.getCheckId() + " - " + check.getCheckDescription(), check.executeCheck(dataset));
+				break;
+			}
+		}
+		if (results.isEmpty()) {
+			throw new IllegalArgumentException("Check ID not found: " + checkId);
+		}
+		return results;
+	}
 }

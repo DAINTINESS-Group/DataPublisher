@@ -68,6 +68,15 @@ public class FacadeTests {
     }
     
     @Test
+    public void executeGlobalCheckByIdTest() {
+    	Map<String, Boolean> globalResultsCorrect = facade.executeGlobalChecks("frame3", "IEU16");
+    	
+    	assertNotNull(globalResultsCorrect);
+    	assertEquals(1, globalResultsCorrect.size());
+    	assertTrue(globalResultsCorrect.get("IEU16 - CSV - Data files should have the same number of columns for all rows."));
+    }
+    
+    @Test
     public void executeColumnChecksTest() {
     	Map<String, Map<String, List<FairCheckResult>>> columnResults1 = facade.executeColumnChecks("frame1");
     	
@@ -124,6 +133,30 @@ public class FacadeTests {
                 assertFalse(result.isPassed());
             }
         }
+    }
+    
+    @Test
+    public void executeColumnChecksByIdTest() {
+    	Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks("frame1", "all", "FEU2");
+    	
+    	assertNotNull("Result map should not be null", columnResults);
+    	assertFalse("Expected results for multiple columns", columnResults.isEmpty());
+    	
+    	for (Map.Entry<String, Map<String, List<FairCheckResult>>> columnEntry : columnResults.entrySet()) {
+    		String columnName = columnEntry.getKey();
+    		Map<String, List<FairCheckResult>> checkMap = columnEntry.getValue();
+    		assertNotNull("Check map should not be null for column: " + columnName, checkMap);
+    		
+    		List<FairCheckResult> results = checkMap.get("Findability");
+    		assertNotNull("Check results should not be null for column: " + columnName, results);
+    		assertFalse("Expected at least one result for column: " + columnName, results.isEmpty());
+    		
+    		for (FairCheckResult result : results) {
+    			assertEquals("Check ID mismatch in result", "FEU2", result.getCheckId());
+    			
+    			assertTrue("Expected check FEU2 to pass for column: " + columnName, result.isPassed());
+    		}
+    	}
     }
     
     @Test
