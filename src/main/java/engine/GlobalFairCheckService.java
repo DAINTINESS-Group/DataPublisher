@@ -9,12 +9,13 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * Service class responsible for executing all global FAIR checks on a dataset.
+ * Service class responsible for executing global FAIR checks on a dataset.
  * <p>
  * This class executes checks grouped under the FAIR principles:
- * Findability, Accessibility, Interoperability, and Reusability. It does check instantiation
- * to {@link GlobalFairCheckFactory} and runs each check sequentially on the full dataset.
+ * Findability, Accessibility, Interoperability, and Reusability. It executes all global checks, or a specific one.
+ * It does check instantiation to {@link GlobalFairCheckFactory} and runs each check sequentially on the full dataset.
  * </p>
+ * 
  * @see fairchecks.factory.GlobalFairCheckFactory
  * @see fairchecks.api
  */

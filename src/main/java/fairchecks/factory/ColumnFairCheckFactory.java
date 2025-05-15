@@ -14,10 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Factory class responsible for creating instances of column FAIR checks, organized by FAIR principle.
+ * Factory class responsible for creating instances of column FAIR checks, organized all together or by FAIR principle.
  * <p>
  * Each method returns a list of check implementations related to a specific principle:
- * Findability, Accessibility, Interoperability, or Reusability.
+ * Findability, Accessibility, Interoperability, or Reusability, or all column checks.
  * </p>
  * 
  * @see fairchecks.checks.columnChecks

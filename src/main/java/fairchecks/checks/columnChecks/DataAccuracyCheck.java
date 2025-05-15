@@ -18,7 +18,8 @@ import java.util.Map;
 /**
  * A check that identifies potentially inaccurate values in a column.
  *<p>
- * For string columns, it flags misspelled values. For numeric columns, it applies semantic-aware rules
+ * For string columns, it flags misspelled values, using a British vocabulary. 
+ * For numeric columns, it applies semantic-aware rules
  * (e.g., age must be between 1–120, percentages between 0–100, amounts must be non-negative).
  * 
  * <p>Check ID: REU4

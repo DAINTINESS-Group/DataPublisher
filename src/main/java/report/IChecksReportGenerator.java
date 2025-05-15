@@ -15,17 +15,17 @@ public interface IChecksReportGenerator {
 	
 	/**
 	 * 
-	 * @param alias
-	 * @param results
-	 * @param outputPath
+	 * @param alias the alias of the dataset
+	 * @param results the results of global checks
+	 * @param outputPath the file path to write the report to
 	 */
 	public void generateGlobalReport(String alias, Map<String, Boolean> results, String outputPath);
     
 	/**
 	 * 
-	 * @param alias
-	 * @param results
-	 * @param outputPath
+	 * @param alias the alias of the dataset
+	 * @param results the results of column checks
+	 * @param outputPath the file path to write the report to
 	 */
 	public void generateColumnReport(String alias, Map<String, Map<String, List<FairCheckResult>>> results, String outputPath);
 

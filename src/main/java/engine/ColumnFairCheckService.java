@@ -21,6 +21,8 @@ import java.util.Map;
  * Findability, Accessibility, Interoperability, and Reusability. It uses the
  * {@link fairchecks.factory.ColumnFairCheckFactory} to obtain relevant checks for each column,
  * and evaluates their applicability based on column data types.
+ * The class executes:
+ * All column checks, a specific column check to all columns, a specific column check to a specific column, and all column checks in a specific column.
  * </p>
  *
  * <p>
