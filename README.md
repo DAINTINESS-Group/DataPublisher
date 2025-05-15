@@ -17,7 +17,7 @@ Afterwards, check the Main class inside the App package for an example on the cr
 - Registration of Datasets from CSV files.
 - Global FAIR checks, that checks the whole file.
 - Column FAIR checks, that validate per-column.
-- Detailed report generation for each executed check in TXT File.
+- Detailed report generation for each executed check in TXT or MD File.
 
 ## **Run tests**
 All tests are stored within the test folder. To execute all of them simply run:
@@ -51,16 +51,49 @@ String frameName= "dataset";
 facade.registerDataset("path//of//file//dataset.csv", frameName, hasHeader);
 ```
 
-With the dataset registered via oir facade, we proceed with the validation checks:
+With the dataset registered via our facade, we proceed with the validation checks
+If we want to execute all the global checks and all the column checks:
 ```sh
 Map<String, Boolean> globalResults = facade.executeGlobalChecks(frameName);
 Map<String, Map<String, List<FairCheckResult>>> columnResults = facade.executeColumnChecks(frameName);
 ```
-
-Finally, we generate a report with the results of the checks:
+If we want to execute a specific global check:
 ```sh
-facade.generateGlobalReport(frameName, globalResults, "output//path//directory.txt");
-facade.generateColumnReport(frameName, columnResults, "output//path//directory.txt");
+String checkId = "ID of the global check";
+Map<String, Boolean> globalResultsForcheckId = facade.executeGlobalChecks(frameName, checkId);
+```
+If we want to execute a specific column check for all the columns:
+```sh
+String checkId = "ID of the column check";
+Map<String, Map<String, List<FairCheckResult>>> columnResultsForcheckId = facade.executeColumnChecks(frameName, "all", checkId);
+```
+
+If we want to execute all column checks for a specific column:
+```sh
+String columnName = "the name of the column we want to check";
+Map<String, Map<String, List<FairCheckResult>>> specificColumnResults = facade.executeColumnChecks(frameName, columnName, "all");
+```
+And, if we want to execute a specific column check in a specific column:
+```sh
+String columnName = "the name of the column we want to check";
+String checkId = "ID of the column check";
+Map<String, Map<String, List<FairCheckResult>>> specificColumnResultsForCheckId = facade.executeColumnChecks(frameName, columnName, checkId);
+```
+Then, to generate a report we define the folder of the output and the type of the file:
+```sh
+String outputFolder = "output//path//directory//"
+ReportType reportTypeTXT = ReportType.TEXT;
+ReportType reportTypeMD = ReportType.MARKDOWN;
+```
+Finally, we generate a report with the results of the checks. We can choose either Markdown or Text type:
+```sh
+facade.generateGlobalReport(frameName, globalResults, outputFolder + nameOfFile.md, reportTypeMD);
+facade.generateColumnReport(frameName, columnResults, outputFolder + nameOfFile.md, reportTypeMD);
+
+facade.generateGlobalReport(frameName, globalResultsForcheckId, outputFolder + nameOfFile.txt, reportTypeTXT);
+facade.generateColumnReport(frameName, columnResultsForcheckId, outputFolder + nameOfFile.txt, reportTypeTXT);
+facade.generateColumnReport(frameName, specificColumnResults, outputFolder + nameOfFile.md, reportTypeMD);
+facade.generateColumnReport(frameName, specificColumnResultsForCheckId, outputFolder + nameOfFile.txt, reportTypeTXT);
 ```
   
 ## **Contributors**
