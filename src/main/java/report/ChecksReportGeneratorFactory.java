@@ -14,8 +14,6 @@ public class ChecksReportGeneratorFactory {
 				return new TxtChecksReportGenerator();
 			case MARKDOWN:
 				return new MarkdownChecksReportGenerator();
-			case JSON:
-				return null;
 			default:
 				throw new IllegalArgumentException("Unsupported report type: " + type);
 		}
