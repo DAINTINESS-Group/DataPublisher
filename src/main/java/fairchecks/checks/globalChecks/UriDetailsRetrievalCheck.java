@@ -40,6 +40,7 @@ public class UriDetailsRetrievalCheck implements IGenericCheck{
     public boolean executeCheck(Dataset<Row> dataset) {
     	String[] columns = dataset.columns();
         Map<String, List<String>> candidatePairs = new HashMap<>();
+        boolean foundControlledURIs = false;
 
         for (String column : columns) {
             List<Row> values = dataset.select(column)
@@ -56,6 +57,7 @@ public class UriDetailsRetrievalCheck implements IGenericCheck{
             double ratio = (double) matchCount / values.size();
 
             if (ratio >= 0.5) {
+            	foundControlledURIs = true;
                 String labelColumn = findMatchingLabelColumn(column, columns);
                 if (labelColumn == null) {
                     invalidRows.add("No label column found for controlled URI column: " + column);
@@ -63,6 +65,10 @@ public class UriDetailsRetrievalCheck implements IGenericCheck{
                     candidatePairs.put(column, Arrays.asList(labelColumn));
                 }
             }
+        }
+        
+        if(!foundControlledURIs) {
+        	return false;
         }
 
         return invalidRows.isEmpty();

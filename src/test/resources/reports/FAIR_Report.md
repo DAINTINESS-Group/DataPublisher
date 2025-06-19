@@ -3,7 +3,7 @@
 ## GLOBAL CHECKS
 - **IEU3.1 - The encoding of choice on the web is UTF-8, and must be explicitly enabled on ‘Save As’.**: `PASSED`
 - **IEU5 - Data labels shall be referenced by unique identifiers, i.e. URIs**: `FAILED`
-- **IEU6 - Once tags are referenced by unique identifiers from controlled vocabularies, URI details shall be retrieved in the data.**: `PASSED`
+- **IEU6 - Once tags are referenced by unique identifiers from controlled vocabularies, URI details shall be retrieved in the data.**: `FAILED`
 - **IEU7 - Data shall leverage URIs and be published as Linked Data in the form of semantic characters.**: `FAILED`
 - **IEU9 - CSV - Data shall use the semicolon, not the comma, as a separator between values, with no spaces or tabs on either side.**: `FAILED`
 - **IEU10 - CSV - Each data file shall contain a single table.**: `PASSED`
